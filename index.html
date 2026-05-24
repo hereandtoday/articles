@@ -16,8 +16,6 @@ body{
 .header h1{font-size:26px;font-weight:700;color:#1a365d;letter-spacing:1px}
 .header p{font-size:14px;color:#6a7a8a;margin-top:6px}
 .header .divider{height:2px;background:linear-gradient(to right,#1a365d,transparent);margin-top:14px;width:100px}
-
-/* Search */
 .search-bar{position:relative;margin-bottom:28px}
 .search-bar input{
   width:100%;padding:12px 16px 12px 44px;border:1px solid #dde2ea;border-radius:8px;
@@ -26,20 +24,16 @@ body{
 }
 .search-bar input:focus{border-color:#1f4ea8;box-shadow:0 0 0 3px rgba(31,78,168,.1)}
 .search-bar .icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#8a9aaa;font-size:18px}
-
-/* Category section */
 .category{margin-bottom:36px}
 .category h2{
   font-size:14px;font-weight:600;color:#4a5a6a;margin-bottom:12px;
   display:flex;align-items:center;gap:8px
 }
 .category h2 .badge{font-size:11px;padding:2px 10px;border-radius:10px;font-weight:600}
-.badge.key{background:#1a365d;color:#fff}
-.badge.watch{background:#f0e8c8;color:#8a6a20}
-.badge.rebound{background:#fce8e8;color:#a32a2a}
-.badge.ref{background:#e8edf5;color:#4a5a7a}
-
-/* Company grid */
+.badge.a{background:#1a365d;color:#fff}
+.badge.b{background:#f0e8c8;color:#8a6a20}
+.badge.c{background:#fce8e8;color:#a32a2a}
+.badge.d{background:#e8edf5;color:#4a5a7a}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
 .card{
   display:flex;flex-direction:column;padding:16px 18px;background:#fff;
@@ -50,26 +44,21 @@ body{
 .card .top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:4px}
 .card .name{font-size:15px;font-weight:600;color:#1a365d}
 .card .code{font-size:12px;color:#6a7a8a;font-family:"JetBrains Mono",monospace}
-.card .rating{
+.card .mark{
   display:inline-flex;align-items:center;justify-content:center;
   width:28px;height:28px;border-radius:8px;font-size:12px;font-weight:700;flex-shrink:0
 }
-.rating-S{background:#1a365d;color:#fff}
-.rating-A{background:#1f4ea8;color:#fff}
-.rating-A_{background:#5a7ab8;color:#fff}
-.rating-B{background:#8a9aaa;color:#fff}
-.rating-B_{background:#aab0ba;color:#fff}
+.mk-S{background:#1a365d;color:#fff}
+.mk-A{background:#1f4ea8;color:#fff}
+.mk-A_{background:#5a7ab8;color:#fff}
+.mk-B{background:#8a9aaa;color:#fff}
+.mk-B_{background:#aab0ba;color:#fff}
 .card .meta{font-size:12px;color:#8a9aaa;margin-top:4px}
 .card .tags{display:flex;gap:4px;margin-top:8px;flex-wrap:wrap}
 .card .tag{font-size:10px;padding:1px 8px;border-radius:8px;background:#f0f4f9;color:#5a6a7a}
 .card.hidden{display:none}
-
-/* No results */
 .no-results{text-align:center;padding:60px 0;color:#8a9aaa;font-size:15px;display:none}
-
-/* Footer */
 .footer{margin-top:48px;padding-top:20px;border-top:1px solid #e2e8f0;font-size:13px;color:#8a9aaa;text-align:center}
-
 @media(max-width:480px){
   .container{padding:24px 16px 60px}
   .header h1{font-size:22px}
@@ -80,94 +69,82 @@ body{
 <body>
 <div class="container">
 
-<header class="header">
-<h1>&#21315;&#30740;&#25237;&#36164; &middot; &#20844;&#21496;&#26723;&#26696;</h1>
-<p>&#21046;&#36896;&#19994;&#20215;&#20540;&#25237;&#36164;&#20998;&#26512;&#26694;&#26550; &middot; 32 &#23478;&#20844;&#21496;&#28145;&#24230;&#30740;&#31350;</p>
+<div class="header">
+<h1>千研投资 · 公司档案</h1>
+<p>制造业价值投资分析框架 · 32 家公司深度研究</p>
 <div class="divider"></div>
-</header>
+</div>
 
 <div class="search-bar">
 <span class="icon">&#128269;</span>
-<input type="text" id="searchInput" placeholder="&#25628;&#32034;&#20844;&#21496;&#21517;&#31216;&#25110;&#20195;&#30721;..."
-  oninput="filterCompanies()" onkeyup="filterCompanies()">
+<input type="text" id="q" placeholder="搜索公司名称或代码..." oninput="doSearch()">
 </div>
 
-<div id="categories"></div>
-
-<div class="no-results" id="noResults">&#27809;&#26377;&#31526;&#21512;&#26465;&#20214;&#30340;&#20844;&#21496;</div>
+<div id="cats"></div>
+<div class="no-results" id="none">没有符合条件的公司</div>
 
 <footer class="footer">
-<p>&#21315;&#30740;&#25237;&#36164; &middot; &#30693;&#35782;&#24211;&#39537;&#21160;&#30340;&#30740;&#31350;&#36755;&#20986; &middot; &#20844;&#21496;&#20449;&#24687;&#25353;&#23454;&#38469;&#25345;&#20179;&#19982;&#20851;&#27880;&#21487;&#33021;&#26377;&#26356;&#26032;&#24310;&#36831;</p>
+<p>千研投资 · 知识库驱动的研究输出</p>
 </footer>
 
 </div>
 
 <script>
-const COMPANIES = [];
+const COMP = [];
 
-async function init() {
+async function start() {
   try {
-    const res = await fetch('data/companies.json');
-    const raw = await res.json();
-    raw.forEach((c,i) => {
-      c.ratingKey = c.rating.replace('+','').replace('-','_');
-      COMPANIES.push(c);
-    });
+    const r = await fetch('data/companies.json');
+    const raw = await r.json();
+    raw.forEach(function(c) { COMP.push(c); });
     render();
   } catch(e) {
-    document.getElementById('categories').innerHTML = '<p style="color:#a32a2a">&#21152;&#36733;&#20844;&#21496;&#25968;&#25454;&#22833;&#36133;</p>';
+    document.getElementById('cats').innerHTML = '<p style="color:#a32a2a">数据加载失败</p>';
   }
 }
 
 function render() {
-  const cats = [
-    {key:'&#37325;&#28857;&#36319;&#36394;', cls:'badge key', label:'&#37325;&#28857;&#36319;&#36394;'},
-    {key:'&#31561;&#24453;&#35266;&#23519;', cls:'badge watch', label:'&#31561;&#24453;&#35266;&#23519;'},
-    {key:'&#21338;&#21453;&#24377;', cls:'badge rebound', label:'&#21338;&#21453;&#24377;'},
-    {key:'&#30740;&#31350;&#23545;&#29031;', cls:'badge ref', label:'&#30740;&#31350;&#23545;&#29031;'}
+  var q = (document.getElementById('q').value || '').trim().toLowerCase();
+  var groups = [
+    {key:'a', label:'重点跟踪'},
+    {key:'b', label:'等待观察'},
+    {key:'c', label:'博反弹'},
+    {key:'d', label:'研究对照'}
   ];
-  const container = document.getElementById('categories');
-  container.innerHTML = '';
-  const query = (document.getElementById('searchInput').value || '').trim().toLowerCase();
-
-  let hasAny = false;
-  cats.forEach(cat => {
-    const items = COMPANIES.filter(c => c.category === cat.label && matches(c, query));
-    if (!items.length && query) return;
-    if (items.length) hasAny = true;
-
-    const section = document.createElement('div');
-    section.className = 'category';
-    section.innerHTML = '<h2><span class="'+cat.cls+'">'+cat.label+'</span> <span style="font-weight:400;color:#8a9aaa;font-size:12px">'+items.length+'&#23478;</span></h2><div class="grid"></div>';
-    const grid = section.querySelector('.grid');
-
-    items.forEach(c => {
-      const card = document.createElement('a');
-      card.className = 'card';
-      card.href = c.id + '/';
-      card.innerHTML =
-        '<div class="top"><div><div class="name">'+c.name+'</div><div class="code">'+c.code+'</div></div><div class="rating rating-'+c.ratingKey+'">'+c.rating+'</div></div>' +
-        '<div class="meta">&#30830;&#23450;&#24615;: '+c.certainty+' &#183; &#23433;&#20840;&#36793;&#38469;: '+c.margin+'</div>' +
-        '<div class="tags"><span class="tag">&#26356;&#26032; '+c.updated+'</span><span class="tag">'+c.category+'</span></div>';
-      grid.appendChild(card);
+  var html = '';
+  var hasAny = false;
+  
+  groups.forEach(function(g) {
+    var items = [];
+    COMP.forEach(function(c) {
+      if (c.category !== g.label) return;
+      if (q && c.name.indexOf(q) === -1 && c.name.toLowerCase().indexOf(q) === -1 && c.code.toLowerCase().indexOf(q) === -1) return;
+      items.push(c);
     });
-
-    container.appendChild(section);
+    if (items.length === 0 && q) return;
+    if (items.length > 0) hasAny = true;
+    
+    var cards = '';
+    items.forEach(function(c) {
+      var rk = c.rating.replace('+','').replace('-','_');
+      cards += '<a class="card" href="' + c.id + '/">' +
+        '<div class="top"><div><div class="name">' + c.name + '</div><div class="code">' + c.code + '</div></div>' +
+        '<div class="mark mk-' + rk + '">' + c.rating + '</div></div>' +
+        '<div class="meta">确定性: ' + c.certainty + ' · 安全边际: ' + c.margin + '</div>' +
+        '<div class="tags"><span class="tag">更新 ' + c.updated + '</span></div></a>';
+    });
+    
+    html += '<div class="category"><h2><span class="badge ' + g.key + '">' + g.label + '</span> <span style="font-weight:400;color:#8a9aaa;font-size:12px">' + items.length + '家</span></h2>' +
+      '<div class="grid">' + cards + '</div></div>';
   });
-
-  document.getElementById('noResults').style.display = hasAny ? 'none' : 'block';
+  
+  document.getElementById('cats').innerHTML = html;
+  document.getElementById('none').style.display = hasAny ? 'none' : 'block';
 }
 
-function matches(c, q) {
-  if (!q) return true;
-  return c.name.includes(q) || c.code.includes(q) || c.name.toLowerCase().includes(q) || c.code.toLowerCase().includes(q);
-}
+function doSearch() { render(); }
 
-function filterCompanies() {
-  render();
-}
-
-init();
+start();
 </script>
 </body>
 </html>
