@@ -47,11 +47,11 @@ body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-syste
 .page::-webkit-scrollbar{width:6px}
 .page::-webkit-scrollbar-thumb{background:#d0d8e0;border-radius:3px}
 .page h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d}
-.page h2{font-size:1.2rem;font-weight:700;color:#14181f;margin:1.8em 0 .6em;padding-left:12px;border-left:4px solid #1f4ea8}
+.page h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid #dde2ea}
 .page h3{font-size:1.05rem;font-weight:600;color:#3c4451;margin:1.4em 0 .5em}
 .page p{margin-bottom:1em;text-align:justify}
 .page hr{border:none;height:1px;background:#dde2ea;margin:1.8em 0}
-.page blockquote{margin:1em 0;padding:12px 16px;background:#e8edf5;border-left:4px solid #1f4ea8;color:#3c4451;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+.page blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
 .page blockquote p{margin-bottom:0}
 .page strong{color:#14181f;font-weight:700}
 .page code{font-family:"JetBrains Mono","SF Mono",monospace;background:#e8edf5;padding:2px 6px;border-radius:3px;font-size:13px;color:#1f4ea8}
@@ -62,6 +62,7 @@ body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-syste
 .page table th{background:#1f4ea8;color:#fff;font-weight:600;padding:8px 12px;border:1px solid #1f4ea8;text-align:left;font-size:12px}
 .page table td{padding:7px 12px;border:1px solid #dde2ea;vertical-align:top}
 .page table tbody tr:nth-child(even) td{background:#fafbfd}
+.page table tbody tr:hover td{background:#e8edf5;cursor:pointer}
 .page .pos{color:#1c6e3d;font-weight:600}
 .page .neg{color:#a32a2a;font-weight:600}
 .page .warn{color:#c97a1a;font-weight:600}
@@ -114,7 +115,7 @@ function pick(id){
   go();
   var h='';for(var i=0;i<cards.length;i++)h+='<button class="tbtn" onclick="ld(\''+cards[i]+'\',this)">'+cname[i]+'</button>';
   document.getElementById('nav').innerHTML=h;
-  document.getElementById('pg').innerHTML='<div class="ld">选择一张卡片</div>';
+  ld('gailan',document.querySelector('.tbtn'));
 }
 
 function ld(k,btn){
