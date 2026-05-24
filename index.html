@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>千研投资 · 投研文章</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;
+  color:#1f1f1f;background:#f7f8fa;line-height:1.6;min-height:100vh;
+}
+.container{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+.header{margin-bottom:48px}
+.header h1{font-size:28px;font-weight:700;color:#1a365d;letter-spacing:1px}
+.header p{font-size:15px;color:#6a7a8a;margin-top:8px}
+.header .divider{height:2px;background:linear-gradient(to right,#1a365d,transparent);margin-top:16px;width:120px}
+.articles{display:flex;flex-direction:column;gap:20px}
+.card{
+  display:flex;flex-direction:column;
+  background:#fff;border-radius:8px;padding:24px 28px;
+  border:1px solid #e2e8f0;transition:box-shadow .15s,transform .15s;
+  text-decoration:none;color:inherit;
+}
+.card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-1px);border-color:#cbd5e1}
+.card .meta{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.card .tag{
+  display:inline-block;font-size:11px;font-weight:600;padding:2px 10px;border-radius:10px;
+  letter-spacing:.5px;
+}
+.tag.article{background:#e8edf5;color:#1f4ea8}
+.tag.report{background:#e8f5e8;color:#1a5e3d}
+.tag.wechat{background:#fff3e0;color:#b85a20}
+.card .date{font-size:13px;color:#8a9aaa}
+.card h2{font-size:18px;font-weight:600;color:#1a365d;margin-bottom:6px;line-height:1.4}
+.card .desc{font-size:14px;color:#5a6a7a;line-height:1.5}
+.card .readmore{font-size:13px;color:#1f4ea8;margin-top:10px;font-weight:500}
+.footer{margin-top:48px;padding-top:24px;border-top:1px solid #e2e8f0;font-size:13px;color:#8a9aaa;text-align:center}
+@media(max-width:480px){
+  .container{padding:28px 16px 60px}
+  .header h1{font-size:24px}
+  .card{padding:18px 20px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header class="header">
+<h1>千研投资 · 投研文章</h1>
+<p>制造业价值投资 · 公司深度分析 · 投资框架研究</p>
+<div class="divider"></div>
+</header>
+
+<div class="articles">
+
+<a class="card" href="建立根据地还是趁乱捞一把.html">
+<div class="meta">
+<span class="tag wechat">公众号</span>
+<span class="date">2026-05-24</span>
+</div>
+<h2>建立根据地，还是趁乱捞一把？</h2>
+<p class="desc">一套判断挑战者能否真正升级的投资框架——海安集团案例分析，11种窗口类型与六项关键任务。</p>
+<span class="readmore">阅读全文 →</span>
+</a>
+
+<a class="card" href="海大集团_002311_制造业框架评估.html">
+<div class="meta">
+<span class="tag report">研究报告</span>
+<span class="date">2026-05-24</span>
+</div>
+<h2>海大集团（002311）— 制造业价值投资框架评估</h2>
+<p class="desc">生态协同护城河分析 · 海外强α驱动 · 猪周期底部区域 · Forward PE近5年最低分位 · A-评级</p>
+<span class="readmore">阅读全文 →</span>
+</a>
+
+</div>
+
+<footer class="footer">
+<p>千研投资 · 知识库驱动的研究输出</p>
+</footer>
+
+</div>
+</body>
+</html>

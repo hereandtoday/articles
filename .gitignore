@@ -1,0 +1,5 @@
+# Gitee Pages 站点
+# 忽略系统文件
+Thumbs.db
+.DS_Store
+*.swp
