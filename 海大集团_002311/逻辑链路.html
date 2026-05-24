@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>海大集团 · 逻辑链路</title>
+<style>
+:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--link:#1a3f8c;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a;--max-prose:880px;--gutter:clamp(24px,4vw,80px)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+.container{max-width:var(--max-prose);margin:0 auto;padding:clamp(40px,5vw,80px) var(--gutter) 6rem}
+.back{margin-bottom:24px}
+.back a{font-size:14px;color:var(--accent);text-decoration:none}
+.back a:hover{text-decoration:underline}
+.header{margin-bottom:28px;padding-bottom:20px;border-bottom:2px solid var(--accent)}
+.header .crumbs{font-size:13px;color:var(--ink-mute);margin-bottom:6px}
+.header .crumbs a{color:var(--accent);text-decoration:none}
+.header h1{font-size:22px;font-weight:700;color:var(--ink);line-height:1.3}
+.header .sub{font-size:13px;color:var(--ink-mute);margin-top:6px}
+.body{font-size:15px}
+.body p{margin-bottom:1em;text-align:justify;word-break:break-word}
+.body h2{font-size:1.2rem;font-weight:700;color:var(--ink);margin:1.8em 0 .6em;padding-left:12px;border-left:4px solid var(--accent)}
+.body h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+.body hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+.body blockquote{margin:1em 0;padding:12px 16px;background:var(--accent-light);border-left:4px solid var(--accent);color:var(--ink-soft);font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+.body blockquote p{margin-bottom:0}
+.body strong{color:var(--ink);font-weight:700}
+.body em{font-style:italic;color:var(--ink-soft)}
+.body code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+.body pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono","Fira Code",Consolas,monospace;color:var(--code-ink)}
+.body pre code{background:none;padding:0;color:var(--code-ink);font-size:13px}
+.body li{margin-bottom:4px;text-align:justify;line-height:1.6;margin-left:20px}
+.body table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+.body table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px}
+.body table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+.body table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+.body .pos{color:var(--positive);font-weight:600}
+.body .neg{color:var(--negative);font-weight:600}
+.body .warn{color:var(--warning);font-weight:600}
+@media(max-width:480px){.container{padding:20px 14px 40px}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="back"><a href="../">&#8592; &nbsp;&#36820;&#22238;&#20844;&#21496;&#26723;&#26696;</a></div>
+<div class="header">
+<div class="crumbs"><a href="../">&#21315;&#30740;&#25237;&#36164;</a> &rsaquo; <a href="../">&#28023;&#22823;&#38598;&#22242;</a> &rsaquo; 逻辑链路</div>
+<h1>逻辑链路</h1>
+</div>
+<div class="body">
+<h1>海大集团 - 逻辑链路</h1>
+<blockquote><p>因果断言网络（L3），显式化判断之间的逻辑关系。</p></blockquote>
+<blockquote><p>每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p></blockquote>
+<h2>一、链路清单</h2>
+<p>| 链路ID | 因果断言 | 置信度 | 关联判断 | 失效信号 | 更新日期 |</p>
+<p>|--------|---------|--------|---------|---------|---------|</p>
+<p>| LK-001 | 海外持续扩张 → 销量高增长 → 利润增量核心 | 高 | 成长性评级B+ | 海外销量增速<30%或单吨净利<200元 | 2026-05-13 |</p>
+<p>| LK-002 | 猪周期见底 → 养殖亏损收窄 → 净利润修复 → PE修复 | 中 | 估值评级A | 猪价持续<10元/kg超过6个月 | 2026-05-13 |</p>
+<p>| LK-003 | 服务营销体系 → 客户粘性高 → 国内市占率提升 | 高 | 商业模式评级B+ | 国内单吨净利<80元或市占率增速放缓 | 2026-05-13 |</p>
+<p>| LK-004 | 鱼粉涨价 → 中小厂商出清 → 龙头份额集中 | 中 | 风险应对有效 | 鱼粉价格回落至1,500美元/吨以下 | 2026-05-13 |</p>
+<p>| LK-005 | 港股分拆成功 → 海外独立估值 → 母公司价值重估 | 中 | 催化剂 | 港交所否决或分拆推迟超1年 | 2026-05-13 |</p>
+<p>| LK-006 | 原材料大涨 → 毛利率压缩 → 净利受冲击 | 高 | 风险识别 | 套保充分或涨价成功传导至下游 | 2026-05-13 |</p>
+<h2>二、链路详情</h2>
+<h3>LK-001：海外扩张驱动增长</h3>
+<p><strong>因果断言：</strong></p>
+<p>如果海外市场持续扩张（产能建设+模式复制+渠道下沉），则海外销量保持高增长，贡献核心利润增量。</p>
+<p><strong>支持依据：</strong></p>
+<li>【L2】2012-2024年海外收入CAGR+38%，销量CAGR 28%</li>
+<li>【L2】2025年海外销量346万吨（+47%），单吨净利314元远超国内98元</li>
+<li>【L2】2030年目标720万吨（CAGR 22%），对应约22.5亿利润</li>
+<li>【L2】海外产能2025年末480万吨/年，计划至2028年新增110万吨至590万吨</li>
+<p><strong>适用条件：</strong></p>
+<li>海外市场需求持续增长（东南亚/拉美/非洲CAGR 3.5-6.3%）</li>
+<li>海大本土化运营优势保持（本地团队>90%）</li>
+<li>地缘政治风险未大规模爆发</li>
+<p><strong>失效信号：</strong></p>
+<li>海外销量增速连续2个季度<30%</li>
+<li>海外单吨净利持续下降至<200元</li>
+<li>核心市场出现政策壁垒或重大地缘冲突</li>
+<li>主要竞争对手（新希望/大北农等）海外产能大规模落地并侵蚀份额</li>
+<p><strong>置信度：</strong> 高</p>
+<p><strong>置信度依据：</strong> 12年以上历史数据验证+可量化的产能扩张路径+明确的市场空间</p>
+<h3>LK-002：猪周期反转驱动估值修复</h3>
+<p><strong>因果断言：</strong></p>
+<p>如果猪周期见底（行业持续亏损导致产能去化），则养殖业务亏损收窄，归母净利润恢复正常，驱动PE从当前历史低位修复。</p>
+<p><strong>支持依据：</strong></p>
+<li>【L2】行业已连续亏损8个月，超80%上市猪企Q1亏损</li>
+<li>【L2】Forward PE约15x，处近5年最低分位</li>
+<li>【L2】猪周期正常化后，养殖利润可贡献+3-5亿净利（vs当前深度亏损）</li>
+<li>【L2】能繁仅去化3.41%，远慢于前两轮周期（39.4%/6.67%）</li>
+<p><strong>适用条件：</strong></p>
+<li>能繁去化持续进行，累计去化达8-10%触发拐点</li>
+<li>需求端未出现系统性萎缩</li>
+<li>PSY效率提升未完全对冲去化效果</li>
+<p><strong>失效信号：</strong></p>
+<li>能繁去化持续停滞或反弹</li>
+<li>PSY进一步提升至>26头，完全对冲去化</li>
+<li>猪价长期<10元/kg超6个月</li>
+<li>猪周期进入"新常态"：价格中枢从15-18元/kg下移至12-15元/kg</li>
+<p><strong>置信度：</strong> 中</p>
+<p><strong>置信度依据：</strong> 历史规律支撑，但PSY提升和规模化可能改变周期形态，去化速度远慢于历史，拐点时间存在较大不确定性</p>
+<h3>LK-003：服务营销体系驱动国内份额提升</h3>
+<p><strong>因果断言：</strong></p>
+<p>如果服务营销体系持续有效运转（10,000+技术服务人员），则客户粘性高，国内市占率持续提升，吨利保持稳定。</p>
+<p><strong>支持依据：</strong></p>
+<li>【L2】10,000+技术服务人员覆盖百万养殖户</li>
+<li>【L2】2025年国内饲料外销量2,640万吨（+20%），远超行业增速</li>
+<li>【L2】国内市占率从2024年约7.7%提升至2025年约8.7%</li>
+<li>【L2】国内单吨净利98元，服务溢价有效</li>
+<p><strong>适用条件：</strong></p>
+<li>中小散户仍占市场相当比重，服务营销有差异化价值</li>
+<li>规模化进程未加速侵蚀服务营销目标市场</li>
+<li>竞争对手未有效复制服务模式</li>
+<p><strong>失效信号：</strong></p>
+<li>国内单吨净利连续下降至<80元</li>
+<li>国内市占率增速放缓至<1pct/年</li>
+<li>CR10规模化速度加速，中小市场快速萎缩</li>
+<li>服务人员人均覆盖客户数下降（效率降低）</li>
+<p><strong>置信度：</strong> 高</p>
+<p><strong>置信度依据：</strong> 多年验证的商业模式，数据持续验证（+20%销量增速、市占率持续提升、单吨净利稳定）</p>
+<h3>LK-004：鱼粉涨价驱动行业出清</h3>
+<p><strong>因果断言：</strong></p>
+<p>如果鱼粉价格持续大涨，则中小饲料厂商成本压力加大，加速行业出清，龙头市占率提升。</p>
+<p><strong>支持依据：</strong></p>
+<li>【L2】鱼粉CNF价格从1,500美元/吨涨至2,700美元/吨（+80%）</li>
+<li>【L2】海大拥有成熟鱼粉替代技术（用量降低15-25%）</li>
+<li>【L2】海大采购规模优势：鱼粉采购价低于行业5-15%</li>
+<li>【L2】3-4月水产料涨价200-1,000元/吨，成本成功传导</li>
+<p><strong>适用条件：</strong></p>
+<li>鱼粉价格保持高位>2,000美元/吨</li>
+<li>中小厂商缺乏替代技术和规模采购能力</li>
+<li>下游养殖户对涨价有一定接受度</li>
+<p><strong>失效信号：</strong></p>
+<li>鱼粉价格回落至1,500美元/吨以下</li>
+<li>替代技术被中小厂商普及</li>
+<li>下游养殖亏损加深导致无法承接涨价</li>
+<p><strong>置信度：</strong> 中</p>
+<p><strong>置信度依据：</strong> 逻辑成立但鱼粉价格波动大，短期可能回落；替代技术扩散后优势递减</p>
+<h3>LK-005：港股分拆驱动价值重估</h3>
+<p><strong>因果断言：</strong></p>
+<p>如果海大国际港股分拆成功上市，则海外业务获得独立估值，母公司整体价值重估。</p>
+<p><strong>支持依据：</strong></p>
+<li>【L2】海大国际2026年1月向港交所递交上市申请</li>
+<li>【L2】2024年海外净利润7.35亿，2025前三季度8.69亿</li>
+<li>【L2】海外业务当前被市场低估（成长性未在PE中体现）</li>
+<p><strong>适用条件：</strong></p>
+<li>港交所审批顺利（递交A1后6-9个月窗口期）</li>
+<li>海外业务上市后估值合理（对标新兴市场饲料公司）</li>
+<li>分拆后母公司仍持有控制权并合并报表</li>
+<p><strong>失效信号：</strong></p>
+<li>港交所否决上市申请</li>
+<li>上市进度推迟超过12个月</li>
+<li>上市后估值低于预期（PE<10x）</li>
+<li>分拆导致母公司利润表显著缩表</li>
+<p><strong>置信度：</strong> 中</p>
+<p><strong>置信度依据：</strong> 已递交申请但审批周期和估值存在不确定性</p>
+<h3>LK-006：原材料价格波动冲击利润</h3>
+<p><strong>因果断言：</strong></p>
+<p>如果玉米/豆粕等原材料价格大涨，则毛利率被压缩，净利润受到直接冲击。</p>
+<p><strong>支持依据：</strong></p>
+<li>【L2】玉米豆粕占饲料成本80-90%</li>
+<li>【L2】原材料+10%→毛利率-1.5至-2pct→净利影响约-2至-3亿</li>
+<li>【L2】玉米采购低于行业200元/吨、豆粕低于138元/吨</li>
+<p><strong>适用条件：</strong></p>
+<li>原材料价格大幅波动（>10%）</li>
+<li>涨价无法完全传导至下游</li>
+<li>套保覆盖不足</li>
+<p><strong>失效信号：</strong></p>
+<li>公司已通过期货套保充分锁定成本</li>
+<li>涨价成功传导给下游养殖户</li>
+<li>配方替代有效降低成本</li>
+<p><strong>置信度：</strong> 高</p>
+<p><strong>置信度依据：</strong> 历史数据明确，成本结构透明，量化测算可靠，但公司有套保和配方替代等对冲机制</p>
+<h2>三、跨链路关系</h2>
+<p>| 链路ID | 关联链路 | 关系类型 | 说明 |</p>
+<p>|--------|---------|---------|------|</p>
+<p>| LK-001 | LK-005 | 并行 | 海外扩张和港股分拆独立但共同支撑海外增长逻辑 |</p>
+<p>| LK-002 | LK-003 | 依赖 | 猪周期修复依赖国内市场份额稳定（LK-003有效为前提） |</p>
+<p>| LK-003 | LK-004 | 并行 | 服务营销和鱼粉涨价分别从内外部支撑份额提升 |</p>
+<p>| LK-006 | LK-003 | 互斥 | 原材料成本压力（LK-006）与毛利率稳定的假设（LK-003隐含条件）互斥 |</p>
+<p>| LK-002 | LK-001 | 并行 | 猪周期反转和海外扩张是独立的两大增长引擎 |</p>
+<p><strong>关系类型定义：</strong></p>
+<li>**依赖**：B 的成立依赖于 A 的成立</li>
+<li>**并行**：A 与 B 独立，共同支撑同一结论</li>
+<li>**互斥**：A 与 B 不能同时成立</li>
+<h2>四、关联卡片</h2>
+<li>[[01_公司研究/公司卡片/海大集团_002311/海大集团总览]] — 关联判断：综合评级A-，安全边际显著（2026-05-13从B+升级）</li>
+<li>商业模式 — 关联判断：LK-003服务营销体系护城河</li>
+<li>成长性 — 关联判断：LK-001海外扩张核心驱动</li>
+<li>盈利能力 — 关联判断：LK-006原材料对盈利的冲击</li>
+<li>估值 — 关联判断：LK-002猪周期反转驱动PE修复</li>
+<li>风险 — 关联判断：LK-004鱼粉涨价、LK-006原材料风险</li>
+<li>影响因素 — 关联判断：LK-002猪周期、LK-005港股分拆</li>
+<blockquote><p>来源：综合原始资料 — 海大集团_价值投资深度评估_20260504.md、海大集团_深度研究报告_20260508.md、海大集团_正负面预期综合分析_20260509.md</p></blockquote>
+
+</div>
+</div>
+</body>
+</html>
