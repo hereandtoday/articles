@@ -147,7 +147,7 @@ function renderSidebar() {
     var dots = {key:'dot-key',watch:'dot-watch',rebound:'dot-rebound',ref:'dot-ref'};
     var dk = c.category === '重点跟踪' ? 'key' : c.category === '等待观察' ? 'watch' : c.category === '博反弹' ? 'rebound' : 'ref';
     var cls = activeCompany && activeCompany.id === c.id ? 'active' : '';
-    html += '<div class="company-item ' + cls + '" onclick="selectCompany('' + c.id + '')">' +
+html += '<div class="company-item ' + cls + '" data-id="' + c.id + '" onclick="selectCompany(this.dataset.id)">' +
       '<div style="display:flex;align-items:center"><span class="cat-dot ' + dots[dk] + '"></span>' +
       '<div><div class="cname">' + c.name + '</div><div class="ccode">' + c.code + '</div></div></div>' +
       '<span class="crating cr-' + rk + '">' + c.rating + '</span></div>';
