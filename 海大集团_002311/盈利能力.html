@@ -1,116 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>海大集团 · 盈利能力</title>
-<style>
-:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--link:#1a3f8c;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a;--max-prose:880px;--gutter:clamp(24px,4vw,80px)}
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{font-size:16px;-webkit-text-size-adjust:100%}
-@media(max-width:600px){html{font-size:15px}}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
 body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
-.container{max-width:var(--max-prose);margin:0 auto;padding:clamp(40px,5vw,80px) var(--gutter) 6rem}
-.back{margin-bottom:24px}
-.back a{font-size:14px;color:var(--accent);text-decoration:none}
-.back a:hover{text-decoration:underline}
-.header{margin-bottom:28px;padding-bottom:20px;border-bottom:2px solid var(--accent)}
-.header .crumbs{font-size:13px;color:var(--ink-mute);margin-bottom:6px}
-.header .crumbs a{color:var(--accent);text-decoration:none}
-.header h1{font-size:22px;font-weight:700;color:var(--ink);line-height:1.3}
-.header .sub{font-size:13px;color:var(--ink-mute);margin-top:6px}
-.body{font-size:15px}
-.body p{margin-bottom:1em;text-align:justify;word-break:break-word}
-.body h2{font-size:1.2rem;font-weight:700;color:var(--ink);margin:1.8em 0 .6em;padding-left:12px;border-left:4px solid var(--accent)}
-.body h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
-.body hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
-.body blockquote{margin:1em 0;padding:12px 16px;background:var(--accent-light);border-left:4px solid var(--accent);color:var(--ink-soft);font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
-.body blockquote p{margin-bottom:0}
-.body strong{color:var(--ink);font-weight:700}
-.body em{font-style:italic;color:var(--ink-soft)}
-.body code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
-.body pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono","Fira Code",Consolas,monospace;color:var(--code-ink)}
-.body pre code{background:none;padding:0;color:var(--code-ink);font-size:13px}
-.body li{margin-bottom:4px;text-align:justify;line-height:1.6;margin-left:20px}
-.body table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
-.body table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px}
-.body table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
-.body table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
-.body .pos{color:var(--positive);font-weight:600}
-.body .neg{color:var(--negative);font-weight:600}
-.body .warn{color:var(--warning);font-weight:600}
-@media(max-width:480px){.container{padding:20px 14px 40px}}
-</style>
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}</style>
 </head>
 <body>
-<div class="container">
-<div class="back"><a href="../">&#8592; &nbsp;&#36820;&#22238;&#20844;&#21496;&#26723;&#26696;</a></div>
-<div class="header">
-<div class="crumbs"><a href="../">&#21315;&#30740;&#25237;&#36164;</a> &rsaquo; <a href="../">&#28023;&#22823;&#38598;&#22242;</a> &rsaquo; 盈利能力</div>
-<h1>盈利能力</h1>
-</div>
 <div class="body">
+<h1>海大集团 · 盈利能力</h1>
 <h1>海大集团 - 盈利能力</h1>
 <h2>一、盈利核心指标</h2>
 <h3>五年+最新季报财务数据</h3>
-<p>| 指标 | 2021 | 2022 | 2023 | 2024 | 2025 | 近5年平均 |</p>
-<p>|------|------|------|------|------|------|-----------|</p>
-<p>| 营业收入（亿元） | 860 | 1,047 | 1,165 | 1,146 | 1,285 | 1,101 |</p>
-<p>| 归母净利润（亿元） | 15.96 | 29.54 | 27.41 | 45.16 | 42.80 | 32.17 |</p>
-<p>| 毛利率 | — | 9.27% | 8.47% | 11.31% | 10.33% | 9.85% |</p>
-<p>| 净利率 | 2.12% | 2.73% | 2.47% | 4.08% | 3.54% | 2.99% |</p>
-<p>| ROE | 12.45% | 16.67% | 10.70% | 18.91% | ~17% | 15.15% |</p>
+<table><thead><tr><th>指标</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th><th>近5年平均</th></tr></thead>
+<tbody><tr><td>营业收入（亿元）</td><td>860</td><td>1,047</td><td>1,165</td><td>1,146</td><td>1,285</td><td>1,101</td></tr>
+<tr><td>归母净利润（亿元）</td><td>15.96</td><td>29.54</td><td>27.41</td><td>45.16</td><td>42.80</td><td>32.17</td></tr>
+<tr><td>毛利率</td><td>—</td><td>9.27%</td><td>8.47%</td><td>11.31%</td><td>10.33%</td><td>9.85%</td></tr>
+<tr><td>净利率</td><td>2.12%</td><td>2.73%</td><td>2.47%</td><td>4.08%</td><td>3.54%</td><td>2.99%</td></tr>
+<tr><td>ROE</td><td>12.45%</td><td>16.67%</td><td>10.70%</td><td>18.91%</td><td>~17%</td><td>15.15%</td></tr></tbody></table>
 <p>【L2】过去5年平均：毛利率约9.85%，净利率约2.99%，ROE约15.15%。</p>
 <p>【L4】ROE 20.88%（2024年）创历史新高，2025年约17%，处于巴菲特"良好"区间（15%-20%）。</p>
 <blockquote><p>来源：海大集团_价值投资深度评估_20260504.md §财务分析</p></blockquote>
 <h2>二、杜邦ROE分析</h2>
 <h3>2.1 驱动因子拆解</h3>
-<p>| 因子 | 2022 | 2023 | 2024 | 2025E |</p>
-<p>|------|------|------|------|-------|</p>
-<p>| 净利率 | 2.73% | 2.47% | 4.08% | 3.54% |</p>
-<p>| 资产周转率 | 高 | 中 | 高 | 高 |</p>
-<p>| 权益乘数 | ~2倍 | ~2倍 | ~2倍 | ~2倍 |</p>
-<p>| <strong>ROE</strong> | <strong>16.67%</strong> | <strong>10.70%</strong> | <strong>18.91%</strong> | <strong>~17%</strong> |</p>
+<table><thead><tr><th>因子</th><th>2022</th><th>2023</th><th>2024</th><th>2025E</th></tr></thead>
+<tbody><tr><td>净利率</td><td>2.73%</td><td>2.47%</td><td>4.08%</td><td>3.54%</td></tr>
+<tr><td>资产周转率</td><td>高</td><td>中</td><td>高</td><td>高</td></tr>
+<tr><td>权益乘数</td><td>~2倍</td><td>~2倍</td><td>~2倍</td><td>~2倍</td></tr>
+<tr><td><strong>ROE</strong></td><td><strong>16.67%</strong></td><td><strong>10.70%</strong></td><td><strong>18.91%</strong></td><td><strong>~17%</strong></td></tr></tbody></table>
 <h3>2.2 趋势判断</h3>
 <p>【L4】2024年ROE大幅提升（18.91%）完全由净利率驱动（+1.61pct），资产周转率和权益乘数基本稳定。这是<strong>量利齐升</strong>的质量型增长，而非依赖财务杠杆。</p>
 <p>【L2】五年权益乘数维持在2倍左右，财务结构健康，非杠杆驱动。</p>
 <blockquote><p>来源：海大集团_价值投资深度评估_20260504.md §财务分析</p></blockquote>
 <h2>三、盈利驱动拆解</h2>
 <h3>3.1 毛利率变化分析</h3>
-<p>| 年份 | 毛利率 | 变化 | 解释 |</p>
-<p>|------|--------|------|------|</p>
-<p>| 2022 | 9.27% | — | 正常水平 |</p>
-<p>| 2023 | 8.47% | -0.80pct | 行业景气下行 |</p>
-<p>| 2024 | 11.31% | +2.84pct | 产品结构优化（高毛特水料）+运营效率提升 |</p>
-<p>| 2025 | 10.33% | -0.98pct | 猪周期拖累养殖利润，但饲料主业稳健 |</p>
+<table><thead><tr><th>年份</th><th>毛利率</th><th>变化</th><th>解释</th></tr></thead>
+<tbody><tr><td>2022</td><td>9.27%</td><td>—</td><td>正常水平</td></tr>
+<tr><td>2023</td><td>8.47%</td><td>-0.80pct</td><td>行业景气下行</td></tr>
+<tr><td>2024</td><td>11.31%</td><td>+2.84pct</td><td>产品结构优化（高毛特水料）+运营效率提升</td></tr>
+<tr><td>2025</td><td>10.33%</td><td>-0.98pct</td><td>猪周期拖累养殖利润，但饲料主业稳健</td></tr></tbody></table>
 <p>【L2】2024年毛利率+2.84pct，主要受益于产品结构升级（特种水产料占比提升）和成本控制。</p>
 <p>【L4】2025年小幅回落但仍高于2023年，饲料主业盈利能力保持稳定。</p>
 <h3>3.2 净利率变化分析</h3>
-<p>| 年份 | 净利率 | 变化 | 解释 |</p>
-<p>|------|--------|------|------|</p>
-<p>| 2022 | 2.73% | — | 周期高点 |</p>
-<p>| 2023 | 2.47% | -0.26pct | 行业调整期 |</p>
-<p>| 2024 | 4.08% | +1.61pct | <strong>量利齐升</strong>，净利率几乎翻倍 |</p>
-<p>| 2025 | 3.54% | -0.54pct | 养殖利润下降约9亿拖累 |</p>
+<table><thead><tr><th>年份</th><th>净利率</th><th>变化</th><th>解释</th></tr></thead>
+<tbody><tr><td>2022</td><td>2.73%</td><td>—</td><td>周期高点</td></tr>
+<tr><td>2023</td><td>2.47%</td><td>-0.26pct</td><td>行业调整期</td></tr>
+<tr><td>2024</td><td>4.08%</td><td>+1.61pct</td><td><strong>量利齐升</strong>，净利率几乎翻倍</td></tr>
+<tr><td>2025</td><td>3.54%</td><td>-0.54pct</td><td>养殖利润下降约9亿拖累</td></tr></tbody></table>
 <p>【L4】2024年净利率+1.61pct创历史新高，验证服务营销体系+产品升级的成效。2025年猪周期拖累但饲料主业净利率仍维持高位。</p>
 <h2>四、现金流质量</h2>
-<p>| 指标 | 2024A | 2025A | 含义 |</p>
-<p>|------|-------|-------|------|</p>
-<p>| 经营现金流净额 | ~80亿 | 62.60亿 | — |</p>
-<p>| 归母净利润 | 45.16亿 | 42.80亿 | — |</p>
-<p>| 净现比 | >1 | ~1.5 | 盈利含金量良好 |</p>
-<p>| 自由现金流 | ~50亿 | ~30亿 | 资本开支高峰已过 |</p>
-<p>| CAPEX/营收 | ~3% | ~2.5% | 扩张期投入合理 |</p>
+<table><thead><tr><th>指标</th><th>2024A</th><th>2025A</th><th>含义</th></tr></thead>
+<tbody><tr><td>经营现金流净额</td><td>~80亿</td><td>62.60亿</td><td>—</td></tr>
+<tr><td>归母净利润</td><td>45.16亿</td><td>42.80亿</td><td>—</td></tr>
+<tr><td>净现比</td><td>>1</td><td>~1.5</td><td>盈利含金量良好</td></tr>
+<tr><td>自由现金流</td><td>~50亿</td><td>~30亿</td><td>资本开支高峰已过</td></tr>
+<tr><td>CAPEX/营收</td><td>~3%</td><td>~2.5%</td><td>扩张期投入合理</td></tr></tbody></table>
 <p>【L4】2025年净现比约1.5，盈利含金量良好。经营现金流（62.60亿）大于净利润（42.80亿），盈利质量验证。</p>
 <blockquote><p>来源：2025年报</p></blockquote>
 <h2>五、分红与股东回报</h2>
 <h3>5.1 分红历史</h3>
-<p>| 年份 | 分红金额(亿) | 派息率 | 每10股派息(元) |</p>
-<p>|------|-------------|--------|----------------|</p>
-<p>| 2023末 | — | — | 5.0元 |</p>
-<p>| 2024末 | — | — | 11.0元 |</p>
-<p>| 2025中 | — | — | 2.0元 |</p>
-<p>| 2025末 | — | 50.06% | 待定 |</p>
+<table><thead><tr><th>年份</th><th>分红金额(亿)</th><th>派息率</th><th>每10股派息(元)</th></tr></thead>
+<tbody><tr><td>2023末</td><td>—</td><td>—</td><td>5.0元</td></tr>
+<tr><td>2024末</td><td>—</td><td>—</td><td>11.0元</td></tr>
+<tr><td>2025中</td><td>—</td><td>—</td><td>2.0元</td></tr>
+<tr><td>2025末</td><td>—</td><td>50.06%</td><td>待定</td></tr></tbody></table>
 <p>【L2】2025年分红率大幅提升至50.06%（2024年约30%），公司承诺2025-2027年分红率≥50%。</p>
 <p>【L4】分红率提升显示股东回报意识显著改善，是正面信号。</p>
 <h3>5.2 股东回报分析</h3>
@@ -120,21 +97,18 @@ body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-app
 <p>【L4】<strong>内生驱动型</strong>。盈利改善来自产品结构升级（特水料占比提升）+ 服务营销体系强化客户粘性 + 规模采购成本优势，不依赖并购或杠杆。</p>
 <h3>6.2 评级</h3>
 <p>【L4】盈利能力评级：<strong>良好（B+）</strong> ← ROE平均15%+，净现比>1，ROE非杠杆驱动，盈利质量在农牧行业中属优良水准</p>
-<p>| 评估维度 | 评分（1-10） | 核心依据 |</p>
-<p>|:---|:---:|:---|</p>
-<p>| 盈利能力 | 8 | ROE 20.88%创历史新高 |</p>
-<p>| 现金流质量 | 7.5 | 净现比>1，盈利含金量良好 |</p>
-<p>| 股东回报 | 8 | 分红率提升至50%+，综合回馈66.85% |</p>
-<p>| <strong>综合</strong> | <strong>B+级</strong> | — |</p>
+<table><thead><tr><th>评估维度</th><th>评分（1-10）</th><th>核心依据</th></tr></thead>
+<tbody><tr><td>盈利能力</td><td>8</td><td>ROE 20.88%创历史新高</td></tr>
+<tr><td>现金流质量</td><td>7.5</td><td>净现比>1，盈利含金量良好</td></tr>
+<tr><td>股东回报</td><td>8</td><td>分红率提升至50%+，综合回馈66.85%</td></tr>
+<tr><td><strong>综合</strong></td><td><strong>B+级</strong></td><td>—</td></tr></tbody></table>
 <h2>七、相关链接</h2>
-<li>[[01_公司研究/公司卡片/海大集团_002311/海大集团总览]] - 公司总览</li>
+<ul><li>01_公司研究/公司卡片/海大集团_002311/海大集团总览 - 公司总览</li>
 <li>商业模式 - 核心竞争力</li>
 <li>成长性 - 成长分析</li>
 <li>风险 - 风险提示</li>
 <li>估值 - 估值分析</li>
-<li>影响因素 - 短期影响因素</li>
-
-</div>
+<li>影响因素 - 短期影响因素</li></ul>
 </div>
 </body>
 </html>

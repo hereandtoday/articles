@@ -1,132 +1,108 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>海大集团 · 风险</title>
-<style>
-:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--link:#1a3f8c;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a;--max-prose:880px;--gutter:clamp(24px,4vw,80px)}
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{font-size:16px;-webkit-text-size-adjust:100%}
-@media(max-width:600px){html{font-size:15px}}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
 body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
-.container{max-width:var(--max-prose);margin:0 auto;padding:clamp(40px,5vw,80px) var(--gutter) 6rem}
-.back{margin-bottom:24px}
-.back a{font-size:14px;color:var(--accent);text-decoration:none}
-.back a:hover{text-decoration:underline}
-.header{margin-bottom:28px;padding-bottom:20px;border-bottom:2px solid var(--accent)}
-.header .crumbs{font-size:13px;color:var(--ink-mute);margin-bottom:6px}
-.header .crumbs a{color:var(--accent);text-decoration:none}
-.header h1{font-size:22px;font-weight:700;color:var(--ink);line-height:1.3}
-.header .sub{font-size:13px;color:var(--ink-mute);margin-top:6px}
-.body{font-size:15px}
-.body p{margin-bottom:1em;text-align:justify;word-break:break-word}
-.body h2{font-size:1.2rem;font-weight:700;color:var(--ink);margin:1.8em 0 .6em;padding-left:12px;border-left:4px solid var(--accent)}
-.body h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
-.body hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
-.body blockquote{margin:1em 0;padding:12px 16px;background:var(--accent-light);border-left:4px solid var(--accent);color:var(--ink-soft);font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
-.body blockquote p{margin-bottom:0}
-.body strong{color:var(--ink);font-weight:700}
-.body em{font-style:italic;color:var(--ink-soft)}
-.body code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
-.body pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono","Fira Code",Consolas,monospace;color:var(--code-ink)}
-.body pre code{background:none;padding:0;color:var(--code-ink);font-size:13px}
-.body li{margin-bottom:4px;text-align:justify;line-height:1.6;margin-left:20px}
-.body table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
-.body table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px}
-.body table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
-.body table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
-.body .pos{color:var(--positive);font-weight:600}
-.body .neg{color:var(--negative);font-weight:600}
-.body .warn{color:var(--warning);font-weight:600}
-@media(max-width:480px){.container{padding:20px 14px 40px}}
-</style>
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}</style>
 </head>
 <body>
-<div class="container">
-<div class="back"><a href="../">&#8592; &nbsp;&#36820;&#22238;&#20844;&#21496;&#26723;&#26696;</a></div>
-<div class="header">
-<div class="crumbs"><a href="../">&#21315;&#30740;&#25237;&#36164;</a> &rsaquo; <a href="../">&#28023;&#22823;&#38598;&#22242;</a> &rsaquo; 风险</div>
-<h1>风险</h1>
-</div>
 <div class="body">
+<h1>海大集团 · 风险</h1>
 <h1>海大集团 - 风险</h1>
 <h2>一、风险总表</h2>
-<p>| 风险项目 | 发生概率 | 影响幅度 | 对冲机制 |</p>
-<p>|----------|---------|---------|----------|</p>
-<p>| 猪周期持续低迷 | 高（40-50%） | -8至-12亿净利 | 饲料主业对冲，养殖占比仅16%，套保部分对冲 |</p>
-<p>| PSY+规模化→猪周期新常态 | 高（40-50%） | 永久性压低养殖利润中枢2-3亿/年 | 海外增长对冲国内结构性降速 |</p>
-<p>| 服务营销体系潜在风险 | 中高（35-45%） | -2至-5亿净利（单吨净利从98→70-80元） | 海外高利润率对冲国内压缩 |</p>
-<p>| 海外利润竞争压缩 | 中（30-40%） | -2至-4亿净利（海外单吨从314→200-250元） | 先发优势+本土化运营壁垒 |</p>
-<p>| 鱼粉价格继续大涨 | 中（25-35%） | -3至-5亿净利 | 多轮涨价传导+鱼粉替代技术 |</p>
-<p>| 原材料价格大涨 | 中（20-30%） | -2至-4亿净利 | 期货套保+配方替代，规模采购优势 |</p>
-<p>| 汇率风险 | 中（25-35%） | -1至-3亿净利（70%美元结算，人民币升值5%） | 海外资产自然对冲+本地化采购 |</p>
-<p>| 行业价格战加剧 | 中（25-35%） | -1至-3亿净利 | 规模优势+技术优势护城河 |</p>
-<p>| 海外扩张地缘风险 | 中低（15-20%） | -2至-3亿净利 | 分散国家布局+港股分拆 |</p>
+<table><thead><tr><th>风险项目</th><th>发生概率</th><th>影响幅度</th><th>对冲机制</th></tr></thead>
+<tbody><tr><td>猪周期持续低迷</td><td>高（40-50%）</td><td>-8至-12亿净利</td><td>饲料主业对冲，养殖占比仅16%，套保部分对冲</td></tr>
+<tr><td>PSY+规模化→猪周期新常态</td><td>高（40-50%）</td><td>永久性压低养殖利润中枢2-3亿/年</td><td>海外增长对冲国内结构性降速</td></tr>
+<tr><td>服务营销体系潜在风险</td><td>中高（35-45%）</td><td>-2至-5亿净利（单吨净利从98→70-80元）</td><td>海外高利润率对冲国内压缩</td></tr>
+<tr><td>海外利润竞争压缩</td><td>中（30-40%）</td><td>-2至-4亿净利（海外单吨从314→200-250元）</td><td>先发优势+本土化运营壁垒</td></tr>
+<tr><td>鱼粉价格继续大涨</td><td>中（25-35%）</td><td>-3至-5亿净利</td><td>多轮涨价传导+鱼粉替代技术</td></tr>
+<tr><td>原材料价格大涨</td><td>中（20-30%）</td><td>-2至-4亿净利</td><td>期货套保+配方替代，规模采购优势</td></tr>
+<tr><td>汇率风险</td><td>中（25-35%）</td><td>-1至-3亿净利（70%美元结算，人民币升值5%）</td><td>海外资产自然对冲+本地化采购</td></tr>
+<tr><td>行业价格战加剧</td><td>中（25-35%）</td><td>-1至-3亿净利</td><td>规模优势+技术优势护城河</td></tr>
+<tr><td>海外扩张地缘风险</td><td>中低（15-20%）</td><td>-2至-3亿净利</td><td>分散国家布局+港股分拆</td></tr></tbody></table>
 <blockquote><p>来源：海大集团_价值投资深度评估_20260504.md §风险清单</p></blockquote>
 <h2>二、重要风险详细分析</h2>
 <h3>2.1 猪周期风险（含结构性因素）</h3>
 <p>【L2】行业已连续亏损8个月，超80%上市猪企Q1亏损，5月猪价进一步跌至9.5-10.3元/kg。能繁去化缓慢（累计仅3.41%），PSY提升至25.1头对冲去化效果，周期底部预期延长。</p>
 <p>【L4】<strong>超越周期的结构性变化</strong>：PSY从~22头提升至25.1头，意味着3900万能繁母猪的实际供应能力相当于过去4500万头以上。这可能导致猪周期"新常态"——价格中枢从过去15-18元/kg下移至12-15元/kg，养殖利润长期只有2-3亿/年而非3-5亿/年。这是<strong>结构性而非周期性</strong>变化。</p>
 <p><strong>量化测算</strong>：</p>
-<p>| 情景 | 猪价 | 养殖利润 | 对净利影响 |</p>
-<p>|:----:|:----:|:--------:|:----------:|</p>
-<p>| 当前（5月） | 9.5元/kg | 深度亏损 | -约3-4亿（Q1，套保对冲后） |</p>
-<p>| 悲观 | <9元/kg持续 | 严重亏损 | -约10-12亿/年 |</p>
-<p>| 乐观 | >15元/kg | 盈利 | +约3-5亿/年 |</p>
+<table><thead><tr><th>情景</th><th>猪价</th><th>养殖利润</th><th>对净利影响</th></tr></thead>
+<tbody><tr><td>当前（5月）</td><td>9.5元/kg</td><td>深度亏损</td><td>-约3-4亿（Q1，套保对冲后）</td></tr>
+<tr><td>悲观</td><td><9元/kg持续</td><td>严重亏损</td><td>-约10-12亿/年</td></tr>
+<tr><td>乐观</td><td>>15元/kg</td><td>盈利</td><td>+约3-5亿/年</td></tr></tbody></table>
 <p>【L4】<strong>跟踪指标</strong>：全国能繁母猪存栏量、生猪出场价格、公司养殖业务成本、PSY变化趋势</p>
 <p><strong>对冲机制</strong>：</p>
-<li>【L2】饲料主业与养殖业务对冲，养殖营收占比约16%</li>
+<ul><li>【L2】饲料主业与养殖业务对冲，养殖营收占比约16%</li>
 <li>【L2】生猪期货套保：Q1贡献约2.8亿盈利，部分对冲养殖亏损</li>
 <li>【L2】轻资产模式推进，"公司+家庭农场"降低风险</li>
-<li>【L2】资产负债率仅48.98%，财务结构稳健</li>
+<li>【L2】资产负债率仅48.98%，财务结构稳健</li></ul>
 <blockquote><p>来源：海大集团_价值投资深度评估_20260504.md §猪周期风险</p></blockquote>
 <h3>2.2 鱼粉价格风险</h3>
 <p>【L2】2026年鱼粉CNF价格从1,500美元/吨涨至2,700美元/吨（+80%），特种水产料成本中鱼粉占比30-40%。</p>
 <p><strong>量化测算</strong>：</p>
-<p>| 鱼粉价格 | 成本增量 | 对净利影响 |</p>
-<p>|----------|---------|-----------|</p>
-<p>| 当前2,700美元/吨 | 基准 | 已有部分传导 |</p>
-<p>| 涨至3,000美元/吨 | +约1.5亿 | -约1.5亿 |</p>
-<p>| 涨至3,500美元/吨 | +约4亿 | -约3-4亿 |</p>
+<table><thead><tr><th>鱼粉价格</th><th>成本增量</th><th>对净利影响</th></tr></thead>
+<tbody><tr><td>当前2,700美元/吨</td><td>基准</td><td>已有部分传导</td></tr>
+<tr><td>涨至3,000美元/吨</td><td>+约1.5亿</td><td>-约1.5亿</td></tr>
+<tr><td>涨至3,500美元/吨</td><td>+约4亿</td><td>-约3-4亿</td></tr></tbody></table>
 <p>【L4】三层对冲护盾：多轮涨价传导 + 鱼粉替代技术（用量-15-25%） + 规模采购锁价</p>
 <p>【L2】3-4月水产料涨价200-1,000元/吨，成本成功传导。</p>
 <blockquote><p>来源：鱼粉价格上涨_海大集团影响分析_20260509.md</p></blockquote>
 <h3>2.3 原材料价格风险</h3>
 <p>【L2】玉米、豆粕占饲料成本80-90%，是大宗农产品价格波动的直接承受者。</p>
 <p><strong>量化测算</strong>：</p>
-<p>| 原材料涨幅 | 毛利率压缩 | 对净利影响 |</p>
-<p>|------------|-----------|-----------|</p>
-<p>| +10% | -1.5至-2pct | -约2-3亿 |</p>
-<p>| +20% | -3至-4pct | -约5-7亿 |</p>
-<p>| +30% | -4.5至-6pct | -约8-10亿 |</p>
+<table><thead><tr><th>原材料涨幅</th><th>毛利率压缩</th><th>对净利影响</th></tr></thead>
+<tbody><tr><td>+10%</td><td>-1.5至-2pct</td><td>-约2-3亿</td></tr>
+<tr><td>+20%</td><td>-3至-4pct</td><td>-约5-7亿</td></tr>
+<tr><td>+30%</td><td>-4.5至-6pct</td><td>-约8-10亿</td></tr></tbody></table>
 <p>【L4】<strong>对冲机制</strong>：期货套保锁定部分成本 + 配方替代（豆粕→菜粕、玉米替代品）+ 规模采购优势（玉米低于行业200元/吨，豆粕低于138元/吨）</p>
 <h3>2.4 服务营销体系潜在风险（情境分析）</h3>
 <p>【L4】若中国养猪业规模化持续加速（CR10从2019年~8%升至2025年~25%），规模场拥有自己的营养师，按最低成本采购，则海大"卖方案而非卖产品"的溢价定价权可能在规模化进程中被侵蚀。</p>
 <p><strong>量化测算</strong>：</p>
-<p>| 情景 | 国内饲料单吨净利 | 对总净利影响 |</p>
-<p>|:----:|:--------------:|:------------:|</p>
-<p>| 当前 | 98元 | 基准 |</p>
-<p>| 缓慢压缩（中性） | 85元（3年） | -约3亿/年 |</p>
-<p>| 加速压缩（悲观） | 70元（3年） | -约5亿/年 |</p>
+<table><thead><tr><th>情景</th><th>国内饲料单吨净利</th><th>对总净利影响</th></tr></thead>
+<tbody><tr><td>当前</td><td>98元</td><td>基准</td></tr>
+<tr><td>缓慢压缩（中性）</td><td>85元（3年）</td><td>-约3亿/年</td></tr>
+<tr><td>加速压缩（悲观）</td><td>70元（3年）</td><td>-约5亿/年</td></tr></tbody></table>
 <p>【L4】当前判断：此情境尚处于早期阶段，2025年国内饲料单吨净利仍维持98元，服务营销体系仍在有效运转。需持续跟踪规模场占比变化作为预警信号。</p>
 <h3>2.5 海外利润竞争压缩风险（情境分析）</h3>
 <p>【L4】若其他中国饲料厂跟进出海（如新希望、大北农等均有海外布局），竞争加剧可能压低海外利润率。当前海外346万吨的利润池（约10.9亿）的高利润率（单吨314元）可能随竞争加剧而收窄。</p>
 <p><strong>量化测算</strong>：</p>
-<p>| 情景 | 海外单吨净利 | 对总净利影响（以600万吨计） |</p>
-<p>|:----:|:----------:|:------------------------:|</p>
-<p>| 当前 | 314元 | +18.8亿 |</p>
-<p>| 3年后中性 | 250元 | +15.0亿（-3.8亿vs维持） |</p>
-<p>| 3年后悲观 | 200元 | +12.0亿（-6.8亿vs维持） |</p>
+<table><thead><tr><th>情景</th><th>海外单吨净利</th><th>对总净利影响（以600万吨计）</th></tr></thead>
+<tbody><tr><td>当前</td><td>314元</td><td>+18.8亿</td></tr>
+<tr><td>3年后中性</td><td>250元</td><td>+15.0亿（-3.8亿vs维持）</td></tr>
+<tr><td>3年后悲观</td><td>200元</td><td>+12.0亿（-6.8亿vs维持）</td></tr></tbody></table>
 <p>【L4】当前判断：海大在东南亚/非洲的先发优势（已建产能+渠道网络+本土化团队）为后来者设置了3-5年的追赶门槛。目前海外单吨净利仍维持314元高位，尚未出现明显下行趋势。</p>
 <h3>2.6 汇率风险</h3>
 <p>【L2】海大海外业务以美元结算为主（约70%），人民币每升值5%，海外利润直接减值约5%。海外饲料业务2025年贡献利润约10.9亿，若人民币升值5%，折算回人民币的利润减少约0.5亿。若海外2028年扩至600万吨，这个敞口将扩大至2-3亿。</p>
 <p><strong>量化测算</strong>：</p>
-<p>| 人民币升幅 | 对海外利润影响（以2028E 600万吨计） |</p>
-<p>|:---------:|:--------------------------------:|</p>
-<p>| +3% | -约0.5至-1亿 |</p>
-<p>| +5% | -约1至-2亿 |</p>
-<p>| +10% | -约2至-3亿 |</p>
+<table><thead><tr><th>人民币升幅</th><th>对海外利润影响（以2028E 600万吨计）</th></tr></thead>
+<tbody><tr><td>+3%</td><td>-约0.5至-1亿</td></tr>
+<tr><td>+5%</td><td>-约1至-2亿</td></tr>
+<tr><td>+10%</td><td>-约2至-3亿</td></tr></tbody></table>
 <p>【L4】<strong>对冲机制</strong>：海外资产自然对冲 + 本地化采购降低美元敞口 + 部分美元收入保留在境外用于再投资</p>
 <h2>三、综合评估</h2>
 <h3>3.1 风险定性</h3>
@@ -138,23 +114,20 @@ body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-app
 <p>【L4】<strong>底部支撑依然坚实</strong>：龙头地位+全产业链+48.98%低负债率+Q1仍盈利8.87亿（行业仅4家盈利），海大不会出现生存危机。</p>
 <h3>3.2 评级</h3>
 <p>【L4】风险评级：<strong>中等（5.5/10）</strong> ← 周期底部为主+结构性情景观测，底部坚实，盈利修复时间拉长</p>
-<p>| 评估维度 | 评价 | 评分（1-10） |</p>
-<p>|---------|------|:-----------:|</p>
-<p>| 固有风险 | 强周期行业，底部已超预期延长 | 4 |</p>
-<p>| 风险可控性 | 周期风险可通过套保+多业务对冲 | 6 |</p>
-<p>| 风险分散度 | 饲料+养殖+种苗+动保多业务，海外成长线独立 | 6 |</p>
-<p>| 下行保护 | 龙头地位+低负债率+仅4家盈利之一 | 7 |</p>
-<p>| 尾部风险 | 三重结构性风险同时恶化的概率低 | 5 |</p>
-<p>| <strong>综合</strong> | — | <strong>5.5</strong> |</p>
+<table><thead><tr><th>评估维度</th><th>评价</th><th>评分（1-10）</th></tr></thead>
+<tbody><tr><td>固有风险</td><td>强周期行业，底部已超预期延长</td><td>4</td></tr>
+<tr><td>风险可控性</td><td>周期风险可通过套保+多业务对冲</td><td>6</td></tr>
+<tr><td>风险分散度</td><td>饲料+养殖+种苗+动保多业务，海外成长线独立</td><td>6</td></tr>
+<tr><td>下行保护</td><td>龙头地位+低负债率+仅4家盈利之一</td><td>7</td></tr>
+<tr><td>尾部风险</td><td>三重结构性风险同时恶化的概率低</td><td>5</td></tr>
+<tr><td><strong>综合</strong></td><td>—</td><td><strong>5.5</strong></td></tr></tbody></table>
 <h2>四、相关链接</h2>
-<li>[[01_公司研究/公司卡片/海大集团_002311/海大集团总览]] - 公司总览</li>
+<ul><li>01_公司研究/公司卡片/海大集团_002311/海大集团总览 - 公司总览</li>
 <li>商业模式 - 核心竞争力</li>
 <li>成长性 - 成长分析</li>
 <li>盈利能力 - 盈利能力</li>
 <li>估值 - 估值分析</li>
-<li>影响因素 - 短期影响因素</li>
-
-</div>
+<li>影响因素 - 短期影响因素</li></ul>
 </div>
 </body>
 </html>
