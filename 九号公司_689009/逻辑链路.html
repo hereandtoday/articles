@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>九号公司 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>九号公司 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th style="text-align: center;">置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>智能化差异化持续扩大 → 两轮车份额持续提升</td>
+<td style="text-align: center;">高</td>
+<td>成长性A级</td>
+<td>月销量增速&lt;10%持续2季度</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>原材料成本上涨 → 毛利率承压 → 提价100元对冲 → H2毛利率回升</td>
+<td style="text-align: center;">中</td>
+<td>盈利能力B+级</td>
+<td>提价后销量显著下滑/成本继续大涨</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>越南出海首站本地化成功 → 复制国内增长路径 → 第二增长曲线</td>
+<td style="text-align: center;">中</td>
+<td>成长性A级</td>
+<td>调研推进受阻/渠道铺设失败</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>双品牌（Segway+九号）协同 → 突破1000万台天花板 → 长期空间打开</td>
+<td style="text-align: center;">中</td>
+<td>成长性+估值</td>
+<td>Segway国内启动延迟/品牌定位模糊</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>2.0门店+诊疗体系建成 → 服务代差 → 品牌溢价+用户粘性 → 店效提升</td>
+<td style="text-align: center;">中</td>
+<td>商业模式A级</td>
+<td>升级进度延迟/店效未回升</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>行业需求3月复苏+透支仅H1 → 全年550万台可达</td>
+<td style="text-align: center;">高</td>
+<td>成长性</td>
+<td>下半年行业销量低于同期</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>电摩独有竞争优势 → 与传统品牌差异化 → 高端市场份额巩固</td>
+<td style="text-align: center;">中</td>
+<td>商业模式A级</td>
+<td>电自占比未回升/电摩监管收紧</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：智能化差异化 → 份额提升</h3>
+<p><strong>因果断言：</strong>
+如果九号持续在智能/电动/车三维底层技术投入，产品力领先行业2-3个身位，则两轮车份额将从7%持续提升至20%+。</p>
+<p><strong>支持依据：</strong>
+- 【L2】26Q1销量123万台（+22%），行业-17%，份额逆势扩张
+- 【L2】研发费用率6%，为传统龙头2倍
+- 【L2】专利比雅迪/爱玛高约20%
+- 管理层判断：明年产品力将实现显著飞跃</p>
+<p><strong>适用条件：</strong>
+- 底层技术投入按计划兑现
+- 友商模仿限于表层，"九号化"趋势不构成实质威胁</p>
+<p><strong>失效信号：</strong>
+- 两轮车月销量增速持续低于10%
+- 友商在智能化维度出现实质性突破
+- 底层技术研发进度显著延迟</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> Q1销量数据已验证逆势增长，行业需求复苏信号明确。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §一（一）+ §一（三）</p>
+</blockquote>
+<hr />
+<h3>LK-002：成本上涨 → 提价对冲 → 毛利率回升</h3>
+<p><strong>因果断言：</strong>
+如果原材料上涨趋势5月基本结束，且4月起提价100元有效传导，则Q2毛利率与Q1持平，H2毛利率明显回升。</p>
+<p><strong>支持依据：</strong>
+- 【L2】4月实施约100元提价
+- 【L2】3-5月销量持续向好，提价未影响需求
+- 【L2】原材料（电机/轮胎/大灯/控制器）普遍涨价，但锂电池在可控范围
+- 新品上市将采用全新定价，进一步传导成本</p>
+<p><strong>适用条件：</strong>
+- 原材料上涨趋势5月结束（如管理层判断）
+- 3500-4500元主力价格带议价权持续
+- 新品定价顺利传导成本</p>
+<p><strong>失效信号：</strong>
+- 原材料6月后继续大幅上涨
+- Q2毛利率环比Q1显著下滑（跌破26%）
+- 提价导致销量显著下滑</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 提价行为已验证价格传导能力，但全年毛利率略有下滑的预期说明改善幅度有限。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §四（二）+ §七</p>
+</blockquote>
+<hr />
+<h3>LK-003：越南出海 → 第二增长曲线</h3>
+<p><strong>因果断言：</strong>
+如果越南市场本地化产品+中加越双体系渠道策略成功，则有望复制国内增长路径，打开全球增长空间。</p>
+<p><strong>支持依据：</strong>
+- 【L2】3月已完成多维度调研，产品方向/用户调研基本完成
+- 【L2】国内优质代理商对越南兴趣浓厚，具备本地资源
+- 【L2】已成立出海业务筹备组，收购摩托车/汽车制造公司提供技术支撑
+- 越南已进入电动化快速转换阶段</p>
+<p><strong>适用条件：</strong>
+- 全自研产品适配本地长续航需求
+- 充电基础设施短板（依赖家庭充电）不构成阻碍
+- 日系品牌竞争可有效应对</p>
+<p><strong>失效信号：</strong>
+- 产品开发/渠道铺设进度显著延迟
+- 越南市场初期销量远低于预期
+- 日系品牌竞争壁垒超预期</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 管理层资源投入充足，但东南亚市场实际落地存在不确定性。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §二</p>
+</blockquote>
+<hr />
+<h3>LK-004：双品牌战略 → 突破天花板</h3>
+<p><strong>因果断言：</strong>
+如果Segway品牌2027年在国内市场正式运营，与九号品牌协同推动行业均价从2500-3500元拉升至3500-4500元，则长期空间扩展至800-1000万台+全球市场。</p>
+<p><strong>支持依据：</strong>
+- 【L2】九号品牌国内合理体量目标800-1000万台
+- 【L2】2026年Segway X350越野电摩上市，米兰展会发布2-3款前沿产品
+- 价格底层线明确（电摩&lt;3000元、电自&lt;2000元不布局）</p>
+<p><strong>适用条件：</strong>
+- Segway品牌定位清晰，与九号不产生内部竞争
+- 店中店模式试水成功</p>
+<p><strong>失效信号：</strong>
+- Segway国内启动时间延迟（超过2027年）
+- 双品牌内部定位冲突
+- 行业均价未实现上移</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 双品牌战略处于早期阶段，A股市场对Segway认知度有限。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §五（二）+ §九（二）</p>
+</blockquote>
+<hr />
+<h3>LK-005：服务体系 → 代差优势</h3>
+<p><strong>因果断言：</strong>
+如果2.0门店6月起升级+用户全生命周期诊疗体系2026年底建成，则在售后维度形成代差，带动店效和品牌溢价显著提升。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2.0门店5月底打样完成，6月起城区大面积升级
+- 【L2】软件端诊疗体系年底完全完成，硬件端基本完成
+- 传统两轮车售后薄弱（夫妻店模式），存在差异化空间</p>
+<p><strong>适用条件：</strong>
+- 城区门店升级按计划落地
+- 软件系统与硬件网点协同适配完成
+- 用户对售后服务差异化的感知度足够</p>
+<p><strong>失效信号：</strong>
+- 2.0门店升级进度延迟（6月未能启动）
+- 下半年店效未出现明显回升
+- 竞争对手快速复制类似服务体系</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 体系架构清晰但实际落地效果待验证。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §一（二）+ §六（二）</p>
+</blockquote>
+<hr />
+<h3>LK-006：行业复苏 → 550万台可达</h3>
+<p><strong>因果断言：</strong>
+如果行业需求自3月复苏（透支仅影响H1），且九号3-5月销量持续向好，则全年550万台目标可达且可能上修。</p>
+<p><strong>支持依据：</strong>
+- 【L2】4月雅迪销量已恢复增长，爱玛预计5月正增长
+- 【L2】一季度九号在规模企业中增长表现最好
+- 【L2】全年目标制定基于2025年5月即开始的提前布局规划
+- 下半年需求未被透支，旺季表现可期</p>
+<p><strong>适用条件：</strong>
+- 行业复苏延续，下半年销量与同期持平或增长
+- 7-9月旺季需求兑现</p>
+<p><strong>失效信号：</strong>
+- 下半年行业销量显著低于去年同期
+- 旺季销量未达历史新高预期
+- 行业总需求全年难同比持平</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 雅迪、爱玛的恢复增长提供了行业层面的交叉验证，多信号指向需求复苏。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §三 + §九（一）</p>
+</blockquote>
+<hr />
+<h3>LK-007：电摩独有优势 → 份额巩固</h3>
+<p><strong>因果断言：</strong>
+如果电摩作为九号独有竞争优势（相较传统品牌多出电摩业务线），则高端市场差异化壁垒持续巩固。</p>
+<p><strong>支持依据：</strong>
+- 【L2】电摩业务线为公司独有竞争优势，与5-6年前智能化预判逻辑一致
+- 【L2】Q1电摩占比远超预期，电摩需求强劲
+- 【L2】6月豪华电自上市后结构趋于平衡，电自占比回升</p>
+<p><strong>适用条件：</strong>
+- 电摩监管政策不发生重大不利变化
+- 电摩需求持续旺盛</p>
+<p><strong>失效信号：</strong>
+- 电摩监管政策突然收紧
+- 电摩需求快速回落
+- 友商快速跟进电摩业务线</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 电摩布局属于战略性预判，短期数据支持，但监管不确定性存在。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §四（一）+ §五（一）</p>
+</blockquote>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-005</td>
+<td>依赖</td>
+<td>渠道网络差异化是份额提升的支撑条件</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-007</td>
+<td>并行</td>
+<td>智能化+电摩双重差异共同驱动份额</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-006</td>
+<td>并行</td>
+<td>成本管理+销量增长共同决定利润</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-004</td>
+<td>依赖</td>
+<td>越南出海是双品牌全球化的第一步</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-001</td>
+<td>依赖</td>
+<td>双品牌成功依赖于九号品牌先达1000万台体量</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-001</td>
+<td>依赖</td>
+<td>服务体系提升间接强化份额扩张基础</td>
+</tr>
+</tbody>
+</table>
+<h2>四、关联卡片</h2>
+<ul>
+<li>01_公司研究/公司卡片/九号公司_689009/九号公司总览 — 总入口，所有L4判断在此汇总</li>
+<li>商业模式 — 护城河分析，LK-001/LK-005/LK-007的支撑数据</li>
+<li>成长性 — 增长驱动拆解，LK-003/LK-004/LK-006的因果支撑</li>
+<li>盈利能力 — 毛利率管控，LK-002的验证数据</li>
+<li>估值 — 估值锚点，LK-001/LK-004/LK-006的空间判断</li>
+<li>风险 — 各链路对应的失效风险评估</li>
+</ul>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 + 九号公司_689009_综合投研分析_20260506.md</p>
+</blockquote>
+</div>
+</body>
+</html>

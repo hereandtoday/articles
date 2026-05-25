@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>海螺水泥 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>海螺水泥 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>国常会"六张网"基建投资落地 → 基建水泥需求增加</td>
+<td>中</td>
+<td>需求企稳拐点</td>
+<td>基建投资增速连续2季&lt;3%</td>
+<td>2026-05-21</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>房地产新开工持续负增长 → 水泥需求总量承压</td>
+<td>高</td>
+<td>需求结构性下行</td>
+<td>房地产新开工同比转正</td>
+<td>2026-05-21</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>T型战略沿江沿海布局 → 吨净利领先同行30元+</td>
+<td>高</td>
+<td>成本优势护城河</td>
+<td>吨毛利降至行业平均以下</td>
+<td>2026-05-21</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>PB 2%分位+分红率55%+ → 下行保护充足</td>
+<td>中</td>
+<td>安全边际</td>
+<td>分红率&lt;50%或PB修复至0.8x+</td>
+<td>2026-05-21</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>骨料产能扩张至1.8亿吨+ → 非水泥收入占比提升</td>
+<td>中</td>
+<td>第二增长曲线</td>
+<td>骨料毛利率持续&lt;30%</td>
+<td>2026-05-21</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>行业出清(产能利用率&lt;65%) → 龙头份额提升</td>
+<td>中</td>
+<td>集中度提升</td>
+<td>产能利用率回升至70%+</td>
+<td>2026-05-21</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：基建投资拉动水泥需求</h3>
+<p><strong>因果断言：</strong>
+如果国常会"六张网"政策落地（7万亿基建投资），则基建水泥需求增加，部分对冲房地产下行。</p>
+<p><strong>支持依据：</strong>
+【L2】2026年5月国常会部署"六张网"建设，涉及7万亿投资，基建水泥需求有望拉动。</p>
+<p><strong>适用条件：</strong>
+政策资金到位，项目开工正常推进。</p>
+<p><strong>失效信号：</strong>
+基建投资增速连续2个季度低于3%。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 政策已部署但落地节奏不确定，历史上基建投资传导至水泥需求有3-6个月时滞。</p>
+<hr />
+<h3>LK-002：房地产下行压制水泥需求</h3>
+<p><strong>因果断言：</strong>
+如果房地产新开工面积持续负增长，则水泥需求总量承压。</p>
+<p><strong>支持依据：</strong>
+【L2】房地产占水泥下游约40%，是最重要的需求来源。新开工面积持续负增长直接减少水泥需求。</p>
+<p><strong>适用条件：</strong>
+房地产行业不发生政策逆转。</p>
+<p><strong>失效信号：</strong>
+房地产新开工面积同比转正。</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 过去3年数据持续验证，属结构性下行而非周期性波动。</p>
+<hr />
+<h3>LK-003：T型战略成本优势</h3>
+<p><strong>因果断言：</strong>
+如果海螺水泥保持T型战略布局（沿江沿海+水运物流），则吨净利领先同行30元+。</p>
+<p><strong>支持依据：</strong>
+【L2】优质石灰石矿山资源有限，沿江码头布局具有排他性。吨运费仅为陆运的1/5-1/3。</p>
+<p><strong>适用条件：</strong>
+长江水运条件不发生重大变化（如环保限运）。</p>
+<p><strong>失效信号：</strong>
+吨毛利降至行业平均以下。</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> T型战略已运行20年+，持续验证成本优势。</p>
+<hr />
+<h3>LK-004：低PB+高股息提供下行保护</h3>
+<p><strong>因果断言：</strong>
+如果PB处历史极端低位（2%分位）且分红率维持55%+，则股价下行空间有限。</p>
+<p><strong>支持依据：</strong>
+【L2】PB 0.63x处近十年2%分位，500亿净现金，股息率3.78%高于无风险利率。</p>
+<p><strong>适用条件：</strong>
+公司承诺的2025-2027年高分红政策不改变。</p>
+<p><strong>失效信号：</strong>
+分红率降至50%以下，或PB修复至0.8x以上（估值保护消失）。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 估值保护安全垫厚实但前提是分红政策不变。</p>
+<hr />
+<h3>LK-005：骨料扩张提供第二曲线</h3>
+<p><strong>因果断言：</strong>
+如果骨料产能持续扩张至1.8亿吨+，则非水泥收入占比提升，平滑单一业务周期波动。</p>
+<p><strong>支持依据：</strong>
+【L2】2025年骨料产能1.8亿吨，毛利率高于水泥主业，产能仍在扩张中。</p>
+<p><strong>适用条件：</strong>
+骨料价格不发生大幅下跌，环保政策不收紧。</p>
+<p><strong>失效信号：</strong>
+骨料毛利率持续低于30%。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 产能扩张进度符合预期，但盈利能力受区域竞争影响。</p>
+<hr />
+<h3>LK-006：行业出清利好龙头</h3>
+<p><strong>因果断言：</strong>
+如果行业产能利用率持续低于65%（中小企业加速退出），则海螺水泥市占率提升。</p>
+<p><strong>支持依据：</strong>
+【L2】行业产能利用率从70%降至65%，落后产能出清加速。海螺水泥凭借成本优势在价格战中维持盈利。</p>
+<p><strong>适用条件：</strong>
+行业出清速度不被人为政策逆转。</p>
+<p><strong>失效信号：</strong>
+产能利用率回升至70%以上（行业出清停滞）。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 行业出清是慢变量，需2-3年持续跟踪。</p>
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td>并行</td>
+<td>基建正向外力 vs 房地产负向外力，共同决定需求总量</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-006</td>
+<td>并行</td>
+<td>成本优势是龙头在行业出清中胜出的核心武器</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-002</td>
+<td>依赖</td>
+<td>骨料扩张的必要性部分取决于房地产需求的持续萎缩</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-005</td>
+<td>并行</td>
+<td>下行保护由低估值+高股息+骨料成长共同构成</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<h2>四、关联卡片</h2>
+<ul>
+<li>海螺水泥总览 — 综合评级 B级，价值底仓型判断</li>
+<li>商业模式 — T型战略成本优势护城河</li>
+<li>成长性 — 骨料+海外中低速增长</li>
+<li>盈利能力 — 周期底部，现金流极强</li>
+<li>估值 — PB 2%极端低位</li>
+<li>风险 — 强周期+需求结构性萎缩</li>
+<li>影响因素 — 国常会投资+地产下行</li>
+</ul>
+<blockquote>
+<p>来源：海螺水泥_千研分析报告_20260506.md</p>
+</blockquote>
+</div>
+</body>
+</html>

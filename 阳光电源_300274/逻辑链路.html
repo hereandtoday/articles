@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>阳光电源 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>阳光电源 · 逻辑链路</h1>
+<blockquote>
+<p><strong>逻辑链路 = L3 因果断言网络</strong>。每条链路是一个因果断言：如果A，则B。含适用条件、失效信号、置信度。</p>
+</blockquote>
+<hr />
+<h2>LK-001：储能全球龙头地位 → 出货量持续高增</h2>
+<p><strong>因果断言</strong>：如果全球储能市场维持30%+增速（行业β），则阳光电源作为全球前二龙头（α）将实现出货量40%+增长。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>置信度</strong></td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>依据</strong></td>
+<td>【L2】2025年全球储能+74%，公司储能发货43GWh（+54%）；2026年目标60+GWh（+40%+）</td>
+</tr>
+<tr>
+<td><strong>适用条件</strong></td>
+<td>全球储能政策未出现重大倒退；碳酸锂价格不失控至25万/吨以上</td>
+</tr>
+<tr>
+<td><strong>失效信号</strong></td>
+<td>全球储能增速连续两季低于20%；公司在Top5排名中掉出前三</td>
+</tr>
+<tr>
+<td><strong>与LK-002关系</strong></td>
+<td>并行（出货量增长与毛利率共同决定储能利润）</td>
+</tr>
+<tr>
+<td><strong>与LK-003关系</strong></td>
+<td>依赖（AIDC储能是新增量，但不影响现有储能主逻辑）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>LK-002：品牌溢价+海外占比提升 → 毛利率韧性</h2>
+<p><strong>因果断言</strong>：如果公司维持BNEF可融资性第一的品牌优势和60%+海外收入占比，则综合毛利率可稳定在30%以上。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>置信度</strong></td>
+<td>中高</td>
+</tr>
+<tr>
+<td><strong>依据</strong></td>
+<td>【L2】BNEF六度蝉联第一（100%可融资性）；海外收入占比60.54%；海外毛利率显著高于国内</td>
+</tr>
+<tr>
+<td><strong>适用条件</strong></td>
+<td>海外市场需求不发生系统性萎缩；行业竞争不演变为纯价格战</td>
+</tr>
+<tr>
+<td><strong>失效信号</strong></td>
+<td>海外收入占比持续低于50%；储能毛利率连续两季低于28%</td>
+</tr>
+<tr>
+<td><strong>与LK-001关系</strong></td>
+<td>并行（出货量增长与毛利率共同决定储能利润）</td>
+</tr>
+<tr>
+<td><strong>与LK-005关系</strong></td>
+<td>依赖（碳酸锂涨价是毛利率下行的核心外因）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>LK-003：AIDC+SST技术储备→第三成长曲线</h2>
+<p><strong>因果断言</strong>：如果公司SST产品按计划在2026年底试样、2027年批量生产，则AIDC电源将成为第三成长曲线，打开千亿级市场空间。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>置信度</strong></td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>依据</strong></td>
+<td>【L2】SST技术预研10年，35kV固态变压器技术储备充足；已与英伟达等头部客户对接；广发证券测算2030年全球AIDC电源市场超2000亿元</td>
+</tr>
+<tr>
+<td><strong>适用条件</strong></td>
+<td>AIDC供电架构从UPS向SST演进的技术路径不改变；碳化硅器件成本下降速度支撑SST商业化</td>
+</tr>
+<tr>
+<td><strong>失效信号</strong></td>
+<td>SST产品试样延期超过1年；主要客户（英伟达、谷歌等）转向其他技术方案</td>
+</tr>
+<tr>
+<td><strong>与LK-004关系</strong></td>
+<td>并行（独立于主营业务的新增长极）</td>
+</tr>
+<tr>
+<td><strong>跨链路关系</strong></td>
+<td>此链路若失效，不影响LK-001和LK-002，但会降低估值溢价空间</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>LK-004：AIDC配储需求→储能新增量</h2>
+<p><strong>因果断言</strong>：如果AI数据中心配储从"选配"变为"必配"（行业趋势），则阳光电源凭借全球储能龙头地位将获得储能新增量。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>置信度</strong></td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>依据</strong></td>
+<td>【L2】英伟达白皮书明确AIDC配储为必选项；美国AIDC储能市场已启动，2030年锂储需求约50GWh/年；阳光电源北美客户已小批量出货</td>
+</tr>
+<tr>
+<td><strong>适用条件</strong></td>
+<td>AI算力投资持续高增长；北美电网瓶颈不缓解</td>
+</tr>
+<tr>
+<td><strong>失效信号</strong></td>
+<td>AIDC储能订单连续两年未形成规模（&lt;1GWh/年）；燃机供应大幅改善替代储能方案</td>
+</tr>
+<tr>
+<td><strong>与LK-001关系</strong></td>
+<td>依赖（AIDC储能是LK-001的增量子集）</td>
+</tr>
+<tr>
+<td><strong>与LK-003关系</strong></td>
+<td>并行（AIDC配储和SST电源是AIDC业务的两个独立维度）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>LK-005：碳酸锂价格变化→储能毛利率反向变动</h2>
+<p><strong>因果断言</strong>：如果碳酸锂价格持续高位（&gt;15万/吨），则储能毛利率承压；反之则毛利率修复。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>置信度</strong></td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>依据</strong></td>
+<td>【L2】碳酸锂从7万→18万/吨，储能毛利率从Q3约41%→Q4 24%；电芯成本占储能系统45-55%</td>
+</tr>
+<tr>
+<td><strong>适用条件</strong></td>
+<td>公司长协锁价和浮动定价机制无法完全对冲成本上涨</td>
+</tr>
+<tr>
+<td><strong>失效信号</strong></td>
+<td>碳酸锂回落至10万/吨以下；浮动定价机制全面覆盖存量合同，传导周期缩至3个月以内</td>
+</tr>
+<tr>
+<td><strong>与LK-002关系</strong></td>
+<td>被依赖（LK-002的毛利率韧性受LK-005制约）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>LK-006：港股IPO+员工持股→估值催化</h2>
+<p><strong>因果断言</strong>：如果港股IPO在2026Q2备案完成+10亿回购实施，则短期内形成估值催化剂。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>置信度</strong></td>
+<td>中高</td>
+</tr>
+<tr>
+<td><strong>依据</strong></td>
+<td>【L2】2026年4月24日二次递表；5月8日成立员工持股管理委员会；参考宁德时代H股上市经验</td>
+</tr>
+<tr>
+<td><strong>适用条件</strong></td>
+<td>港股IPO备案进度正常；回购计划按承诺执行</td>
+</tr>
+<tr>
+<td><strong>失效信号</strong></td>
+<td>港股IPO被否或撤回；回购规模大幅缩减</td>
+</tr>
+<tr>
+<td><strong>与LK-001-LK-004关系</strong></td>
+<td>独立（估值催化不改变基本面逻辑）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>LK-007：逆变器CR2格局稳定→收入利润稳定</h2>
+<p><strong>因果断言</strong>：如果华为+阳光电源维持全球逆变器55%+份额（CR2格局），则公司逆变器收入维持稳健增长，毛利率稳定在34-37%。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>置信度</strong></td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>依据</strong></td>
+<td>【L2】公司全球份额25%+，连续十年前二；BNEF可融资性六度第一；海外出货增速跑赢行业</td>
+</tr>
+<tr>
+<td><strong>适用条件</strong></td>
+<td>华为不发动极端价格战；无颠覆性逆变器技术（如钙钛矿直配）改变行业格局</td>
+</tr>
+<tr>
+<td><strong>失效信号</strong></td>
+<td>公司全球份额跌破20%；新进入者通过颠覆性技术改变行业竞争格局</td>
+</tr>
+<tr>
+<td><strong>与LK-002关系</strong></td>
+<td>并行（逆变器毛利率稳定是整体毛利率的重要支撑）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>跨链路关系总表</h2>
+<table>
+<thead>
+<tr>
+<th>链路</th>
+<th>LK-001</th>
+<th>LK-002</th>
+<th>LK-003</th>
+<th>LK-004</th>
+<th>LK-005</th>
+<th>LK-006</th>
+<th>LK-007</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>—</td>
+<td>并行</td>
+<td>无关</td>
+<td>包含</td>
+<td>无关</td>
+<td>无关</td>
+<td>无关</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>并行</td>
+<td>—</td>
+<td>无关</td>
+<td>无关</td>
+<td>被依赖</td>
+<td>无关</td>
+<td>并行</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>无关</td>
+<td>无关</td>
+<td>—</td>
+<td>并行</td>
+<td>无关</td>
+<td>无关</td>
+<td>无关</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>子集</td>
+<td>无关</td>
+<td>并行</td>
+<td>—</td>
+<td>无关</td>
+<td>无关</td>
+<td>无关</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>无关</td>
+<td>制约</td>
+<td>无关</td>
+<td>无关</td>
+<td>—</td>
+<td>无关</td>
+<td>无关</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>无关</td>
+<td>无关</td>
+<td>无关</td>
+<td>无关</td>
+<td>无关</td>
+<td>—</td>
+<td>无关</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>无关</td>
+<td>支撑</td>
+<td>无关</td>
+<td>无关</td>
+<td>无关</td>
+<td>无关</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>相关链接</h2>
+<ul>
+<li>01_公司研究/公司卡片/阳光电源_300274/阳光电源总览 - 入口汇总</li>
+<li>跟踪清单 - M2跟踪项</li>
+<li>风险 - 风险提示</li>
+</ul>
+</div>
+</body>
+</html>

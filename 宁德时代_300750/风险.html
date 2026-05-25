@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>宁德时代 · 风险</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>宁德时代 · 风险</h1>
+<blockquote>
+<p><strong>边界说明</strong>：本卡片聚焦"结构性威胁+极端情景损失"，不含当前状态/边际变化
+- 当前状态 → 影响因素
+- 跟踪指标阈值 → 影响因素</p>
+</blockquote>
+<h2>一、风险矩阵概览</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">编号</th>
+<th>风险类别</th>
+<th>风险描述</th>
+<th style="text-align: center;">影响程度</th>
+<th style="text-align: center;">发生概率</th>
+<th style="text-align: center;">可控性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">R1</td>
+<td>碳酸锂失控</td>
+<td>价格突破25万/吨极端情景</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">低（15-20%）</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R2</td>
+<td>价格战恶化</td>
+<td>二线厂商持续价格战&gt;2年</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">低（15%）</td>
+<td style="text-align: center;">高</td>
+</tr>
+<tr>
+<td style="text-align: center;">R3</td>
+<td>固态电池路线颠覆</td>
+<td>押错技术路线，现有产线减值</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">极低（&lt;5%）</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R4</td>
+<td>欧盟IAA法案趋严</td>
+<td>新项目被迫引入合资49%持股</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中（20-30%）</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R5</td>
+<td>地缘政治 Worst Case</td>
+<td>美国PFE+欧洲IAA+中东同步</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">低（10-15%）</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R6</td>
+<td>AIDC 交易交割</td>
+<td>审批延期超1季度或被否</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中（30%）</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R7</td>
+<td>AIDC Capex依赖</td>
+<td>科技大厂AI Capex大幅削减</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中（35%）</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R8</td>
+<td>AIDC 技术整合</td>
+<td>钠电+液冷在AIDC效率低于预期</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中（30%）</td>
+<td style="text-align: center;">中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>说明</strong>：
+- 影响程度：高（致命）/ 中（显著）/ 低（可承受）
+- 发生概率：高（已发生）/ 中（可能）/ 低（极端情景）
+- 可控性：高（有对冲）/ 中（部分）/ 低（几乎无）</p>
+<hr />
+<h2>二、结构性威胁详解</h2>
+<h3>2.1 碳酸锂价格失控风险（R1）</h3>
+<p><strong>触发条件</strong>：碳酸锂价格突破25万/吨且持续3个月以上。</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>损失估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>&gt;25万/吨且持续3个月</td>
+<td>-200至-300亿净利润</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三层对冲护盾</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>对冲机制</th>
+<th>年化收益</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>洛阳钼业持股约25%</td>
+<td>60-70亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>天华新能持股13.54%</td>
+<td>约7亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td>自有矿权（宜春+斯诺威Q2复产）</td>
+<td>约35亿</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>约100亿/年</strong></td>
+<td>完全覆盖3-4分/Wh的碳酸锂成本上涨</td>
+</tr>
+</tbody>
+</table>
+<p><strong>护城河脆弱性边界</strong>：此风险触及的是成本端，不影响护城河本身，但影响短期盈利预测。</p>
+<blockquote>
+<p>来源：宁德时代_全面分析报告_20260420.md §11.2</p>
+</blockquote>
+<hr />
+<h3>2.2 价格战恶化风险（R2）</h3>
+<p><strong>触发条件</strong>：二线电池厂商通过融资支撑价格战超过2年，宁德时代被迫跟进降价。</p>
+<p><strong>量化损失</strong>：电芯价格再降10%对应净利润冲击约-380亿，但需同时满足"二线降价抢份额+龙头被迫跟随"两个极端条件。</p>
+<p><strong>格局分析</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>竞争者</th>
+<th>成本劣势</th>
+<th>当前状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>宁德时代</td>
+<td>综合成本优势3-4分/Wh</td>
+<td>盈利</td>
+</tr>
+<tr>
+<td>二线厂商</td>
+<td>BOM+制造+良率综合劣势</td>
+<td>降价10%即亏损</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论</strong>：价格战是二线厂商的末日，宁德时代具备极强的防御能力。</p>
+<p><strong>护城河脆弱性边界</strong>：此风险主要影响价格敏感的低端客户，对高端产品线（神行/麒麟电池）影响有限。</p>
+<blockquote>
+<p>来源：宁德时代_全面分析报告_20260420.md §11.4</p>
+</blockquote>
+<hr />
+<h3>2.3 固态电池技术路线风险（R3）</h3>
+<p><strong>触发条件</strong>：宁德时代押错技术路线（硫化物vs氧化物/卤化物），或竞争对手先发成功。</p>
+<p><strong>量化损失</strong>：若押错路线，现有900GWh+产能面临减值风险，预计影响净利润-100至-150亿。</p>
+<p><strong>工艺兼容性</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>技术路线</th>
+<th>与现有产线兼容度</th>
+<th>改造成本</th>
+<th>对宁德影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>半固态/凝聚态</td>
+<td>≈80%</td>
+<td>低</td>
+<td>几乎无影响</td>
+</tr>
+<tr>
+<td>硫化物全固态</td>
+<td>&lt;30%</td>
+<td>高</td>
+<td>削弱但不颠覆</td>
+</tr>
+<tr>
+<td>非硫化物全固态</td>
+<td>&lt;30%</td>
+<td>高</td>
+<td>严重削弱</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲措施</strong>：
+- 干湿并行策略（2026Q1各招标0.5GWh），不押注单一工艺路线
+- 半固态凝聚态电池已量产（2026年1月），提供5-7年缓冲窗口</p>
+<p><strong>护城河脆弱性边界</strong>：半固态/凝聚态与现有产线约80%兼容，是短期内的安全垫。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/宁德时代_300750/宁德时代_全面分析报告_20260420 §11.5
+来源：01_公司研究/原始资料/宁德时代_300750/宁德时代_300750_固态电池产线兼容性分析_20260508 §一、§四</p>
+</blockquote>
+<hr />
+<h3>2.4 欧盟IAA法案风险（R4）</h3>
+<p><strong>触发条件</strong>：法案实施后，中资持股&gt;49%且不满足4项条件的新项目受限。</p>
+<p><strong>量化损失</strong>：若新项目被迫引入欧盟合资伙伴49%持股，影响净利润约-20至-40亿元/年。</p>
+<p><strong>已有防护</strong>：匈牙利工厂（一期34GWh）+ 德国工厂（14GWh）已投产，享有差异化政策。</p>
+<p><strong>护城河脆弱性边界</strong>：已投产项目享有豁免，脆弱性主要在新建项目。</p>
+<blockquote>
+<p>来源：宁德时代_全面分析报告_20260420.md §11.3</p>
+</blockquote>
+<hr />
+<h3>2.5 地缘政治 Worst Case 叠加（R5）</h3>
+<p><strong>触发条件</strong>：美国PFE规则+欧洲IAA法案+中东冲突同时恶化。</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>收入冲击</th>
+<th>净利润冲击</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PFE+IAA+中东同步</td>
+<td>10-15%</td>
+<td>-8%</td>
+<td>-70至-90亿（-7至-9%）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>已有防护</strong>：已建项目本地化产能提供基础保护。</p>
+<blockquote>
+<p>来源：宁德时代_全面分析报告_20260420.md §11.3</p>
+</blockquote>
+<hr />
+<h3>2.6 AIDC 交易交割风险（R6）</h3>
+<p><strong>触发条件</strong>：山东高速股东大会审批延期超1个季度，或反垄断审查未通过。</p>
+<p><strong>量化损失</strong>：整合延迟而非失败，但造成短期不确定性。股价可能承压，但不影响主业盈利。</p>
+<p><strong>对冲措施</strong>：
+- 维持创始人Josh Sheng Chen控制权不变，避免触发客户合同违约条款
+- 分批交割结构降低单节点失败风险</p>
+<blockquote>
+<p>来源：宁德时代投资世纪互联的战略考虑_20260514.md §风险提示</p>
+</blockquote>
+<hr />
+<h3>2.7 AIDC Capex 依赖风险（R7）</h3>
+<p><strong>触发条件</strong>：腾讯/阿里/字节等科技大厂AI Capex大幅削减，世纪互联机柜上架率&lt;60%持续两个季度。</p>
+<p><strong>传导链条</strong>：科技大厂AI Capex ↓ → 世纪互联机柜上架率 ↓ → AIDC配储需求 ↓ → 宁德时代AIDC储能出货 ↓</p>
+<p><strong>对冲措施</strong>：
+- 客户多元化（腾讯/阿里/字节/美团/快手等），降低单一客户依赖
+- 绿电合规需求（政策强制）提供非周期性托底</p>
+<blockquote>
+<p>来源：宁德时代投资世纪互联的战略考虑_20260514.md §风险提示</p>
+</blockquote>
+<hr />
+<h3>2.8 AIDC 技术整合失败风险（R8）</h3>
+<p><strong>触发条件</strong>：钠离子电池在AIDC实际运行效率低于90%（远低于声称的97%），或液冷PUE改善不达预期。</p>
+<p><strong>量化损失</strong>：协同效应打折，但不影响主业。非结构性破坏。</p>
+<p><strong>核心技术验证点</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>技术</th>
+<th>声称参数</th>
+<th>待验证</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>钠离子电池</td>
+<td>97%系统效率、15000次循环</td>
+<td>实际AIDC场景效率</td>
+</tr>
+<tr>
+<td>钠离子电池良率</td>
+<td>当前80-90%，需提升至<strong>95%+</strong></td>
+<td>规模化量产降本进度</td>
+</tr>
+<tr>
+<td>液冷热管理</td>
+<td>优化PUE</td>
+<td>实际PUE改善幅度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键阈值</strong>：碳酸锂<strong>&lt;10万/吨</strong>持续3个月时，LFP电池价格持续下探，压缩钠电池套利空间；钠电平价触发点为碳酸锂&gt;<strong>20-25万/吨</strong>。</p>
+<p><strong>对冲措施</strong>：
+- 钠电池+液冷均已在宁德时代动力电池领域有成熟应用，技术迁移而非从零开发
+- 初期小批量交付+观察，再决定是否大规模放量
+- 锂价&lt;10万/吨时，调整AIDC配储产品结构，灵活切换钠电/LFP比例</p>
+<blockquote>
+<p>来源：宁德时代投资世纪互联的战略考虑_20260514.md §风险提示
+来源：宁德时代_钠离子电池发展前景_20260517.md §核心风险</p>
+</blockquote>
+<hr />
+<h2>三、风险综合评估</h2>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th>评价</th>
+<th style="text-align: center;">评分（1-10）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固有风险</td>
+<td>碳酸锂+固态+地缘，短期风险较多</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td>风险可控性</td>
+<td>资源对冲+干湿并行，措施有力</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td>风险分散度</td>
+<td>动力+储能+海外，多元分散</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>下行保护</td>
+<td>净现金3000亿+高分红</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>尾部风险</td>
+<td>护城河崩溃概率极低</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td><strong>综合</strong></td>
+<td>短期风险集中但可控，长期结构风险低</td>
+<td style="text-align: center;"><strong>6.5</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、相关链接</h2>
+<ul>
+<li>宁德时代总览 - 公司总览</li>
+<li>商业模式 - 核心竞争力</li>
+<li>影响因素 - 短期影响因素（<strong>当前状态在影响因素中跟踪</strong>）</li>
+<li>盈利能力 - 盈利能力</li>
+<li>成长性 - 成长性</li>
+<li>估值 - 估值分析</li>
+</ul>
+<blockquote>
+<p><strong>边界说明</strong>：
+- 本卡片聚焦"结构性威胁+极端情景损失"
+- 当前碳酸锂价格/固态进展/AIDC战略等动态 → 影响因素
+- 跟踪指标阈值 → 影响因素</p>
+</blockquote>
+</div>
+</body>
+</html>

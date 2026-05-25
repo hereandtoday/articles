@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>汇川技术 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>汇川技术 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<hr />
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>工控订单+40% → 业绩兑现</td>
+<td><strong>高</strong></td>
+<td>总览：成长性A</td>
+<td>订单增速回落至&lt;20%</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>人形机器人8月发布 → 第三成长曲线</td>
+<td><strong>中</strong></td>
+<td>总览：成长性A</td>
+<td>发布延迟或市场反馈冷淡</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>联合动力Q2恢复 → 压制解除</td>
+<td><strong>中</strong></td>
+<td>总览：盈利能力B+</td>
+<td>Q2利润无明显改善</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>H股上市 → 国际化加速</td>
+<td><strong>中</strong></td>
+<td>总览：多空逻辑</td>
+<td>上市延迟或募资不及预期</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>制造业资本开支转正 → 工控景气延续</td>
+<td><strong>高</strong></td>
+<td>成长性：主业复苏</td>
+<td>资本开支再度转负</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>数字能源三阶段 → 新增长极</td>
+<td><strong>中</strong></td>
+<td>成长性：战略新兴业务</td>
+<td>第二阶段(海外大储)进展缓慢</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>AI+工业软件业务化 → 长期竞争力</td>
+<td><strong>中</strong></td>
+<td>成长性：战略新兴业务</td>
+<td>2026年业务化未达预期</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>国际化GLOCAL执行 → 海外收入突破</td>
+<td><strong>中</strong></td>
+<td>成长性：国际化拓展</td>
+<td>海外收入增速&lt;20%</td>
+<td>2026-05-17</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>二、链路详情</h2>
+<h3>LK-001：工控订单+40%验证复苏，业绩兑现</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果1-4月新接订单同比增长40%，且5-6月产能提升30%打破交付瓶颈，则2026Q2起业绩进入明确上行通道，中报有望实现较高增长，全年净利润增速大概率超过20%。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】2026年1-4月新接订单同比增长40%，其中约10%为代理商备货</li>
+<li>【L2】5-6月产能提升30%以上，打破交付瓶颈</li>
+<li>【L2】工控龙头已启动向下游涨价（1月和3月两次），顺利顺价验证真实需求</li>
+<li>【L2】通用设备行业资本开支2025Q4/2026Q1分别转正至1.8%/1.9%</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>制造业资本开支维持正增长</li>
+<li>订单增速维持&gt;30%</li>
+<li>产能释放顺利</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>工控订单增速连续两个月&lt;20%</li>
+<li>产能提升不及预期</li>
+<li>涨价传导受阻</li>
+</ul>
+<p><strong>置信度：高</strong>
+<strong>置信度依据</strong>：订单数据为前端先行指标，叠加产能释放和涨价成功三重验证，逻辑链路清晰。</p>
+<hr />
+<h3>LK-002：人形机器人8月发布，第三成长曲线落地</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果2026年8月轮式工业机器人成功发布并获得头部客户订单，则公司人形机器人业务从"概念"进入"兑现"阶段，复刻新能源车从工控跨界成功路径，打造第三成长曲线。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】2013年起布局工业机器人，2023年成立人形机器人专项团队</li>
+<li>【L2】2025年获得<strong>小批量试验订单</strong>（首个商业化信号），标志从"送样合作"进入"小批量交付"阶段</li>
+<li>【L2】2025年10月工博会发布仿生臂、无框力矩电机、低压高功率驱动器、行星滚柱丝杠等全栈核心零部件</li>
+<li>【L2】已与主机厂及科研机构开展送样合作</li>
+<li>【L4】2026年8月发布轮式机器人是战略节点</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>产品按时发布</li>
+<li>客户验证通过</li>
+<li>订单落地</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>发布延迟超过3个月</li>
+<li>市场反馈冷淡</li>
+<li>头部客户订单未落地</li>
+</ul>
+<p><strong>置信度：中</strong>
+<strong>置信度依据</strong>：技术积累充分，2025年已获小批量试验订单（商业化信号增强），但8月产品发布尚未落地，仍待验证。</p>
+<hr />
+<h3>LK-003：联合动力Q2恢复，压制因素解除</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果联合动力Q2利润环比改善至2亿+，则Q1利润-85%为季节性/交付节奏问题而非结构性恶化，新能源汽车业务压制解除，估值压制因素消除。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】Q1利润-85%主要受新能源汽车动力系统业务交付节奏拖累，产能不足导致交付滞后</li>
+<li>【L2】5月产能提升30%以上，Q2是传统旺季</li>
+<li>【L2】2026年1月和3月两次涨价已落地，Q2毛利率有望回升</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>Q2旺季需求正常释放</li>
+<li>产能提升顺利</li>
+<li>涨价传导顺畅</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>Q2利润仍低于1.5亿</li>
+<li>价格战持续恶化</li>
+<li>产能提升不及预期</li>
+</ul>
+<p><strong>置信度：中</strong>
+<strong>置信度依据</strong>：Q1下滑有交付节奏因素，Q2是关键验证窗口，需等待数据确认。</p>
+<hr />
+<h3>LK-004：H股上市加速国际化</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果H股上市成功（2026年底前），则公司海外收入占比有望从6%提升至25-30%，打开长期成长天花板，复刻ABB/西门子等国际龙头全球化路径。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】2026年4月8日提交H股上市申请</li>
+<li>【L2】2025年海外收入约26亿元（+30%），占比仅6%</li>
+<li>【L2】长期目标：海外收入占比提升至25-30%</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>H股上市按计划完成</li>
+<li>海外渠道建设顺利</li>
+<li>产品竞争力得到海外客户认可</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>上市延迟超6个月</li>
+<li>海外收入增速低于20%</li>
+<li>汇率大幅波动影响</li>
+</ul>
+<p><strong>置信度：中</strong>
+<strong>置信度依据</strong>：国际化是长期战略，但执行存在不确定性，H股上市是重要催化剂。</p>
+<hr />
+<h3>LK-005：制造业资本开支转正，工控景气延续</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果全A非金融资本开支维持正增长（2025Q4 1.8%/2026Q1 1.9%），则工控行业景气上行至少持续至2027年上半年，汇川作为工控龙头持续受益。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】全A非金融资本开支2025Q4/2026Q1分别同比增长1.8%/1.9%，正式转正</li>
+<li>【L2】多数行业资本开支/折旧摊销比降至1.5以下，为2011年以来历史底部，下行空间封死</li>
+<li>【L2】库存进入补库上行通道，PPI上行强化补库动力</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>制造业PMI维持荣枯线上</li>
+<li>库存周期持续向上</li>
+<li>无外部冲击打断复苏</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>资本开支再度转负</li>
+<li>PMI连续3个月低于荣枯线</li>
+<li>外部贸易摩擦升级</li>
+</ul>
+<p><strong>置信度：高</strong>
+<strong>置信度依据</strong>：数据来自宏观层面，资本开支转正是明确的周期信号，持续性较强。</p>
+<hr />
+<h3>LK-006：数字能源三阶段 → 新增长极</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果数字能源管理业务按三阶段路径推进（大储领先→海外大储+工商业储能→户储+数字化方案），则公司在中长期获得继工控、新能源车之后的又一增量业务板块，支撑"双碳"战略下的可持续增长。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】第一阶段已完成：发电侧和配电侧大储领域国内领先</li>
+<li>【L2】第二阶段进行中：进军海外大储+工商业储能试点，客户反馈良好</li>
+<li>【L2】核心产品：储能变流器、升压一体机、FEMS能源管理软件平台（基于InoCube）</li>
+<li>【L2】覆盖"源、网、荷、储、碳"全场景</li>
+<li>【L2】公司明确提出"2850"和"3030"双碳目标</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>海外大储渠道建设顺利</li>
+<li>储能行业政策环境稳定</li>
+<li>数字化平台能力持续迭代</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>海外大储拓展连续2个季度不及预期</li>
+<li>户储+数字化方案落地延迟超过1年</li>
+<li>储能行业政策出现重大不利变化</li>
+</ul>
+<p><strong>置信度：中</strong>
+<strong>置信度依据</strong>：第一阶段已兑现，但第二、三阶段仍存在执行不确定性，海外储能市场竞争激烈。</p>
+<hr />
+<h3>LK-007：AI+工业软件业务化 → 长期竞争力</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果AI+工业软件成功实现业务化（2026年探索成为营利组织），则公司将工业场景Know-how转化为可复用的AI产品和软件平台，提升整体解决方案溢价能力，并形成差异化竞争壁垒。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】董事长朱兴明亲自推动"AI+"战略</li>
+<li>【L2】已成立AI应用研究所和iFG（汇川工业智脑）平台</li>
+<li>【L2】iFA、InoCube、Ino Air等工业软件产品矩阵已形成</li>
+<li>【L2】三大落地场景明确（设备端/管理侧/运营侧）</li>
+<li>【L2】工业场景Know-how数据化正在推进</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>AI投入持续，不被短期盈利压力打断</li>
+<li>工业软件产品获得客户认可</li>
+<li>数据积累和模型训练持续推进</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>2026年AI业务化目标未取得实质性进展</li>
+<li>客户付费意愿低于预期</li>
+<li>核心团队流失</li>
+</ul>
+<p><strong>置信度：中</strong>
+<strong>置信度依据</strong>：基础设施已搭建（AI研究所/iFG平台），但业务化路径仍在探索，盈利模式尚未验证。</p>
+<hr />
+<h3>LK-008：国际化GLOCAL执行 → 海外收入突破</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果国际化"GLOCAL"战略（欧洲行业线+新兴市场区域化）有效执行，叠加H股上市的资本平台效应，则公司海外收入占比有望从6%提升至20%以上，打开3-4倍的长期成长空间。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】董事长明确"出海为未来几年第一战略"</li>
+<li>【L2】已在全球设立18家子公司及办事处，海外团队超600人</li>
+<li>【L2】发展超130家海外分销商，布局42家联保中心、10家备件中心、10家维修中心</li>
+<li>【L2】欧洲：在德国斯图加特规划研发中心，匈牙利部署欧洲工厂</li>
+<li>【L2】新兴市场：以本地化员工为主推进渠道建设</li>
+<li>【L2】并购战略：在欧洲寻找自动化/精密机械/工业软件标的</li>
+<li>【L4】H股上市（2026年4月已提交申请）将强化国际资本平台</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>H股上市按计划完成</li>
+<li>海外渠道建设和本地化团队执行到位</li>
+<li>产品竞争力得到海外客户认可</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>海外收入增速连续低于20%</li>
+<li>H股上市延迟超过6个月</li>
+<li>欧洲并购整合不及预期</li>
+</ul>
+<p><strong>置信度：中</strong>
+<strong>置信度依据</strong>：战略定位清晰（第一战略），基础设施已初步建成，但占比仅6%→20%+的提升跨度大，执行期3-5年，不确定性较高。</p>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-005</td>
+<td><strong>依赖</strong></td>
+<td>LK-001（工控复苏）的成立依赖LK-005（资本开支转正）的成立</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td><strong>并行</strong></td>
+<td>两者共同支撑"业绩上行"的判断，任一失效则上行力度减弱</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-001</td>
+<td><strong>独立</strong></td>
+<td>人形机器人是第三成长曲线，与工控主业复苏相互独立</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-001</td>
+<td><strong>独立</strong></td>
+<td>国际化是长期战略，与短期工控复苏相互独立</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-001</td>
+<td><strong>独立</strong></td>
+<td>数字能源是独立于工控主业的战略新兴业务</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-002</td>
+<td><strong>独立</strong></td>
+<td>数字能源与人形机器人为不同战略新兴业务方向</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-006</td>
+<td><strong>并行</strong></td>
+<td>两者共同构成"战略新兴业务群"(数字能源+AI工业软件)，皆为中长期增量</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-002</td>
+<td><strong>独立</strong></td>
+<td>AI工业软件与人形机器人分属不同细分方向</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>LK-004</td>
+<td><strong>依赖</strong></td>
+<td>LK-008（国际化GLOCAL执行）的资本平台基础依赖LK-004（H股上市）的完成</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>LK-001</td>
+<td><strong>独立</strong></td>
+<td>国际化是长期战略，与短期工控复苏相互独立</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B的成立依赖于A的成立
+- <strong>并行</strong>：A与B独立，共同支撑同一结论
+- <strong>独立</strong>：A与B相互独立，分别支撑不同结论</p>
+<hr />
+<h2>四、关联卡片</h2>
+<ul>
+<li>01_公司研究/公司卡片/汇川技术_300124/汇川技术总览 — 关联判断：工控订单+40%验证复苏，综合评级A级</li>
+<li>成长性 — 关联判断：三成长曲线拓展为"工控复苏+国际化+人形机器人+战略新兴业务群(数字能源/AI+工业软件)"，评级A</li>
+<li>盈利能力 — 关联判断：Q1净利润-23%，等待Q2验证，综合评分B+</li>
+<li>风险 — 关联判断：联合动力盈利恢复是核心变量</li>
+<li>估值 — 关联判断：3年CAGR 20%，目标价80-95元</li>
+<li>影响因素 — 关联判断：工控订单+40%/联合动力Q2恢复/数字能源进展/AI业务化是跟踪指标</li>
+<li>跟踪清单 — 关联判断：各链路跟踪项（T-01至T-08）</li>
+</ul>
+<hr />
+<h2>五、来源</h2>
+<blockquote>
+<p>来源：01_公司研究/原始资料/汇川技术_300124/2026-05-15_汇川技术逻辑分析 §一~§七（全文）
+来源：00_inbox/归档目录/2026-05-15_通用设备景气度观察 §一、通用设备景气度及投资逻辑
+来源：00_inbox/归档目录/2026-05-15_通用设备近况 §一、制造业周期上行的核心支撑
+来源：用户提供（2026-05-17）§一~§五</p>
+</blockquote>
+</div>
+</body>
+</html>

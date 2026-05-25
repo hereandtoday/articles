@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>福耀玻璃 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>福耀玻璃 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<hr />
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>高附加值占比提升 → ASP持续上升 → 毛利率扩张</td>
+<td>高</td>
+<td>商业模式/成长性</td>
+<td>高附加值渗透率见顶</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>海外产能爬坡 → 美国/欧洲利润率提升 → 全球估值提升</td>
+<td>中</td>
+<td>成长性/估值</td>
+<td>二期利用率&lt;60%或海外亏损</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>返利率上行 → 利润损耗增加 → 净利率承压</td>
+<td>高</td>
+<td>风险</td>
+<td>返利率趋稳或下降</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>汇兑损失 → 报表利润波动 → PE被动抬升</td>
+<td>高</td>
+<td>风险/估值</td>
+<td>人民币贬值或对冲工具启用</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>铝饰条放量 → 第二增长曲线 → 估值体系重塑</td>
+<td>中</td>
+<td>成长性/估值</td>
+<td>产能爬坡持续不及预期</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>全球竞争对手收缩 → 福耀份额扩张 → 规模优势加强</td>
+<td>高</td>
+<td>商业模式/成长性</td>
+<td>竞争对手重新聚焦汽玻</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>AI调光玻璃渗透 → ASP加速上行 → 利润弹性放大</td>
+<td>中</td>
+<td>成长性/盈利能力</td>
+<td>渗透率低于预期或价格战</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>资本开支回落 → 自由现金流改善 → 分红能力增强</td>
+<td>中</td>
+<td>盈利能力/估值</td>
+<td>Capex重新扩张</td>
+<td>2026-05-17</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>二、链路详情</h2>
+<h3>LK-001：高附加值驱动ASP与毛利率上升</h3>
+<p><strong>因果断言：</strong>
+如果高附加值产品占比持续提升（当前54%，目标2027年60%+），则ASP将维持6-7%年复合增长，推动毛利率持续扩张。</p>
+<p><strong>支持依据：</strong>
+【L2】ASP从174→248元/㎡（5年CAGR 7.4%），高附加值占比从约30%→54%，毛利率从34.32%→37.27%，三者呈高度正相关。管理层给出未来10年ASP CAGR 6-7%指引。</p>
+<p><strong>适用条件：</strong>
+车企不减配，消费者愿意为天幕/HUD/调光等功能付费。</p>
+<p><strong>失效信号：</strong>
+- 高附加值占比连续2个季度&lt;52%
+- ASP同比增速&lt;5%（连续3个季度）
+- 车企在主力车型上将天幕/HUD从标配降为选配</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 5年数据验证，管理层明确指引，行业趋势（智能化）不可逆。</p>
+<hr />
+<h3>LK-002：海外产能爬坡提升利润率</h3>
+<p><strong>因果断言：</strong>
+如果美国二期利用率从30%提升至65%+（2026目标），则美国工厂利润率将从13.3%向15%+修复，带动全球利润率提升。</p>
+<p><strong>支持依据：</strong>
+【L2】美国一期利用率95%时利润率稳定在13%+。二期以高附加值产品为主，理论上利润率更高。2026年Capex 77.3亿中不含新增500万套投入，聚焦现有产能爬坡。</p>
+<p><strong>适用条件：</strong>
+海外需求不出现大幅萎缩，产能爬坡按计划推进。</p>
+<p><strong>失效信号：</strong>
+- 美国二期利用率&lt;60%（2026中报）
+- 欧洲工厂持续亏损扩大
+- 地缘政治严重影响海外工厂运营</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 产能爬坡节奏存在不确定性（Q1美国工厂利润率已从13.27%降至12.38%）。</p>
+<hr />
+<h3>LK-003：返利率上行压制净利率</h3>
+<p><strong>因果断言：</strong>
+如果返利率从0.97%（2023）持续上行至2.0%+（2026E），则每年带来约2亿+增量成本压力，拖累净利率约0.2-0.3pct。</p>
+<p><strong>支持依据：</strong>
+【L2】每+0.1pct返利率对应利润损耗约3亿。2024-2026年三年累计损耗约15亿。</p>
+<p><strong>适用条件：</strong>
+国内新能源价格战持续，整车厂降本压力不减。</p>
+<p><strong>失效信号：</strong>
+- 返利率趋稳或下降
+- 新能源价格战降温</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 趋势已延续3年，管理层明确给出2.0%指引，确定性高。</p>
+<hr />
+<h3>LK-004：汇兑波动造成利润扰动</h3>
+<p><strong>因果断言：</strong>
+如果人民币持续升值，则汇兑损失将显著拖累报表利润（海外收入占比45.55%），导致PE被动抬升。</p>
+<p><strong>支持依据：</strong>
+【L2】Q1汇兑损失4.4亿，直接导致净利-15.68%。4Q25损失2.29亿。</p>
+<p><strong>适用条件：</strong>
+美元/欧元相对于人民币贬值。</p>
+<p><strong>失效信号：</strong>
+- 人民币贬值方向逆转
+- 公司启用外汇衍生品对冲工具</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 海外收入占比高且无有效对冲，汇兑影响已反复验证。</p>
+<hr />
+<h3>LK-005：铝饰条第二曲线</h3>
+<p><strong>因果断言：</strong>
+如果铝饰条业务产能按计划落地（上海6月、重庆年底），则2026E营收+25%，长期5年50亿目标可期，为福耀提供第二增长曲线。</p>
+<p><strong>支持依据：</strong>
+【L2】2025年铝饰条收入已超40亿。中国区增速指引25%，欧洲亏损收窄。</p>
+<p><strong>适用条件：</strong>
+产能按计划落地，客户订单充足。</p>
+<p><strong>失效信号：</strong>
+- 上海/重庆产能延期
+- 全年增速&lt;15%
+- 欧洲持续大幅亏损</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> Q1国内铝饰条增速仅+1%，不及预期，全年目标实现有挑战。</p>
+<hr />
+<h3>LK-006：竞争对手收缩推动份额扩张</h3>
+<p><strong>因果断言：</strong>
+如果旭硝子/板硝子/圣戈班持续收缩汽玻业务，则福耀全球市占率将从38%向45%+迈进，规模优势进一步强化。</p>
+<p><strong>支持依据：</strong>
+【L2】圣戈班退出欧洲释放35%份额（400-500万套），板硝子持续亏损收缩。福耀近5年市占率从约30%提升至38%。</p>
+<p><strong>适用条件：</strong>
+竞争对手的战略收缩趋势持续。</p>
+<p><strong>失效信号：</strong>
+- 竞争对手重新聚焦汽玻业务
+- 新进入者（如蓝思科技）快速抢占份额</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 竞争对手多元化转型不可逆，福耀专注优势持续扩大。</p>
+<hr />
+<h3>LK-007：AI调光玻璃释放利润弹性</h3>
+<p><strong>因果断言：</strong>
+如果AI调光玻璃搭载率快速提升，则ASP将进入加速上升通道（溢价5-10倍），带来显著的利润弹性。</p>
+<p><strong>支持依据：</strong>
+【L2】首发搭载小鹏GX，相对传统玻璃溢价5-10倍。管理层目标从30-40万车型逐步下探至20万价位。</p>
+<p><strong>适用条件：</strong>
+车企将调光玻璃作为差异化卖点，消费者接受溢价。</p>
+<p><strong>失效信号：</strong>
+- 调光玻璃渗透率低于预期
+- 车企压价导致溢价收窄
+- 竞争对手推出同类替代产品</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 技术已成熟但渗透节奏存在不确定性（管理层的"10年逐步下探"表态偏保守）。</p>
+<hr />
+<h3>LK-008：资本开支回落改善自由现金流</h3>
+<p><strong>因果断言：</strong>
+如果Capex从2025年61.6亿高位回落至正常水平，则自由现金流显著改善，分红能力增强，支撑估值修复。</p>
+<p><strong>支持依据：</strong>
+【L2】2025年Capex 61.6亿（2024年81.2亿），2026年指引77.3亿（主要为尾款，不含新增500万套）。经营性现金流充裕（120.55亿），自由现金流将持续转正。</p>
+<p><strong>适用条件：</strong>
+Capex不出现新一轮大规模扩张。</p>
+<p><strong>失效信号：</strong>
+- 2027年Capex重新回到80亿+
+- 新增500万套产能设备投入启动</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 管理层提及"未来按需推进合理资本开支"，不排除新一轮扩张。</p>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-007</td>
+<td>依赖</td>
+<td>AI调光玻璃（LK-007）是高附加值占比（LK-001）的重要增量</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td>互斥</td>
+<td>ASP提升可部分对冲返利率上行压力，两者方向相反</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-004</td>
+<td>并行</td>
+<td>海外产能爬坡改善利润，但汇兑波动可能抵消部分效果</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-002</td>
+<td>依赖</td>
+<td>竞争对手收缩（LK-006）是海外产能扩张（LK-002）的需求基础</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-008</td>
+<td>并行</td>
+<td>铝饰条扩张需要Capex支撑，与自由现金流改善存在阶段性矛盾</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-004</td>
+<td>并行</td>
+<td>返利率和汇兑是两大利润压制因素，叠加影响时需重点关注</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B的成立依赖于A的成立
+- <strong>并行</strong>：A与B独立，共同支撑同一结论
+- <strong>互斥</strong>：A与B不能同时成立</p>
+<hr />
+<h2>四、关联卡片</h2>
+<ul>
+<li>福耀玻璃总览 — 关联判断：综合评级和投资结论基于以上链路综合评估</li>
+<li>商业模式 — 关联判断：LK-001（高附加值）、LK-006（全球份额）</li>
+<li>成长性 — 关联判断：LK-001（ASP成长）、LK-005（铝饰条）、LK-007（调光玻璃）</li>
+<li>盈利能力 — 关联判断：LK-001（毛利率）、LK-003（返利率）、LK-008（自由现金流）</li>
+<li>估值 — 关联判断：LK-002（全球估值提升）、LK-004（PE扰动）、LK-008（估值修复）</li>
+<li>风险 — 关联判断：LK-003（返利率风险）、LK-004（汇兑风险）</li>
+</ul>
+<blockquote>
+<p>来源：综合自福耀玻璃_600660_综合投研分析_20260517.md | 福耀玻璃_投前体检报告_20260501.md | 福耀玻璃2025年经营业绩深度解读.md</p>
+</blockquote>
+</div>
+</body>
+</html>

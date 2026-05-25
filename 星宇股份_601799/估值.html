@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>星宇股份 · 估值</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>星宇股份 · 估值</h1>
+<h2>一、当前估值位置</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: center;">数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价（2026-05-06）</td>
+<td style="text-align: center;">136.02元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>市值</td>
+<td style="text-align: center;">~356亿元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>PE TTM</td>
+<td style="text-align: center;">23.8x</td>
+<td>近5年区间15-45x，低于历史中位25-30x</td>
+</tr>
+<tr>
+<td>PB</td>
+<td style="text-align: center;">3.36x</td>
+<td>低于历史中位3.5-4x</td>
+</tr>
+<tr>
+<td>PS TTM</td>
+<td style="text-align: center;">2.33x</td>
+<td>略低于历史中位2.5-3x</td>
+</tr>
+<tr>
+<td>股息率</td>
+<td style="text-align: center;">1.61%</td>
+<td>偏低，成长型特征</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心判断（修正）</strong>：旧模型使用12%增长率已严重偏离实际增速（共识2026-2028净利增速均&gt;21%），导致DCF中性仅111.5元。修正为<strong>PCF模型（利润增速17%×5年 → -2%/年递减 → 3%永续）</strong>后，中性估值约<strong>176元</strong>，当前价124.61元有约30%上行空间。PE/PB均低于历史中位，估值确实合理偏低，且修正后安全边际充足。</p>
+<blockquote>
+<p>来源：星宇股份_601799_千研分析报告_20260506.md §3.7
+来源：用户联合推导（2026-05-17）：PCF修正模型</p>
+</blockquote>
+<h2>二、核心估值逻辑</h2>
+<h3>2.1 方法论修正说明</h3>
+<p><strong>旧模型（2026-05-06）的问题：</strong>
+- 快速增长期增长率<strong>12%</strong>——严重偏低。共识预测2026-2028E净利润增速均&gt;21%，12%仅为实际的一半
+- 第二阶段增长率<strong>8%</strong>——偏保守但可接受
+- 8年增长期——海外放量期（2028-2030+）和机器人期权的核心增长被截断
+- 结果：DCF中性仅111.5元，比机构目标价中位数（177.40元）低了<strong>37%</strong>
+- 本质上，"当前缺乏安全边际"是<strong>模型偏误</strong>而非股价偏贵</p>
+<p><strong>修正方法</strong>：引入<strong>PCF（所有者收益折现）模型</strong>，以净利润为起点，通过多阶段增长递减来刻画"高成长→衰减→永续"的生命周期。D&amp;A在长期与维持性CapEx对冲，使用净利润≈所有者收益为合理近似。</p>
+<h3>2.2 PCF模型参数</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th style="text-align: center;">取值</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>起始FCF</strong></td>
+<td style="text-align: center;"><strong>16.24亿</strong></td>
+<td>2025年归母净利润。2025年经营现金流24.37亿、经营现金流/净利润=1.50，利润质量扎实</td>
+</tr>
+<tr>
+<td><strong>高增长期（1-5年）</strong></td>
+<td style="text-align: center;"><strong>+17%</strong></td>
+<td>介于共识21-22%与保守之间，仍留安全边际。驱动：智能灯ASP提升+海外订单爆发+控制器放量</td>
+</tr>
+<tr>
+<td><strong>过渡期（6-12年）</strong></td>
+<td style="text-align: center;"><strong>每年-2%递减</strong></td>
+<td>第6年15%→第13年3%，模拟全球化放量后增速自然衰减</td>
+</tr>
+<tr>
+<td><strong>终值增长率</strong></td>
+<td style="text-align: center;"><strong>3%</strong></td>
+<td>与永续经济增速一致，PCF常用假设</td>
+</tr>
+<tr>
+<td><strong>折现率</strong></td>
+<td style="text-align: center;"><strong>11%</strong></td>
+<td>与原DCF一致。WACC约8-9%，加2-3pp安全边际</td>
+</tr>
+<tr>
+<td><strong>净现金</strong></td>
+<td style="text-align: center;"><strong>+22.43亿</strong></td>
+<td>现金23.73亿-有息负债1.3亿</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PCF模型结果：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">阶段</th>
+<th style="text-align: center;">年份</th>
+<th style="text-align: center;">增长率</th>
+<th style="text-align: center;">FCF（亿）</th>
+<th style="text-align: center;">现值（亿）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">高增长期</td>
+<td style="text-align: center;">2026E-2030E</td>
+<td style="text-align: center;">+17%</td>
+<td style="text-align: center;">19.0→35.6</td>
+<td style="text-align: center;"><strong>95.4</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">过渡期</td>
+<td style="text-align: center;">2031E-2037E</td>
+<td style="text-align: center;">15%→3%</td>
+<td style="text-align: center;">40.9→64.8</td>
+<td style="text-align: center;"><strong>147.9</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">终值</td>
+<td style="text-align: center;">2038E起</td>
+<td style="text-align: center;">+3%</td>
+<td style="text-align: center;">TV 834.0</td>
+<td style="text-align: center;"><strong>238.5</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>企业价值</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>481.8</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">+ 净现金</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>22.4</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>股权价值</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>504.2亿</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">÷ 总股本</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2.86亿股</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>每股价值</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>≈176元</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>2.3 敏感性分析</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">高增长期增长率</th>
+<th style="text-align: center;">每股价值</th>
+<th style="text-align: center;">隐含PE（2026E）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">16%</td>
+<td style="text-align: center;"><strong>169元</strong></td>
+<td style="text-align: center;">24.4x</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>17%（基准）</strong></td>
+<td style="text-align: center;"><strong>176元</strong></td>
+<td style="text-align: center;"><strong>25.4x</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">18%</td>
+<td style="text-align: center;"><strong>184元</strong></td>
+<td style="text-align: center;">26.6x</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">折现率</th>
+<th style="text-align: center;">每股价值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">10%</td>
+<td style="text-align: center;"><strong>210元</strong></td>
+<td>WACC上限情景</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>11%（基准）</strong></td>
+<td style="text-align: center;"><strong>176元</strong></td>
+<td>WACC+安全边际</td>
+</tr>
+<tr>
+<td style="text-align: center;">12%</td>
+<td style="text-align: center;"><strong>148元</strong></td>
+<td>保守情景</td>
+</tr>
+</tbody>
+</table>
+<h3>2.4 历史分位与当前位置</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">时期</th>
+<th style="text-align: center;">PE</th>
+<th style="text-align: center;">PB</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">近5年最高</td>
+<td style="text-align: center;">~45x</td>
+<td style="text-align: center;">~5.5x</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: center;">近5年中位</td>
+<td style="text-align: center;">~25-30x</td>
+<td style="text-align: center;">~3.5-4x</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: center;">当前</td>
+<td style="text-align: center;">21.92x</td>
+<td style="text-align: center;">3.08x</td>
+<td>低于历史中位，合理偏低</td>
+</tr>
+<tr>
+<td style="text-align: center;">近5年最低</td>
+<td style="text-align: center;">~15x</td>
+<td style="text-align: center;">~2.5x</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心判断</strong>：PE 21.92x处历史合理偏低。PCF修正后中性估值<strong>176元</strong>，较当前价124.61元有约<strong>30%上行空间</strong>。合理买入区间<strong>130-150元</strong>（安全边际15-30%）。<strong>旧模型的"安全边际不足"结论已不再成立。</strong></p>
+<blockquote>
+<p>来源：星宇股份_601799_千研分析报告_20260506.md §3.7
+来源：用户联合推导（2026-05-17）：PCF修正模型</p>
+</blockquote>
+<h3>2.5 DCF交叉验证</h3>
+<p>作为PCF模型的交叉验证，参考外部机构DCF参数进行估算：</p>
+<p><strong>DCF三情景估值</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">情景</th>
+<th style="text-align: center;">WACC</th>
+<th style="text-align: center;">永续增长率g</th>
+<th style="text-align: center;">每股价值（元）</th>
+<th style="text-align: center;">相对当前（~135元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">乐观</td>
+<td style="text-align: center;">9.1%</td>
+<td style="text-align: center;">3.0%</td>
+<td style="text-align: center;">175-185</td>
+<td style="text-align: center;">+30%</td>
+</tr>
+<tr>
+<td style="text-align: center;">基准</td>
+<td style="text-align: center;">10.5%</td>
+<td style="text-align: center;">2.5%</td>
+<td style="text-align: center;">150-160</td>
+<td style="text-align: center;">+12%</td>
+</tr>
+<tr>
+<td style="text-align: center;">保守</td>
+<td style="text-align: center;">12.0%</td>
+<td style="text-align: center;">2.0%</td>
+<td style="text-align: center;">130-140</td>
+<td style="text-align: center;">-3%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>WACC vs g 敏感性矩阵</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">WACC</th>
+<th style="text-align: center;">g=2.0%</th>
+<th style="text-align: center;">g=2.5%</th>
+<th style="text-align: center;">g=3.0%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">9.1%</td>
+<td style="text-align: center;">150-160</td>
+<td style="text-align: center;">165-175</td>
+<td style="text-align: center;">180-195</td>
+</tr>
+<tr>
+<td style="text-align: center;">10.5%</td>
+<td style="text-align: center;">130-140</td>
+<td style="text-align: center;">145-155</td>
+<td style="text-align: center;">160-170</td>
+</tr>
+<tr>
+<td style="text-align: center;">12.0%</td>
+<td style="text-align: center;">115-125</td>
+<td style="text-align: center;">125-135</td>
+<td style="text-align: center;">140-150</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>DCF基准情景（WACC 10.5%/g 2.5%）对应150-160元，与PCF中性176元接近但略低，差异来自DCF与PCF对永续价值依赖结构的不同。两者互为验证，均支持当前估值合理偏低。
+来源：星宇股份_601799_综合投研分析_20260517.md §四（一）DCF估值</p>
+</blockquote>
+<h2>三、盈利预测</h2>
+<h3>3.1 三年预测</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">年份</th>
+<th style="text-align: center;">营业收入（亿元）</th>
+<th style="text-align: center;">归母净利润（亿元）</th>
+<th style="text-align: center;">YoY</th>
+<th style="text-align: center;">EPS（元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2026E</td>
+<td style="text-align: center;">188.1</td>
+<td style="text-align: center;">20.56</td>
+<td style="text-align: center;">+26.6%</td>
+<td style="text-align: center;">7.19</td>
+</tr>
+<tr>
+<td style="text-align: center;">2027E</td>
+<td style="text-align: center;">225.0</td>
+<td style="text-align: center;">24.77</td>
+<td style="text-align: center;">+20.5%</td>
+<td style="text-align: center;">8.66</td>
+</tr>
+<tr>
+<td style="text-align: center;">2028E</td>
+<td style="text-align: center;">254.2</td>
+<td style="text-align: center;">29.36</td>
+<td style="text-align: center;">+18.5%</td>
+<td style="text-align: center;">10.27</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>2026-2027E采用券商一致预期（国泰海通/银河证券共识），2028E沿用原卡片假设。
+原卡片182.70/19.81（2026E）低于共识188.09/20.56约3%，已上修至共识水平。</p>
+</blockquote>
+<h3>3.2 PCF模型关键假设</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">假设</th>
+<th style="text-align: center;">旧值</th>
+<th style="text-align: center;">新值</th>
+<th style="text-align: left;">修正依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">高增长期增长率</td>
+<td style="text-align: center;">12%</td>
+<td style="text-align: center;"><strong>17%</strong></td>
+<td style="text-align: left;">共识2026-2028净利增速均&gt;21%，17%已留安全边际</td>
+</tr>
+<tr>
+<td style="text-align: left;">高增长期长度</td>
+<td style="text-align: center;">8年</td>
+<td style="text-align: center;"><strong>5年</strong></td>
+<td style="text-align: left;">高增速大概率持续5年后自然衰减</td>
+</tr>
+<tr>
+<td style="text-align: left;">衰减模式</td>
+<td style="text-align: center;">8%匀速</td>
+<td style="text-align: center;"><strong>-2%/年递减</strong></td>
+<td style="text-align: left;">模拟全球化→成熟期的平滑过渡</td>
+</tr>
+<tr>
+<td style="text-align: left;">永续增长率</td>
+<td style="text-align: center;">3%</td>
+<td style="text-align: center;"><strong>3%</strong></td>
+<td style="text-align: left;">不变</td>
+</tr>
+<tr>
+<td style="text-align: left;">折现率</td>
+<td style="text-align: center;">11%</td>
+<td style="text-align: center;"><strong>11%</strong></td>
+<td style="text-align: left;">不变</td>
+</tr>
+<tr>
+<td style="text-align: left;">起始FCF</td>
+<td style="text-align: center;">16.24亿</td>
+<td style="text-align: center;"><strong>16.24亿</strong></td>
+<td style="text-align: left;">2025年净利润</td>
+</tr>
+<tr>
+<td style="text-align: left;">净现金调整</td>
+<td style="text-align: center;">未计入</td>
+<td style="text-align: center;"><strong>+22.43亿</strong></td>
+<td style="text-align: left;">货币资金23.73亿-有息负债1.3亿</td>
+</tr>
+</tbody>
+</table>
+<h3>3.3 敏感性分析</h3>
+<p>PCF估值对增长率和折现率的敏感性：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">变量</th>
+<th style="text-align: center;">变动</th>
+<th style="text-align: center;">估值变动</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">高增长期增长率</td>
+<td style="text-align: center;">+1pp（17%→18%）</td>
+<td style="text-align: center;">+8元（+4.5%）</td>
+<td>对增长率弹性适中</td>
+</tr>
+<tr>
+<td style="text-align: left;">高增长期增长率</td>
+<td style="text-align: center;">-1pp（17%→16%）</td>
+<td style="text-align: center;">-7元（-4.0%）</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">折现率</td>
+<td style="text-align: center;">+1pp（11%→12%）</td>
+<td style="text-align: center;">-28元（-16%）</td>
+<td>对折现率敏感</td>
+</tr>
+<tr>
+<td style="text-align: left;">折现率</td>
+<td style="text-align: center;">-1pp（11%→10%）</td>
+<td style="text-align: center;">+34元（+19%）</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：星宇股份_601799_千研分析报告_20260506.md §3.7
+来源：用户联合推导（2026-05-17）：PCF修正模型</p>
+</blockquote>
+<h2>四、安全边际评估</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">情景</th>
+<th style="text-align: center;">价格</th>
+<th style="text-align: center;">PE（2026E）</th>
+<th>条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Bull</td>
+<td style="text-align: center;">184元</td>
+<td style="text-align: center;">25.6x</td>
+<td>PCF乐观（高增长期18%）</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>基准</strong></td>
+<td style="text-align: center;"><strong>176元</strong></td>
+<td style="text-align: center;"><strong>24.5x</strong></td>
+<td><strong>PCF中性（高增长期17%）← 主锚点</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">Bear</td>
+<td style="text-align: center;">148元</td>
+<td style="text-align: center;">20.6x</td>
+<td>PCF保守（折现率12%）</td>
+</tr>
+<tr>
+<td style="text-align: center;">当前价</td>
+<td style="text-align: center;">124.61元</td>
+<td style="text-align: center;">17.3x</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>退出原则</strong>：不因价格下跌止损，只在公司出现结构性风险变化时考虑退出。</p>
+<p><strong>安全边际</strong>：
+- 当前价124.61元 vs 基准176元 → <strong>上行空间约30%</strong>
+- 安全边际充足（&gt;&gt;15-30%阈值）
+- 即使折现率提至12%，PCF保守仍得148元 → 上行空间约19%
+- 合理买入区间<strong>130-150元</strong>（对应安全边际15-30%）</p>
+<p><strong>旧DCF（111.5元）与新PCF（176元）的差异来源</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>差异项</th>
+<th style="text-align: center;">旧DCF</th>
+<th style="text-align: center;">新PCF</th>
+<th style="text-align: center;">对估值的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高增长期增长率</td>
+<td style="text-align: center;">12%</td>
+<td style="text-align: center;">17%</td>
+<td style="text-align: center;"><strong>+约25元</strong></td>
+</tr>
+<tr>
+<td>衰减模式</td>
+<td style="text-align: center;">8%跃降至3%</td>
+<td style="text-align: center;">15%→3%逐年递减</td>
+<td style="text-align: center;"><strong>+约20元</strong></td>
+</tr>
+<tr>
+<td>净现金调整</td>
+<td style="text-align: center;">未计入</td>
+<td style="text-align: center;">+22.43亿</td>
+<td style="text-align: center;"><strong>+约8元</strong></td>
+</tr>
+<tr>
+<td>增长持续期</td>
+<td style="text-align: center;">8年</td>
+<td style="text-align: center;">5年+7年过渡</td>
+<td style="text-align: center;"><strong>略有抵消</strong></td>
+</tr>
+<tr>
+<td><strong>净差异</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>+约65元</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：用户联合推导（2026-05-17）：PCF修正模型</p>
+</blockquote>
+<h2>五、投资决策</h2>
+<h3>5.1 核心逻辑（一句话）</h3>
+<p>全球车灯智能化升级周期中，中国绝对龙头深度受益。PCF修正后中性估值<strong>176元</strong>，较当前124.61元有约30%上行空间。旧模型12%增长率严重偏低，修正后安全边际转为充足。A级——质优+价合理，建议买入区间130-150元。</p>
+<h3>5.2 不对称机会评估</h3>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th style="text-align: center;">概率</th>
+<th style="text-align: center;">幅度</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上行（→176元+）</td>
+<td style="text-align: center;">45%</td>
+<td style="text-align: center;">+41%+</td>
+<td>智能化+全球化正常兑现，PCF基准达成的概率较高</td>
+</tr>
+<tr>
+<td>下行（→100-110元）</td>
+<td style="text-align: center;">20%</td>
+<td style="text-align: center;">-12%~-20%</td>
+<td>毛利率大幅恶化+全球化失败，但下行有经营现金流支撑</td>
+</tr>
+</tbody>
+</table>
+<p><strong>不对称性</strong>：上行41%+ vs 下行12-20%，不对称比&gt;2，<strong>正向不对称成立</strong>。旧模型的不对称比&lt;1是由增长率假设偏低造成的伪信号，修正后风险收益比已显著改善。</p>
+<h3>5.3 机构观点汇总</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">机构</th>
+<th style="text-align: center;">评级</th>
+<th style="text-align: center;">目标价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Morgan Stanley</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">222.42元</td>
+</tr>
+<tr>
+<td style="text-align: center;">东方证券</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">147.18元</td>
+</tr>
+<tr>
+<td style="text-align: center;">一致预期中位</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"><strong>177.40元</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>其他机构目标价（2026年3-4月）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">机构</th>
+<th style="text-align: center;">评级</th>
+<th style="text-align: center;">目标价（元）</th>
+<th>核心逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Morgan Stanley</td>
+<td style="text-align: center;">增持</td>
+<td style="text-align: center;">176</td>
+<td>智能车灯升级周期+国际化</td>
+</tr>
+<tr>
+<td style="text-align: center;">UBS</td>
+<td style="text-align: center;">买入</td>
+<td style="text-align: center;">170</td>
+<td>WACC=9.1%，DCF法</td>
+</tr>
+<tr>
+<td style="text-align: center;">BofA</td>
+<td style="text-align: center;">买入</td>
+<td style="text-align: center;">159</td>
+<td>2026年PE 30x</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：星宇股份_601799_综合投研分析_20260517.md §四（三）机构目标价对比</p>
+</blockquote>
+<p>修正后的PCF中性176元与机构中位数177.40元高度吻合，验证模型合理。</p>
+<h3>5.4 关键跟踪指标</h3>
+<ul>
+<li>毛利率：&lt;19%为年降侵蚀信号</li>
+<li>季度营收增速：若连续2季&lt;15%，需重估增长期假设</li>
+<li>2026Q3欧洲前灯定点结果：定RFQ转化率是否达标</li>
+<li>机器人定点进展：2026Q2国内定点公告</li>
+</ul>
+<blockquote>
+<p>来源：星宇股份_601799_千研分析报告_20260506.md §3.7、§第四阶段</p>
+</blockquote>
+<h2>六、相关链接</h2>
+<ul>
+<li>01_公司研究/公司卡片/星宇股份_601799/星宇股份总览 - 本页</li>
+<li>商业模式 - 核心竞争力</li>
+<li>成长性 - 成长分析</li>
+<li>盈利能力 - 盈利能力</li>
+<li>风险 - 风险提示</li>
+<li>影响因素 - 短期影响因素</li>
+</ul>
+</div>
+</body>
+</html>

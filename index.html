@@ -90,7 +90,7 @@ body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-syste
 var C=[], sel=null, cix=null;
 var cards=['gailan','shangye','chengzhang','yingli','guzhi','fengxian','yingxiang','luoji','genzong','licheng','biangeng'];
 var cname=['总览','商业模式','成长性','盈利能力','估值','风险','影响因素','逻辑链路','跟踪清单','发展历程','变更记录'];
-var fmap={'gailan':'海大集团总览','shangye':'商业模式','chengzhang':'成长性','yingli':'盈利能力','guzhi':'估值','fengxian':'风险','yingxiang':'影响因素','luoji':'逻辑链路','genzong':'跟踪清单','licheng':'公司发展历程','biangeng':'变更记录'};
+var fmap={'shangye':'商业模式','chengzhang':'成长性','yingli':'盈利能力','guzhi':'估值','fengxian':'风险','yingxiang':'影响因素','luoji':'逻辑链路','genzong':'跟踪清单','licheng':'公司发展历程','biangeng':'变更记录'};
 
 fetch('data/companies.json').then(function(r){return r.json()}).then(function(d){
   C=d; go();
@@ -122,7 +122,7 @@ function ld(k,btn){
   var b=document.querySelectorAll('.tbtn');for(var i=0;i<b.length;i++)b[i].classList.remove('on');
   if(btn)btn.classList.add('on');
   document.getElementById('pg').innerHTML='<div class="ld">加载中...</div>';
-  var fn=fmap[k];if(!fn)return;
+  var fn=k==='gailan'?sel.name+'总览':fmap[k];if(!fn)return;
   fetch(sel.id+'/'+fn+'.html').then(function(r){if(!r.ok)throw Error('404');return r.text()}).then(function(html){
     var d=document.createElement('div');d.innerHTML=html;
     var body=d.querySelector('.body');var h=d.querySelector('.header h1');

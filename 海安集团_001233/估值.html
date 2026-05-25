@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>海安集团 · 估值</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>海安集团 · 估值</h1>
+<h2>一、当前估值位置</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价（2026-05-19）</td>
+<td>57.28元</td>
+<td>Wind金融终端</td>
+</tr>
+<tr>
+<td>市值</td>
+<td>~106.53亿元</td>
+<td>Wind金融终端</td>
+</tr>
+<tr>
+<td>PE(TTM)</td>
+<td>22.66x</td>
+<td>Wind金融终端</td>
+</tr>
+<tr>
+<td>EV（调整后）</td>
+<td>~82亿元</td>
+<td>市值-净金融资产</td>
+</tr>
+<tr>
+<td>EV/PE 2026E</td>
+<td>~12.7x</td>
+<td>当前EV对应2026E（中泰6.43亿）</td>
+</tr>
+<tr>
+<td>EV/PE 2026E</td>
+<td>~11.5x</td>
+<td>当前EV对应2026E（天风7.1亿）</td>
+</tr>
+<tr>
+<td>EV/PE 2027E</td>
+<td>~10.3x</td>
+<td>当前EV对应2027E，严重低估</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心判断</strong>：EV口径下当前仅10.3x PE 2027E，严重低估。中期目标价72-84元（+26%~+47%）。</p>
+<blockquote>
+<p>⚠️ Q1净利润含江铜摊销等过渡性因素，不宜线性外推。管理层预计Q2起业绩回升。</p>
+<p>来源：海安集团_001233_2026Q1交流纪要 §一</p>
+</blockquote>
+<hr />
+<h2>二、核心估值逻辑</h2>
+<h3>2.0 净金融资产（EV口径调整前必读）</h3>
+<blockquote>
+<p>⚠️ 当前106亿市值含 <strong>24亿净金融资产</strong>（含约18亿冗余现金），PE法虚高。须用EV口径重算。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">项目</th>
+<th style="text-align: center;">数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">当前总市值</td>
+<td style="text-align: center;">106亿</td>
+<td>股价~56.98元（2026-05-15）</td>
+</tr>
+<tr>
+<td style="text-align: left;">减：净金融资产</td>
+<td style="text-align: center;">-24亿</td>
+<td>账面冗余资金</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>调整后企业价值(EV)</strong></td>
+<td style="text-align: center;"><strong>82亿</strong></td>
+<td>经营业务真实估值</td>
+</tr>
+<tr>
+<td style="text-align: left;">冗余现金（超额）</td>
+<td style="text-align: center;">~18亿</td>
+<td>每股约8.5元纯安全垫</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>IPO募资26亿消耗预期</strong>：其中22亿用于全钢巨胎项目。募投落地后净金融资产将从24亿消耗至约4-6亿运营底线，冗余现金非永久留存。后续资本开支须从现金流口径扣除。</p>
+</blockquote>
+<h3>2.1 估值锚点与方法选择</h3>
+<table>
+<thead>
+<tr>
+<th>公司类型</th>
+<th>推荐方法</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>成长型高端制造</td>
+<td>PE + DCF</td>
+<td>盈利稳定+高壁垒</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本方法选择</strong>：EV/PE为主（考虑净金融资产），PE辅助参考。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>目标价</th>
+<th>隐含空间（vs ~56.98元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EV/PE法（18-20x × 2027E净利润8亿）</td>
+<td>73-84元</td>
+<td>+28%~+47%</td>
+</tr>
+<tr>
+<td>PE法（18-20x 正常化利润）</td>
+<td>65-75元</td>
+<td>+14%~+32%</td>
+</tr>
+<tr>
+<td><strong>中期综合目标价（2027）</strong></td>
+<td><strong>72-84元</strong></td>
+<td><strong>+26%~+47%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 EV口径估值重算（核心）</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">评估时点</th>
+<th style="text-align: right;">净利润预测</th>
+<th style="text-align: right;">EV(82亿)对应PE</th>
+<th style="text-align: right;">EV合理PE</th>
+<th style="text-align: right;">调整后EV目标</th>
+<th style="text-align: right;">+期末净金融资产</th>
+<th style="text-align: right;">目标总市值</th>
+<th style="text-align: right;">目标价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2026E（中泰）</td>
+<td style="text-align: right;">6.43亿</td>
+<td style="text-align: right;">12.7x</td>
+<td style="text-align: right;">17-20x</td>
+<td style="text-align: right;">109-129亿</td>
+<td style="text-align: right;">+26亿</td>
+<td style="text-align: right;"><strong>135-155亿</strong></td>
+<td style="text-align: right;">64-74元</td>
+</tr>
+<tr>
+<td style="text-align: center;">2026E（天风）</td>
+<td style="text-align: right;">7.1亿</td>
+<td style="text-align: right;">11.5x</td>
+<td style="text-align: right;">17-20x</td>
+<td style="text-align: right;">121-142亿</td>
+<td style="text-align: right;">+26亿</td>
+<td style="text-align: right;"><strong>147-168亿</strong></td>
+<td style="text-align: right;">70-80元</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2027E</strong></td>
+<td style="text-align: right;"><strong>8.0亿</strong></td>
+<td style="text-align: right;"><strong>10.3x</strong></td>
+<td style="text-align: right;"><strong>17-20x</strong></td>
+<td style="text-align: right;"><strong>136-160亿</strong></td>
+<td style="text-align: right;"><strong>+29亿</strong></td>
+<td style="text-align: right;"><strong>165-189亿</strong></td>
+<td style="text-align: right;"><strong>78-89元</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2028E</td>
+<td style="text-align: right;">10.0亿</td>
+<td style="text-align: right;">8.2x</td>
+<td style="text-align: right;">16-20x</td>
+<td style="text-align: right;">160-200亿</td>
+<td style="text-align: right;">+31亿</td>
+<td style="text-align: right;"><strong>191-231亿</strong></td>
+<td style="text-align: right;">90-109元</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：取2027年为中期锚点。EV/PE 18x（高壁垒成长股合理溢价）× 8亿净利润 + 29亿净金融资产 = <strong>约173亿 ≈ 82元</strong></p>
+</blockquote>
+<h3>2.3 可比公司分析</h3>
+<table>
+<thead>
+<tr>
+<th>可比公司</th>
+<th>PE(TTM)</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赛轮轮胎</td>
+<td>15-20x</td>
+<td>国内轮胎龙头，通用胎为主</td>
+</tr>
+<tr>
+<td>玲珑轮胎</td>
+<td>12-18x</td>
+<td>国内轮胎第二梯队</td>
+</tr>
+<tr>
+<td>森麒麟</td>
+<td>14-18x</td>
+<td>专注高性能轮胎</td>
+</tr>
+</tbody>
+</table>
+<p><strong>海安集团定位</strong>：技术壁垒极高（全球仅3家）+竞争格局好，合理EV/PE <strong>17-20倍</strong>（较可比公司溢价20-30%）。</p>
+<blockquote>
+<p>考虑净金融资产后，实际EV口径PE更低，当前82亿EV对应2027E约10.3x，处于低估。</p>
+<p>来源：海安集团_001233_综合投研分析_20260519.md §4.2</p>
+</blockquote>
+<hr />
+<h2>三、盈利与现金流预测</h2>
+<h3>3.1 三年盈利与资本开支预测</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">年份</th>
+<th style="text-align: right;">归母净利润</th>
+<th style="text-align: right;">经营现金流（E）</th>
+<th style="text-align: right;">资本开支</th>
+<th style="text-align: right;">自由现金流</th>
+<th style="text-align: right;">累计净金融资产</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2026E</td>
+<td style="text-align: right;">6.5亿</td>
+<td style="text-align: right;">5.5亿</td>
+<td style="text-align: right;">4亿</td>
+<td style="text-align: right;">+1.5亿</td>
+<td style="text-align: right;">24亿→26亿</td>
+</tr>
+<tr>
+<td style="text-align: center;">2027E</td>
+<td style="text-align: right;">8.0亿</td>
+<td style="text-align: right;">7.0亿</td>
+<td style="text-align: right;">4亿</td>
+<td style="text-align: right;">+3.0亿</td>
+<td style="text-align: right;">26亿→29亿</td>
+</tr>
+<tr>
+<td style="text-align: center;">2028E</td>
+<td style="text-align: right;">10.0亿</td>
+<td style="text-align: right;">9.0亿</td>
+<td style="text-align: right;">2亿</td>
+<td style="text-align: right;">+7.0亿</td>
+<td style="text-align: right;">29亿→31亿</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：资本开支含募投续投+俄罗斯建厂合资款。2028年俄罗斯建厂基本完工后资本开支回落。</p>
+</blockquote>
+<h3>3.2 净现比讨论</h3>
+<blockquote>
+<p>2024年净现比0.7（经营现金流/净利润=0.7），引发"现金流质量是否恶化"的疑问。</p>
+</blockquote>
+<p><strong>关键修正判断</strong>：
+- 净现比偏低主因：扩产期需为客户垫资 + 俄罗斯客户回款审核延长
+- 但Q1的应收/营收比179%是<strong>分母缩小导致的失真</strong>（Q1营收4.74亿受过渡因素影响异常低），并非分子扩大恶化
+- 经营现金流同比+657%（2026Q1），实际收钱能力在改善
+- 预计全年营收正常化后，净现比将回到<strong>0.85-1.0</strong>的健康区间</p>
+<p><strong>对PCF估值的影响</strong>：
+| 情景 | 经营现金流 | EV/PCF | 判断 |
+|:----:|:----------:|:------:|------|
+| 阶段性问题（Q1失真） | 5.0-5.5亿（全年正常化后） | 15-16x | ✅ 原估值结论成立 |
+| 结构性问题（非失真） | 3.9亿（按0.7净现比） | 21x | ❌ 原估值不成立 |</p>
+<p><strong>结论</strong>：当前证据支持"阶段性"判断，净现比0.7不改变原估值前提。但需持续跟踪全年应收/营收比的正常化进程。</p>
+<blockquote>
+<p>来源：联网调研（审计报告+2026Q1财报简析）</p>
+</blockquote>
+<h3>3.3 关键假设</h3>
+<h3>3.4 敏感性分析</h3>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>变化</th>
+<th>对净利润影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛利率</td>
+<td>±2pct</td>
+<td>±0.4-0.5亿</td>
+</tr>
+<tr>
+<td>在手订单</td>
+<td>±10%</td>
+<td>±2亿</td>
+</tr>
+<tr>
+<td>天胶价格</td>
+<td>+20%</td>
+<td>-0.3亿</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：海安集团_001233_2026Q1交流纪要 §三</p>
+</blockquote>
+<hr />
+<h2>四、EV调整后安全边际评估</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">情景</th>
+<th style="text-align: center;">年份</th>
+<th style="text-align: right;">价格</th>
+<th style="text-align: center;">EV对应PE</th>
+<th>条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Bear</td>
+<td style="text-align: center;">2026</td>
+<td style="text-align: right;">50-55元</td>
+<td style="text-align: center;">约12-14x</td>
+<td>过渡因素持续+地缘恶化</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>基准</strong></td>
+<td style="text-align: center;"><strong>2027</strong></td>
+<td style="text-align: right;"><strong>72-84元</strong></td>
+<td style="text-align: center;"><strong>约17-20x</strong></td>
+<td><strong>产能释放+Q2业绩验证</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">Bull</td>
+<td style="text-align: center;">2028</td>
+<td style="text-align: right;">90-100元</td>
+<td style="text-align: center;">约16-20x</td>
+<td>毛利率修复+产能超预期+海外突破</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>三情景概率：悲观20% / 基准55% / 乐观25%，概率加权目标价72元。</p>
+</blockquote>
+<p><strong>当前股价</strong>：57.28元（106.53亿市值），对应2027E EV/PE约10.3x，严重低估</p>
+<p><strong>退出原则</strong>：不因价格下跌止损，只在公司出现结构性风险变化（护城河侵蚀/商业模式恶化/逻辑被证伪）时考虑退出。</p>
+<blockquote>
+<p>⚠️ 11月43.86%解禁折价：大量解禁筹码冲击下，实际估值可能在中性区间下沿（~72元），须预留10-15%折价。</p>
+</blockquote>
+<hr />
+<h2>五、投资决策</h2>
+<h3>5.1 核心逻辑（一句话）</h3>
+<blockquote>
+<p>全钢巨胎稀缺标的，深度绑定矿业龙头。当前106亿市值含24亿净金融资产，调整EV后仅82亿，对应2027E约10.3x PE，严重低估。中期目标价72-84元（+26%~+47%），冗余现金约18亿（每股~8.5元）为纯安全垫。</p>
+</blockquote>
+<h3>5.2 不对称机会评估</h3>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>概率</th>
+<th>幅度</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上行（&gt;82元）</td>
+<td>50%</td>
+<td>+55%</td>
+<td>Q2业绩验证+估值修复至EV/PE 18x</td>
+</tr>
+<tr>
+<td>下行（&lt;44元）</td>
+<td>20%</td>
+<td>-17%</td>
+<td>过渡因素持续+解禁压制</td>
+</tr>
+</tbody>
+</table>
+<p><strong>不对称性</strong>：EV口径下风险收益比约3:1，上行空间显著大于下行风险。</p>
+<h3>5.3 机构观点汇总</h3>
+<table>
+<thead>
+<tr>
+<th>券商</th>
+<th>评级</th>
+<th>目标价</th>
+<th>上行空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>天风证券</td>
+<td>增持</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>山西证券</td>
+<td>买入-B</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>5.4 关键跟踪指标</h3>
+<ul>
+<li>Q2毛利率是否回升至40%+</li>
+<li>在手订单金额变化</li>
+<li>大承包业务占比变化</li>
+<li>净金融资产消耗节奏（关注募投项目支出）</li>
+<li>11月解禁规模与市场承接情况</li>
+</ul>
+<hr />
+<h2>七、相关链接</h2>
+<ul>
+<li>01_公司研究/公司卡片/海安集团_001233/海安集团总览 - 总览</li>
+<li>商业模式 - 核心竞争力</li>
+<li>成长性 - 成长分析</li>
+<li>盈利能力 - 盈利能力</li>
+<li>风险 - 风险提示</li>
+<li>影响因素 - 短期影响因素</li>
+<li>逻辑链路 - 因果断言网络</li>
+<li>跟踪清单 - 关键判断监控</li>
+</ul>
+<blockquote>
+<p>来源：海安集团_001233_综合投研分析_20260418.md §四 + 海安集团_001233_2026Q1交流纪要</p>
+</blockquote>
+</div>
+</body>
+</html>

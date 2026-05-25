@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>怡合达 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>怡合达 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<hr />
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>锂电持续高增 → 收入增速维持</td>
+<td><strong>高</strong></td>
+<td>总览：成长性A</td>
+<td>锂电增速跌破20%</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td></td>
+<td>半导体爆发 → 打造第二成长曲线</td>
+<td><strong>高</strong></td>
+<td>总览：成长性A</td>
+<td>前道客户认证进展缓慢</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td></td>
+<td>非标数字化 → 长期壁垒构建</td>
+<td><strong>中</strong></td>
+<td>总览：商业模式A</td>
+<td>数字化进展不及预期</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td></td>
+<td>毛利率提升 → 定价权验证</td>
+<td><strong>高</strong></td>
+<td>总览：盈利能力B+</td>
+<td>毛利率跌破35%</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td></td>
+<td>费用率回落 → 利润增速回升</td>
+<td><strong>中</strong></td>
+<td>总览：盈利能力B+</td>
+<td>Q2-Q3费用率未回落</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td></td>
+<td>减持完成 → 筹码压力解除</td>
+<td><strong>高</strong></td>
+<td>总览：估值B</td>
+<td>减持延期或扩大</td>
+<td>2026-05-15</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>二、链路详情</h2>
+<h3>LK-001：锂电持续高增，收入增速维持</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果锂电行业维持40%+增速，且下游头部客户释放超预期产能规划，则怡合达收入增速将维持在20%以上，平台规模效应持续放大。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】2025年锂电营收增速40%+，收入占比23%（2024年19%）</li>
+<li>【L2】2026Q1锂电增速仍维持40%+，占比进一步提升至27%</li>
+<li>【L2】下游客户年初工商大会释放超预期产能规划，二线厂商出海+新技术布局</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>新能源车渗透率持续提升</li>
+<li>锂电资本开支维持正增长</li>
+<li>下游客户扩产计划顺利执行</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>锂电增速连续两季度跌破20%</li>
+<li>头部电池厂商资本开支下调</li>
+<li>新能源车渗透率提升放缓</li>
+</ul>
+<p><strong>置信度：高</strong>
+<strong>置信度依据</strong>：数据来自一手交流纪要，Q1已验证，当前行业景气度较高。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/2026-05-15_怡合达2025年年报交流 §二、分行业业务表现</p>
+</blockquote>
+<hr />
+<h3>LK-002：半导体爆发，打造第二成长曲线</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果半导体业务维持60%+增速，且从前道客户认证中逐步获得订单，则半导体业务将从"概念"进入"兑现"阶段，成为第二成长曲线。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】2025年半导体营收增速30%+，成交客户1200+家</li>
+<li>【L2】2026Q1营收增速达60%+，占比提升至7%</li>
+<li>【L2】成立专门半导体事业部，匹配行业差异化需求</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>半导体设备国产化持续推进</li>
+<li>前道客户认证通过</li>
+<li>订单逐步落地</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>半导体增速连续两季度跌破30%</li>
+<li>前道客户认证进展缓慢（超过1年未突破）</li>
+<li>半导体行业资本开支下滑</li>
+</ul>
+<p><strong>置信度：高</strong>
+<strong>置信度依据</strong>：Q1数据强劲（+60%），行业国产化趋势明确，逻辑清晰。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/2026-05-15_怡合达2025年年报交流 §二、分行业业务表现</p>
+</blockquote>
+<hr />
+<h3>LK-003：非标数字化，长期壁垒构建</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果非标业务数字化持续推进（自动报价90%+、自动编程2.0），则人工依赖度将逐步降低，报价编程效率提升，非标业务将从"成本中心"转为"利润贡献"。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】自动报价系统3D模型解析覆盖率90%+</li>
+<li>【L2】自动编程系统已升级至2.0版本</li>
+<li>【L2】柔性产线稼动率从10%+提升至30%+</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>数字化系统持续迭代</li>
+<li>客户图纸数积累</li>
+<li>人工成本占比下降</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>数字化投入大幅低于预期</li>
+<li>非标业务营收增速放缓</li>
+<li>云制造模式推进受阻</li>
+</ul>
+<p><strong>置信度：中</strong>
+<strong>置信度依据</strong>：数字化进展明确，但非标业务规模仍小（1.15亿），盈利贡献有限，需持续跟踪。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/2026-05-15_怡合达2025年年报交流 §三、非标业务运营</p>
+</blockquote>
+<hr />
+<h3>LK-004：毛利率提升，定价权验证</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果毛利率维持在38%+且持续提升，则说明平台具备定价权，客户结构优化+规模效应持续发挥作用。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】2025年毛利率39.14%（+3.89pct），持续提升</li>
+<li>【L2】2026Q1毛利率39.02%，环比2025Q4提升0.86pct</li>
+<li>【L2】客户结构优化（大客户长尾需求聚焦+中小客户占比提升）</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>客户结构持续优化</li>
+<li>规模效应持续发挥</li>
+<li>无恶性价格战</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>毛利率跌破35%</li>
+<li>锂电等大客户压价加剧</li>
+<li>竞争加剧导致价格战</li>
+</ul>
+<p><strong>置信度：高</strong>
+<strong>置信度依据</strong>：数据验证清晰（39%且持续提升），驱动力明确。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/2026-05-15_怡合达2025年年报交流 §五、财务指标深度分析</p>
+</blockquote>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-004</td>
+<td><strong>并行</strong></td>
+<td>锂电高增和毛利率提升共同支撑"平台价值"判断</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-001</td>
+<td><strong>独立</strong></td>
+<td>半导体是独立于锂电的第二成长曲线</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-004</td>
+<td><strong>并行</strong></td>
+<td>非标数字化和定价权提升共同支撑"长期壁垒"判断</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-004</td>
+<td><strong>依赖</strong></td>
+<td>费用率回落是净利率提升的短期条件，与定价权并行</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-005</td>
+<td><strong>独立</strong></td>
+<td>减持解除是情绪修复，与基本面改善逻辑独立</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B的成立依赖于A的成立
+- <strong>并行</strong>：A与B独立，共同支撑同一结论
+- <strong>独立</strong>：A与B相互独立，分别支撑不同结论</p>
+<hr />
+<h2>四、关联卡片</h2>
+<ul>
+<li>01_公司研究/公司卡片/怡合达_301029/怡合达总览 — 关联判断：FA平台龙头，锂电+半导体双轮驱动，综合评级A级</li>
+<li>商业模式 — 关联判断：285万SKU+4.6万客户，平台护城河，评级A</li>
+<li>成长性 — 关联判断：锂电+40%/半导体+60%/非标+50%，评级A</li>
+<li>盈利能力 — 关联判断：毛利率39%+且持续提升，评级B+</li>
+<li>风险 — 关联判断：锂电集中度过高是核心风险</li>
+<li>估值 — 关联判断：平台型公司享有估值溢价</li>
+<li>影响因素 — 关联判断：锂电/半导体/非标是关键跟踪因素</li>
+<li>跟踪清单 — 关联判断：各链路跟踪项（T-01至T-04）</li>
+</ul>
+<hr />
+<h2>五、来源</h2>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/2026-05-15_怡合达2025年年报交流 §一~§七（全文）</p>
+</blockquote>
+<hr />
+<h3>LK-005：费用率回落，利润增速回升</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果Q2-Q3费用率出现环比回落（管理费用率下降超0.5pct），则净利润增速将从Q1的6%重新加速至20%以上，支撑估值修复。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】Q1管理费用率同比+1.98pct，主因股权激励费用和人员扩招</li>
+<li>【L2】每季度计提700-800万元股份支付费用，摊销趋于稳定</li>
+<li>【L2】J.P. Morgan和中金公司预计费用率在Q2-Q3回落</li>
+<li>【L2】公司内部目标：2026年利润增速超收入增速</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>股权激励费用摊销稳定</li>
+<li>营收持续增长摊薄固定费用</li>
+<li>无重大人员扩张计划</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>Q2净利润增速仍低于15%</li>
+<li>管理费用率连续两季度超过11%</li>
+<li>BofA下调2026/27年盈利预测3%/1%</li>
+</ul>
+<p><strong>置信度：中</strong>
+<strong>置信度依据</strong>：历史上费用率上行是短期因素，Q1增速6%低于预期的23%存在预期差，但需Q2数据验证。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/怡合达_301029.SZ_综合投研分析_20260515 §3.1 预期地图</p>
+</blockquote>
+<hr />
+<h3>LK-006：管理层减持完成，筹码压力解除</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果实控人一致行动人减持计划执行完毕（约1.8%），则短期筹码压力解除，股价有望迎来估值修复行情。</p>
+</blockquote>
+<p><strong>支持依据：</strong></p>
+<ul>
+<li>【L2】2026年3月公告减持不超过2.73%</li>
+<li>【L2】2026年5月8日已完成0.93%，尚有约1.8%待减持</li>
+<li>【L2】预计2026年7月减持计划执行完毕</li>
+<li>【L4】减持是短期情绪压制，不影响公司基本面</li>
+</ul>
+<p><strong>适用条件：</strong></p>
+<ul>
+<li>减持计划正常执行</li>
+<li>无新的减持公告</li>
+<li>大盘无系统性风险</li>
+</ul>
+<p><strong>失效信号：</strong></p>
+<ul>
+<li>减持计划延期</li>
+<li>实控人扩大减持范围</li>
+<li>新增其他股东大额减持</li>
+</ul>
+<p><strong>置信度：高</strong>
+<strong>置信度依据</strong>：减持是有明确时间表的短期因素，执行完毕后压力解除逻辑清晰。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/怡合达_301029.SZ_综合投研分析_20260515 §2.8 管理层评价</p>
+</blockquote>
+</div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>泡泡玛特 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>泡泡玛特 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>Labubu热度持续+新IP验证→IP平台化逻辑成立→估值重塑</td>
+<td>中</td>
+<td>总览、商业模式、成长性</td>
+<td>Labubu二手价格跌30%+，新IP失败</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>海外门店持续扩张→海外收入占比提升→全球化逻辑验证</td>
+<td>高</td>
+<td>总览、成长性、估值</td>
+<td>海外单店产出持续下降</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>毛绒品类天花板高→情绪消费扩容→长期增长空间打开</td>
+<td>中</td>
+<td>总览、成长性、估值</td>
+<td>毛绒品类增速低于50%</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>供应链柔性化→毛利率持续提升→盈利能力增强</td>
+<td>中</td>
+<td>商业模式、盈利能力</td>
+<td>毛利率下降超过5pct</td>
+<td>2026-05-14</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：IP平台化逻辑验证</h3>
+<p><strong>因果断言：</strong>
+如果Labubu热度维持（二手价格指数不持续下跌超过30%）且Merodi/KeyA在发布后6个月内进入收入过亿IP清单，则IP平台化逻辑成立，估值将从当前15x PE重塑至18-20x PE，对应股价HKD 188-221（+17-38%）。</p>
+<p><strong>支持依据：</strong>
+【L2】THE MONSTERS成为首个百亿级IP，6个IP收入超20亿，17个IP过亿，IP矩阵高度成熟化。2025年发布57个新IP证明持续孵化能力。泡泡玛特城市乐园1.5期2026年4月30日升级开业，Labubu电影项目推进，IP变现渠道多元化。</p>
+<p><strong>适用条件：</strong>
+此断言在Q1业绩验证高增长持续性、Merodi/KeyA市场接受度良好、宏观消费环境不急剧恶化条件下成立。</p>
+<p><strong>失效信号：</strong>
+- Labubu二手市场价格指数持续下跌超过30%
+- Merodi或KeyA在发布后6个月内未能进入收入过亿IP清单
+- 2026年Q1业绩低于Bloomberg一致预期
+- 机构大幅下调盈利预测</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> Labubu已持续高热超过两年，从高点已回撤50%+，新IP尚未验证，Q1业绩是关键验证节点。</p>
+<h3>LK-002：全球化逻辑验证</h3>
+<p><strong>因果断言：</strong>
+如果海外门店保持每季度新增50+家且海外单店产出维持在4000万元以上，则海外收入占比将从当前43.8%提升至2027年的55%以上，推动整体收入保持20%以上增速，全球化逻辑持续验证。</p>
+<p><strong>支持依据：</strong>
+【L2】2025年海外收入占比43.8%（+4.95pct YoY），美洲收入+748.4%爆发，欧洲占比仅3.9%空间巨大。630家门店（欧洲36家），海外单店5221万元同比+116.9%。全球潮玩市场2025年预计520亿美元，海外市场渗透率极低。</p>
+<p><strong>适用条件：</strong>
+此断言在海外门店扩张顺利、消费者文化接受度持续提升、竞争者不大幅抢占市场条件下成立。</p>
+<p><strong>失效信号：</strong>
+- 海外单店产出连续两个季度环比下滑超过15%
+- 海外门店扩张进度大幅低于预期（季度新增低于30家）
+- 海外市场出现强竞争对手（如乐高加大潮玩布局）</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 美洲+748.4%验证了海外市场接受度，门店扩张计划具体可跟踪，但需持续验证单店产出。</p>
+<h3>LK-003：情绪消费扩容逻辑</h3>
+<p><strong>因果断言：</strong>
+如果中国情绪经济市场规模从2.7万亿元扩容至4.6万亿元（2029年），且泡泡玛特保持21%+市场份额，则公司2029年收入有望突破800-1000亿元，是2025年的2.5-3倍。</p>
+<p><strong>支持依据：</strong>
+【L2】中国情绪经济市场规模2.7万亿元（2025年），预计2029年达4.6万亿元。泡泡玛特以21.8%市占率绝对领先。潮玩作为情绪消费核心品类，渗透率仍有提升空间。</p>
+<p><strong>适用条件：</strong>
+此断言在情绪消费行业持续扩容、公司市场份额不大幅流失、消费人群年龄跨度持续扩大条件下成立。</p>
+<p><strong>失效信号：</strong>
+- 情绪消费行业增速大幅放缓（低于10%）
+- 公司市场份额被竞争对手侵蚀（降至15%以下）
+- Z世代消费意愿大幅下降</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 宏观趋势有利，但行业扩张速度和公司份额均存在不确定性，远期预测不确定性高。</p>
+<h3>LK-004：供应链柔性化提升盈利能力</h3>
+<p><strong>因果断言：</strong>
+如果供应链数字化灯塔工厂持续提升效率，则毛利率有望从当前72.1%提升至75-78%，调整后净利率从35.2%提升至38-40%，推动利润增速持续高于收入增速。</p>
+<p><strong>支持依据：</strong>
+【L2】2025年毛利率72.1%同比+5.3pct，供应链柔性化贡献0.9pct。数字化灯塔工厂实现快速响应市场需求同时控制库存风险（120天周转天数）。销售费用率21.8%同比-6.2pct，管理费用率4.8%同比-2.5pct，体现规模效应。</p>
+<p><strong>适用条件：</strong>
+此断言在海外占比持续提升（海外毛利率更高）、供应链效率持续改善、授权费占比持续下降条件下成立。</p>
+<p><strong>失效信号：</strong>
+- 毛利率下降超过5pct（低于67%）
+- 销售费用率大幅上升（超过25%）
+- 库存周转天数超过150天</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 2025年已验证供应链改善驱动毛利率提升，但持续性和幅度存在不确定性。</p>
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td>并行</td>
+<td>IP平台化和全球化共同支撑估值，独立验证</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td>依赖</td>
+<td>LK-003情绪消费扩容是LK-001长期逻辑的基础</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-003</td>
+<td>并行</td>
+<td>海外扩张和情绪消费扩容共同支撑长期增长</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-004</td>
+<td>并行</td>
+<td>IP平台化和供应链改善共同支撑盈利能力提升</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<h2>四、关联卡片</h2>
+<ul>
+<li>01_公司研究/公司卡片/泡泡玛特_9992.HK/泡泡玛特总览 — 关联判断：★★★★☆中性偏谨慎，PE 15x安全边际有限</li>
+<li>商业模式 — 关联判断：IP平台化+全产业链闭环，护城河强</li>
+<li>成长性 — 关联判断：全球化+IP梯队+情绪消费三驱动</li>
+<li>盈利能力 — 关联判断：毛利率72.1%，净利率35.2%，消费品顶级</li>
+<li>风险 — 关联判断：IP生命周期风险，估值透支风险</li>
+</ul>
+<blockquote>
+<p>来源：01_公司研究/原始资料/泡泡玛特_9992.HK/泡泡玛特_9992.HK_综合投研分析_20260513 §一至§六</p>
+</blockquote>
+</div>
+</body>
+</html>

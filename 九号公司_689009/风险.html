@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>九号公司 · 风险</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>九号公司 · 风险</h1>
+<h2>一、风险总表</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">编号</th>
+<th>风险类别</th>
+<th>风险描述</th>
+<th style="text-align: center;">影响程度</th>
+<th style="text-align: center;">发生概率</th>
+<th style="text-align: center;">可控性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">R1</td>
+<td><strong>汇率风险</strong></td>
+<td>26Q1汇兑损失2.48亿导致净利-55%</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R2</td>
+<td><strong>原材料风险</strong></td>
+<td>铜铝涨价压缩毛利率（Q1 -3.1pct）</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R3</td>
+<td><strong>反倾销风险</strong></td>
+<td>欧盟割草机器人调查，6月初裁</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R4</td>
+<td><strong>竞争风险</strong></td>
+<td>传统龙头加大智能化投入，"九号化"趋势明显但表层模仿影响有限</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R5</td>
+<td><strong>新业务拓展</strong></td>
+<td>美国/日本/东南亚开拓不确定</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中低</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R6</td>
+<td><strong>季节性波动</strong></td>
+<td>Q1/Q4传统淡季，净利率波动大</td>
+<td style="text-align: center;">低</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R7</td>
+<td><strong>电摩占比偏高</strong></td>
+<td>Q1电摩占比远超预期，Q2起电自占比将回升</td>
+<td style="text-align: center;">低-中</td>
+<td style="text-align: center;">低</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R8</td>
+<td><strong>越南本土化</strong></td>
+<td>日系品牌（本田）根基深厚，渠道壁垒高</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R9</td>
+<td><strong>新国标监管</strong></td>
+<td>北上广深等核心城市监管偏严，区域分化</td>
+<td style="text-align: center;">低-中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">低</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：九号公司_689009_综合投研分析_20260506.md §3.5
+来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §五（一）+ §六（三）</p>
+<p>来源：九号公司_689009_综合投研分析_20260506.md §3.5</p>
+</blockquote>
+<hr />
+<h2>二、核心风险详解</h2>
+<h3>2.1 汇率风险（R1）</h3>
+<p><strong>风险量化</strong>：26Q1汇兑损失2.48亿元，直接导致归母净利润-55%。</p>
+<p><strong>影响机制</strong>：
+- 海外收入占比40%
+- 人民币升值导致欧元应收款产生汇兑损失
+- 影响为一次性/非经常性，不削弱核心竞争力</p>
+<p><strong>对冲机制</strong>：
+- 管理层优化汇率对冲策略
+- 马来西亚/越南海外产能建设，降低人民币敞口
+- 海外收入多元化（多币种结算）</p>
+<p><strong>监控指标</strong>：单季汇兑损益金额（&gt;1亿元需关注）</p>
+<blockquote>
+<p>来源：九号公司_689009_综合投研分析_20260506.md §2.4.2</p>
+</blockquote>
+<hr />
+<h3>2.2 原材料风险（R2）</h3>
+<p><strong>风险量化</strong>：26Q1毛利率26.5%（-3.1pct），原材料成本占COGS约85%。</p>
+<p><strong>影响机制</strong>：铜铝等大宗商品涨价推升成本，压缩毛利率。</p>
+<p><strong>对冲机制</strong>：
+- 2026年4月起对国内两轮车提价
+- 新品结构优化（高毛利产品占比提升）
+- 多品类共享供应链，规模效应</p>
+<p><strong>监控指标</strong>：毛利率变化（&lt;27%需警惕）</p>
+<blockquote>
+<p>来源：九号公司_689009_综合投研分析_20260506.md §3.5</p>
+</blockquote>
+<hr />
+<h3>2.3 反倾销风险（R3）</h3>
+<p><strong>风险量化</strong>：割草机器人收入20.02亿元（占比9.4%），欧洲为主要市场。</p>
+<p><strong>影响机制</strong>：加征关税增加出口成本，短期利润承压。</p>
+<p><strong>对冲机制</strong>：
+- 马来西亚工厂：2026年&gt;10%，2027年目标100%承接
+- 短期抢先发货至欧洲海外仓
+- 中长期利好龙头格局出清</p>
+<p><strong>监控指标</strong>：2026年6月初裁结果</p>
+<blockquote>
+<p>来源：九号公司_689009_综合投研分析_20260506.md §3.5</p>
+</blockquote>
+<hr />
+<h3>2.4 竞争风险（R4）</h3>
+<p><strong>风险量化</strong>：九号研发费用率6%，传统龙头约3%，差距仍显著。</p>
+<p><strong>影响机制</strong>：雅迪/爱玛加大智能化投入，可能加剧高端市场竞争。</p>
+<p><strong>对冲机制</strong>：
+- 持续高研发投入（12.5亿元，+51.3%）
+- E2W专利比雅迪/爱玛高约20%
+- 渠道扩张（计划净增2,000家门店）</p>
+<p><strong>监控指标</strong>：两轮车月销量增速（&lt;10%需警惕份额流失）</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §一（一）产品力差异化布局</p>
+</blockquote>
+<h3>2.5 电摩占比偏高风险（R7）</h3>
+<p><strong>风险量化</strong>：Q1电摩占比远超预期，产品结构偏离预期。</p>
+<p><strong>影响机制</strong>：电摩以铅酸车为主（未配电池），导致表观单车均价下滑；新国标电自6月上市后结构将趋于平衡。</p>
+<p><strong>对冲机制</strong>：
+- 5月底起豪华国标电自陆续上市
+- Q2起电自占比将逐步回升
+- 长期来看电摩为公司独有竞争优势</p>
+<p><strong>监控指标</strong>：电自销量占比（Q2起是否回升）</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §四（一）+ §六（一）</p>
+</blockquote>
+<h3>2.6 越南本土化风险（R8）</h3>
+<p><strong>风险量化</strong>：日系品牌（本田）在越南深耕多年，渠道优势深厚。</p>
+<p><strong>影响机制</strong>：公共充电网络不成熟，用户依赖家庭充电；日系品牌网点完善，竞争壁垒高。</p>
+<p><strong>对冲机制</strong>：
+- 3月已完成深度调研，了解合作契机
+- 国内优质代理商对越南兴趣浓厚，具备本地资源
+- 整合中越两地渠道资源，零售+服务本地化</p>
+<p><strong>监控指标</strong>：越南市场产品上市节奏、渠道铺设进度</p>
+<h3>2.7 新国标监管风险（R9）</h3>
+<p><strong>风险量化</strong>：当前仅北上广深、南京、杭州、武汉等核心中心城市监管偏严，低线城市无影响。</p>
+<p><strong>影响机制</strong>：新国标对速度/参数限制可能导致产品功能受限，但消费者后续可自主调整使用方式，市场需求未见下降。</p>
+<p><strong>对冲机制</strong>：
+- 全链路合规经营原则，工厂端+门店端严格合规
+- 豪华电自市场需求维持强劲
+- 影响区域逐步减缓，政策影响进入尾声</p>
+<p><strong>监控指标</strong>：核心城市监管力度变化，电自销量变化</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §五（一）+ §六（三）+ §八（一）</p>
+</blockquote>
+<hr />
+<h2>三、风险排查汇总</h2>
+<table>
+<thead>
+<tr>
+<th>风险项</th>
+<th>风险程度</th>
+<th>关键监控指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汇率风险</td>
+<td>高</td>
+<td>汇兑损益金额</td>
+</tr>
+<tr>
+<td>原材料风险</td>
+<td>中</td>
+<td>毛利率变化</td>
+</tr>
+<tr>
+<td>反倾销风险</td>
+<td>中</td>
+<td>6月初裁结果</td>
+</tr>
+<tr>
+<td>竞争风险</td>
+<td>中低</td>
+<td>两轮车销量增速</td>
+</tr>
+<tr>
+<td>新业务拓展</td>
+<td>中</td>
+<td>割草机器人激活量</td>
+</tr>
+<tr>
+<td>季节性波动</td>
+<td>低</td>
+<td>非结构性扰动</td>
+</tr>
+<tr>
+<td>电摩占比偏高</td>
+<td>低-中</td>
+<td>Q2起电自占比是否回升</td>
+</tr>
+<tr>
+<td>越南本土化</td>
+<td>中</td>
+<td>越南市场上市/渠道进度</td>
+</tr>
+<tr>
+<td>新国标监管</td>
+<td>低-中</td>
+<td>核心城市监管力度</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>风险项</th>
+<th>风险程度</th>
+<th>关键监控指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汇率风险</td>
+<td>高</td>
+<td>汇兑损益金额</td>
+</tr>
+<tr>
+<td>原材料风险</td>
+<td>中</td>
+<td>毛利率变化</td>
+</tr>
+<tr>
+<td>反倾销风险</td>
+<td>中</td>
+<td>6月初裁结果</td>
+</tr>
+<tr>
+<td>竞争风险</td>
+<td>中低</td>
+<td>两轮车销量增速</td>
+</tr>
+<tr>
+<td>新业务拓展</td>
+<td>中</td>
+<td>割草机器人激活量</td>
+</tr>
+<tr>
+<td>季节性波动</td>
+<td>低</td>
+<td>非结构性扰动</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：九号公司_689009_综合投研分析_20260506.md §3.5
+来源：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §四（一）</p>
+</blockquote>
+<hr />
+<h2>四、风险综合评估</h2>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th>评价</th>
+<th style="text-align: center;">评分（1-10，10=低风险）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固有风险</td>
+<td>中（汇率+竞争）</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td>风险可控性</td>
+<td>中（部分可对冲）</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td>风险分散度</td>
+<td>中（多品类）</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>下行保护</td>
+<td>强（现金115亿）</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td>尾部风险</td>
+<td>低</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td><strong>综合</strong></td>
+<td>—</td>
+<td style="text-align: center;"><strong>6.8/10</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>五、三情景概率</h2>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>概率</th>
+<th>26E净利润</th>
+<th>目标价</th>
+<th>PE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bull</td>
+<td>15%</td>
+<td>24-25亿</td>
+<td>73-77元</td>
+<td>22x</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>55%</td>
+<td>21-22亿</td>
+<td>58-62元</td>
+<td>20x</td>
+</tr>
+<tr>
+<td>Bear</td>
+<td>30%</td>
+<td>18-19亿</td>
+<td>40-42元</td>
+<td>16x</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>相关链接</h2>
+<ul>
+<li>01_公司研究/公司卡片/九号公司_689009/九号公司总览 - 总览</li>
+<li>商业模式 - 核心竞争力</li>
+<li>成长性 - 成长分析</li>
+<li>盈利能力 - 盈利能力</li>
+<li>估值 - 估值分析</li>
+<li>影响因素 - 短期影响因素</li>
+</ul>
+<h2>来源</h2>
+<blockquote>
+<p>原始资料：九号公司_689009_综合投研分析_20260506.md §3.5
+原始资料：01_公司研究/原始资料/九号公司_689009/九号公司两轮车交流会纪要_20260514 §一 + §二 + §四 + §六 + §八</p>
+</blockquote>
+</div>
+</body>
+</html>

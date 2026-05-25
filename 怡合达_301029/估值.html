@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>怡合达 · 估值</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>怡合达 · 估值</h1>
+<h2>一、当前估值位置</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价（2026-05-14）</td>
+<td>30.46元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>市值</td>
+<td>180.68亿元</td>
+<td>—</td>
+</tr>
+<tr>
+<td>PE(TTM)</td>
+<td>34.79倍</td>
+<td>历史中位偏下</td>
+</tr>
+<tr>
+<td>PE(2026E)</td>
+<td>约28倍</td>
+<td>一致预期6.38亿</td>
+</tr>
+<tr>
+<td>PB(MRQ)</td>
+<td>4.02倍</td>
+<td>适中</td>
+</tr>
+<tr>
+<td>PS(TTM)</td>
+<td>5.88倍</td>
+<td>适中</td>
+</tr>
+</tbody>
+</table>
+<p>【L2】当前股价28.49元，对应2026E PE约27-30倍，处于历史估值中枢偏下区间。近五年估值区间约25x-60x。</p>
+<p><strong>核心判断</strong>：安全边际有限，距合理价值中枢下沿约8.8%，适合底仓配置而非投机性买入。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/怡合达_301029.SZ_综合投研分析_20260515 §1.2内在价值与安全边际</p>
+</blockquote>
+<hr />
+<h2>二、核心估值逻辑</h2>
+<h3>2.1 估值锚点与方法选择</h3>
+<p><strong>本方法选择</strong>：PE + DCF，适合盈利稳定的FA平台龙头。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>目标价</th>
+<th>隐含空间（vs 28.49元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DCF（WACC 12.5%, g 3%）</td>
+<td>27.9元</td>
+<td>-2%</td>
+</tr>
+<tr>
+<td>PE（30x 2026E）</td>
+<td>30.3元</td>
+<td>+6%</td>
+</tr>
+<tr>
+<td>PE（35x 2026E）</td>
+<td>35.4元</td>
+<td>+24%</td>
+</tr>
+<tr>
+<td>PE（28x 2026E）</td>
+<td>28.3元</td>
+<td>-1%</td>
+</tr>
+<tr>
+<td><strong>综合目标价</strong></td>
+<td><strong>31-35元</strong></td>
+<td><strong>+9%~+23%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/怡合达_301029.SZ_综合投研分析_20260515 §4.3 DCF完整计算</p>
+</blockquote>
+<hr />
+<h3>2.2 机构观点汇总</h3>
+<table>
+<thead>
+<tr>
+<th>机构</th>
+<th>评级</th>
+<th>目标价</th>
+<th>上行空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>华泰证券</td>
+<td>买入</td>
+<td>47.0元</td>
+<td>+65%</td>
+</tr>
+<tr>
+<td>中金公司</td>
+<td>跑赢行业</td>
+<td>35.0元</td>
+<td>+23%</td>
+</tr>
+<tr>
+<td>J.P. Morgan</td>
+<td>Overweight</td>
+<td>36.0元</td>
+<td>+26%</td>
+</tr>
+<tr>
+<td>Goldman Sachs</td>
+<td>Buy</td>
+<td>36.8元</td>
+<td>+29%</td>
+</tr>
+<tr>
+<td>西南证券</td>
+<td>买入</td>
+<td>34.24元</td>
+<td>+20%</td>
+</tr>
+<tr>
+<td>Citi</td>
+<td>Buy</td>
+<td>31.0元</td>
+<td>+9%</td>
+</tr>
+<tr>
+<td>BofA</td>
+<td>Neutral</td>
+<td>29.0元</td>
+<td>+2%</td>
+</tr>
+<tr>
+<td><strong>机构均值</strong></td>
+<td>—</td>
+<td><strong>约35.5元</strong></td>
+<td><strong>+25%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>【L2】覆盖机构共10家，目标价区间29-47元，外资主流定价30-36元。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/怡合达_301029.SZ_综合投研分析_20260515 §4.1 机构预测汇总</p>
+</blockquote>
+<hr />
+<h3>2.3 DCF敏感性分析</h3>
+<table>
+<thead>
+<tr>
+<th>WACC \ g</th>
+<th>2.5%</th>
+<th>3.0%</th>
+<th>3.5%</th>
+<th>4.0%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11.5%</td>
+<td>33.5</td>
+<td>35.9</td>
+<td>38.9</td>
+<td>41.0</td>
+</tr>
+<tr>
+<td>12.5%</td>
+<td>26.6</td>
+<td>27.9</td>
+<td>29.4</td>
+<td>31.0</td>
+</tr>
+<tr>
+<td>13.5%</td>
+<td>21.8</td>
+<td>22.7</td>
+<td>23.7</td>
+<td>24.8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>中性情景DCF估值约27.9元，隐含2026年约27x PE。当前股价28.49元，略高于DCF中性估值。</strong></p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/怡合达_301029.SZ_综合投研分析_20260515 §4.3 DCF完整计算</p>
+</blockquote>
+<hr />
+<h2>三、盈利预测</h2>
+<h3>3.1 三年预测</h3>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th>营业收入（亿元）</th>
+<th>归母净利润（亿元）</th>
+<th>YoY</th>
+<th>EPS（元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024A</td>
+<td>25.04</td>
+<td>4.04</td>
+<td>-13%</td>
+<td>0.64</td>
+</tr>
+<tr>
+<td>2025A</td>
+<td>29.48</td>
+<td>5.12</td>
+<td>+27%</td>
+<td>0.81</td>
+</tr>
+<tr>
+<td>2026E</td>
+<td>35.36-35.93</td>
+<td>6.30-6.58</td>
+<td>+23%~+28%</td>
+<td>0.99-1.04</td>
+</tr>
+<tr>
+<td>2027E</td>
+<td>41.20-42.40</td>
+<td>7.47-8.30</td>
+<td>+18%~+26%</td>
+<td>1.18-1.31</td>
+</tr>
+</tbody>
+</table>
+<p>【L2】2026年一致预期归母净利润约6.38亿元，同比增长约24.6%。2027年一致预期约7.8亿元，同比增长约22.3%。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/怡合达_301029.SZ_综合投研分析_20260515 §4.1 机构预测汇总</p>
+</blockquote>
+<hr />
+<h2>四、安全边际评估</h2>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>价格</th>
+<th>PE</th>
+<th>条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>乐观</td>
+<td>41元</td>
+<td>约40x</td>
+<td>DCF乐观情景，锂电+FB双轮驱动兑现</td>
+</tr>
+<tr>
+<td><strong>基准</strong></td>
+<td><strong>31-35元</strong></td>
+<td><strong>约28-32x</strong></td>
+<td><strong>中性假设兑现</strong></td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>23元</td>
+<td>约22x</td>
+<td>费用率持续高企，锂电景气下行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>止损位</strong>：23元（-19%）</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/怡合达_301029/怡合达_301029.SZ_综合投研分析_20260515 §1.4 操作建议</p>
+</blockquote>
+<hr />
+<h2>五、投资决策</h2>
+<h3>5.1 核心逻辑（一句话）</h3>
+<p>【L4】怡合达当前估值处于历史合理偏低区间，FA行业贝塔向上拐点明确，公司阿尔法来自产品结构优化和FB业务放量，中期向上弹性约30%-60%，但短期受管理层减持压制。</p>
+<h3>5.2 不对称机会评估</h3>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>概率</th>
+<th>幅度</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上行（&gt;35元）</td>
+<td>40%</td>
+<td>+23%</td>
+<td>行业复苏+公司阿尔法</td>
+</tr>
+<tr>
+<td>下行（&lt;23元）</td>
+<td>20%</td>
+<td>-19%</td>
+<td>锂电景气下行+费用率失控</td>
+</tr>
+</tbody>
+</table>
+<p><strong>不对称性</strong>：中性预期盈亏比约2:1，预期胜率约60%-65%。</p>
+<h3>5.3 关键跟踪指标</h3>
+<ul>
+<li>2026年Q2-Q3费用率是否回落</li>
+<li>FB业务柔性产线稼动率能否突破50%</li>
+<li>锂电收入增速能否维持30%+</li>
+</ul>
+<hr />
+<h2>六、相关链接</h2>
+<ul>
+<li>01_公司研究/公司卡片/怡合达_301029/怡合达总览 - 公司总览</li>
+<li>商业模式 - 核心竞争力</li>
+<li>成长性 - 成长分析</li>
+<li>盈利能力 - 盈利能力</li>
+<li>风险 - 风险提示</li>
+<li>影响因素 - 短期影响因素</li>
+<li>逻辑链路 - 因果断言网络（L3）</li>
+<li>跟踪清单 - 关键判断监控（M2）</li>
+</ul>
+</div>
+</body>
+</html>

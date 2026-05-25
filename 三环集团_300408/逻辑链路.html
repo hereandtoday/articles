@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>三环集团 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>三环集团 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th style="text-align: center;">置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th style="text-align: center;">更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>MLCC涨价 → 盈利弹性 → 估值消化</td>
+<td style="text-align: center;">中高</td>
+<td>估值评级C+/目标价108元</td>
+<td>MLCC价格连续2月持平或下跌</td>
+<td style="text-align: center;">2026-05-19</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>SOFC隔膜板翻倍 → 第二曲线爆发 → 估值重构</td>
+<td style="text-align: center;">中</td>
+<td>成长性评级A-/目标价上调空间</td>
+<td>BE单季订单环比下滑&gt;30%</td>
+<td style="text-align: center;">2026-05-19</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>成本护城河（垂直一体化）→ 毛利率韧性 → 穿越周期</td>
+<td style="text-align: center;">高</td>
+<td>商业模式评级A-</td>
+<td>高容粉体自制率无法突破80%</td>
+<td style="text-align: center;">2026-05-19</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>MLCC产能爬坡(400→500亿) → 营收天花板突破</td>
+<td style="text-align: center;">中高</td>
+<td>成长性评级A-</td>
+<td>下半年无法跨过良率拐点</td>
+<td style="text-align: center;">2026-05-19</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>独立拓展国内SOFC → 单一客户风险对冲 → 估值修复</td>
+<td style="text-align: center;">中</td>
+<td>风险评级可控</td>
+<td>国内SOFC示范项目无新增落地</td>
+<td style="text-align: center;">2026-05-19</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>垂直一体化→迭代速度→技术领先持续强化</td>
+<td style="text-align: center;">高</td>
+<td>商业模式评级A-</td>
+<td>核心团队流失或垂直一体化被打破</td>
+<td style="text-align: center;">2026-05-19</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>扩产行动→高端产品突破确认→成长预期上调</td>
+<td style="text-align: center;">中</td>
+<td>成长性评级A-/估值上调潜力</td>
+<td>扩产产能用于中低端而非高端</td>
+<td style="text-align: center;">2026-05-19</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：MLCC涨价驱动的盈利弹性</h3>
+<p><strong>因果断言：</strong>
+如果MLCC涨价周期持续（村田/三星跟进），三环凭借大尺寸高容领域的技术领先和满产的高端产线，将充分受益于量价齐升，净利润增速超预期驱动估值消化。</p>
+<p><strong>支持依据：</strong>
+- 村田15-35%/三星双位数/太阳诱电6-13%涨价已落地
+- AI服务器MLCC需求年增30%，产能结构性挤压
+- 三环大尺寸高容技术代差领先、高端产线满产</p>
+<p><strong>适用条件：</strong>
+- 涨价持续至2026H2（至少村田不降价）
+- 消费电子H2需求不出现断崖式下滑</p>
+<p><strong>失效信号：</strong>
+- MLCC价格连续2个月持平或下跌（原厂端）
+- 行业BB值持续低于0.8
+- 智能手机/PC出货量连续2季度同比下滑</p>
+<p><strong>置信度：</strong> 中高
+<strong>置信度依据：</strong> 涨价已实质性落地，周期处于早中期，但H2消费电子需求存在不确定性</p>
+<h3>LK-002：SOFC第二增长曲线</h3>
+<p><strong>因果断言：</strong>
+如果Bloom Energy产能如期扩张（1→2GW）且隔膜板耗材属性被市场定价，SOFC业务将在3年内从补充业务变为第二大收入来源（占比从~5%→20%+），驱动公司估值重构。</p>
+<p><strong>支持依据：</strong>
+- BE在手订单超180亿美元（订单收入比5倍）
+- 隔膜板单GW价值量2-2.5亿元，2-2.5年替换一次
+- 三环占BE份额约2/3，工艺壁垒高</p>
+<p><strong>适用条件：</strong>
+- BE扩产计划按节奏执行
+- 隔膜板工艺路线不变（3-5年内替代风险低）
+- 地缘政治不实质性切断供应链</p>
+<p><strong>失效信号：</strong>
+- BE单季订单金额环比下滑&gt;30%
+- 其他SOFC技术路线显著超越（Ceres Power/金属基）
+- 美国对华SOFC隔膜板出口管制</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> BE订单能见度高（5倍覆盖），但客户集中风险和地缘政治不确定</p>
+<h3>LK-003：垂直一体化成本护城河</h3>
+<p><strong>因果断言：</strong>
+凭借粉体自制率60%（目标80%）和核心设备自制率90%的垂直一体化能力，三环MLCC生产成本比三星电机低约32%。这一成本优势在高容产品持续放量下不断强化，是毛利率维持在42%+的核心支撑。</p>
+<p><strong>支持依据：</strong>
+- 陶瓷粉体占成本40%，三环自制率60%
+- 设备自制率90%，避免被日系设备厂卡脖子
+- 综合良率90%以上
+- 2026Q1毛利率不降反升（产能利用率提升对冲折旧）</p>
+<p><strong>适用条件：</strong>
+- 粉体配方持续迭代
+- 高容粉体自制率突破路径清晰</p>
+<p><strong>失效信号：</strong>
+- 高容粉体自制率长期无法突破80%
+- 日系设备厂对核心设备实现差异化封锁
+- 良率持续低于行业水平</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 过去55年积累的配方know-how已验证，工艺壁垒明确</p>
+<h3>LK-004：产能爬坡决定营收天花板</h3>
+<p><strong>因果断言：</strong>
+当前落地产能400亿只/月（非市场预期500亿只），2026年新增100亿只爬坡进度将直接影响MLCC营收上限。但需注意：<strong>产能≠产出只数</strong>——高端品对产能消耗极大，同等产能生产高端品的只数远低于低端品。因此爬坡顺利与否不仅看数量，更要看产品结构。</p>
+<p>若爬坡顺利且用于高端品，2026E MLCC收入可达50-55亿元。</p>
+<p><strong>支持依据：</strong>
+- 新增100亿只产能精准卡位高端高容工业类和车规级
+- 高端产线已满产（&gt;90%），新增产能将直接转化为收入
+- 三环扩产本身就是高端产品突破的信号（非低端重复建设）
+- 定增募集资金充裕（37.5亿中仅投34.89%）</p>
+<p><strong>适用条件：</strong>
+- 新增产能良率爬坡顺利
+- 下游需求不出现断崖式下滑</p>
+<p><strong>失效信号：</strong>
+- 下半年无法跨过良率拐点
+- 新增产能稼动率持续低于70%</p>
+<p><strong>置信度：</strong> 中高
+<strong>置信度依据：</strong> 公司扩产历史执行度尚可，但MLCC良率爬坡存在工艺不确定性</p>
+<h3>LK-005：国内SOFC独立拓展对冲单一客户风险</h3>
+<p><strong>因果断言：</strong>
+三环已掌握从单电池到发电系统的全链条SOFC技术，深圳燃气300kW示范项目标志着独立拓展能力。若国内SOFC市场持续突破，单一客户依赖风险将被实质性对冲。</p>
+<p><strong>支持依据：</strong>
+- 2025年1月深圳燃气300kW示范项目投产（全国首个商业化项目）
+- 掌握全链条技术（单电池、电堆、系统）
+- 全球SOFC市场（尤其AIDC备用电源）持续高景气</p>
+<p><strong>适用条件：</strong>
+- 国内SOFC政策环境友好
+- 示范项目运行数据良好，具备复制条件</p>
+<p><strong>失效信号：</strong>
+- 国内SOFC示范项目无新增落地
+- 国内SOFC装机量低于市场预期
+- 核心团队流失或技术路线被超越</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 示范项目已落地验证技术能力，但商业化推广仍在早期</p>
+<h3>LK-006：垂直一体化驱动的迭代速度优势</h3>
+<p><strong>因果断言：</strong>
+如果三环保持材料+设备+工艺的垂直一体化架构（粉体自制率60%+、设备自制率90%），则其在MLCC领域的迭代速度将系统性快于依赖外采的竞争对手，技术领先地位将持续强化而非削弱。这是追赶村田的最关键基础设施。</p>
+<p><strong>支持依据：</strong>
+- 村田材料+叠层设备均为自制，反馈回路短，迭代速度快
+- 外采模式下，材料供应商不懂MLCC，MLCC厂商不懂材料，反馈隔层
+- 三星当年靠挖村田团队解决配方能力，耗费多年积累
+- 三环55年材料积累+300人设备团队，形成一体化闭环</p>
+<p><strong>适用条件：</strong>
+- 研发投入持续（研发费率不低于5%）
+- 核心团队稳定，技术传承不断</p>
+<p><strong>失效信号：</strong>
+- 核心设备团队流失（如被竞对挖角）
+- 研发费用率持续低于5%
+- 粉体自制率长期停滞在60%无法突破</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 制造业复杂度竞争框架已被多个行业验证（村田、丰田等），三环55年积累构成了深厚的一体化壁垒</p>
+<h3>LK-007：扩产=高端产品突破的信号</h3>
+<p><strong>因果断言：</strong>
+如果三环启动大规模扩产（如400→500亿只/月），这不应被简单理解为"增加低端产能"，而应解读为高端产品已取得突破、需要新产能承接的信号。高端品对产能消耗极大（同等产能下高端产出只数远低于低端），扩产的底层逻辑是产品能力升级而非数量扩张。</p>
+<p><strong>支持依据：</strong>
+- 高端MLCC单颗生产耗时是标准品3-4倍，层数可达低端品的30倍
+- 高端产线满产（&gt;90%稼动率）→扩产承接高端需求是自然结果
+- 新增100亿只产能精准卡位高端高容工业类和车规级（非低端重复建设）</p>
+<p><strong>适用条件：</strong>
+- 扩产的产能确实用于高附加值产品（需要从公司公告/调研验证）
+- 高端良率爬坡路径清晰</p>
+<p><strong>失效信号：</strong>
+- 扩产产能实际用于中低端产品（产品结构未升级）
+- 高端良率长期无法突破，扩产产能稼动率持续低于70%</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 逻辑成立，但需要实际验证——观察新增产能的产品结构是验证关键</p>
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-004</td>
+<td>依赖</td>
+<td>MLCC涨价弹性（LK-001）以产能满足交付为前提（LK-004）</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td>并行</td>
+<td>成本优势（LK-003）放大涨价弹性（LK-001）的盈利效果</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-005</td>
+<td>并行</td>
+<td>海外订单（LK-002）与国内拓展（LK-005）共同支撑SOFC增长</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-003</td>
+<td>依赖</td>
+<td>SOFC隔膜板成本优势来自MLCC同源流延工艺（LK-003）</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-003</td>
+<td>依赖</td>
+<td>产能爬坡良率受垂直一体化能力（LK-003）支撑</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-003</td>
+<td>依赖</td>
+<td>迭代速度优势（LK-006）是成本护城河（LK-003）的底层驱动</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-004</td>
+<td>依赖</td>
+<td>产能爬坡良率受迭代速度（LK-006）支撑</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-004</td>
+<td>依赖</td>
+<td>扩产（LK-007）是产能爬坡（LK-004）的前提动作</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-006</td>
+<td>依赖</td>
+<td>高端突破（LK-007）以迭代速度（LK-006）为基础</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<h2>四、关联卡片</h2>
+<ul>
+<li>三环集团总览 — 关联判断：综合评级B+，基准目标价94-108元</li>
+<li>商业模式 — 关联判断：商业模式评级A-，护城河评估</li>
+<li>成长性 — 关联判断：成长性评级A-，3年CAGR约30%</li>
+<li>估值 — 关联判断：估值评级C+，安全边际有限</li>
+<li>风险 — 关联判断：风险综合评估5.8/10，核心关注涨价持续性</li>
+</ul>
+<blockquote>
+<p>来源：三环集团_300408_综合投研分析_20260519.md
+来源：三环集团_300408_调研补充报告_20260519.md</p>
+</blockquote>
+</div>
+</body>
+</html>

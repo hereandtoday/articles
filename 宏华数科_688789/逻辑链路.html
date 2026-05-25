@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>宏华数科 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>宏华数科 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001A</td>
+<td>数码印花短单/快反渗透率提升 → 设备需求增长</td>
+<td>高</td>
+<td>成长性</td>
+<td>短单综合成本优势逆转</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-001B</td>
+<td>大批量长单仍由传统印花主导 → 渗透率天花板低于100%</td>
+<td>高</td>
+<td>成长性/风险</td>
+<td>SinglePass大幅拉近长单成本差距</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>天津产能投产 → 墨水收入+毛利率改善</td>
+<td>中</td>
+<td>成长性/盈利能力</td>
+<td>产能延期或价格战加速</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>设备-墨水锁定 → 耗材复利增长</td>
+<td>高</td>
+<td>商业模式</td>
+<td>设备-墨水捆绑率大幅下降</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>京瓷喷头绑定（非排他但体量锁定）→ 技术壁垒</td>
+<td>中</td>
+<td>护城河</td>
+<td>爱普生S3200直喷技术突破</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>2026Q1触底 → Q2起V型修复</td>
+<td>低</td>
+<td>估值</td>
+<td>Q2继续负增长</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-009</td>
+<td>海外墨水捆绑率下降 → 耗材复利模式承压</td>
+<td>中</td>
+<td>商业模式/风险</td>
+<td>海外墨水收入占比企稳回升</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-010</td>
+<td>中日贸易争端升级 → 喷头断供系统性风险</td>
+<td>低</td>
+<td>风险</td>
+<td>喷头未列入管制清单/自研喷头成功</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>毛利率下行 → 盈利能力承压</td>
+<td>高</td>
+<td>盈利能力</td>
+<td>毛利率企稳回升</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>股权激励高目标 → 业绩确定性增强</td>
+<td>中</td>
+<td>成长性</td>
+<td>目标频繁下调</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>海外高增可对冲国内疲软</td>
+<td>中</td>
+<td>风险</td>
+<td>海外增速低于25%</td>
+<td>2026-05-22</td>
+</tr>
+<tr>
+<td>LK-011</td>
+<td>数码无版印刷替代传统有版印刷→非纺第二曲线爆发</td>
+<td>中</td>
+<td>成长性</td>
+<td>书刊增速&lt;30%/渗透率提升慢于预期</td>
+<td>2026-05-22</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001A：短单/快反市场的数码印花渗透率提升</h3>
+<p><strong>因果断言：</strong>
+如果数码印花在短单/快反/定制化领域的综合成本优势持续保持（已接近传统印花盈亏线），则下游印染企业在该细分市场的设备更新和新增需求将持续增长。</p>
+<p><strong>支持依据：</strong>
+全球直喷渗透率仅约6%、成衣直喷仅1-2%，短单市场替代空间巨大；数码转移印花成本已从10+元/米降至约1.2元/米，与传统印花0.8-1.1元/米的差距已极为接近；环保优势（节水40-60%、节能40-50%）加速替代；SinglePass机型持续降低数码印花综合成本。</p>
+<p><strong>适用条件：</strong>
+短单/快反市场需求结构不变，数码印花设备价格持续下降。</p>
+<p><strong>失效信号：</strong>
+数码印花成本下降停滞或与传统印花的成本差距重新扩大；快反/小批量生产模式逆转。</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 成本曲线下降趋势明确（2007-2025年降幅超90%），与传统印花接近交叉点；环保政策持续趋严加速替代。该链路限定于短单/快反市场，排除了大批量长单领域的不确定性。</p>
+<hr />
+<h3>LK-001B：大批量长单市场仍由传统印花主导</h3>
+<p><strong>因果断言：</strong>
+传统圆网/平网印花在大批量长单生产中具有结构性成本优势（固定成本摊薄效应），数码印花在该细分市场渗透率天花板低于30%。</p>
+<p><strong>支持依据：</strong>
+传统盈亏平衡点约1500-2000米/批次，数码印花每米边际成本固定；传统印花大批量下单米成本0.8-1.1元，数码印花1.2元+仍存在约20%价差；传统印花在长单中具有规模经济效应，不会因为数码印花的技术进步而消失。</p>
+<p><strong>适用条件：</strong>
+大批量/标准化产品市场格局不变。</p>
+<p><strong>失效信号：</strong>
+SinglePass大幅降低数码印花单米成本至与传统印花平价以下；传统印花环保合规成本大幅上升超出数码印花。</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 这是由两种技术路线的成本结构差异决定的（固定成本vs边际成本），非暂时性现象。</p>
+<hr />
+<h3>LK-002：天津产能投产驱动墨水收入增长</h3>
+<p><strong>因果断言：</strong>
+如果天津4.7万吨墨水基地在2026Q3前顺利投产并爬坡，则墨水收入将从当前约6亿增长至10亿+，且规模效应部分对冲降价压力。</p>
+<p><strong>支持依据：</strong>
+当前产能约1.5万吨已近饱和、天津产能是当前的3倍+、设备安装调试中。管理层和券商一致预期投产窗口为2026H2。</p>
+<p><strong>适用条件：</strong>
+设备安装调试顺利，产能爬坡周期在6-12个月内。</p>
+<p><strong>失效信号：</strong>
+投产延期超过3个月；产能爬坡后需求不足以消化；天津扩产后行业价格战加剧导致毛利率加速下降。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 进度按计划推进但产能爬坡存在执行风险；扩产后价格格局存在不确定性。</p>
+<hr />
+<h3>LK-003：设备-墨水锁定驱动耗材复利增长</h3>
+<p><strong>因果断言：</strong>
+如果设备保有量持续增长且设备-墨水捆绑率维持高位，则墨水收入将实现高于设备销量的复利增长。</p>
+<p><strong>支持依据：</strong>
+国内超90%设备-墨水捆绑率；设备保有量从约3500台（2022）增至约5500台（2025）；2023-2025年墨水收入CAGR约23%，显著高于设备销量CAGR约17%。</p>
+<p><strong>适用条件：</strong>
+绑定模式不松动，存量客户不流失。</p>
+<p><strong>失效信号：</strong>
+设备-墨水捆绑率大幅下降（&lt;70%）；存量客户大规模流失；替代耗材出现。</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 商业模式已验证并持续运行多年，数据充分。</p>
+<hr />
+<h3>LK-004：京瓷喷头绑定构成技术壁垒（非排他但体量锁定）</h3>
+<p><strong>因果断言：</strong>
+如果京瓷喷头在直喷领域的性能优势持续且产能有限，则新进入者难以突破喷头供给壁垒，宏华的先发优势得以维持。（注意：双方无正式排他协议，是以采购体量为基础的事实性绑定——宏华采购占京瓷直喷喷头70-80%，具备定价优势10-20%。）</p>
+<p><strong>支持依据：</strong>
+京瓷喷头采用陶瓷压电技术，精度/寿命/稳定性领先；京瓷产能有限；东吴证券研报确认新进入者大批量获取京瓷喷头可能性小；国内直喷设备商均使用京瓷喷头；宏华与京瓷的关系是"基于超大规模采购的事实性独家绑定"，比法律意义的排他协议更具经济约束力。</p>
+<p><strong>适用条件：</strong>
+京瓷喷头保持技术领先，宏华与京瓷合作关系稳固，宏华采购体量持续领先竞争对手。</p>
+<p><strong>失效信号：</strong>
+爱普生S3200系列在直喷领域取得技术突破；京瓷开放喷头供应或宏华采购体量大幅下降；国产喷头（盈科杰）形成可替代方案。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 技术绑定关系存在但非正式排他协议，爱普生等竞争对手在持续追赶。</p>
+<hr />
+<h3>LK-005：2026Q1触底后V型修复</h3>
+<p><strong>因果断言：</strong>
+如果2026Q1业绩下滑是季节性因素+天津投产前空窗期的阶段性冲击，则Q2起营收和利润将逐季修复，全年达成一致预期。</p>
+<p><strong>支持依据：</strong>
+2025Q1营收占比全年仅约21%；天津Q2-Q3投产将释放增量；海外订单指引&gt;40%；股权激励设定2026年营收30亿/净利6.8亿目标。</p>
+<p><strong>适用条件：</strong>
+国内需求不进一步恶化，海外订单如期放量。</p>
+<p><strong>失效信号：</strong>
+Q2营收继续同比负增长；全年业绩指引下修；股权激励触发值无法达成。</p>
+<p><strong>置信度：</strong> 低
+<strong>置信度依据：</strong> 2026Q1下滑幅度远超季节性（净利-62%），追赶难度大，一致预期存在下修风险。</p>
+<hr />
+<h3>LK-006：毛利率下行压缩盈利能力</h3>
+<p><strong>因果断言：</strong>
+如果设备和墨水均价持续下降（设备受SinglePass占比提升结构性拖累、墨水年均降价7.5%），则综合毛利率将继续承压。</p>
+<p><strong>支持依据：</strong>
+毛利率三年连降（47.20%→43.05%，累计-4.15pct）；墨水年均降价7.5%；天津扩产后降价可能加速；设备毛利率从43.07%降至40.66%。</p>
+<p><strong>适用条件：</strong>
+降价趋势不逆转，产品结构持续向低毛利率产品倾斜。</p>
+<p><strong>失效信号：</strong>
+毛利率企稳回升，天津规模效应显著对冲降价压力。</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 数据趋势明确且持续三年，未见拐点信号。</p>
+<hr />
+<h3>LK-007：股权激励高目标增强业绩确定性</h3>
+<p><strong>因果断言：</strong>
+如果2026年股权激励设定2026-2027年累计营收70亿/净利16亿的目标值，且覆盖31%员工，则管理层达成目标的动机和能力将显著提升业绩确定性。</p>
+<p><strong>支持依据：</strong>
+激励覆盖范围最广（31%）；目标值较2025年净利5.28亿隐含2026年增速约29%、2027年约35%；前序激励均顺利达成；同步推出1-2亿回购（上限100元/股）。</p>
+<p><strong>适用条件：</strong>
+激励目标不被频繁下调，执行不出现重大偏差。</p>
+<p><strong>失效信号：</strong>
+激励目标下调；2026年实际业绩显著偏离目标值。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 管理层历史兑现率高，但2026Q1下滑幅度增大不确定性。</p>
+<hr />
+<h3>LK-008：海外高增对冲国内疲软</h3>
+<p><strong>因果断言：</strong>
+如果海外订单维持&gt;40%增长且南亚市场需求持续旺盛，则海外收入增长可部分对冲国内需求下行风险。</p>
+<p><strong>支持依据：</strong>
+2025年外销11.49亿（+24%），占比约50%；海外设备及墨水毛利率（44.31%）高于国内（41.28%）；南亚渗透率更低、增速更快。</p>
+<p><strong>适用条件：</strong>
+海外需求不出现系统性风险，地缘政治不冲击南亚市场。</p>
+<p><strong>失效信号：</strong>
+海外增速低于25%；南亚市场地缘政治风险爆发；人民币大幅升值。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 海外趋势良好但地缘风险和汇率风险不可忽视。</p>
+<hr />
+<h3>LK-009：海外墨水捆绑率下降削弱耗材复利模式</h3>
+<p><strong>因果断言：</strong>
+如果海外墨水捆绑率（当前约80%，国内&gt;90%）持续下降，且海外墨水收入占比从50%降至40%+的趋势未逆转，则"设备-墨水锁定"模式的复利效应在海外市场面临侵蚀。</p>
+<p><strong>支持依据：</strong>
+海外墨水收入占比从历史50%降至约40%+；巴基斯坦等区域因三方墨水厂低价竞争丢失市场；海外经销模式下经销商多品牌代理，客户有墨水替代选择。</p>
+<p><strong>适用条件：</strong>
+海外墨水直营体系建设未能有效提升捆绑率。</p>
+<p><strong>失效信号：</strong>
+海外墨水收入占比企稳回升至45%+；直营团队建设成效显著；第三方墨水厂竞争格局改善。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 趋势已确立但程度尚浅（80%捆绑率仍属较高水平），管理层已有对应方案（自建直营团队），有待验证。</p>
+<hr />
+<h3>LK-010：中日贸易摩擦升级导致喷头断供系统性风险</h3>
+<p><strong>因果断言：</strong>
+如果日本对半导体/先进制造设备的出口管制趋势进一步收紧，且陶瓷压电元件被列入管制清单，则宏华的京瓷喷头供应将面临系统性中断风险。</p>
+<p><strong>支持依据：</strong>
+日本对半导体和先进制造设备出口管制持续收紧；陶瓷压电元件与军工和半导体制造有技术关联；喷头目前未被纳入限制清单。尾部风险概率&lt;5%。</p>
+<p><strong>适用条件：</strong>
+中日贸易摩擦持续升级，管制清单扩大化。</p>
+<p><strong>失效信号：</strong>
+喷头明确不在管制范围内；宏华自研喷头成功适配纺织品实现供应自主。</p>
+<p><strong>置信度：</strong> 低
+<strong>置信度依据：</strong> 当前概率极低（&lt;5%），但一旦发生将造成系统性冲击。属于尾部情景，主要用于风险预警而非核心判断依据。</p>
+<hr />
+<h3>LK-011：数码无版印刷替代传统有版印刷驱动非纺第二曲线爆发</h3>
+<p><strong>因果断言：</strong>
+如果宏华将底层数码喷印技术从纺织横向拓展至书刊/标签/包装/瓦楞纸领域，且下游产业从"以产定销"向"以销定产"转型持续推进，则非纺数字印刷业务将复制纺织数码印花的替代路径，成为第二增长曲线。</p>
+<p><strong>支持依据：</strong>
+传统印刷（胶印/丝网/辊筒）有制版成本高、起印量大、库存积压等结构性缺陷；数码无版印刷的"小单快反"优势在广告标牌领域已兑现（渗透率~80%）；书刊/标签/包装当前数码渗透率&lt;5%，机构预测5年内可达30%，即有6倍+提升空间；宏华2023-2025年数字印刷收入CAGR &gt;90%，毛利率54.24%高于核心主业，验证了产品力和盈利质量。【L2】</p>
+<p><strong>适用条件：</strong>
+下游客户对个性化/定制化/小批量需求持续增长；宏华的渠道建设（盈科杰收购+代理合作）持续推进；墨水配方和介质处理技术持续适配新领域。</p>
+<p><strong>失效信号：</strong>
+书刊数字印刷增速连续低于30%；与传统有版印刷的成本差距扩大而非缩小；非纺收入占比连续2年低于15%；主要竞品（HP/理光）在中国市场大幅降价挤压空间。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 2023-2025年数据已实证了产品-市场匹配（+71-115%增长，54%毛利率），且渗透率逻辑在纺织领域已得到交叉验证；但非纺市场的竞争格局（HP等国际巨头）和客户导入速度仍存不确定性。</p>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001A</td>
+<td>LK-002</td>
+<td>依赖</td>
+<td>短单渗透率提升（LK-001A）是天津产能消化（LK-002）的前提</td>
+</tr>
+<tr>
+<td>LK-001A</td>
+<td>LK-001B</td>
+<td>并行</td>
+<td>两者共同框定市场空间——短单增长+长单天花板</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-006</td>
+<td>互斥</td>
+<td>天津产能释放的规模效应与降价加速对毛利率影响方向相反</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-004</td>
+<td>依赖</td>
+<td>京瓷喷头壁垒（LK-004）是设备-墨水锁定模式（LK-003）的基础</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-008</td>
+<td>并行</td>
+<td>V型修复（LK-005）依赖于国内修复+海外高增（LK-008）双引擎</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-005</td>
+<td>互斥</td>
+<td>毛利率继续下行（LK-006）将侵蚀V型修复（LK-005）的利润弹性</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-005</td>
+<td>依赖</td>
+<td>股权激励目标（LK-007）的合理性依赖于V型修复（LK-005）能否兑现</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-009</td>
+<td>依赖</td>
+<td>设备-墨水锁定模式（LK-003）的海外可持续性受制于捆绑率趋势（LK-009）</td>
+</tr>
+<tr>
+<td>LK-009</td>
+<td>LK-005</td>
+<td>并行</td>
+<td>海外墨水捆绑率变化（LK-009）与V型修复（LK-005）共同影响2026年利润</td>
+</tr>
+<tr>
+<td>LK-010</td>
+<td>LK-004</td>
+<td>并行</td>
+<td>出口管制风险（LK-010）与京瓷技术壁垒（LK-004）共同构成供应链评估的双面变量</td>
+</tr>
+<tr>
+<td>LK-011</td>
+<td>LK-001A</td>
+<td>并行</td>
+<td>数码无版印刷替代（LK-011）与数码印花替代（LK-001A）是同一产业逻辑在不同领域的复制，共同支撑成长性</td>
+</tr>
+<tr>
+<td>LK-011</td>
+<td>LK-002</td>
+<td>独立</td>
+<td>非纺业务的墨水需求与纺织墨水共享天津产能，但体量尚小，不构成对LK-002的依赖或互斥</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<h2>四、关联卡片</h2>
+<ul>
+<li>宏华数科总览 — 关联判断：综合评级B+，目标价75-86元（渗透率天花板未影响中期判断，但降低长期成长预期）</li>
+<li>商业模式 — 关联判断：护城河B+，商业模式B+</li>
+<li>成长性 — 关联判断：成长确定性中，2026-2028年CAGR约25%</li>
+<li>盈利能力 — 关联判断：盈利能力B，毛利率下行是核心隐忧</li>
+<li>估值 — 关联判断：PE(TTM) 22.48x合理偏低，目标价75-95元</li>
+<li>风险 — 关联判断：供应链单一依赖是最大结构性风险，渗透率天花板(R7)新补充，出口管制(R8)尾部风险</li>
+<li>影响因素 — 关联判断：天津投产和Q2验证是即期关键催化剂</li>
+<li>LK-009 — 关联判断：海外墨水捆绑率下降是海外"设备-墨水锁定"模式的新关注点</li>
+<li>LK-010 — 关联判断：出口管制属于低概率高冲击的尾部风险预警</li>
+<li>LK-011 — 关联判断：数码无版印刷替代传统有版印刷，是第二曲线爆发的核心驱动逻辑</li>
+</ul>
+<blockquote>
+<p>来源：原始资料/宏华数科_688789_综合投研分析_20260522.md
+来源：原始资料/宏华数科_688789_深度投研分析Q1Q10_20260522.md
+更新说明：2026-05-22 将LK-001拆分为LK-001A(短单)和LK-001B(长单天花板)；新增LK-009(海外捆绑率)、LK-010(出口管制)、LK-011(非纺第二曲线)</p>
+</blockquote>
+</div>
+</body>
+</html>

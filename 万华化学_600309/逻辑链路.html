@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>万华化学 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>万华化学 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>MDI供需缺口支撑价格持续上涨</td>
+<td>高</td>
+<td>目标价110-120元</td>
+<td>价格跌破18,000元/吨</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>石化板块2026年扭亏为盈</td>
+<td>高</td>
+<td>估值上调，ROE回升</td>
+<td>乙烯-乙烷价差跌破2,000元/吨</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>FCF 2026年约100亿转正</td>
+<td>高</td>
+<td>战略转变验证</td>
+<td>CAPEX超300亿</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>PB均值回归至3.55倍</td>
+<td>中</td>
+<td>估值修复，PB从2.37→3.55</td>
+<td>ROE持续低于12%</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>全球份额加速扩张</td>
+<td>中</td>
+<td>出口+20%，市占率向40%</td>
+<td>东南亚跟进反倾销</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>磷酸铁锂成为第二增长极</td>
+<td>中</td>
+<td>新材料板块盈利改善</td>
+<td>单吨盈利持续为负</td>
+<td>2026-05-15</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>TDI供需缺口16/26/16万吨支撑价格</td>
+<td>中</td>
+<td>TDI价格上涨，业绩弹性释放</td>
+<td>价格跌破14,000元/吨</td>
+<td>2026-05-15</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：MDI供需缺口支撑价格持续上涨</h3>
+<p><strong>因果断言：</strong>
+如果中东冲突持续导致==Sadara停产（40万吨）+ 欧洲高成本产能退出（陶氏德国/葡萄牙评估永久退出）==，且万华福建技改70万吨逐步爬坡而非一次性释放，则MDI供需缺口2026-2028年维持22/22/61万吨，价格持续高位。</p>
+<p><strong>支持依据：</strong>
+- 【L2】Sadara资产损毁超50亿美元，2026年内难以满负荷复产
+- 【L2】陶氏欧洲工厂正在评估永久退出
+- 【L2】纯MDI价格较年初+34%至24,200元/吨
+- 【L2】万华管理层表态将逐步爬坡而非一次性释放</p>
+<p><strong>适用条件：</strong>
+- 中东冲突持续或霍尔木兹海峡未恢复畅通
+- 全球经济未深度衰退</p>
+<p><strong>失效信号：</strong>
+- MDI价格跌破18,000元/吨（低于成本线+合理利润）
+- 福建技改一次性全量释放
+- 欧洲产能复产（陶氏撤回退出评估）</p>
+<p><strong>置信度：高</strong>
+<strong>置信度依据：</strong> 供给侧收紧有充分数据支撑，价格已开始验证上涨，但需求侧存在不确定性</p>
+<hr />
+<h3>LK-002：石化板块2026年扭亏为盈</h3>
+<p><strong>因果断言：</strong>
+如果乙烯一期乙烷改造完成（2026年1月）+ 乙烯-乙烷价差维持3,000-3,500元/吨，则石化板块2026年贡献20-40亿元利润增量，从"拖累项"变为"增量引擎"。</p>
+<p><strong>支持依据：</strong>
+- 【L2】乙烯一期100万吨已完成全乙烷进料改造，2026年1月8日公告产出合格产品
+- 【L2】乙烷裂解成本较石脑油低1,000-1,500元/吨
+- 【L2】乙烯-乙烷价差3,000-3,500元/吨高位运行
+- 【L2】2026年Q1石化板块已贡献约9亿元单季度利润增量</p>
+<p><strong>适用条件：</strong>
+- 美国乙烷价格未大幅上涨
+- 国际油价未暴跌至极端低位</p>
+<p><strong>失效信号：</strong>
+- 乙烯-乙烷价差跌破2,000元/吨
+- 原材料（乙烷/LPG）价格大幅上涨吞噬利润
+- 国内丙烯/乙烯开工率持续低迷</p>
+<p><strong>置信度：高</strong>
+<strong>置信度依据：</strong> 乙烷改造已完成，Q1数据已验证扭亏，逻辑链完整</p>
+<hr />
+<h3>LK-003：FCF 2026年约100亿转正</h3>
+<p><strong>因果断言：</strong>
+如果资本开支降至273亿（官方计划）+ OCF约372亿，则2026年FCF约96-110亿元，FCF从"负值时代"进入"百亿级净流入时代"。</p>
+<p><strong>支持依据：</strong>
+- 【L2】⚠️ 原报告错误数据已修正：真实CAPEX为273亿而非6亿，OCF为372亿而非48亿
+- 【L2】2025年FCF约24亿已转正（vs 原报告错误计算的42亿）
+- 【L2】资本开支高峰已过（2024年401.5亿→2025年307亿→2026年273亿）
+- 【L2】2026年官方计划投资273亿元</p>
+<p><strong>适用条件：</strong>
+- CAPEX控制在273亿元以内
+- OCF达到370亿以上</p>
+<p><strong>失效信号：</strong>
+- CAPEX超300亿元（开启新一轮扩张）
+- OCF低于300亿元（MDI价格暴跌）</p>
+<p><strong>置信度：高</strong>
+<strong>置信度依据：</strong> 资本开支趋势明确，OCF稳健增长，逻辑可验证</p>
+<hr />
+<h3>LK-004：PB均值回归至3.55倍</h3>
+<p><strong>因果断言：</strong>
+如果2026年ROE从12.35%回升至15%+，则PB从当前2.37倍（5.8%分位）向历史中位数3.55倍回归。</p>
+<p><strong>支持依据：</strong>
+- 【L2】当前PB 2.37倍处于历史5.8%分位，远低于中位数3.55倍
+- 【L2】PB与ROE高度相关，周期底部ROE回升通常带动PB同步共振修复
+- 【L2】2026年ROE回升驱动力：MDI涨价+石化扭亏+FCF转正</p>
+<p><strong>适用条件：</strong>
+- ROE持续回升（不只是季节性反弹）
+- 化工股系统性折价缓解</p>
+<p><strong>失效信号：</strong>
+- ROE持续低于12%，长期底部徘徊
+- 全球深度衰退，PB失去均值回归动力</p>
+<p><strong>置信度：中</strong>
+<strong>置信度依据：</strong> 历史规律支持，但需要ROE持续改善作为验证</p>
+<hr />
+<h3>LK-005：全球份额加速扩张</h3>
+<p><strong>因果断言：</strong>
+如果Sadara停产深化（2026年内难以复产）+ 欧洲高成本产能退出，则万华全球市占率从34%向40%迈进，出口数据验证+20%增长。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2026年3月中国聚合MDI出口同比+20%，TDI出口+15%
+- 【L2】万华匈牙利BC工厂（40万吨）填补欧洲和中东市场真空
+- 【L2】万华产能450万吨（市占率37%）后，将进一步巩固全球绝对龙头地位</p>
+<p><strong>适用条件：</strong>
+- 中东冲突持续或欧洲产能不出清
+- 东南亚、南美等新兴市场不跟进反倾销</p>
+<p><strong>失效信号：</strong>
+- 欧盟或其他国家对中国MDI反倾销调查立案
+- 万华产品质量或供应出现问题</p>
+<p><strong>置信度：中</strong>
+<strong>置信度依据：</strong> 出口数据已验证，但长期格局变化需持续跟踪</p>
+<hr />
+<h3>LK-006：磷酸铁锂成为第二增长极</h3>
+<p><strong>因果断言：</strong>
+如果磷酸铁锂四代/五代产品（技术代差）持续扩大+产能快速扩张至100万吨+，则磷酸铁锂将成为万华第二个"现金牛"业务，与聚氨酯主业形成双引擎。</p>
+<p><strong>支持依据：</strong>
+- 【L2】磷酸铁锂2025年Q4已率先扭亏为盈
+- 【L2】四代产品已批量供货，五代产品已完成定型首发
+- 【L2】四代产品具备1,000-2,000元/吨超额加工费
+- 【L2】2026年产能将快速提升至100万吨/年级别，远期规划300万吨</p>
+<p><strong>适用条件：</strong>
+- 新能源车渗透率持续提升
+- 磷酸铁锂技术迭代保持领先</p>
+<p><strong>失效信号：</strong>
+- 磷酸铁锂单吨盈利持续为负
+- 行业产能出清导致价格战
+- 固态电池等新技术替代磷酸铁锂</p>
+<p><strong>置信度：中</strong>
+<strong>置信度依据：</strong> Q4扭亏验证，但行业整体过剩背景下需持续跟踪</p>
+<hr />
+<h3>LK-007：TDI供需缺口16/26/16万吨支撑价格上涨</h3>
+<p><strong>因果断言：</strong>
+如果2026-2028年全球TDI供需缺口维持16/26/16万吨，且万华以147万吨/年产能（全球市占率40%）充分受益，则TDI价格有望从当前1.78万元/吨继续上行。</p>
+<p><strong>支持依据：</strong>
+- 【L2】全球TDI供需缺口2026-2028年预计分别达16万吨、26万吨、16万吨
+- 【L2】全球CR5高达86%，万华市占率约40%居全球首位
+- 【L2】TDI价格较年初+22%至1.78万元/吨，距2016年历史最高4.69万元/吨仍有2.90万元/吨空间
+- 【L2】老旧装置不可抗力多发：科思创德国30万吨装置遭遇不可抗力、日本MCNS产能缩减至5万吨</p>
+<p><strong>适用条件：</strong>
+- 全球TDI供给扰动持续
+- 下游需求（汽车/鞋材/人形机器人）稳步增长</p>
+<p><strong>失效信号：</strong>
+- TDI价格跌破14,000元/吨
+- 全球产能利用率回升至80%以上
+- 需求侧出现超预期下滑</p>
+<p><strong>置信度：中</strong>
+<strong>置信度依据：</strong> 供给缺口有数据支撑，但需求侧增速（CAGR 4%）低于MDI（5%），弹性较弱</p>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td><strong>并行</strong></td>
+<td>共同支撑ROE回升和估值修复</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td><strong>并行</strong></td>
+<td>共同支撑FCF转正</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-003</td>
+<td><strong>并行</strong></td>
+<td>石化扭亏→OCF增加→FCF转正</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-001/LK-002</td>
+<td><strong>依赖</strong></td>
+<td>PB均值回归依赖于ROE回升，而ROE依赖于LK-001/LK-002</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-001</td>
+<td><strong>并行</strong></td>
+<td>份额扩张与MDI景气相互强化</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>—</td>
+<td>独立</td>
+<td>新材料板块，与主业逻辑相对独立</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-001</td>
+<td><strong>并行</strong></td>
+<td>共同支撑聚氨酯景气，协同效应</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<h2>四、关联卡片</h2>
+<ul>
+<li>01_公司研究/公司卡片/万华化学_600309/万华化学总览 — 关联判断：综合评级S级，目标价98-104元</li>
+<li>商业模式 — 关联判断：三重护城河，极强</li>
+<li>成长性 — 关联判断：2026E净利润+52-92%，第二增长极验证</li>
+<li>盈利能力 — 关联判断：ROE从12%向18%+修复</li>
+<li>估值 — 关联判断：PB均值回归，DCF 98元</li>
+<li>风险 — 关联判断：最大风险已解除，下行保护充足</li>
+<li>影响因素 — 关联判断：MDI涨价+石化扭亏+反倾销解除</li>
+</ul>
+<hr />
+<h2>来源</h2>
+<blockquote>
+<p>原始资料：01_公司研究/原始资料/万华化学_600309/万华化学_600309_SH_综合投研分析_20260515
+原始资料：01_公司研究/原始资料/万华化学_600309/万华化学_投研深度调研报告_20260515
+原始资料：01_公司研究/原始资料/万华化学_600309/万华化学_投资评估报告_修正版_20260515</p>
+</blockquote>
+</div>
+</body>
+</html>

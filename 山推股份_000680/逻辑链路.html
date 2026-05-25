@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>山推股份 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>山推股份 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th style="text-align: center;">置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>国际化扩张→盈利确定性（修正）</td>
+<td style="text-align: center;">高</td>
+<td>成长性/估值</td>
+<td>海外收入连续下滑</td>
+<td>2026-05-21（调研修正）</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>降本增效→净利率提升</td>
+<td style="text-align: center;">高</td>
+<td>盈利能力/估值</td>
+<td>降本目标未达成</td>
+<td>2026-05-21</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>推土机护城河→周期防御（修正）</td>
+<td style="text-align: center;">高</td>
+<td>商业模式/风险</td>
+<td>市占率大幅下降</td>
+<td>2026-05-21（调研修正）</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>周期复苏→业绩弹性</td>
+<td style="text-align: center;">中</td>
+<td>成长性/估值</td>
+<td>复苏节奏低于预期</td>
+<td>2026-05-21</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>国企改革催化→估值重估（修正）</td>
+<td style="text-align: center;">中</td>
+<td>估值/影响因素</td>
+<td>H股/雷沃进展停滞</td>
+<td>2026-05-21（调研修正）</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>组织能力→持续竞争优势（新增）</td>
+<td style="text-align: center;">高</td>
+<td>商业模式/成长性</td>
+<td>管理层/激励政策变化</td>
+<td>2026-05-21（调研新增）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：山推股份_000680_综合投研分析_20260521.md</p>
+</blockquote>
+<hr />
+<h2>二、链路详情</h2>
+<h3>LK-001：国际化扩张驱动盈利确定性</h3>
+<p><strong>因果断言：</strong>
+如果山推的海外收入占比持续提升（当前60%）且海外毛利占比维持高位（当前78%），则公司的盈利确定性将持续增强，即使国内需求承压也能维持业绩增长。</p>
+<p><strong>支持依据：</strong>
+- 2025年海外收入87.41亿元，同比+17.94%，占比59.8%
+- 海外毛利占比78%，远高于国内
+- 5年CAGR约48%，2026年目标105亿元
+- 非洲已成为海外最大单一市场</p>
+<p><strong>适用条件：</strong>
+- 海外矿山需求持续旺盛（非洲/中东/俄罗斯/南美）
+- 海外销售服务网络持续扩张（13家子公司+160+国家）
+- 地缘政治风险可控</p>
+<p><strong>失效信号：</strong>
+- 海外收入单季同比&lt;5%（连续2个季度）
+- 海外毛利率下降超过5pp
+- 海外市场出现重大地缘冲突（如非洲主要市场政权更迭）
+- <strong>【修正】</strong> 汇率贬值超过20%（影响利润）
+- <strong>【新增失效信号】</strong> 中国重汽非洲市占率&lt;60%（生态壁垒核心依赖松动）</p>
+<blockquote>
+<p>⚠️ <strong>调研修正</strong>：非洲业务驱动中基建议题占比82%（非矿山），服务网络依赖重汽协同（非独立积累），需增加重汽非洲市占率作为失效信号
+来源：山推股份_000680_调研报告_20260521.md</p>
+</blockquote>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 海外收入高增趋势明确（在手订单+渠道布局），历史数据验证充分。</p>
+<hr />
+<h3>LK-002：降本增效驱动净利率提升</h3>
+<p><strong>因果断言：</strong>
+如果山推每年维持5亿+降本目标且执行到位，则净利率将持续提升（2022年6.36%→2025年8.31%），盈利能力增强。</p>
+<p><strong>支持依据：</strong>
+- 2025年降本5.3亿元（采购降本3.4亿+工艺降本8000万+研发降本约1.1亿）
+- 2026年降本目标维持5.2-5.3亿元
+- 山东重工集团"黄金内核"产业链协同降本</p>
+<p><strong>适用条件：</strong>
+- 降本目标设定合理且可执行
+- 原材料价格不出现大幅上涨（侵蚀降本成果）
+- 生产工艺持续优化</p>
+<p><strong>失效信号：</strong>
+- 降本目标连续2年未达成
+- 钢材等原材料价格大幅上涨（&gt;20%），侵蚀降本成果
+- 降本措施影响产品质量（客户投诉增加）</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 历史3年降本执行记录良好（2023-2025年持续达成），管理层指引明确。</p>
+<hr />
+<h3>LK-003：推土机护城河提供周期防御</h3>
+<p><strong>因果断言：</strong>
+如果山推推土机国内市占率维持63%+且黄金内核产业链（潍柴+林德+山推）保持协同，则即使工程机械行业进入下行周期，山推的推土机业务也能提供底部支撑。</p>
+<p><strong>支持依据：</strong>
+- 推土机国内63%市占率，全球第三
+- 40年品牌积累，"山推"牌推土机中国第一
+- 黄金内核产业链：潍柴发动机+林德液压+山推传动件，省油提效
+- 2025年降本5.3亿，成本控制能力强</p>
+<p><strong>适用条件：</strong>
+- 市占率不出现大幅下滑（&lt;50%）
+- 集团内部协同关系稳定
+- 竞争对手未实现技术突破</p>
+<p><strong>失效信号：</strong>
+- 推土机国内市占率下降超过10pp（&lt;53%）
+- 潍柴动力/林德液压供应出现问题
+- 竞争对手推出颠覆性产品</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 推土机护城河极强（★★★★★），历史验证充分（市占率多年稳定）。</p>
+<hr />
+<h3>LK-004：周期复苏带来业绩弹性</h3>
+<p><strong>因果断言：</strong>
+如果工程机械行业在2026年迎来周期反转（设备以旧换新政策+国四排放切换驱动），则山推作为周期龙头将享受业绩弹性（净利润2026E 14.98亿→2028E 22.02亿，CAGR 22%）。</p>
+<p><strong>支持依据：</strong>
+- 工程机械上一轮高点2011-2012年，2016年触底，2021年再迎高峰，当前处于复苏早期
+- 设备以旧换新政策持续推进，存量更新需求释放
+- 2026年有望成为周期反转转折点
+- Wind一致预期：2026E 14.98亿（+23.7%），2027E 18.33亿（+22.4%）</p>
+<p><strong>适用条件：</strong>
+- 国内基建/地产投资增速企稳回升
+- 设备以旧换新政策持续（不退出）
+- 海外需求不大幅下滑（双轮驱动）</p>
+<p><strong>失效信号：</strong>
+- 周期复苏节奏低于预期（PMI连续3个月&lt;45）
+- 设备以旧换新政策退出
+- 国内需求持续低迷（连续2季度负增长）</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 周期复苏方向明确但节奏不确定，历史周期规律仅供参考。</p>
+<hr />
+<h3>LK-005：国企改革催化估值重估（调研修正）</h3>
+<p><strong>因果断言：</strong>
+如果山推成功发行H股（2026年推进中）并推进雷沃重工同业竞争解决方案（2029年前），则将带来估值弹性（市场给予H股平台溢价+资产注入预期）。</p>
+<p><strong>支持依据：</strong>
+- 拟发行H股建立海外融资平台（股东大会已通过，2026-04-30）
+- 集团承诺2029年前解决雷沃重工同业竞争
+- 雷沃重工为国内农业装备龙头，资产质量优质</p>
+<blockquote>
+<p>⚠️ <strong>调研修正</strong>：雷沃托管性质为"看涨期权"（非财务洗澡）。托管费仅50万/年，核心价值在于获得经营管理权+优先购买权。雷沃净资产-7076万元必须转正后才能注入，山推角色从"被动等待"→"主动操盘"。注入后营收逼近200亿元。
+来源：山推股份_000680_调研报告_20260521.md</p>
+<p>⚠️ <strong>交流会更新</strong>：港股IPO已于2024年8月28日递交财务数据（2023年6月30日节点），正在准备加期材料（2023年12月31日节点），初步规划2025年二季度完成。股权激励因国资系统窗口指导未明确，暂未推进。
+来源：山推股份2025年业绩交流会纪要</p>
+</blockquote>
+<p><strong>适用条件：</strong>
+- H股发行顺利推进（2026年内完成）
+- 雷沃重工同业竞争解决方案2026-2027年有明确进展
+- 市场对国企改革预期持续升温</p>
+<p><strong>失效信号：</strong>
+- H股发行进度大幅延迟或终止
+- 雷沃重工净资产转正节点延后（当前-7076万元，硬性门槛）
+- 市场对国企改革主题热情降温</p>
+<blockquote>
+<p>⚠️ <strong>失效信号更新</strong>：港股IPO进度停滞（超6个月无实质进展）或监管审批被拒视为失效信号。
+来源：山推股份2025年业绩交流会纪要</p>
+</blockquote>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 催化剂有明确时间表，但执行节奏和结果不确定（H股需审批，雷沃方案需谈判）。</p>
+<hr />
+<h3>LK-006：组织能力驱动持续竞争优势（调研新增）</h3>
+<p><strong>因果断言：</strong>
+如果山推的管理层激励机制持续有效（80后团队+对赌协议+股权激励"动真格"），则组织能力将持续转化为竞争优势，成为真正的核心护城河。</p>
+<p><strong>支持依据：</strong>
+- 股权激励2020年授予2527万股，已执行未达标注销18.48万股（"动真格"验证）
+- 高管薪酬绩效占比≥50%，结果导向
+- 销售/研发：阶梯激励+揭榜挂帅+对赌协议
+- 80后管理层（平均49岁）+李士振董事长（44-45岁）
+- 权力下放：子公司独立定价权、区域差异化策略</p>
+<p><strong>适用条件：</strong>
+- 激励机制持续执行，不出现倒退
+- 核心管理层稳定，不发生重大变更
+- 国企改革方向不变</p>
+<p><strong>失效信号：</strong>
+- 股权激励/薪酬考核出现大幅调整
+- 核心管理层离职率上升
+- 国企改革方向逆转</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 激励机制已实质落地，历史执行记录良好（已执行注销），管理层年轻化且稳定。</p>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th style="text-align: center;">关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td style="text-align: center;">并行</td>
+<td>国际化+降本增效共同支撑盈利确定性</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-004</td>
+<td style="text-align: center;">依赖</td>
+<td>国际化提供底部支撑，使周期复苏弹性更大</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-004</td>
+<td style="text-align: center;">依赖</td>
+<td>推土机护城河提供周期防御，使复苏时弹性更大</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-001</td>
+<td style="text-align: center;">并行</td>
+<td>国企改革（估值催化）与国际化（盈利催化）并行，互不依赖</td>
+</tr>
+<tr>
+<td><strong>LK-006</strong></td>
+<td>LK-001/002/003</td>
+<td style="text-align: center;"><strong>底层支撑</strong></td>
+<td><strong>组织能力是所有其他链路的底层支撑</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<hr />
+<h2>四、关联卡片</h2>
+<ul>
+<li>山推股份总览 — 关联判断：综合评级B+级（推荐买入）</li>
+<li>商业模式 — 关联判断：推土机护城河★★★★★，国际化占比60%</li>
+<li>成长性 — 关联判断：国际化驱动，2026-2028年净利润CAGR 22%</li>
+<li>盈利能力 — 关联判断：净利率持续提升至8.31%，ROIC&gt;WACC</li>
+<li>估值 — 关联判断：目标价14.32元，安全边际+23.77%</li>
+<li>风险 — 关联判断：周期风险/竞争风险/地缘风险</li>
+<li>影响因素 — 关联判断：设备以旧换新政策/国企改革催化</li>
+</ul>
+<hr />
+<h2>五、来源</h2>
+<blockquote>
+<p>来源：山推股份_000680_综合投研分析_20260521.md §综合投资决策</p>
+</blockquote>
+</div>
+</body>
+</html>

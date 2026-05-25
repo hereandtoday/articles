@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>怡合达 · 跟踪清单</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>怡合达 · 跟踪清单</h1>
+<blockquote>
+<p>M2 定期检查清单，用于监控关键判断和逻辑链路的有效性。
+建议检查频率：月度/季度/半年度</p>
+</blockquote>
+<hr />
+<h2>一、跟踪项总表</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>关联链路/判断</th>
+<th>检查内容</th>
+<th>检查频率</th>
+<th>上次检查</th>
+<th>下次检查</th>
+<th>状态</th>
+<th>预警阈值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>LK-001</td>
+<td>锂电增速是否维持30%+</td>
+<td>季度</td>
+<td>2026-05-15</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>连续2季度&lt;20%</td>
+</tr>
+<tr>
+<td></td>
+<td>LK-002</td>
+<td>半导体前道客户认证进展</td>
+<td>季度</td>
+<td>2026-05-15</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>超过12个月无突破</td>
+</tr>
+<tr>
+<td></td>
+<td>LK-003</td>
+<td>非标业务营收增速</td>
+<td>季度</td>
+<td>2026-05-15</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>连续2季度&lt;20%</td>
+</tr>
+<tr>
+<td></td>
+<td>LK-004</td>
+<td>毛利率是否维持在38%+</td>
+<td>季度</td>
+<td>2026-05-15</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>跌破35%</td>
+</tr>
+<tr>
+<td></td>
+<td>LK-005</td>
+<td>费用率是否回落</td>
+<td>季度</td>
+<td>2026-05-15</td>
+<td>2026-08-15</td>
+<td>🟡 关注</td>
+<td>Q2管理费用率&gt;11%</td>
+</tr>
+<tr>
+<td></td>
+<td>LK-006</td>
+<td>减持计划执行进度</td>
+<td>月度</td>
+<td>2026-05-15</td>
+<td>2026-06-15</td>
+<td>🟢 正常</td>
+<td>减持延期或扩大</td>
+</tr>
+</tbody>
+</table>
+<p><strong>状态说明：</strong>
+- 🟢 正常：未触发预警，逻辑有效
+- 🟡 关注：接近预警阈值，需留意
+- 🔴 警报：触发预警阈值，需重新评估
+- ⚫ 失效：逻辑链路已失效，待更新</p>
+<hr />
+<h2>二、跟踪项详情</h2>
+<h3>T-01：锂电增速（LK-001）</h3>
+<p><strong>关联链路</strong>：<a href="#LK-001">LK-001：锂电持续高增，收入增速维持</a></p>
+<p><strong>检查内容</strong>：季度跟踪锂电行业营收增速</p>
+<p><strong>预警阈值</strong>：连续2季度&lt;20%</p>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-15</td>
+<td>🟢 Q1锂电+40%+，正常</td>
+<td>维持跟踪</td>
+<td>系统</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-02：半导体前道拓展（LK-002）</h3>
+<p><strong>关联链路</strong>：<a href="#LK-002">LK-002：半导体爆发，打造第二成长曲线</a></p>
+<p><strong>检查内容</strong>：半导体前道客户认证进展</p>
+<p><strong>预警阈值</strong>：超过12个月无突破</p>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-15</td>
+<td>🟢 Q1半导体+60%+，成立专门事业部</td>
+<td>维持跟踪</td>
+<td>系统</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-03：非标业务增速（LK-003）</h3>
+<p><strong>关联链路</strong>：<a href="#LK-003">LK-003：非标数字化，长期壁垒构建</a></p>
+<p><strong>检查内容</strong>：非标业务营收增速</p>
+<p><strong>预警阈值</strong>：连续2季度&lt;20%</p>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-15</td>
+<td>🟢 Q1非标+50%，成交客户+50%</td>
+<td>维持跟踪</td>
+<td>系统</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-04：毛利率（LK-004）</h3>
+<p><strong>关联链路</strong>：<a href="#LK-004">LK-004：毛利率提升，定价权验证</a></p>
+<p><strong>检查内容</strong>：毛利率是否维持在38%+</p>
+<p><strong>预警阈值</strong>：跌破35%</p>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-15</td>
+<td>🟢 2025年39.14%，Q1 39.02%，持续提升</td>
+<td>维持跟踪</td>
+<td>系统</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>三、检查记录日志</h2>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>编号</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-15</td>
+<td>T-01~T-04</td>
+<td>首次建立跟踪清单</td>
+<td>初始化跟踪项</td>
+<td>系统</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-05：费用率回落（LK-005）</h3>
+<p><strong>关联链路</strong>：<a href="#LK-005">LK-005：费用率回落 → 利润增速回升</a></p>
+<p><strong>检查内容</strong>：Q2-Q3管理费用率是否环比回落</p>
+<p><strong>预警阈值</strong>：Q2管理费用率超过11%</p>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-15</td>
+<td>🟡 Q1管理费用率同比+1.98pct，需关注Q2</td>
+<td>维持跟踪</td>
+<td>系统</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-06：减持进度（LK-006）</h3>
+<p><strong>关联链路</strong>：<a href="#LK-006">LK-006：减持完成 → 筹码压力解除</a></p>
+<p><strong>检查内容</strong>：实控人一致行动人减持计划执行进度</p>
+<p><strong>预警阈值</strong>：减持延期或扩大</p>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-15</td>
+<td>🟢 尚有约1.8%待减持，预计2026年7月完成</td>
+<td>维持跟踪</td>
+<td>系统</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、过期项汇总</h2>
+<blockquote>
+<p>以下为 lint 检查时自动填充的过期项。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>关联链路/判断</th>
+<th>应检日期</th>
+<th>已过期</th>
+<th>建议操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>五、关联文件</h2>
+<ul>
+<li>逻辑链路 — 因果断言网络（L3）</li>
+<li>变更记录 — 逻辑修正记录</li>
+<li>01_公司研究/公司卡片/怡合达_301029/怡合达总览 — 公司总览</li>
+<li>商业模式 — 核心竞争力</li>
+<li>成长性 — 成长分析</li>
+<li>盈利能力 — 盈利能力</li>
+<li>风险 — 风险提示</li>
+<li>估值 — 估值分析</li>
+<li>影响因素 — 短期影响因素</li>
+</ul>
+</div>
+</body>
+</html>

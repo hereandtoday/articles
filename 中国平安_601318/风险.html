@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>中国平安 · 风险</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>中国平安 · 风险</h1>
+<blockquote>
+<p><strong>边界说明</strong>：本卡片聚焦"结构性威胁+极端情景损失"，不含当前状态/边际变化
+- 当前状态 → 影响因素
+- 跟踪指标阈值 → 影响因素</p>
+</blockquote>
+<hr />
+<h2>一、风险矩阵概览</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">编号</th>
+<th>风险类别</th>
+<th>风险描述</th>
+<th style="text-align: center;">影响程度</th>
+<th style="text-align: center;">发生概率</th>
+<th style="text-align: center;">可控性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">R1</td>
+<td>市场风险</td>
+<td>权益市场大幅波动导致投资端短期亏损</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R2</td>
+<td>利率风险</td>
+<td>长端利率持续下行侵蚀寿险利差和EV假设回报率</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R3</td>
+<td>NBVM下行风险</td>
+<td>银保渠道扩张但NBVM无法修复，压制增长含金量</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R4</td>
+<td>代理人渠道收缩风险</td>
+<td>代理人清虚早于产能释放，造成个险价值断层</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R5</td>
+<td>信用风险</td>
+<td>平安银行零售信贷资产质量恶化</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">低</td>
+<td style="text-align: center;">中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>说明</strong>：
+- 影响程度：高（致命）/ 中（显著）/ 低（可承受）
+- 发生概率：高（已发生）/ 中（可能）/ 低（极端情景）
+- 可控性：高（有对冲）/ 中（部分）/ 低（几乎无）</p>
+<blockquote>
+<p>来源：中国平安_601318_综合投研分析_20260518.md §三（五）风险排查</p>
+</blockquote>
+<hr />
+<h2>二、结构性威胁详解</h2>
+<h3>2.1 R1：权益市场波动风险</h3>
+<p><strong>触发条件</strong>：
+- A股/H股大幅下跌30%以上
+- 保险资金投资组合中股票资产减值</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>损失估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>—</td>
+<td>1Q26归母净利润同比-7.4%（250.22亿元）</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>权益市场下跌30%+</td>
+<td>P/EV可能下探至0.50倍，股价约43.90元，下行空间23.8%（约2,390亿元市值损失）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>对冲措施</th>
+<th>量化效果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高股息（4.63%+）</td>
+<td>股息覆盖下行</td>
+<td>长期配置资金提供下行缓冲</td>
+</tr>
+<tr>
+<td>保险资金久期匹配</td>
+<td>降低短期波动影响</td>
+<td>股票投资占比约10.5%（约6,900亿元）</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>下行保护</strong></td>
+<td>极端情景概率低（5%），且高股息提供缓冲</td>
+</tr>
+</tbody>
+</table>
+<p><strong>护城河脆弱性边界</strong>：塔身（中层资产质量），不影响塔基客户粘性。</p>
+<blockquote>
+<p>来源：中国平安_601318_综合投研分析_20260518.md §二（一）/ §五（二）</p>
+</blockquote>
+<hr />
+<h3>2.2 R2：利率持续下行风险</h3>
+<p><strong>触发条件</strong>：
+- 10年期国债收益率进一步大幅下行至1.5%以下
+- 寿险负债久期较长，利率下行对EV假设回报率有压力</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>10年期国债约1.8%</td>
+<td>负面压力约1-2个百分点</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>利率下行至1.5%以下</td>
+<td>对EV增速和CSM余额稳定性构成压力</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：
+- CSM余额7,251亿元保持高位，为未来两年利润释放提供安全垫
+- 寿险精算假设已考虑利率下行情景</p>
+<p><strong>护城河脆弱性边界</strong>：塔身（负债端成本），综合金融生态提供对冲。</p>
+<blockquote>
+<p>来源：中国平安_601318_综合投研分析_20260518.md §三（三）变量四</p>
+</blockquote>
+<hr />
+<h3>2.3 R3：NBVM下行风险</h3>
+<p><strong>触发条件</strong>：
+- 分红险占比持续提升+精算假设调整导致NBVM无法修复
+- 银保渠道持续扩张但NBVM跌破20%</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>1Q26 NBVM 23.5%，同比-4.8pct</td>
+<td>NBV增长含金量受质疑</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>NBVM持续低于23%</td>
+<td>P/EV修复目标从0.80倍压缩至0.70倍</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：
+- 银保NBV规模高增（1Q26同比+138%），总量增长对冲率下行
+- 8年交等较长缴费期产品推出有望逐步修复NBVM</p>
+<p><strong>护城河脆弱性边界</strong>：塔尖（产品定价权），银保渠道NBVM 28.6%-28.8%行业领先提供缓冲。</p>
+<blockquote>
+<p>来源：中国平安_601318_综合投研分析_20260518.md §三（三）变量一</p>
+</blockquote>
+<hr />
+<h3>2.4 R4：代理人渠道收缩风险</h3>
+<p><strong>触发条件</strong>：
+- 代理人清虚进程早于产能充分释放
+- 人均产能提升不及预期</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>代理人33.2万人（1Q26），较年初-1.9万人</td>
+<td>个险NBV增速面临压力</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>代理人持续收缩+增员失败</td>
+<td>个险渠道价值断层，与银保渠道"双轮驱动"逻辑受损</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：
+- 2026年Q2加大增员力度，重点招募本科以上学历新人
+- 银保渠道高增形成替代，弥补个险下滑</p>
+<p><strong>护城河脆弱性边界</strong>：塔身（渠道竞争力），社区金融网格+银保渠道提供对冲。</p>
+<blockquote>
+<p>来源：中国平安_601318_综合投研分析_20260518.md §三（三）变量二</p>
+</blockquote>
+<hr />
+<h3>2.5 R5：平安银行资产质量风险</h3>
+<p><strong>触发条件</strong>：
+- 零售信贷业务资产质量恶化
+- 不良率突破1.3%</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>不良率1.05%，拨备覆盖率220.88%</td>
+<td>整体可控</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>不良率突破1.3%，拨备覆盖率跌破200%</td>
+<td>对集团整体估值造成额外压力</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：
+- 平安银行整体资产质量可控
+- 集团综合金融优势提供客户协同</p>
+<p><strong>护城河脆弱性边界</strong>：塔基（协同效应），银行零售业务为保险生态提供客户来源，风险可承受。</p>
+<blockquote>
+<p>来源：中国平安_601318_综合投研分析_20260518.md §三（三）变量五</p>
+</blockquote>
+<hr />
+<h2>三、风险综合评估</h2>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th>评价</th>
+<th style="text-align: center;">评分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固有风险</td>
+<td>中（多业务板块分散）</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td>风险可控性</td>
+<td>高（多渠道对冲+高股息缓冲）</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td>风险分散度</td>
+<td>高（综合金融+多业务板块）</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td>下行保护</td>
+<td>高（股息率4.63%+EV底部）</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td>尾部风险</td>
+<td>低（极端情景概率5%）</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td><strong>综合</strong></td>
+<td><strong>风险整体可控，提供充分下行保护</strong></td>
+<td style="text-align: center;"><strong>7/10</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>边界说明</strong>：
+- 本卡片聚焦"结构性威胁+极端情景损失"
+- 当前NBVM变化/利率走势等动态 → 影响因素
+- 跟踪指标阈值 → 影响因素</p>
+</blockquote>
+</div>
+</body>
+</html>

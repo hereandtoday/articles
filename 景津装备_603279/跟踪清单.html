@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>景津装备 · 跟踪清单</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>景津装备 · 跟踪清单</h1>
+<blockquote>
+<p>M2 定期检查清单，用于监控关键判断和逻辑链路的有效性。
+建议检查频率：月度/季度/半年度</p>
+</blockquote>
+<h2>一、跟踪项总表</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>关联链路/判断</th>
+<th>检查内容</th>
+<th>检查频率</th>
+<th>上次检查</th>
+<th>下次检查</th>
+<th>状态</th>
+<th>预警阈值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T-01</td>
+<td>LK-001</td>
+<td>季度毛利率</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-08-21</td>
+<td>🟡 关注</td>
+<td>持续&lt;22%；企稳回升至25%+为正向信号</td>
+</tr>
+<tr>
+<td>T-02</td>
+<td>LK-002</td>
+<td>矿业收入增速（矿业CAPEX趋势）</td>
+<td>半年度</td>
+<td>—</td>
+<td>2026-12-31</td>
+<td>🟢 正常</td>
+<td>增速连续2季&lt;10%</td>
+</tr>
+<tr>
+<td>T-03</td>
+<td>LK-003</td>
+<td>配套设备收入增速</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-08-21</td>
+<td>🟢 正常</td>
+<td>&lt;20%</td>
+</tr>
+<tr>
+<td>T-04</td>
+<td>LK-004</td>
+<td>海外收入增速</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-08-21</td>
+<td>🟢 正常</td>
+<td>&lt;20%</td>
+</tr>
+<tr>
+<td>T-05</td>
+<td>LK-005</td>
+<td>耗材收入增速及耗材/整机比</td>
+<td>半年度</td>
+<td>—</td>
+<td>2026-12-31</td>
+<td>🟢 正常</td>
+<td>耗材收入增速转负</td>
+</tr>
+<tr>
+<td>T-06</td>
+<td>综合</td>
+<td>2026H1净利润同比是否转正</td>
+<td>半年度</td>
+<td>—</td>
+<td>2026-08-31</td>
+<td>🟡 关注</td>
+<td>连续亏损（不及预期）</td>
+</tr>
+<tr>
+<td>T-07</td>
+<td>L4 综合评级</td>
+<td>综合评级B级是否有效</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-08-21</td>
+<td>🟢 正常</td>
+<td>毛利率大幅回升或护城河被侵蚀</td>
+</tr>
+<tr>
+<td>T-08</td>
+<td>R3 实控人治理</td>
+<td>实控人状态及公告</td>
+<td>月度</td>
+<td>—</td>
+<td>2026-06-21</td>
+<td>🟢 正常</td>
+<td>出现新的留置/监管问询</td>
+</tr>
+</tbody>
+</table>
+<p><strong>状态说明：</strong>
+- 🟢 正常：未触发预警，逻辑有效
+- 🟡 关注：接近预警阈值，需留意
+- 🔴 警报：触发预警阈值，需重新评估
+- ⚫ 失效：逻辑链路已失效，待更新</p>
+<h2>二、检查记录日志</h2>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>编号</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-21</td>
+<td>T-01~T-08</td>
+<td>首次建立跟踪清单</td>
+<td>初始化跟踪项</td>
+<td>系统</td>
+</tr>
+</tbody>
+</table>
+<h2>三、过期项汇总</h2>
+<blockquote>
+<p>以下为 lint 检查时自动填充的过期项。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>关联链路/判断</th>
+<th>应检日期</th>
+<th>已过期</th>
+<th>建议操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2>四、关联文件</h2>
+<ul>
+<li>逻辑链路 — 因果断言网络（L3）</li>
+<li>变更记录 — 逻辑修正记录</li>
+<li>景津装备总览 — 公司总览/跟踪指标</li>
+<li>影响因素 — 边际变化跟踪</li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>思源电气 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>思源电气 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>国网投资高景气→思源份额提升→营收增长</td>
+<td>高</td>
+<td>成长性评级</td>
+<td>招标增速低于+10%</td>
+<td>2026-05-23</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>海外供需错配→思源产能释放→海外高增长</td>
+<td>高</td>
+<td>成长性评级、海外占比</td>
+<td>海外订单增速低于+20%</td>
+<td>2026-05-23</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>北美AIDC认证突破→高毛利订单→净利率提升</td>
+<td><strong>高</strong>↑</td>
+<td>盈利能力评级</td>
+<td>认证延期/北美订单未落地</td>
+<td>2026-05-23</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>订单375亿(+30%)→营收270亿(+25%)→利润高增</td>
+<td>高</td>
+<td>估值/目标价</td>
+<td>季度订单增速低于+20%</td>
+<td>2026-05-23</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>高增长+PEG=1→估值合理→目标价237-287元</td>
+<td>中</td>
+<td>估值评级/目标价</td>
+<td>PE持续高于45x且增长放缓</td>
+<td>2026-05-23</td>
+</tr>
+<tr>
+<td><strong>LK-006</strong></td>
+<td><strong>竞争本质三层结构→护城河难以复制→民企优势持续</strong></td>
+<td><strong>高</strong></td>
+<td><strong>商业模式评级</strong></td>
+<td><strong>国企改革后体制效率差距收窄</strong></td>
+<td><strong>2026-05-24</strong></td>
+</tr>
+<tr>
+<td><strong>LK-007</strong></td>
+<td><strong>五重机制共振→市占率快速提升→规模优势强化</strong></td>
+<td><strong>高</strong></td>
+<td><strong>成长性评级</strong></td>
+<td><strong>单一机制失效（如竞争加剧/订单流失）</strong></td>
+<td><strong>2026-05-24</strong></td>
+</tr>
+<tr>
+<td><strong>LK-008</strong></td>
+<td><strong>供需错配窗口期→产能出海+客户信任+技术升级→长期护城河加深</strong></td>
+<td><strong>高</strong></td>
+<td><strong>成长性评级、海外战略</strong></td>
+<td><strong>窗口期内未完成关键布局（北美未站稳/1100kV未突破/环保GIS未补课）</strong></td>
+<td><strong>2026-05-24</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>二、链路详情</h2>
+<h3>LK-001：国网投资→份额提升→营收增长</h3>
+<p><strong>因果断言：</strong>
+如果"十五五"国网投资4万亿元落地且思源在GIS/变压器/保护自动化等核心品类份额持续提升，则2026-2028年国内营收CAGR约25-30%。</p>
+<p><strong>支持依据：</strong>
+- 2025年国网输变电集招919.52亿元，同比+26.2%
+- 思源在国网10类高压设备份额从9.1%→11.8%（两年+2.7pct）
+- 2025年国网中标金额70.16亿元，同比+82.5%</p>
+<p><strong>适用条件：</strong>
+- 国网招标规模维持15%+增速
+- 思源在GIS品类份额维持20%+</p>
+<p><strong>失效信号：</strong>
+- 国网招标金额同比低于+10%
+- 思源综合中标份额跌破10%
+- 特高压/配网投资节奏大幅延后</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 国网"十五五"4万亿规划已明确，招标数据高频可跟踪，失效信号明确。</p>
+<hr />
+<h3>LK-002：海外供需错配→产能释放→海外高增长</h3>
+<p><strong>因果断言：</strong>
+如果全球电网设备供需错配持续且思源常州二期高压厂房（400+台/年）产能释放，则2025-2030年海外收入CAGR约43%，2028年海外占比超35%。</p>
+<p><strong>支持依据：</strong>
+- 2025年海外收入58.03亿元，同比+85.84%
+- 北美变压器交期18-24个月，全球缺口预计持续至2030年
+- 常州二期2025年11月投产，产能提升54%
+- Goldman Sachs预测2025-2030年海外CAGR 43%</p>
+<p><strong>适用条件：</strong>
+- 全球电网投资supercycle持续
+- 思源海外渠道/认证顺利推进
+- 贸易摩擦不显著升级</p>
+<p><strong>失效信号：</strong>
+- 海外收入季度增速低于+20%
+- 北美认证未能在2027年前落地
+- 贸易关税全面升级（&gt;25%）
+- 主要竞争对手产能释放填补缺口</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 供需错配是结构性非周期性，产能建设已落地，失效信号可量化跟踪。</p>
+<hr />
+<h3>LK-003：北美AIDC认证突破→高毛利订单→净利率提升</h3>
+<p><strong>因果断言：</strong>
+如果北美AIDC数据中心认证落地且订单规模化，则北美业务毛利率高达50%+，显著高于海外整体（35%+），成为贡献净利率提升的核心增量。</p>
+<p><strong>支持依据：</strong>
+- 罐式断路器已通过美国ANSI标准认证，北美订单已开始部分发运
+- 2025年北美数据中心客户订单达9亿元，2026年前2月新增4亿元
+- 交期优势显著：北美订单交付仅需3个季度，远快于传统EPC的2-3年
+- 2026年北美订单目标至少翻倍增长，Q2报表端开始体现</p>
+<p><strong>适用条件：</strong>
+- 2026年UL/IEEE认证全面获批
+- AIDC数据中心建设持续加速
+- 关税风险可控（北美变压器毛利50%+具备盈利缓冲空间）</p>
+<p><strong>失效信号：</strong>
+- 北美订单低于预期（&lt;5亿元/年）
+- 关税全面升级（&gt;25%）且无法通过产能转移规避
+- AIDC建设放缓或转向其他供应商</p>
+<p><strong>置信度：</strong> 高（↑从中调升）
+<strong>调升依据：</strong> 认证已通过，订单已开始发运，2026Q2报表端可见性高；北美变压器毛利50%+提供关税缓冲</p>
+<blockquote>
+<p>来源：调研纪要（2026-05-23）</p>
+</blockquote>
+<hr />
+<h3>LK-004：订单锁定→营收增长→利润高增</h3>
+<p><strong>因果断言：</strong>
+如果2025年新增订单288.91亿元（+34.64%）且2026年订单目标375亿元（+30%）实现，则2026-2027年营收/利润高增长有强可见性。</p>
+<p><strong>支持依据：</strong>
+- 2025年订单288.91亿元，超年初目标7.7%
+- 合同负债29.77亿元（同比+25.6%），在手订单累积
+- 2026年营收目标270亿元，订单覆盖率107%
+- 管理层历史执行力强（极少低于指引）</p>
+<p><strong>适用条件：</strong>
+- 订单向营收转化周期正常（6-12个月）
+- 无重大订单取消或延期
+- 产能持续匹配订单增长</p>
+<p><strong>失效信号：</strong>
+- 季度新增订单增速连续两期低于+20%
+- 合同负债环比下降
+- 重大订单取消公告</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 订单数据高频可跟踪，管理层历史指引超额完成，失效信号明确。</p>
+<hr />
+<h3>LK-005：高增长+PEG=1→估值合理→目标价237-287元</h3>
+<p><strong>因果断言：</strong>
+如果2026-2028年归母净利润CAGR 36%兑现，则2026E PE 36x/2027E PE 27x，估值快速消化，当前197元对应目标价237-287元有20-45%上行空间。</p>
+<p><strong>支持依据：</strong>
+- 一致预期2026E/2027E EPS 5.36/7.37元
+- PEG 2026E = 36.42/36.41 ≈ 1.00，成长股合理估值
+- 19家机构一致预期目标价237.15元
+- Morgan Stanley目标价286.50元（DCF）</p>
+<p><strong>适用条件：</strong>
+- 业绩增速维持30%+（2026-2028年）
+- PE维持35x以上（市场给予成长溢价）
+- 无系统性估值收缩</p>
+<p><strong>失效信号：</strong>
+- 任一年份净利润增速低于+20%
+- PE TTM持续高于50x且业绩不达预期
+- 市场风格切换至价值/防御
+- DCF与市价鸿沟持续扩大</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> PEG=1支撑当前估值，但PE 47x处于历史高位，安全边际薄；业绩高增长是消化估值的关键。</p>
+<hr />
+<h3>LK-006：竞争本质三层结构→护城河难以复制→民企优势持续</h3>
+<p><strong>因果断言：</strong>
+思源的竞争力本质是"技术（表层）+运营效率（中层）+平台生态（底层）"的三位一体，而非单一技术优势。这一结构使得平高（国企）、西电（国企）难以复制，民企优势具有持续性。</p>
+<p><strong>支持依据：</strong></p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>内容</th>
+<th>思源</th>
+<th>平高/西电</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表层</td>
+<td>技术优势</td>
+<td>GIS灭弧+罐式断路器密封技术</td>
+<td>技术积累同样深厚</td>
+</tr>
+<tr>
+<td>中层</td>
+<td>运营效率</td>
+<td>民营机制、成本管控、股权激励</td>
+<td>社责包袱、决策链条长</td>
+</tr>
+<tr>
+<td>底层</td>
+<td>平台生态</td>
+<td>一二次全覆盖+出海渠道+交期优势</td>
+<td>单品类为主，出海滞后</td>
+</tr>
+</tbody>
+</table>
+<p><strong>量化验证：</strong></p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>思源电气</th>
+<th>平高电气</th>
+<th>差距来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>毛利率</td>
+<td>30.77%</td>
+<td>23.92%</td>
+<td><strong>体制效率差距~7pct</strong></td>
+</tr>
+<tr>
+<td>净利率</td>
+<td>15.13%</td>
+<td>~8.9%</td>
+<td><strong>体制效率差距~6pct</strong></td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>20.33%</td>
+<td>9.96%</td>
+<td><strong>股东回报质量差距2倍</strong></td>
+</tr>
+<tr>
+<td>海外占比</td>
+<td>26.94%</td>
+<td>~2%</td>
+<td><strong>结构性差异</strong></td>
+</tr>
+<tr>
+<td>营收增速</td>
+<td>+39.34%</td>
+<td>+0.93%</td>
+<td><strong>38倍差距</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>适用条件：</strong>
+- 国企改革未显著提升平高/西电运营效率
+- 思源股权激励持续（已四期）
+- 海外战略持续推进</p>
+<p><strong>失效信号：</strong>
+- 平高/西电国企改革后体制效率显著提升（净利率追近12%+）
+- 思源股权激励终止或管理层动荡
+- 海外业务出现重大亏损</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 财务数据验证，体制效率差异是系统性的，难以短期改变</p>
+<blockquote>
+<p>来源：GIS行业研究_思源电气为锚_20260524.md §四</p>
+</blockquote>
+<hr />
+<h3>LK-007：五重机制共振→市占率快速提升→规模优势强化</h3>
+<p><strong>因果断言：</strong>
+思源750kV GIS份额从2023年0%→2025年20%的爆炸式跃迁，是"市场结构+交期优势+平台覆盖+客户绑定+海外反哺"五重机制共振的结果，缺一不可。五重机制同时失效的概率极低，市占率提升具有高确定性。</p>
+<p><strong>支持依据：</strong></p>
+<p><strong>机制一：市场结构决定突破难度</strong>
+- 750kV三寡头格局（平高47.5%、西电29.9%、思源20%），竞争对手仅2家
+- 1100kV特高压平高份额35-40%，格局固化，思源选择"农村包围城市"路径</p>
+<p><strong>机制二：交期优势是核心竞争维度</strong>
+- 思源交期6-9个月 vs GE/西门子/日立2-3年
+- 变压器交期思源6-9个月 vs 海外2.5-3年
+- 电网设备卖方市场下，交期本身就是竞争力</p>
+<p><strong>机制三：平台型"一站式"采购优势</strong>
+- 国内唯一同时具备一次+二次设备覆盖能力的民营电力设备商
+- 可承接EPC整单，直接对标GE/西门子打包服务能力
+- 降低客户供应链管理成本和接口协调成本</p>
+<p><strong>机制四：客户绑定机制</strong>
+- 国网供应商认证周期2-3年，换供应商成本高
+- 思源在GIS、隔离开关、断路器等核心品类均位列国网前1-3名
+- 2025年国网中标金额70亿（+82.5%），份额锁定效应强化</p>
+<p><strong>机制五：海外收入反哺国内竞争</strong>
+- 海外盈利→研发投入→技术升级→国内竞争力提升
+- 海外建立的品牌信任→传导至国内客户
+- 正循环：海外58亿（+85.84%）→分摊成本→国内竞争优势</p>
+<p><strong>适用条件：</strong>
+- 至少三重机制同时有效（防止单一失效导致市占率下滑）
+- 全球电网供需错配持续（支撑交期优势）
+- 国网招标体系稳定（支撑客户绑定）</p>
+<p><strong>失效信号：</strong>
+- 单一机制失效（如竞争加剧→价格战→毛利率崩塌）
+- 全球产能扩张完成→交期优势消失
+- 重大质量事故→客户信任崩塌</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 2023-2025年市占率数据验证，五重机制均有量化指标可跟踪</p>
+<blockquote>
+<p>来源：本次分析整理（2026-05-24）</p>
+</blockquote>
+<hr />
+<h3>LK-008：供需错配窗口期→产能出海+客户信任+技术升级→长期护城河加深</h3>
+<p><strong>因果断言：</strong>
+全球电网供需错配是思源的<strong>战略窗口期</strong>，而非简单的业绩加速期。如果思源能借此完成"北美站稳脚跟+1100kV突破+环保GIS技术补课"三件事，长期护城河将显著加深，从"中国电力设备商"升级为"全球电力设备龙头"；如果只是趁窗口期"捞一把"，等供需平衡后会被打回原形。</p>
+<p><strong>支持依据：</strong></p>
+<p><strong>窗口期的三个长期价值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>价值维度</th>
+<th>具体内容</th>
+<th>关键标志</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>产能出海</strong></td>
+<td>从"产品出口商"→"产能出海商"，建立本地化制造和服务网络</td>
+<td>沙特工厂投产、墨西哥/匈牙利工厂落地</td>
+</tr>
+<tr>
+<td><strong>客户信任</strong></td>
+<td>电力设备行业"运行业绩=市场准入门槛"，窗口期让客户愿意给新供应商机会</td>
+<td>北美AIDC运行业绩建立、欧洲高端客户突破</td>
+</tr>
+<tr>
+<td><strong>技术升级</strong></td>
+<td>高端市场验证+高需求拉动技术迭代</td>
+<td>1100kV GIS通过鉴定、环保GIS 2027年推出</td>
+</tr>
+</tbody>
+</table>
+<p><strong>窗口期结束的挑战：</strong></p>
+<table>
+<thead>
+<tr>
+<th>时间节点</th>
+<th>变化</th>
+<th>对思源的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-3年后</td>
+<td>海外巨头产能扩张完成，交期缩短</td>
+<td>交期优势被压缩</td>
+</tr>
+<tr>
+<td>3-5年后</td>
+<td>中国竞争对手加速出海，竞争加剧</td>
+<td>价格战压力出现</td>
+</tr>
+<tr>
+<td>5年后</td>
+<td>供需逐步平衡，买方市场回归</td>
+<td>毛利率承压</td>
+</tr>
+</tbody>
+</table>
+<p><strong>思源的三项关键任务（决定窗口期价值兑现程度）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>任务</th>
+<th>重要性</th>
+<th>进展</th>
+<th>失败后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>北美市场站稳脚跟</td>
+<td>🔴高</td>
+<td>ANSI认证已通过，Q2报表体现</td>
+<td>无法进入全球最高毛利市场</td>
+</tr>
+<tr>
+<td>1100kV GIS通过鉴定</td>
+<td>🔴高</td>
+<td>百万伏厂房收尾，2026年有望首单</td>
+<td>无法切入特高压最高端</td>
+</tr>
+<tr>
+<td>环保GIS技术补课</td>
+<td>🔴高</td>
+<td>预计2027年推出（落后平高2-3年）</td>
+<td>欧洲高端市场长期缺席</td>
+</tr>
+</tbody>
+</table>
+<p><strong>战略判断：</strong></p>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>特征</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>建立根据地</strong></td>
+<td>窗口期内完成三项关键任务，建立本地化产能、客户信任、技术升级</td>
+<td>从"中国电力设备商"升级为"全球电力设备龙头"，护城河显著加深</td>
+</tr>
+<tr>
+<td><strong>趁乱捞一把</strong></td>
+<td>短期收入爆发，但未建立真正客户关系和本地化运营能力</td>
+<td>窗口期结束后被打回原形，估值长期收缩</td>
+</tr>
+</tbody>
+</table>
+<p><strong>适用条件：</strong>
+- 窗口期持续3-5年（全球电网供需错配未快速缓解）
+- 思源执行能力保持（股权激励、管理层稳定）
+- 地缘政治风险可控（美国市场不全面封锁）</p>
+<p><strong>失效信号：</strong>
+- 窗口期结束但三项关键任务未完成
+- 北美认证未能在2027年前落地
+- 环保GIS进度大幅延迟（2028年后才推出）
+- 1100kV GIS鉴定失败</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 战略逻辑清晰，但执行不确定性较高；窗口期价值兑现需要持续跟踪</p>
+<blockquote>
+<p>来源：本次分析整理（2026-05-24）</p>
+</blockquote>
+<hr />
+<h2>三、跨链路关系（更新）</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td>并行</td>
+<td>国内+海外双轮驱动，共同支撑成长性评级</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td>依赖</td>
+<td>国内份额是高电压产品成熟度的基础，支撑北美认证突破</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-003</td>
+<td>依赖</td>
+<td>海外渠道/认证是北美突破的前提</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-001/LK-002</td>
+<td>依赖</td>
+<td>订单来自国内+海外双轮驱动</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-004</td>
+<td>依赖</td>
+<td>利润高增=估值合理的支撑</td>
+</tr>
+<tr>
+<td><strong>LK-006</strong></td>
+<td>LK-007</td>
+<td><strong>并列</strong></td>
+<td><strong>竞争结构（市占率）+ 竞争本质（三层结构）共同支撑商业模式评级</strong></td>
+</tr>
+<tr>
+<td><strong>LK-008</strong></td>
+<td>LK-001/LK-002</td>
+<td><strong>升级</strong></td>
+<td><strong>LK-008是LK-001/LK-002的战略升华——从"短期业绩"到"长期护城河"</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<hr />
+<h2>四、关联卡片</h2>
+<ul>
+<li>思源电气总览 — 关联判断：综合评级A，投资结论目标价237-287元</li>
+<li>商业模式 — 关联判断：一二次全覆盖平台，护城河A</li>
+<li>成长性 — 关联判断：2026-2028年CAGR 36%，成长性评级S</li>
+<li>盈利能力 — 关联判断：ROE 22.63%，净利率15.13%持续提升；北美变压器毛利50%+（新增）</li>
+<li>估值 — 关联判断：目标价237-287元，综合评级4星</li>
+</ul>
+<blockquote>
+<p>来源：思源电气_002028_综合投研分析_20260523.md §六（综合投研分析）</p>
+</blockquote>
+</div>
+</body>
+</html>

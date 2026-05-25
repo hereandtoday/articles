@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>阳光电源 · 跟踪清单</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>阳光电源 · 跟踪清单</h1>
+<blockquote>
+<p>M2层：关键判断和逻辑链路的定期检查清单。
+每条检查项关联至少一条 L3 因果断言链路或 L4 判断。</p>
+</blockquote>
+<hr />
+<h2>跟踪项</h2>
+<h3>T-001：储能毛利率修复轨迹</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>关联链路</strong></td>
+<td>逻辑链路#LK-002、逻辑链路#LK-005</td>
+</tr>
+<tr>
+<td><strong>关联判断</strong></td>
+<td>综合毛利率可稳定在30%以上</td>
+</tr>
+<tr>
+<td><strong>检查频率</strong></td>
+<td>月度</td>
+</tr>
+<tr>
+<td><strong>跟踪方式</strong></td>
+<td>季度财报储能毛利率 → 月度碳酸锂价格 — 季度欧洲出货占比</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>🟡 关注（Q1修复至30%，Q2需验证32%+）</td>
+</tr>
+<tr>
+<td><strong>预警阈值</strong></td>
+<td>🔴 毛利率低于28%持续两季；⚫ 低于25%持续一季</td>
+</tr>
+<tr>
+<td><strong>检查记录</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2026-05-13</td>
+</tr>
+</tbody>
+</table>
+<h3>T-002：储能出货量进度</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>关联链路</strong></td>
+<td>逻辑链路#LK-001</td>
+</tr>
+<tr>
+<td><strong>关联判断</strong></td>
+<td>2026年出货目标60+GWh（+40%）</td>
+</tr>
+<tr>
+<td><strong>检查频率</strong></td>
+<td>月度</td>
+</tr>
+<tr>
+<td><strong>跟踪方式</strong></td>
+<td>H1出货量-&gt;H2指引-&gt;全年完成度</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>🟢 正常（2026Q1发货11.4GWh，符合60GWh全年节奏）</td>
+</tr>
+<tr>
+<td><strong>预警阈值</strong></td>
+<td>🟡 H1出货&lt;25GWh；🔴 H1出货&lt;20GWh</td>
+</tr>
+<tr>
+<td><strong>检查记录</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2026-05-13</td>
+</tr>
+</tbody>
+</table>
+<h3>T-003：AIDC储能首单进展</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>关联链路</strong></td>
+<td>逻辑链路#LK-003、逻辑链路#LK-004</td>
+</tr>
+<tr>
+<td><strong>关联判断</strong></td>
+<td>AIDC储能2026Q2有望拿到头部客户首单</td>
+</tr>
+<tr>
+<td><strong>检查频率</strong></td>
+<td>事件驱动</td>
+</tr>
+<tr>
+<td><strong>跟踪方式</strong></td>
+<td>公司公告-&gt;业绩交流会-&gt;客户公告</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>🟡 关注（尚未落地，处于送样阶段）</td>
+</tr>
+<tr>
+<td><strong>预警阈值</strong></td>
+<td>🔴 2026全年无订单公告；⚫ AIDC业务正式推迟至2028年后</td>
+</tr>
+<tr>
+<td><strong>检查记录</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2026-05-13</td>
+</tr>
+</tbody>
+</table>
+<h3>T-004：碳酸锂价格</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>关联链路</strong></td>
+<td>逻辑链路#LK-005</td>
+</tr>
+<tr>
+<td><strong>关联判断</strong></td>
+<td>碳酸锂价格影响储能毛利率</td>
+</tr>
+<tr>
+<td><strong>检查频率</strong></td>
+<td>月度</td>
+</tr>
+<tr>
+<td><strong>跟踪方式</strong></td>
+<td>SMM碳酸锂现货价格</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>🟡 关注（当前约18万/吨，已超出15万/吨关注线）</td>
+</tr>
+<tr>
+<td><strong>预警阈值</strong></td>
+<td>🟡 &gt;15万/吨；🔴 &gt;20万/吨；⚫ &gt;25万/吨</td>
+</tr>
+<tr>
+<td><strong>检查记录</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2026-05-13</td>
+</tr>
+</tbody>
+</table>
+<h3>T-005：港股IPO备案进度</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>关联链路</strong></td>
+<td>逻辑链路#LK-006</td>
+</tr>
+<tr>
+<td><strong>关联判断</strong></td>
+<td>港股IPO Q2备案有望完成</td>
+</tr>
+<tr>
+<td><strong>检查频率</strong></td>
+<td>月度</td>
+</tr>
+<tr>
+<td><strong>跟踪方式</strong></td>
+<td>港交所披露——公司公告</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>🟢 正常（2026年4月24日二次递表，进展中）</td>
+</tr>
+<tr>
+<td><strong>预警阈值</strong></td>
+<td>🔴 Q3仍未完成备案；⚫ 被否或撤回</td>
+</tr>
+<tr>
+<td><strong>检查记录</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2026-05-13</td>
+</tr>
+</tbody>
+</table>
+<h3>T-006：逆变器海外出货占比</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>关联链路</strong></td>
+<td>逻辑链路#LK-007</td>
+</tr>
+<tr>
+<td><strong>关联判断</strong></td>
+<td>逆变器毛利率稳定在34-37%</td>
+</tr>
+<tr>
+<td><strong>检查频率</strong></td>
+<td>季度</td>
+</tr>
+<tr>
+<td><strong>跟踪方式</strong></td>
+<td>季报海外收入占比——逆变器毛利率</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>🟢 正常（2025年海外收入占比60.54%，逆变器毛利率34.66%）</td>
+</tr>
+<tr>
+<td><strong>预警阈值</strong></td>
+<td>🟡 海外收入占比&lt;55%；🔴 逆变器毛利率&lt;32%</td>
+</tr>
+<tr>
+<td><strong>检查记录</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2026-05-13</td>
+</tr>
+</tbody>
+</table>
+<h3>T-007：汇兑损失</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>关联链路</strong></td>
+<td>独立</td>
+</tr>
+<tr>
+<td><strong>关联判断</strong></td>
+<td>汇率波动对净利润的影响</td>
+</tr>
+<tr>
+<td><strong>检查频率</strong></td>
+<td>季度</td>
+</tr>
+<tr>
+<td><strong>跟踪方式</strong></td>
+<td>季报财务费用中的汇兑损益</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>🟡 关注（Q1汇率损失约4亿）</td>
+</tr>
+<tr>
+<td><strong>预警阈值</strong></td>
+<td>🔴 单季度&gt;5亿；⚫ 单季度&gt;8亿</td>
+</tr>
+<tr>
+<td><strong>检查记录</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2026-05-13</td>
+</tr>
+</tbody>
+</table>
+<h3>T-008：SST试样产品进展</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>关联链路</strong></td>
+<td>逻辑链路#LK-003</td>
+</tr>
+<tr>
+<td><strong>关联判断</strong></td>
+<td>2026年底SST第一代试样产品推出</td>
+</tr>
+<tr>
+<td><strong>检查频率</strong></td>
+<td>事件驱动/季度</td>
+</tr>
+<tr>
+<td><strong>跟踪方式</strong></td>
+<td>公司公告—业绩交流会—产品发布</td>
+</tr>
+<tr>
+<td><strong>当前状态</strong></td>
+<td>🟢 正常（研发取得阶段性突破，已获头部客户样机诉求）</td>
+</tr>
+<tr>
+<td><strong>预警阈值</strong></td>
+<td>🔴 年底未如期推出试样产品；⚫ 批量生产推迟至2028年后</td>
+</tr>
+<tr>
+<td><strong>检查记录</strong></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>2026-05-13</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>相关链接</h2>
+<ul>
+<li>01_公司研究/公司卡片/阳光电源_300274/阳光电源总览 - 入口汇总</li>
+<li>逻辑链路 - L3因果断言网络</li>
+<li>风险 - 风险提示</li>
+<li>影响因素 - 短期边际变化</li>
+</ul>
+</div>
+</body>
+</html>

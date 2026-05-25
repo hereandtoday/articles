@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>海天精工 · 跟踪清单</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>海天精工 · 跟踪清单</h1>
+<blockquote>
+<p>M2 定期检查清单，用于监控关键判断和逻辑链路的有效性。
+建议检查频率：月度/季度/半年度</p>
+</blockquote>
+<h2>一、跟踪项总表</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>关联链路/判断</th>
+<th>检查内容</th>
+<th>检查频率</th>
+<th>上次检查</th>
+<th>下次检查</th>
+<th>状态</th>
+<th>预警阈值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T-01</td>
+<td>LK-001</td>
+<td>PMI指数是否持续&gt;50%</td>
+<td>月度</td>
+<td>—</td>
+<td>2026-06-01</td>
+<td>🟢 正常</td>
+<td>连续2月&lt;49%</td>
+</tr>
+<tr>
+<td>T-02</td>
+<td>LK-002</td>
+<td>公司月度订单环比变化</td>
+<td>月度</td>
+<td>—</td>
+<td>2026-06-01</td>
+<td>🟢 正常</td>
+<td>连续2季度环比下滑</td>
+</tr>
+<tr>
+<td>T-03</td>
+<td>LK-003</td>
+<td>海外收入占比及增速</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>增速&lt;20%</td>
+</tr>
+<tr>
+<td>T-04</td>
+<td>LK-004</td>
+<td>日系数控系统供货情况</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>恢复供货</td>
+</tr>
+<tr>
+<td>T-05</td>
+<td>LK-005</td>
+<td>PE估值分位变化</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>回升至历史均值</td>
+</tr>
+<tr>
+<td>T-06</td>
+<td>综合</td>
+<td>综合毛利率</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>跌破24%</td>
+</tr>
+<tr>
+<td>T-07</td>
+<td>综合</td>
+<td>净利率</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>持续&lt;13%</td>
+</tr>
+<tr>
+<td>T-08</td>
+<td>综合</td>
+<td>经营现金流</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>同比大幅下滑</td>
+</tr>
+<tr>
+<td>T-09</td>
+<td>综合</td>
+<td>卧式加工中心毛利率</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-07-15</td>
+<td>🟢 正常</td>
+<td>持续&lt;28%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>状态说明：</strong>
+- 🟢 正常：未触发预警，逻辑有效
+- 🟡 关注：接近预警阈值，需留意
+- 🔴 警报：触发预警阈值，需重新评估
+- ⚫ 失效：逻辑链路已失效，待更新</p>
+<hr />
+<h2>二、检查记录日志</h2>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>编号</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>首次创建，待后续检查时补充记录</p>
+</blockquote>
+<hr />
+<h2>三、过期项汇总</h2>
+<blockquote>
+<p>以下为 lint 检查时自动填充的过期项。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>关联链路/判断</th>
+<th>应检日期</th>
+<th>已过期</th>
+<th>建议操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、关键事件跟踪清单</h2>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>事件</th>
+<th>预期时间</th>
+<th>验证标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔴高</td>
+<td>Q2订单数据验证</td>
+<td>2026年6-7月</td>
+<td>环比增长，持续性</td>
+</tr>
+<tr>
+<td>🔴高</td>
+<td>日系数控系统缺货进展</td>
+<td>2026年Q2-Q3</td>
+<td>持续时间3-6个月</td>
+</tr>
+<tr>
+<td>🟡中</td>
+<td>海外子公司销售贡献</td>
+<td>2026年下半年</td>
+<td>巴西、德国订单突破</td>
+</tr>
+<tr>
+<td>🟡中</td>
+<td>五轴新产品市场反响</td>
+<td>2026年下半年</td>
+<td>CCMT新品订单情况</td>
+</tr>
+<tr>
+<td>🟡中</td>
+<td>卧式加工中心毛利率修复</td>
+<td>2026年上半年</td>
+<td>同比改善至30%+</td>
+</tr>
+<tr>
+<td>🟡中</td>
+<td>行业集中度提升进度</td>
+<td>持续跟踪</td>
+<td>CR10进一步提升</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>五、预期调整触发因素</h2>
+<p><strong>上调预期的条件：</strong>
+- Q2/Q3国内需求超预期，PMI持续高于51%
+- 海外收入单季度突破2亿元，毛利率维持39%以上
+- 新接五轴机床订单超预期
+- 卧式加工中心毛利率回升至33%以上</p>
+<p><strong>下调预期的条件：</strong>
+- PMI连续2个月低于49%
+- 海外收入增速降至20%以下
+- 综合毛利率跌破24%
+- 主要竞争对手（如纽威数控）订单持续超公司</p>
+<hr />
+<h2>六、关联文件</h2>
+<ul>
+<li>逻辑链路 — 因果断言网络</li>
+<li>变更记录 — 逻辑修正记录</li>
+<li>01_公司研究/公司卡片/海天精工_601882.SH/海天精工总览 — 公司总览</li>
+<li>风险 — 风险分析</li>
+</ul>
+</div>
+</body>
+</html>

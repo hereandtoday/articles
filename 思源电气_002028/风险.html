@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>思源电气 · 风险</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>思源电气 · 风险</h1>
+<blockquote>
+<p><strong>边界说明</strong>：本卡片聚焦"结构性威胁+极端情景损失"，不含当前状态/边际变化
+- 当前状态 → 影响因素
+- 跟踪指标阈值 → 影响因素</p>
+</blockquote>
+<h2>一、风险矩阵概览</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">编号</th>
+<th>风险类别</th>
+<th>风险描述</th>
+<th style="text-align: center;">影响程度</th>
+<th style="text-align: center;">发生概率</th>
+<th style="text-align: center;">可控性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">R1</td>
+<td>估值回调</td>
+<td>PE TTM 47x处近5年高位，业绩不达预期面临戴维斯双杀</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R2</td>
+<td>电网投资不及预期</td>
+<td>十五五4万亿规划落地节奏偏慢</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R3</td>
+<td>海外政治风险</td>
+<td>美国加征关税、地缘冲突导致项目延期或取消</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;"><strong>中→高</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ 北美变压器毛利50%+，关税缓冲能力较强；但若&gt;25%全面关税仍需观察产能转移
+| R4 | 汇率波动 | 人民币升值侵蚀海外收入利润 | 中 | 高 | 中 |
+| R5 | 原材料涨价 | 铜、硅钢价格持续上行压缩毛利率 | 中 | 中 | 中 |
+| R6 | 竞争加剧 | 平高/西电等加大GIS/SVG投入 | 中 | 高 | 中 |
+| R7 | 储能亏损拖累 | 储能业务毛利率仅11.71%，持续亏损 | 中 | 高 | 中 |
+| R8 | 订单交付节奏波动 | 特高压/EPC项目交付周期长，季度波动 | 中 | 中 | 中 |
+| R9 | <strong>环保GIS技术落后</strong> | 思源2027年才推出环保GIS，平高/韩系已量产，欧洲高端市场受限 | 高 | 中 | 低 |</p>
+</blockquote>
+<p><strong>说明</strong>：
+- 影响程度：高（致命）/ 中（显著）/ 低（可承受）
+- 发生概率：高（已发生）/ 中（可能）/ 低（极端情景）
+- 可控性：高（有对冲）/ 中（部分）/ 低（几乎无）</p>
+<blockquote>
+<p>来源：思源电气_002028_综合投研分析_20260523.md §五（5.3）</p>
+</blockquote>
+<hr />
+<h2>二、结构性威胁详解</h2>
+<h3>2.1 R1：估值回调风险</h3>
+<p><strong>触发条件</strong>：
+PE TTM 47x处于近5年85%分位，若2026-2027年任一季度订单增速、毛利率或海外收入占比低于预期，估值收缩压力可能远大于盈利本身下行。</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>损失估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>PE回归35倍中枢</td>
+<td>股价下行约25%（197→147元）</td>
+</tr>
+<tr>
+<td>悲观</td>
+<td>PE降至30倍</td>
+<td>股价下行约36%（197→126元）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：
+| 对冲措施 | 量化效果 | 说明 |
+|----------|---------|------|
+| 高增长消化 | 2027E PE 26.51x | 若业绩兑现，估值安全边际提升 |
+| 止损纪律 | -20%（157元） | 触发无条件止损 |</p>
+<p><strong>护城河脆弱性边界</strong>：
+估值风险触及"塔尖"层——市场对公司未来增长的预期已高度定价，一旦逻辑破坏，估值溢价将首先蒸发。</p>
+<h3>2.2 R2：电网投资不及预期</h3>
+<p><strong>触发条件</strong>：
+"十五五"4万亿电网投资落地节奏偏慢，特高压/配网招标量低于规划，历史招标偏差约±15%。</p>
+<p><strong>量化损失</strong>：
+| 情景 | 触发条件 | 损失估算 |
+|------|---------|---------|
+| 基准 | 招标低于预期10% | 营收增速拖累5-8pct |
+| 极端 | 投资周期提前见顶 | 长期增长逻辑破坏 |</p>
+<p><strong>对冲机制</strong>：
+| 对冲措施 | 量化效果 | 说明 |
+|----------|---------|------|
+| 海外市场对冲 | 海外收入占比26.94%→35%+ | 降低单一市场依赖 |
+| 订单锁定 | 在手订单覆盖率107% | 短期业绩有保障 |</p>
+<h3>2.3 R3：海外政治风险</h3>
+<p><strong>触发条件</strong>：
+美国对华电气设备加征关税、地缘冲突导致中东/东南亚/非洲项目延期或取消。</p>
+<p><strong>量化损失</strong>：
+| 情景 | 触发条件 | 损失估算 |
+|------|---------|---------|
+| 中等 | 关税10-20% | 海外毛利率压缩2-4pct，北美毛利50%+可部分缓冲 |
+| 极端 | 全面关税&gt;25%且无法转移 | 海外收入中断，损失约58亿元 |</p>
+<p><strong>对冲机制</strong>：
+| 对冲措施 | 量化效果 | 说明 |
+|----------|---------|------|
+| 北美毛利缓冲 | 毛利50%+，可承受10-25%关税 | ✅ 新增：北美高毛利提供安全垫 |
+| 美国敞口控制 | 美占海外5% | 贸易摩擦直接冲击有限 |
+| 沙特工厂 | 与Ah Sharhan Energy合资建厂 | ✅ 新增：深度绑定中东，规避单一地区风险 |
+| 地理分散 | 100+国家 | 无单一市场致命依赖 |</p>
+<h3>2.4 R5：原材料涨价</h3>
+<p><strong>触发条件</strong>：
+铜、硅钢片价格持续上行，铜占GIS产品成本约30%。</p>
+<p><strong>量化损失</strong>：
+| 情景 | 触发条件 | 损失估算 |
+|------|---------|---------|
+| 中等 | 铜价涨10% | 毛利率压缩约1.2pct |
+| 极端 | 铜价涨30%+ | 毛利率压缩约3.6pct，净利损失约3亿元 |</p>
+<p><strong>对冲机制</strong>：
+| 对冲措施 | 量化效果 | 说明 |
+|----------|---------|------|
+| 套期保值 | 部分对冲 | 锁定部分采购成本 |
+| 向下游传导 | 部分传导 | 国网/海外客户接受价格调整 |</p>
+<h3>2.5 R9：环保GIS技术落后风险</h3>
+<p><strong>触发条件</strong>：
+欧洲市场2026年起分阶段禁用SF₆，美国加州、纽约已发布类似规定。思源环保型145/252kV GIS预计2027年才上市，而平高（145kV已量产）、中国西电（800kV全球首套）、韩系HDHE（欧洲已获订单）已领先一步。</p>
+<p><strong>量化损失</strong>：
+| 情景 | 触发条件 | 损失估算 |
+|------|---------|---------|
+| 中等 | 2026-2028年欧洲高端市场受限 | 欧洲市场进入受阻，影响约13亿元（2025年欧洲中东收入） |
+| 极端 | 2028年后仍无有竞争力产品 | 欧洲高端市场长期缺席 |</p>
+<p><strong>对冲机制</strong>：
+| 对冲措施 | 量化效果 | 说明 |
+|----------|---------|------|
+| 中东+东南亚市场 | 优先聚焦中东/东南亚 | 无SF₆禁令，进入门槛较低 |
+| 沙特本地建厂 | 规避贸易壁垒+本地化 | 已建设中，2026-2027年投产 |
+| 国内市场对冲 | 聚焦国内特高压市场 | 2026年1100kV GIS鉴定通过可切入 |</p>
+<p>【L4】环保GIS是思源出海战略的最大短板，2027年技术补课进度需重点跟踪。在欧洲高端市场，思源将面临GE/西门子/日立的竞争，而国内厂商平高和西电的环保GIS已领先2-3年。</p>
+<blockquote>
+<p>来源：GIS行业研究_思源电气为锚_20260524.md §七</p>
+</blockquote>
+<hr />
+<h2>二-2、"窗口期陷阱"风险（新增）</h2>
+<blockquote>
+<p>⚠️ 本章节是本次分析的核心洞察——供需错配既是机遇，也是最大的战略风险。</p>
+</blockquote>
+<h3>2.6 "趁乱捞一把" vs "建立根据地"</h3>
+<p>全球电网供需错配（交期2-3年、价格上涨50-100%）是思源的<strong>战略窗口期</strong>，但存在两种截然不同的结局：</p>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>特征</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>建立根据地</strong></td>
+<td>窗口期内完成北美站稳+1100kV突破+环保GIS补课</td>
+<td>从"中国电力设备商"升级为"全球电力设备龙头"</td>
+</tr>
+<tr>
+<td><strong>趁乱捞一把</strong></td>
+<td>短期收入爆发，但未建立客户关系和本地化运营能力</td>
+<td>窗口期结束后被打回原形，估值长期收缩</td>
+</tr>
+</tbody>
+</table>
+<p><strong>如何判断思源选择了哪条路？</strong></p>
+<table>
+<thead>
+<tr>
+<th>判断标准</th>
+<th>建立根据地</th>
+<th>趁乱捞一把</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产能布局</td>
+<td>沙特工厂投产+规划墨西哥/匈牙利</td>
+<td>只有国内扩产</td>
+</tr>
+<tr>
+<td>客户关系</td>
+<td>北美建立运行业绩+欧洲高端客户突破</td>
+<td>只有低价订单，无运行业绩</td>
+</tr>
+<tr>
+<td>技术升级</td>
+<td>1100kV通过鉴定+环保GIS 2027年推出</td>
+<td>只有750kV，环保GIS无进展</td>
+</tr>
+<tr>
+<td>海外毛利</td>
+<td>维持35%+（正常市场下仍有竞争力）</td>
+<td>海外毛利下降至25%（靠价格换量）</td>
+</tr>
+</tbody>
+</table>
+<h3>2.7 窗口期结束后的竞争格局恶化风险</h3>
+<table>
+<thead>
+<tr>
+<th>时间节点</th>
+<th>变化</th>
+<th>对思源的影响</th>
+<th>严重程度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2-3年后</td>
+<td>海外巨头产能扩张完成，交期缩短</td>
+<td>交期优势从6-9个月压缩至1-2年</td>
+<td>🟡中</td>
+</tr>
+<tr>
+<td>3-5年后</td>
+<td>中国竞争对手（平高、西电）加速出海，竞争加剧</td>
+<td>价格战出现，毛利率承压</td>
+<td>🟠中高</td>
+</tr>
+<tr>
+<td>5年后</td>
+<td>供需逐步平衡，买方市场回归</td>
+<td>综合毛利率可能从30%降至25-27%</td>
+<td>🔴高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>量化情景假设</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>毛利率假设</th>
+<th>净利率假设</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>正常市场（供需平衡）</td>
+<td>27-28%</td>
+<td>11-12%</td>
+<td>当前估值偏贵，PE可能压缩至30x</td>
+</tr>
+<tr>
+<td>价格战情景</td>
+<td>24-25%</td>
+<td>8-10%</td>
+<td>净利润大幅低于预期，股价下跌30%+</td>
+</tr>
+<tr>
+<td>极端情景</td>
+<td>&lt;24%</td>
+<td>&lt;8%</td>
+<td>基本面恶化，长期逻辑破坏</td>
+</tr>
+</tbody>
+</table>
+<h3>2.8 窗口期内未完成关键任务的风险</h3>
+<p><strong>三项关键任务未完成的后果：</strong></p>
+<table>
+<thead>
+<tr>
+<th>任务</th>
+<th>未完成后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>北美市场未站稳</td>
+<td>无法进入全球最高毛利市场（毛利50%+），海外战略天花板降低</td>
+</tr>
+<tr>
+<td>1100kV未突破</td>
+<td>无法切入特高压最高端，平高继续享受1100kV市场最高利润区间</td>
+</tr>
+<tr>
+<td>环保GIS未补课</td>
+<td>2028年后欧洲高端市场长期缺席，与GE/西门子竞争的基础丧失</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心风险：窗口期结束后，思源的护城河没有真正建立。</strong></p>
+<p>【L4】"窗口期陷阱"的本质：在供需错配期间赚了钱，但没有建立起真正的竞争壁垒。当供需平衡后，竞争对手回来，思源的优势消失了。</p>
+<blockquote>
+<p>来源：本次分析整理（2026-05-24）</p>
+</blockquote>
+<hr />
+<h2>三、风险综合评估</h2>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th>评价</th>
+<th style="text-align: center;">评分（1-10）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固有风险</td>
+<td>高估值+电网投资依赖+海外政治</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td>风险可控性</td>
+<td>有对冲机制但部分风险不可控</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td>风险分散度</td>
+<td>多元下游+地理分散，尚可</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>下行保护</td>
+<td>止损157元（-20%），安全垫薄</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td>尾部风险</td>
+<td>DCF下行至50-90元概率低但杀伤力大</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td><strong>综合</strong></td>
+<td><strong>高增长支撑但估值安全边际薄</strong></td>
+<td style="text-align: center;"><strong>6/10</strong></td>
+</tr>
+</tbody>
+</table>
+<p>【L4】风险评估：当前风险集中于估值回调（高概率高影响）、电网投资节奏（中等概率）、海外政治（中等概率），三重叠加构成主要预期差来源。</p>
+<blockquote>
+<p>来源：思源电气_002028_综合投研分析_20260523.md §五（5.4）</p>
+</blockquote>
+<hr />
+<h2>四、相关链接</h2>
+<ul>
+<li>思源电气总览 - 回到入口</li>
+<li>商业模式 - 核心竞争力</li>
+<li>成长性 - 成长分析</li>
+<li>影响因素 - 短期影响因素</li>
+</ul>
+<blockquote>
+<p><strong>边界说明</strong>：
+- 本卡片聚焦"结构性威胁+极端情景损失"
+- 当前碳酸锂价格/招标进展等动态 → 影响因素
+- 跟踪指标阈值 → 影响因素</p>
+</blockquote>
+</div>
+</body>
+</html>

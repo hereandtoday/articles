@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>星宇股份 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>星宇股份 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>车灯智能化升级 → ASP持续扩张 → 营收增速维持15%+</td>
+<td>中高</td>
+<td>成长性、估值</td>
+<td>智能灯渗透率停滞、DLP降本失败</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>海外订单爆发 → 海外收入放量 → 估值体系从中国龙头重估为全球化企业</td>
+<td>中</td>
+<td>成长性、估值</td>
+<td>RFQ转化率低、塞尔维亚无法扭亏、关税壁垒升级</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>毛利率6.24pp为会计调整 → 市场重新认知盈利真实水平 → 盈利预期上修</td>
+<td>高</td>
+<td>盈利能力、估值</td>
+<td>原材料价格持续大涨、年降幅度超预期</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>海外竞对全线收缩+国内华域被压制 → 星宇份额持续扩大 → 护城河加深</td>
+<td>高</td>
+<td>商业模式、成长性</td>
+<td>竞对利润率回升、新强敌出现</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>机器人样件获T客户认可 → 2026年国内定点落地 → 第二增长曲线开启</td>
+<td>低</td>
+<td>成长性、估值</td>
+<td>2026Q2无定点公告、送样后无后续订单</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>接班人实质性启动+管理层团队成熟 → 治理风险大幅降低 → 管理层折价缩小</td>
+<td>高</td>
+<td>总览、风险</td>
+<td>核心副总密集离职、周宇恒战功未兑现</td>
+<td>2026-05-17</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>Tier 0.5+透明供应链从蔚来扩散 → 星宇BOM成本透明度提升 → 长期毛利率天花板受压</td>
+<td>中</td>
+<td>风险、盈利能力</td>
+<td>多数车企未跟进、供应商集体抵制成功</td>
+<td>2026-05-17</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：智能车灯升级驱动ASP持续扩张</h3>
+<p><strong>因果断言：</strong>
+如果ADB/DLP/MicroLED渗透率持续提升（当前~25%→目标40%+），则车灯ASP将从~241元持续上升，驱动营收增速维持15%+。</p>
+<p><strong>支持依据：</strong>
+- 【L2】智能前灯占比2025年~20-21%，2026Q1已提升至~25-26%（其中HD/DLP占19-20%），2026年目标35-40%
+- 【L2】ASP阶梯：传统LED前灯~1,500元 → ADB 1,000-2,000元 → HD/Micro-LED 3,500-5,000元 → DLP 8,000-10,000+元
+- 【L2】全球智能车灯市场2025年284亿→2030年2093亿（CAGR 49.1%）
+- 【L2】公司2025年营收增速+15.1%，共识预期2026E增速+23.3%</p>
+<p><strong>适用条件：</strong>
+- 整车价格战不显著抑制智能灯选配率
+- DLP的TI DMD芯片国产替代在远期能落地，避免单车近万元的成本瓶颈</p>
+<p><strong>失效信号：</strong>
+- 智能灯渗透率连续2季度环比下降
+- DLP降本缓慢，30万以下车型无法搭载
+- HD产品未能有效承接DLP以下的渗透需求</p>
+<p><strong>置信度：</strong> 中高
+<strong>置信度依据：</strong> 渗透率提升已被2025-2026Q1数据验证，但提速节奏取决于整车价格战对选配率的影响。</p>
+<blockquote>
+<p>来源：星宇股份_601799_补充调研报告.md §二（一）ASP趋势与智能车灯产品结构</p>
+</blockquote>
+<hr />
+<h3>LK-002：全球化订单爆发驱动海外收入放量</h3>
+<p><strong>因果断言：</strong>
+如果2026年海外新获订单80-100亿+的目标兑现、十余个前灯RFQ在2026Q3集中定点，则海外收入将从2025年6.55亿快速增长→2026年挑战15亿（扭亏拐点）→2030年70亿+（占比&gt;20%），驱动估值体系从"中国车灯龙头"重估为"全球化车灯企业"。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2025年海外新获订单30-50亿元，2026年新增目标80-100亿元+
+- 【L2】保时捷新一代电动车前大灯定点，单一项目8亿欧元（~60亿人民币）
+- 【L2】奔驰前灯已定点（2026年量产），十余个前灯RFQ在报
+- 【L2】塞尔维亚目标2026年扭亏（保守2027年），北美2027Q2投产
+- 【L2】海外收入2025年仅6.55亿（占比4.29%），2030年目标70亿+（占比&gt;20%）</p>
+<p><strong>适用条件：</strong>
+- 欧洲车企验证周期不显著延长
+- 地缘政治不导致额外关税壁垒
+- 北美工厂建设如期推进</p>
+<p><strong>失效信号：</strong>
+- 2026Q3定点公告数量和金额低于预期
+- 塞尔维亚2026年无法扭亏
+- 北美关税政策大幅恶化</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 保时捷等大单已锁定，订单储备充足；但订单→收入的时滞长达2-3年（验证周期+产能爬坡），且地缘政治风险不可控。</p>
+<blockquote>
+<p>来源：星宇股份_601799_补充调研报告.md §一（一）至（四）海外业务</p>
+</blockquote>
+<hr />
+<h3>LK-003：毛利率会计调整认知修正盈利预期</h3>
+<p><strong>因果断言：</strong>
+如果市场充分认知到2021-2024年毛利率从27.30%降至19.28%的约8pp下降中，6.24pp是运费/质保金科目调整（非经营性恶化），则毛利率的真实下行幅度远小于市场感知，盈利预期存在上修空间。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2021年运费/仓储费划归成本导致毛利率下降-5.22pp（会计准则调整）
+- 【L2】2024年质保金划归成本导致毛利率下降-1.02pp（同上）
+- 【L2】实质性年降侵蚀相对有限，公司成功将年降控制在预算范围内
+- 【L2】产品升级（ES8、极氪9X、问界M9等高毛利产品）已完全吸收年降压力
+- 【L2】外资机构预测2026-2027综合毛利率19.2-19.4%，展现极强韧性</p>
+<p><strong>适用条件：</strong>
+- 原材料价格不出现超预期大幅上涨
+- 年降幅度不出现非理性断崖式降价</p>
+<p><strong>失效信号：</strong>
+- 季度毛利率跌破19%
+- 原材料（塑料粒子/PCB）涨价幅度超预期</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 会计调整为已确认事实（运费划归来自2021年报，质保金划归来自2024年报），年降可控已被历史数据验证。</p>
+<blockquote>
+<p>来源：星宇股份_601799_补充调研报告.md §二（三）年降幅度与对冲</p>
+</blockquote>
+<hr />
+<h3>LK-004：竞对全面收缩强化星宇护城河</h3>
+<p><strong>因果断言：</strong>
+如果海外竞对（小糸/海拉/法雷奥/马瑞利）在华全线收缩且盈利极薄（1-5%净利率），国内华域视觉被压制（专利154 vs 星宇608），则星宇份额将持续扩大，护城河进一步加深。</p>
+<p><strong>支持依据：</strong>
+- 【L2】小糸中国区收入从67亿（2020）降至29.7亿（2024），关闭福州工厂
+- 【L2】海拉照明业务营业利润率约2.9%，法雷奥集团营业利润率约4.7%
+- 【L2】马瑞利正在寻找买家，战略退出
+- 【L2】星宇智能车灯市占率70.2%（统治级），华域仅被压制
+- 【L2】星宇前照灯市占率从13.59%（2020）升至16.60%（2024），国内收入排名超越华域视觉成为第1</p>
+<p><strong>适用条件：</strong>
+- 竞对不发生大规模重组逆转（如被财团注资）
+- 行业出清逻辑持续（HD-ADB→DLP技术壁垒加速尾部出清）</p>
+<p><strong>失效信号：</strong>
+- 竞对利润率回升至星宇水平
+- 新进入者（如科技公司）跨界切入车灯领域
+- 华域视觉研发投入大幅追赶</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 竞对收缩趋势已持续3-5年且有公开财报佐证，技术壁垒随智能化升级持续加深。</p>
+<blockquote>
+<p>来源：星宇股份_601799_补充调研报告.md §三（一）竞争对手动态</p>
+</blockquote>
+<hr />
+<h3>LK-005：机器人业务开启第二增长曲线</h3>
+<p><strong>因果断言：</strong>
+如果2026Q2国内机器人定点公告落地、T客户送样转化为正式订单，则机器人业务将从纯期权变为可见收入，远期（100万台人形机器人/年、60%份额）贡献~370亿市值弹性。</p>
+<p><strong>支持依据：</strong>
+- 【L2】头部模组总成/结构件/关节模组已完成开发验证
+- 【L2】T客户头部模组多次送样获高度认可，董事长亲自带队对接
+- 【L2】节卡股份2025年10月签署战略合作
+- 【L2】SLS、XP等国内整机厂陆续批量落地；机器狗进入导入期
+- 【L2】头部模组单机价值~1.5万元（规模化后~1万元），光感皮肤5,000-10,000元</p>
+<p><strong>适用条件：</strong>
+- 人形机器人产业化进程不显著低于预期
+- 星宇技术从"车规级"成功跨越到"机器人规级"
+- T客户不选择自研或引入其他供应商</p>
+<p><strong>失效信号：</strong>
+- 2026Q2无国内机器人定点公告
+- T客户合作无实质进展
+- 机器人产业化大幅延期</p>
+<p><strong>置信度：</strong> 低
+<strong>置信度依据：</strong> 公开信息有限（⚠️特斯拉机器人合作未找到公开证据），头部模组价值量来自非官方渠道。当前置信度低，需2026Q2定点公告验证。</p>
+<blockquote>
+<p>来源：星宇股份_601799_补充调研报告.md §五（一）机器人交互模组</p>
+</blockquote>
+<hr />
+<h3>LK-006：接班人启动降低治理风险</h3>
+<p><strong>因果断言：</strong>
+如果周晓萍（65岁）已启动接班计划——周宇恒（40岁）升任副董事长、5-10年过渡期、家族54.3%绝对控股、7位产业背景副总护航，则创始人年龄风险已从"中"降至"低"，管理层折价应缩小。</p>
+<p><strong>支持依据：</strong>
+- 【L2】周晓萍2025年8月业绩交流会明确：已考虑5-10年后的接班问题
+- 【L2】周宇恒2025年4月升任副董事长兼副总经理，执掌多家核心创新子公司
+- 【L2】周氏家族合计控制54.30%股份（周晓萍42%+母亲6.11%+全资控股平台6.19%）
+- 【L2】7位核心副总覆盖研发/制造/质量/财务/资本运作全链条，均为资深产业背景</p>
+<p><strong>适用条件：</strong>
+- 交接过程按计划推进，不发生创始人的突发性变故
+- 周宇恒在数字化转型和前沿新业务上持续积累"战功"</p>
+<p><strong>失效信号：</strong>
+- 核心副总密集离职
+- 周宇恒战略决策失误导致重大损失</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 交接计划已在业绩交流会上官方确认，股权结构极稳固，管理层团队成熟度公开可查。</p>
+<blockquote>
+<p>来源：星宇股份_601799_补充调研报告.md §四（一）接班人计划</p>
+</blockquote>
+<hr />
+<h3>LK-007：Tier 0.5+透明供应链压制毛利率天花板</h3>
+<p><strong>因果断言：</strong>
+如果Tier 0.5模式（车企绕过Tier 1直接定义底层技术）和透明供应链（蔚来已要求供应商接入成本数据，年降从3-5%提至10%）从蔚来扩散到其他车企，则星宇的BOM成本透明度提升、集成溢价缩水，长期毛利率天花板受压制。</p>
+<p><strong>支持依据：</strong>
+- 【L2】蔚来2025年起要求供应商实时接入人员/场地/能耗等成本数据
+- 【L2】年降要求从传统3-5%提高至10%
+- 【L2】主机厂完全自研自产车灯概率&lt;10%，但透明供应链压价概率&gt;90%
+- 【L2】星宇反制：向上游核心技术延伸（30亿Micro-LED项目+SoC芯片+LED光源国产化）</p>
+<p><strong>适用条件：</strong>
+- 透明供应链从蔚来扩散至其他新能源车企
+- 星宇向上游的技术延伸不能完全对冲透明化趋势</p>
+<p><strong>失效信号：</strong>
+- 多数车企未跟进透明供应链模式
+- 星宇通过核心技术自研（SoC芯片/Micro-LED）重新拉开信息差
+- 蔚来模式被证明不可持续或车灯领域不适用</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 透明供应链已在蔚来落地，但扩散速度和程度不确定。星宇的向上游延伸是对冲变量，但不可逆趋势下毛利率天花板下移风险真实存在。</p>
+<blockquote>
+<p>来源：星宇股份_601799_补充调研报告.md §三（二）客户自研车灯动向</p>
+</blockquote>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td>并行</td>
+<td>ASP提升+毛利率修复共同支撑盈利预期，相互独立</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td>并行</td>
+<td>国内ASP提升与海外收入放量是两条独立增长驱动力</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-004</td>
+<td>依赖</td>
+<td>海外竞对收缩（LK-004)为星宇全球化(LK-002)创造窗口期</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-007</td>
+<td>互斥</td>
+<td>毛利率修复逻辑（LK-003)与Tier 0.5压制(LK-007)方向相反，长期取决于哪股力量更强</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-002</td>
+<td>并行</td>
+<td>机器人与海外业务是两条独立的新增长曲线</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-003</td>
+<td>并行</td>
+<td>治理风险与盈利风险相互独立</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-004</td>
+<td>互斥</td>
+<td>Tier 0.5（LK-007)若扩散，将削弱星宇相对竞对的护城河优势（LK-004)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<h2>四、关联卡片</h2>
+<ul>
+<li>星宇股份总览 — 关联判断：综合评级A级、买入区间100-110元</li>
+<li>商业模式 — 关联判断：护城河A级，依赖LK-004</li>
+<li>成长性 — 关联判断：三重成长驱动力，依赖LK-001、LK-002、LK-005</li>
+<li>盈利能力 — 关联判断：毛利率修复，依赖LK-003</li>
+<li>估值 — 关联判断：DCF中性111.5元，依赖LK-001、LK-002、LK-003</li>
+<li>风险 — 关联判断：R3创始人风险（LK-006）、R7 Tier 0.5（LK-007）</li>
+<li>影响因素 — 关联判断：各因素权重排序，依赖全部链路</li>
+</ul>
+<blockquote>
+<p>来源：星宇股份_601799_千研分析报告_20260506.md §三、第二阶段八维分析
+来源：星宇股份_601799_补充调研报告.md §六、综合评估与估值影响</p>
+</blockquote>
+</div>
+</body>
+</html>

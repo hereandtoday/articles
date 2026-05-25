@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>迈瑞医疗 · 跟踪清单</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+h4{font-size:1rem;font-weight:600;font-style:italic;color:var(--ink-soft);margin:1.2em 0 .4em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5;overflow-x:auto;display:block}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>迈瑞医疗 · 跟踪清单</h1>
+<blockquote>
+<p>M2 监控清单：关键判断和逻辑链路的定期检查清单。依据逻辑链路.md 中的因果断言制定。</p>
+</blockquote>
+<hr />
+<h2>一、跟踪项总表</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>跟踪项</th>
+<th>类型</th>
+<th>频率</th>
+<th style="text-align: center;">状态</th>
+<th>预警阈值</th>
+<th>最后检查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T-001</td>
+<td>Teratech诉讼进展</td>
+<td>风险</td>
+<td>季度</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>Q2窗口期</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>T-002</td>
+<td>超高端超声 A20 收入增速</td>
+<td>成长</td>
+<td>季度</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>&lt;20%</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>T-003</td>
+<td>MT-8000流水线装机量</td>
+<td>成长</td>
+<td>季度</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>国内&lt;60套/季度</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>T-004</td>
+<td>海外收入增速</td>
+<td>成长</td>
+<td>季度</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>&lt;10%</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>T-005</td>
+<td>新兴业务增速</td>
+<td>成长</td>
+<td>季度</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>&lt;15%</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>T-006</td>
+<td>IVD集采落地节奏</td>
+<td>风险</td>
+<td>季度</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>价格降幅&gt;25%</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>T-007</td>
+<td>国内收入增速</td>
+<td>成长</td>
+<td>季度</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>&lt;2%</td>
+<td>2026-05-14</td>
+</tr>
+<tr>
+<td>T-008</td>
+<td>综合评级</td>
+<td>判断</td>
+<td>季度</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>降级至B+</td>
+<td>2026-05-14</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>二、详细跟踪项</h2>
+<h3>T-001：Teratech诉讼进展</h3>
+<p><strong>跟踪来源</strong>：LK-006（Teratech诉讼 → 最大短期风险）</p>
+<p><strong>检查频率</strong>：季度</p>
+<p><strong>当前状态</strong>：🟢 有效（2026Q2为关键窗口期）</p>
+<p><strong>关键节点</strong>：
+- 2026年4-6月：原告可能提交初步禁令申请
+- 禁令获批 → TE系列停售，年化收入损失10-15亿元</p>
+<p><strong>预警阈值</strong>：
+| 状态 | 触发条件 | 动作 |
+|:----:|---------|------|
+| 🟢 有效 | 无重大不利裁决 | 继续跟踪 |
+| 🟡 关注 | 禁令申请提交 | 评估影响，更新逻辑链路 |
+| 🔴 警报 | 禁令获批 | 触发逻辑修正流程 |
+| ⚫ 失效 | 败诉赔偿&gt;5亿美元 | 触发止损评估 |</p>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th style="text-align: center;">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-14</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>2026Q2为关键窗口期，持续跟踪</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-002：超高端超声 A20 收入增速</h3>
+<p><strong>跟踪来源</strong>：LK-002（超高端超声 A20 → 高端化突破验证）</p>
+<p><strong>检查频率</strong>：季度</p>
+<p><strong>当前状态</strong>：🟢 有效</p>
+<p><strong>关键数据</strong>（2025年）：
+- 收入：超7亿元
+- 增速：+70%+
+- 高端及超高端占国内超声收入比重：接近七成</p>
+<p><strong>预警阈值</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">状态</th>
+<th>触发条件</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 有效</td>
+<td>增速&gt;50%</td>
+<td>维持置信度</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 关注</td>
+<td>增速20-50%</td>
+<td>降低置信度至中</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 警报</td>
+<td>增速&lt;20%</td>
+<td>触发LK-002重新评估</td>
+</tr>
+<tr>
+<td style="text-align: center;">⚫ 失效</td>
+<td>增速负增长</td>
+<td>触发逻辑修正流程</td>
+</tr>
+</tbody>
+</table>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th style="text-align: center;">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-14</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>2025年收入超7亿/+70%+，验证高端化路径</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-003：MT-8000流水线装机量</h3>
+<p><strong>跟踪来源</strong>：LK-001（三瑞生态锁定 → 持续高盈利）</p>
+<p><strong>检查频率</strong>：季度</p>
+<p><strong>当前状态</strong>：🟢 有效</p>
+<p><strong>关键数据</strong>（2025年）：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: center;">2024年</th>
+<th style="text-align: center;">2025年</th>
+<th style="text-align: center;">2026Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国内新增订单</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">360+套</td>
+<td style="text-align: center;">140+套</td>
+</tr>
+<tr>
+<td>国内装机</td>
+<td style="text-align: center;">190套</td>
+<td style="text-align: center;">270套</td>
+<td style="text-align: center;">80+套</td>
+</tr>
+<tr>
+<td>海外装机</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">20+套</td>
+<td style="text-align: center;">11套</td>
+</tr>
+</tbody>
+</table>
+<p><strong>预警阈值</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">状态</th>
+<th>触发条件</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 有效</td>
+<td>国内季度&gt;80套</td>
+<td>维持置信度</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 关注</td>
+<td>国内季度60-80套</td>
+<td>关注趋势</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 警报</td>
+<td>国内季度&lt;60套</td>
+<td>触发LK-001重新评估</td>
+</tr>
+<tr>
+<td style="text-align: center;">⚫ 失效</td>
+<td>增速负增长</td>
+<td>触发逻辑修正流程</td>
+</tr>
+</tbody>
+</table>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th style="text-align: center;">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-14</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>2026Q1国内新增订单140+套/装机80+套，持续超预期</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-004：海外收入增速</h3>
+<p><strong>跟踪来源</strong>：LK-004（海外收入高增长 → 穿越国内周期）</p>
+<p><strong>检查频率</strong>：季度</p>
+<p><strong>当前状态</strong>：🟢 有效</p>
+<p><strong>关键数据</strong>（2025年）：
+- 海外收入：176.50亿元（+7.40%）
+- 占比：53%首超国内
+- 欧洲：+17%
+- 英德：+70%+</p>
+<p><strong>预警阈值</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">状态</th>
+<th>触发条件</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 有效</td>
+<td>增速&gt;10%</td>
+<td>维持置信度</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 关注</td>
+<td>增速5-10%</td>
+<td>关注趋势</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 警报</td>
+<td>增速&lt;5%</td>
+<td>触发LK-004重新评估</td>
+</tr>
+<tr>
+<td style="text-align: center;">⚫ 失效</td>
+<td>负增长</td>
+<td>触发逻辑修正流程</td>
+</tr>
+</tbody>
+</table>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th style="text-align: center;">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-14</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>2025年海外占比53%首超国内，2026年指引12-15%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-005：新兴业务增速</h3>
+<p><strong>跟踪来源</strong>：LK-005（新兴业务占比提升 → 第二增长曲线成型）</p>
+<p><strong>检查频率</strong>：季度</p>
+<p><strong>当前状态</strong>：🟢 有效</p>
+<p><strong>关键数据</strong>（2025年）：
+- 新兴业务收入：53.78亿元
+- 增速：+38.85%
+- 占比：16.16%
+- 目标：2028年占比25%+</p>
+<p><strong>预警阈值</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">状态</th>
+<th>触发条件</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 有效</td>
+<td>增速&gt;30%</td>
+<td>维持置信度</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 关注</td>
+<td>增速15-30%</td>
+<td>关注趋势</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 警报</td>
+<td>增速&lt;15%</td>
+<td>触发LK-005重新评估</td>
+</tr>
+<tr>
+<td style="text-align: center;">⚫ 失效</td>
+<td>增速&lt;10%</td>
+<td>触发逻辑修正流程</td>
+</tr>
+</tbody>
+</table>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th style="text-align: center;">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-14</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>2025年新兴业务+38.85%，占比16%，2028年目标25%+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-006：IVD集采落地节奏</h3>
+<p><strong>跟踪来源</strong>：LK-003（IVD集采扩围 → 短期利润承压）</p>
+<p><strong>检查频率</strong>：季度</p>
+<p><strong>当前状态</strong>：🟢 有效</p>
+<p><strong>当前情况</strong>：
+- 肿标/甲功从安徽试点向全国推广
+- 试剂集采降价约20%
+- 已执行省份价格传导中</p>
+<p><strong>预警阈值</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">状态</th>
+<th>触发条件</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 有效</td>
+<td>价格降幅&lt;25%</td>
+<td>维持置信度</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 关注</td>
+<td>价格降幅25-30%</td>
+<td>关注趋势</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 警报</td>
+<td>价格降幅&gt;30%</td>
+<td>触发LK-003重新评估</td>
+</tr>
+<tr>
+<td style="text-align: center;">⚫ 失效</td>
+<td>迈瑞未中标</td>
+<td>触发逻辑修正流程</td>
+</tr>
+</tbody>
+</table>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th style="text-align: center;">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-14</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>集采持续推进，降价约20%符合预期</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-007：国内收入增速</h3>
+<p><strong>跟踪来源</strong>：L4 投资判断（国内业务恢复）</p>
+<p><strong>检查频率</strong>：季度</p>
+<p><strong>当前状态</strong>：🟢 有效</p>
+<p><strong>关键数据</strong>：
+- 2025年Q3：+1.53%
+- 2025年Q4：+2.86%
+- 2026年指引：+3~5%</p>
+<p><strong>预警阈值</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">状态</th>
+<th>触发条件</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 有效</td>
+<td>增速&gt;3%</td>
+<td>维持置信度</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 关注</td>
+<td>增速1-3%</td>
+<td>关注趋势</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 警报</td>
+<td>增速&lt;1%</td>
+<td>重新评估恢复逻辑</td>
+</tr>
+<tr>
+<td style="text-align: center;">⚫ 失效</td>
+<td>负增长</td>
+<td>触发逻辑修正流程</td>
+</tr>
+</tbody>
+</table>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th style="text-align: center;">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-14</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>Q3/Q4降幅收窄，2026年指引+3~5%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>T-008：综合评级</h3>
+<p><strong>跟踪来源</strong>：L4 投资判断（综合评级A级）</p>
+<p><strong>检查频率</strong>：季度</p>
+<p><strong>当前状态</strong>：🟢 有效</p>
+<p><strong>评级依据</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>评分</th>
+<th>关键依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>商业模式</td>
+<td>A/5</td>
+<td>三层锁定效应</td>
+</tr>
+<tr>
+<td>护城河</td>
+<td>A/5</td>
+<td>99%三甲+三瑞生态</td>
+</tr>
+<tr>
+<td>盈利能力</td>
+<td>B+/5</td>
+<td>ROE 21%+，但下滑</td>
+</tr>
+<tr>
+<td>成长性</td>
+<td>B/5</td>
+<td>海外+新兴双驱动</td>
+</tr>
+<tr>
+<td>估值</td>
+<td>A/5</td>
+<td>历史极端低位</td>
+</tr>
+<tr>
+<td><strong>综合评级</strong></td>
+<td><strong>A级</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>预警阈值</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">状态</th>
+<th>触发条件</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 有效</td>
+<td>维持A级</td>
+<td>继续持有</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 关注</td>
+<td>降至B+</td>
+<td>重新评估，暂缓加仓</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 警报</td>
+<td>降至B</td>
+<td>触发止损评估</td>
+</tr>
+<tr>
+<td style="text-align: center;">⚫ 失效</td>
+<td>降至B-或以下</td>
+<td>触发止损/清仓</td>
+</tr>
+</tbody>
+</table>
+<p><strong>检查记录</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th style="text-align: center;">状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-14</td>
+<td style="text-align: center;">🟢 有效</td>
+<td>综合评级A级，护城河+估值支撑</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>三、相关链接</h2>
+<ul>
+<li>01_公司研究/公司卡片/迈瑞医疗_300760/迈瑞医疗总览 - 公司总览</li>
+<li>商业模式 - 核心竞争力</li>
+<li>成长性 - 成长分析</li>
+<li>盈利能力 - 盈利能力</li>
+<li>风险 - 风险提示</li>
+<li>影响因素 - 短期影响因素</li>
+<li>逻辑链路 - 因果断言网络</li>
+</ul>
+</div>
+</body>
+</html>
