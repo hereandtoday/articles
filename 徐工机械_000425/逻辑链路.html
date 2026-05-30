@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>徐工机械 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>徐工机械 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>设备更新周期启动+政策驱动→2025-2026年业绩增长26-29%</td>
+<td>中</td>
+<td>总览/成长性</td>
+<td>政策力度减弱、更新需求不及预期</td>
+<td>2026-05-29</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>毛利率22.55%为近5年高点→净利率修复趋势明确</td>
+<td>高</td>
+<td>总览/盈利能力</td>
+<td>毛利率跌破20%、竞争导致价格战</td>
+<td>2026-05-29</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>PE 16倍历史中低位+目标价12.67元→安全边际22-29%</td>
+<td>中</td>
+<td>总览/估值</td>
+<td>估值抬升至历史高位(&gt;25x)、业绩不及预期</td>
+<td>2026-05-29</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>海外业务拓展+土方机械崛起→分散单一市场风险</td>
+<td>中</td>
+<td>总览/成长性</td>
+<td>海外收入下滑、竞争加剧导致份额流失</td>
+<td>2026-05-29</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>经营现金流改善+资产负债率下降→财务风险可控</td>
+<td>中</td>
+<td>盈利能力/风险</td>
+<td>现金流恶化、资产负债率突破70%</td>
+<td>2026-05-29</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>矿山机械+高空作业平台成为第二增长曲线→被低估的隐形冠军</td>
+<td>中</td>
+<td>总览/商业模式</td>
+<td>矿山机械增速放缓、竞争加剧</td>
+<td>2026-05-29</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>国企改革+股权激励→费用率下降，利润弹性释放</td>
+<td>中</td>
+<td>盈利能力/风险</td>
+<td>改革不及预期、激励目标落空</td>
+<td>2026-05-29</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：设备更新周期驱动业绩增长</h3>
+<p><strong>因果断言：</strong>
+如果设备更新周期启动且以旧换新政策持续推进，则2025-2026年归母净利润增速达到26-29%。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2024年桩工机械收入+45.21%，反映更新需求已启动
+- 【L2】2024年经营现金流57.20亿元，同比+60%，下游需求旺盛
+- 【L2】一致预期：2025E净利润75.31亿(+26%)、2026E净利润85.10亿(+29%)</p>
+<p><strong>适用条件：</strong>
+- 政策力度维持（以旧换新补贴不退坡）
+- 房地产下行不显著恶化（不至于完全对冲更新需求）
+- 行业竞争格局不急剧恶化</p>
+<p><strong>失效信号：</strong>
+- 以旧换新政策退出或力度大幅减弱
+- 更新订单环比增速连续两季&lt;5%
+- 实际更新需求释放规模低于预期20%以上</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 政策依赖性强，桩工机械高增长已验证，但整体行业数据需持续跟踪。</p>
+<hr />
+<h3>LK-002：净利率修复趋势明确</h3>
+<p><strong>因果断言：</strong>
+如果产品结构持续优化且高毛利产品占比提升，则净利率从6.53%向8%目标修复。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2024年毛利率22.55%为近5年高点（2020年17.07%）
+- 【L2】净利率从2022年低点4.58%持续修复至6.53%，提升1.95pct
+- 【L2】ROE从2022年低点8.09%回升至10.08%
+- 【L2】起重机械收入下滑10.80%，但土方机械+6.43%对冲</p>
+<p><strong>适用条件：</strong>
+- 竞争不恶化（不爆发全面价格战）
+- 钢材成本不大幅上涨（&gt;30%）
+- 产品结构优化持续（高毛利产品占比提升）</p>
+<p><strong>失效信号：</strong>
+- 毛利率跌破20%（近5年低点）
+- 起重机械毛利率下滑超5个百分点
+- 竞争加剧导致价格战</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 历史数据验证明确，修复趋势已持续3年，驱动力（产品结构优化）具有持续性。</p>
+<hr />
+<h3>LK-003：估值安全边际明确</h3>
+<p><strong>因果断言：</strong>
+如果PE约16倍处于历史中低位（约40-50%分位），则目标价12.67元对应上涨空间29%，安全边际明确。</p>
+<p><strong>支持依据：</strong>
+- 【L2】PE TTM 16.34x，历史均值约20x
+- 【L2】PE 2026E 13.30x，2027E 10.69x
+- 【L2】PB 1.72x（约30-40%分位）
+- 【L4】目标价12.67元，上涨空间28.76%（置信度：中）</p>
+<p><strong>适用条件：</strong>
+- 业绩符合一致预期（2025E 75亿、2026E 85亿）
+- 市场情绪不急剧恶化
+- 估值不抬升至历史高位</p>
+<p><strong>失效信号：</strong>
+- PE抬升至历史高位（&gt;25x），安全边际消失
+- 业绩大幅不及预期（净利润低于预期15%以上）
+- 市场系统性下跌（估值中枢下移）</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 估值数据清晰，但工程机械行业PE受宏观周期影响大，需持续跟踪。</p>
+<hr />
+<h3>LK-004：海外拓展分散风险</h3>
+<p><strong>因果断言：</strong>
+如果海外业务持续拓展且土方机械崛起，则收入结构改善，单一市场依赖降低。</p>
+<p><strong>支持依据：</strong>
+- 【L2】海外收入增速领先国内
+- 【L2】土方机械成为第一大收入来源（26.20%），结构多元化
+- 【L2】桩工机械+45%、矿业机械+8.55%，多业务线增长</p>
+<p><strong>适用条件：</strong>
+- 海外市场不出现重大政治/经济风险
+- 汇率波动可控
+- 海外工厂产能顺利释放</p>
+<p><strong>失效信号：</strong>
+- 海外收入增速大幅放缓（&lt;5%）
+- 地缘政治风险导致海外订单流失
+- 汇率大幅波动（人民币升值&gt;10%）</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 趋势明确但缺乏详细海外收入占比数据，需持续跟踪验证。</p>
+<hr />
+<h3>LK-005：财务风险可控</h3>
+<p><strong>因果断言：</strong>
+如果经营现金流持续改善且资产负债率下降，则财务风险可控，具备防御性。</p>
+<p><strong>支持依据：</strong>
+- 【L2】经营现金流从2022年15.83亿提升至2024年57.20亿（+260%）
+- 【L2】经营现金流/净利润从36.7%提升至95.7%
+- 【L2】资产负债率从2022年68.78%下降至62.44%
+- 【L2】ROE从8.09%回升至10.08%</p>
+<p><strong>适用条件：</strong>
+- 现金流改善趋势持续
+- 应收账款管理稳健
+- 不出现大规模资本支出</p>
+<p><strong>失效信号：</strong>
+- 经营现金流/净利润跌破60%
+- 资产负债率突破70%
+- 应收账款周转天数大幅增加</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 趋势明确但行业周期性强，需持续跟踪现金流质量。</p>
+<hr />
+<h3>LK-006：矿山机械——被低估的隐形冠军</h3>
+<p><strong>因果断言：</strong>
+如果矿山机械（徐工矿机）持续高增长（&gt;30%）且2026年矿机二期投产，则矿山机械成为被市场低估的第二增长曲线。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2025年徐工矿机收入约80亿元，同比增长超30%，毛利率约28%（高于公司平均22%）
+- 【L2】超大吨位矿挖（70吨级以上）是国内唯一能与卡特彼勒/小松竞争的产品
+- 【L2】2026年矿机二期投产后产能翻倍
+- 【L4】这是被市场严重低估的"隐形冠军"赛道（置信度：中）</p>
+<p><strong>适用条件：</strong>
+- 全球矿业资本开支维持上行（铜、金、锂等矿价高位）
+- 印尼、澳大利亚、智利等矿业大国需求旺盛
+- 产能爬坡顺利</p>
+<p><strong>失效信号：</strong>
+- 矿山机械增速大幅放缓（&lt;10%）
+- 矿价大幅下跌导致矿业资本开支收缩
+- 卡特彼勒/小松在中国市场反击加剧</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 全球矿业周期向上，但具体弹性取决于产能爬坡节奏。</p>
+<hr />
+<h3>LK-007：国企改革——费用率下降，利润弹性释放</h3>
+<p><strong>因果断言：</strong>
+如果国企改革持续深化且股权激励目标达成，则期间费用率从当前14%向三一重工的12%靠拢，可释放约20亿利润。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2023年推出限制性股票激励，覆盖1,200+核心骨干
+- 【L2】2023年旧方案2025年考核目标：归母净利润复合增速≥10%，ROE≥8%——<strong>已达成</strong>（2024年ROE 10.30%，净利润59.8亿）
+- 【L1】<strong>2025年新方案（2026-05-22登记完成）——考核目标大幅升级：</strong>
+  - 2026年：ROE≥11%，净利润≥75亿，经营现金流≥65亿
+  - 2027年：ROE≥12%，净利润≥100亿，经营现金流≥90亿
+  - 2028年：ROE≥14%
+  - 预留授予第一批32人已完成登记（含总裁陆川110万股，授予价4.84元/股）
+- 【L2】2023年旧方案第二个解除限售期<strong>已成就</strong>（2026-05-27公告），1540人解禁3187万股（总股本0.27%），6月1日上市流通
+- 【L2】期间费用率从2020年16%降至2025年14%，仍有下降空间
+- 【L4】若费用率降至12%，可增厚利润约20亿元（置信度：中）
+- 【L3】新方案净利润目标：2025约66亿→2026≥75亿（+14%）→2027≥100亿（+33%），两年复合增速约23%</p>
+<p><strong>适用条件：</strong>
+- 新方案股权激励目标顺利达成
+- 混改持续推进，管理层激励机制完善
+- 不出现重大管理层变动</p>
+<p><strong>失效信号：</strong>
+- 2026年净利润&lt;75亿或ROE&lt;11%
+- 期间费用率不降反升
+- 国企改革政策倒退
+- 6月1日解禁后管理层大规模减持</p>
+<p><strong>置信度：</strong> 中高（新方案目标高于行业平均，管理层广泛参与，置信度提升）
+<strong>置信度依据：</strong> 旧方案已兑现一轮，新方案目标更高且覆盖核心管理层，"真金白银"承诺力度加大。但国企改革进度有时低于预期，且净利润目标需关注扣非口径。</p>
+<blockquote>
+<p>来源：徐工机械_000425_综合投研分析_20260529.md §一；§二
+来源：徐工机械_000425_深度调研纪要_20260529.md §六、6.1（预期差二）
+来源：东财公告（2026-05-27/28 旧方案解禁 + 2026-05-25 新方案预留授予登记完成）</p>
+</blockquote>
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td>依赖</td>
+<td>业绩增长依赖净利率修复</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td>并行</td>
+<td>共同支撑"投资价值明确"结论</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-005</td>
+<td>并行</td>
+<td>盈利能力修复与现金流改善共同验证运营质量</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-001</td>
+<td>依赖</td>
+<td>海外拓展驱动业绩增长</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-003</td>
+<td>依赖</td>
+<td>财务质量支撑估值安全边际</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<h2>四、关联卡片</h2>
+<ul>
+<li>徐工机械总览 — 关联判断：综合评级B+，目标价12.67元</li>
+<li>商业模式 — 关联判断：护城河B+，规模经济+品牌壁垒</li>
+<li>成长性 — 关联判断：2026-2028年净利润CAGR约26%</li>
+<li>盈利能力 — 关联判断：净利率修复趋势明确，现金流改善</li>
+<li>估值 — 关联判断：PE 16x历史中低位，安全边际22-29%</li>
+<li>风险 — 关联判断：房地产敞口+竞争加剧为主要风险</li>
+<li>影响因素 — 关联判断：设备更新周期+海外拓展为核心驱动</li>
+</ul>
+</div>
+</body>
+</html>

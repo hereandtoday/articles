@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>温氏股份 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>温氏股份 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>猪周期深度亏损 → 产能去化加速 → 猪价2027年初拐点 → 盈利修复</td>
+<td>高</td>
+<td>成长性评级3.5/5，估值基准20-22元</td>
+<td>能繁存栏去化停滞或PSY持续&gt;26头</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>双主业周期对冲 → 平滑单一品种景气波动 → 底部盈利韧性</td>
+<td>高</td>
+<td>商业模式评级4.5/5</td>
+<td>猪鸡周期同步（相关性&gt;0.5）或肉鸡利润&lt;1亿/季</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>成本持续优化至11.8元/kg以下 → 底部亏损收窄 → 周期上行弹性更大</td>
+<td>高</td>
+<td>盈利能力综合7.3/10</td>
+<td>完全成本&gt;12.5元/kg或降本速度停滞</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>高分红82.5%+回购 → 股东回报信号 → 股价底部支撑</td>
+<td>中</td>
+<td>估值头均市值历史底部</td>
+<td>分红率&lt;50%或回购未执行</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>饲料原料涨价&gt;15% → 养殖成本上升 → 抵消降本努力 → 延后周期拐点</td>
+<td>高</td>
+<td>风险R3</td>
+<td>套保充分覆盖或配方优化抵消</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>主动下调出栏 → 配合产能调控 → 加速行业出清 → 中长期市占率提升</td>
+<td>中</td>
+<td>成长性中期逻辑</td>
+<td>去化后补栏过快或出栏恢复&gt;2025年水平</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>资产负债率49.82%+现金48.55亿+授信300亿 → 极端情景支撑&gt;2年 → 穿越周期能力</td>
+<td>高</td>
+<td>盈利能力现金流评分8/10</td>
+<td>资产负债率&gt;55%或连续2季经营现金流净流出</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>食品加工转型（食材事业部盈利1亿） → 从养殖向消费延伸 → 打开中长期空间</td>
+<td>低</td>
+<td>成长性新兴业务</td>
+<td>食材事业部持续亏损或战略收缩</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-009</td>
+<td>猪价每变动1元/kg → 年化净利润影响25-30亿 → 盈利弹性极大</td>
+<td>高</td>
+<td>估值敏感性分析</td>
+<td>头均成本同步变动减弱弹性</td>
+<td>2026-05-27</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：猪周期见底→盈利修复</h3>
+<p><strong>因果断言：</strong>
+如果猪周期处于深度亏损底部（猪价11.36元/kg），且能繁母猪存栏跌破正常保有量（约3900万头），则产能去化将加速，预计10个月后（2027年初）猪价迎来上行拐点，带动盈利修复。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2026Q1外三元均价11.36元/kg，3月10.11元/kg为2010年以来最低
+- 【L2】能繁母猪存栏已跌破正常保有量，去化加速
+- 【L2】领先指标能繁存栏→商品猪出栏约需10个月传导
+- 【L4】机构一致预期2027E净利润约110亿元（vs 2026E约20亿元）</p>
+<p><strong>适用条件：</strong>
+- 产能去化持续（无政策干预逆转）
+- 无大规模疫病冲击加速去化（极端情景概率低）</p>
+<p><strong>失效信号：</strong>
+- 能繁存栏去化停滞或补栏提前
+- PSY持续&gt;26头导致供给弹性增大（结构风险）</p>
+<hr />
+<h3>LK-002：双主业周期对冲</h3>
+<p><strong>因果断言：</strong>
+如果猪鸡周期保持错位（相关性低），则双主业可以有效平滑单一品种的景气波动，使公司在行业底部仍维持正向盈利。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2026Q1生猪板块亏损约11.3亿元，肉鸡板块净利润约1.8亿元
+- 【L2】经营现金流仍正向12.89亿元
+- 【L2】2025年猪价下跌17.95%，营收仅降1.0%（肉鸡出栏增长7.87%部分对冲）</p>
+<p><strong>适用条件：</strong>
+- 猪鸡周期保持低相关性
+- 肉鸡业务维持正常盈利水平</p>
+<p><strong>失效信号：</strong>
+- 猪鸡周期同步（相关性&gt;0.5）
+- 肉鸡季度净利润&lt;1亿元</p>
+<hr />
+<h3>LK-003：成本优化→弹性放大</h3>
+<p><strong>因果断言：</strong>
+如果完全成本从12.4元/kg持续降至11.8元/kg以下，则周期底部亏损收窄，周期上行时盈利弹性更大。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2026年3月完全成本5.8元/斤（约11.6元/kg），较2025年12.2-12.4元/kg显著下降
+- 【L2】领先行业2-3元/kg
+- 【L4】成本每降1元/kg，年化利润弹性约25-30亿元</p>
+<p><strong>适用条件：</strong>
+- 饲料原料价格不出现大幅上涨（稳定或温和上涨）
+- 生产效率持续提升（PSY/料肉比等）</p>
+<p><strong>失效信号：</strong>
+- 完全成本回升&gt;12.5元/kg
+- 降本速度连续两个季度停滞</p>
+<hr />
+<h3>LK-004：高股东回报→底部支撑</h3>
+<p><strong>因果断言：</strong>
+如果分红率维持82.5%高水平且回购计划（8-12亿元）得到执行，则股东回报信号为股价提供底部支撑，在当前头均市值历史底部区间形成安全垫。</p>
+<p><strong>支持依据：</strong>
+- 【L2】分红率82.5%，养殖行业最高水平之一
+- 【L2】回购上限24元/股较当前溢价47.5%
+- 【L2】合计股东回报43.5亿元，占归母净利润79.5%</p>
+<p><strong>适用条件：</strong>
+- 公司现金流充足（维持高分红能力）
+- 管理层股东回报意愿不变</p>
+<p><strong>失效信号：</strong>
+- 分红率降至&lt;50%
+- 回购计划未执行或延期</p>
+<hr />
+<h3>LK-005：饲料原料涨价→抵消降本</h3>
+<p><strong>因果断言：</strong>
+如果玉米/豆粕单年涨幅超过15%，则因饲料原料占养殖成本最大比例，将完全抵消公司年降本约2.2元/kg的努力，延后周期拐点。</p>
+<p><strong>支持依据：</strong>
+- 【L2】玉米/豆粕占养殖成本最大比例
+- 【L2】年降本约2.2元/kg
+- 【L4】饲料原料涨幅&gt;15%为风险触发阈值</p>
+<p><strong>适用条件：</strong>
+- 饲料原料价格持续上行（受国际大宗商品驱动）
+- 公司套保未能充分覆盖</p>
+<p><strong>失效信号：</strong>
+- 套保充分覆盖原料上涨风险
+- 配方优化有效降低原料依赖
+- 饲料原料价格回落</p>
+<hr />
+<h3>LK-006：出栏调整→行业出清→集中度提升</h3>
+<p><strong>因果断言：</strong>
+如果公司主动下调出栏配合产能调控，则在行业产能去化加速背景下，中长期有利于龙头市占率提升（CR10不足20%）。</p>
+<p><strong>支持依据：</strong>
+- 【L2】生猪出栏4047万头全国前二
+- 【L2】行业CR10不足20%
+- 【L2】主动下调出栏配合产能调控</p>
+<p><strong>适用条件：</strong>
+- 行业产能持续出清
+- 无政策干预逆转去化趋势</p>
+<p><strong>失效信号：</strong>
+- 去化后补栏过快导致供给过剩
+- 出栏恢复速度超过行业平均</p>
+<hr />
+<h3>LK-007：资金充裕→穿越周期</h3>
+<p><strong>因果断言：</strong>
+如果资产负债率维持49.82%低位，现金48.55亿元+授信300亿元，则即使在极端情景（头均亏损200元、出栏2500万头）下，公司可支撑超2年，具备穿越周期能力。</p>
+<p><strong>支持依据：</strong>
+- 【L2】现金储备48.55亿元（2026Q1末）
+- 【L2】银行授信额度约300亿元
+- 【L4】极端情景现金可支撑&gt;2年</p>
+<p><strong>失效信号：</strong>
+- 资产负债率&gt;55%（警戒线）
+- 连续2季度经营现金流净流出</p>
+<hr />
+<h3>LK-008：食品转型→中长期空间</h3>
+<p><strong>因果断言：</strong>
+如果食材事业部2026年实现盈利1亿元的目标，则"畜禽→食材→食品"战略转型初步验证，为中长期打开新增长空间。</p>
+<p><strong>支持依据：</strong>
+- 【L2】食材事业部2026年目标盈利1亿元
+- 【L2】"畜禽→食材→食品"战略路径清晰</p>
+<p><strong>适用条件：</strong>
+- 食品转型不分散养殖主业投入</p>
+<p><strong>失效信号：</strong>
+- 食材事业部持续亏损
+- 战略收缩或转型方向调整</p>
+<hr />
+<h3>LK-009：猪价弹性</h3>
+<p><strong>因果断言：</strong>
+猪价每变动1元/kg，公司年化净利润影响约25-30亿元，盈利弹性极大。周期上行时利润修复速度将快于市场预期。</p>
+<p><strong>支持依据：</strong>
+- 【L2】出栏基数大（4047万头）
+- 【L4】敏感性分析：猪价±1元/kg→净利润±25-30亿</p>
+<p><strong>适用条件：</strong>
+- 出栏量保持相对稳定
+- 成本结构不变</p>
+<p><strong>失效信号：</strong>
+- 头均成本同步大幅变动
+- 出栏量主动/被动大幅缩减</p>
+</div>
+</body>
+</html>

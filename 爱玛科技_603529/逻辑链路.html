@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>爱玛科技 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>爱玛科技 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>新国标过渡期冲击 → Q1净利-67.57% → Q2旺季为恢复关键窗口</td>
+<td>高</td>
+<td>盈利能力评级2/5</td>
+<td>Q2销量仍同比负增长或毛利率未企稳</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>净现金100亿 → 剔除后经营PE仅7-9x → 安全垫极厚</td>
+<td>高</td>
+<td>估值评级4/5</td>
+<td>净现金大幅消耗或盈利持续恶化</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>新国标合规成本永久性上升（~100元/台）→ 小厂退出 → CR5逼近70% → 护城河变宽</td>
+<td>中</td>
+<td>护城河评级4/5</td>
+<td>合规成本差异缩小或小厂通过低价维持份额</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>电摩Q1销量+78% → 产品结构升级 → ASP提升 → 盈利能力改善</td>
+<td>中</td>
+<td>成长性评级3/5</td>
+<td>电摩增速放缓或毛利率未随结构优化提升</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>丰县三轮车产能投产（2026Q3）→ 满产满销扩产 → 三轮车新增长极</td>
+<td>低</td>
+<td>成长性三轮车</td>
+<td>投产延期或产能消化不及预期</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>即时配送需求增长 → 换电模式渗透 → 对公业务增量</td>
+<td>低</td>
+<td>成长性新兴场景</td>
+<td>换电渗透率提升慢或竞争加剧</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>消费复苏 → 两轮车终端需求恢复 → 营收和盈利修复</td>
+<td>中</td>
+<td>基准情景232亿市值</td>
+<td>消费持续疲软</td>
+<td>2026-05-27</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：过渡期冲击→Q2验证窗口</h3>
+<p><strong>因果断言：</strong>
+如果新国标过渡期内合规成本永久性上升且行业调整超预期，则2026Q1净利-67.57%属过渡期冲击，Q2旺季数据为恢复趋势的关键验证窗口。</p>
+<p><strong>失效信号：</strong>
+- Q2销量同比仍负增长
+- 毛利率未能企稳回升</p>
+<h3>LK-002：净现金→安全垫</h3>
+<p><strong>因果断言：</strong>
+如果净现金100亿保持充裕，则剔除净现金后经营业务价值仅约103亿，对应正常化PE仅7-9x，安全垫极厚。</p>
+<p><strong>失效信号：</strong>
+- 净现金大幅消耗
+- 盈利持续恶化超出预期</p>
+<h3>LK-003：新国标→行业出清→护城河变宽</h3>
+<p><strong>因果断言：</strong>
+如果新国标执行严格，合规成本永久性上升（约100元/台），则小厂加速退出，CR5逼近70%，龙头护城河在变宽。</p>
+<p><strong>失效信号：</strong>
+- 合规成本差异缩小
+- 小厂通过低价策略维持份额</p>
+<h3>LK-004：电摩→结构升级</h3>
+<p><strong>因果断言：</strong>
+如果电摩销量持续高增（Q1+78%），则产品结构从电动自行车向电摩升级，ASP提升，盈利能力改善。</p>
+<p><strong>失效信号：</strong>
+- 电摩增速放缓
+- 毛利率未随结构优化提升</p>
+<h3>LK-005：三轮车→新增长极</h3>
+<p><strong>因果断言：</strong>
+如果丰县三轮车产能2026Q3如期投运且满产满销，则三轮车成为新增长极。</p>
+<p><strong>失效信号：</strong>
+- 投产延期
+- 产能消化不及预期</p>
+<h3>LK-006：即时配送→对公增量</h3>
+<p><strong>因果断言：</strong>
+如果即时配送需求增长带动换电模式渗透，则对公业务（面向骑手）成为增量来源。</p>
+<p><strong>失效信号：</strong>
+- 换电渗透率提升慢
+- 竞争加剧</p>
+<h3>LK-007：消费复苏→需求恢复</h3>
+<p><strong>因果断言：</strong>
+如果宏观消费复苏，则两轮车终端需求恢复，带动营收和盈利修复至正常化水平。</p>
+<p><strong>失效信号：</strong>
+- 消费持续疲软
+- 居民购买力不足</p>
+</div>
+</body>
+</html>

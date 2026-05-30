@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>泡泡玛特 · 估值</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>泡泡玛特 · 估值</h1>
+<blockquote>
+<p>来源：泡泡玛特_9992HK_综合投研分析_20260528 §四、§五</p>
+</blockquote>
+<hr />
+<h2>一、当前估值位置</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>股价（2026-05-28）</td>
+<td>159.8港元</td>
+<td>52周低点137.4港元，较+16.4%</td>
+</tr>
+<tr>
+<td>市值</td>
+<td>2143亿港元（约1971亿人民币）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>PE TTM</td>
+<td>15.15倍</td>
+<td>历史分位约10-15%区间</td>
+</tr>
+<tr>
+<td>PE 2026E</td>
+<td>约12倍</td>
+<td>基于一致预期净利润145亿元</td>
+</tr>
+<tr>
+<td>PB</td>
+<td>8.384倍</td>
+<td>历史分位约20-25%区间</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心判断</strong>：PE 15.15倍处于历史低位（10-15%分位），较52周高点回调约53%，较52周低点137.4港元+16%，已较充分消化2026年增速放缓预期及利润率压力。</p>
+<blockquote>
+<p>来源：泡泡玛特_9992HK_综合投研分析_20260528 §4.2</p>
+</blockquote>
+<hr />
+<h2>二、核心估值逻辑</h2>
+<h3>2.1 估值锚点与方法选择</h3>
+<table>
+<thead>
+<tr>
+<th>公司类型</th>
+<th>推荐方法</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台型/轻资产</td>
+<td>PE + DCF + PEG</td>
+<td>高增长+稳定盈利+轻资产</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本方法选择</strong>：PE估值法（锚定2026E）+ DCF估值法（锚定长期现金流），兼顾短期盈利确定性和长期IP平台化价值。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>目标价</th>
+<th>隐含空间（vs 159.8港元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PE 18x（2026E，合理偏低）</td>
+<td>195港元</td>
+<td>+22%</td>
+</tr>
+<tr>
+<td>PE 20x（2026E，合理中枢）</td>
+<td>216港元</td>
+<td>+35%</td>
+</tr>
+<tr>
+<td>PE 22x（2026E，合理偏高）</td>
+<td>238港元</td>
+<td>+49%</td>
+</tr>
+<tr>
+<td>DCF保守（WACC 12%，永续3%）</td>
+<td>188港元</td>
+<td>+18%</td>
+</tr>
+<tr>
+<td><strong>DCF基准（WACC 11%，永续5%）</strong></td>
+<td><strong>224港元</strong></td>
+<td><strong>+40%</strong></td>
+</tr>
+<tr>
+<td>DCF乐观（WACC 10%，永续6%）</td>
+<td>334港元</td>
+<td>+109%</td>
+</tr>
+<tr>
+<td><strong>综合目标价</strong></td>
+<td><strong>220-250港元</strong></td>
+<td><strong>+38-57%</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 历史PE分位与当前位置</h3>
+<table>
+<thead>
+<tr>
+<th>时期</th>
+<th>PE</th>
+<th>股价</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>15.15x</td>
+<td>159.8</td>
+<td>历史低位（10-15%分位）</td>
+</tr>
+<tr>
+<td>历史中位数</td>
+<td>约25x</td>
+<td>—</td>
+<td>正常估值中枢</td>
+</tr>
+<tr>
+<td>历史25%分位</td>
+<td>约18x</td>
+<td>—</td>
+<td>偏低估区间</td>
+</tr>
+<tr>
+<td>历史75%分位</td>
+<td>约35x</td>
+<td>—</td>
+<td>偏高估区间</td>
+</tr>
+<tr>
+<td>52周高点</td>
+<td>~30x+</td>
+<td>~219</td>
+<td>2025年12月前后</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心判断</strong>：当前PE 15.15倍处于历史低位，提供了较好的安全边际。若回归历史中位数25倍，隐含约65%上涨空间。</p>
+<blockquote>
+<p>来源：泡泡玛特_9992HK_综合投研分析_20260528 §4.2</p>
+</blockquote>
+<hr />
+<h2>三、盈利预测</h2>
+<h3>3.1 三年预测（机构一致预期）</h3>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th>营业收入（亿元）</th>
+<th>归母净利润（亿元）</th>
+<th>YoY</th>
+<th>关键假设</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026E</td>
+<td>446-467</td>
+<td>145</td>
+<td>+11.8%</td>
+<td>中国+100%Q1，海外+40%Q1，全年20%</td>
+</tr>
+<tr>
+<td>2027E</td>
+<td>522-581</td>
+<td>170</td>
+<td>+17.2%</td>
+<td>LABUBU 4.0持续放量，海外稳态增长</td>
+</tr>
+<tr>
+<td>2028E</td>
+<td>625-705</td>
+<td>200+</td>
+<td>+18-25%</td>
+<td>IP平台化初具规模，新业态贡献</td>
+</tr>
+</tbody>
+</table>
+<h3>3.2 关键假设</h3>
+<ul>
+<li><strong>收入增速</strong>：2026年20%（管理层指引"不低于20%"），2027年17-18%，2028年15-20%</li>
+<li><strong>利润率</strong>：净利率维持30-35%高位区间（面临原材料成本和海运费压力）</li>
+<li><strong>海外占比</strong>：从43.8%继续提升至50%+</li>
+</ul>
+<h3>3.3 DCF敏感性分析（WACC vs 永续增长率）</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>永续3%</th>
+<th>永续4%</th>
+<th>永续5%</th>
+<th>永续6%</th>
+<th>永续7%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WACC 9%</td>
+<td>282</td>
+<td>317</td>
+<td>366</td>
+<td>444</td>
+<td>588</td>
+</tr>
+<tr>
+<td>WACC 10%</td>
+<td>225</td>
+<td>249</td>
+<td>283</td>
+<td>334</td>
+<td>423</td>
+</tr>
+<tr>
+<td><strong>WACC 11%</strong></td>
+<td>188</td>
+<td><strong>224（基准）</strong></td>
+<td>251</td>
+<td>290</td>
+<td>359</td>
+</tr>
+<tr>
+<td>WACC 12%</td>
+<td>163</td>
+<td>191</td>
+<td>225</td>
+<td>257</td>
+<td>312</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：泡泡玛特_9992HK_综合投研分析_20260528 §5.4</p>
+</blockquote>
+<hr />
+<h2>四、安全边际评估</h2>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>价格</th>
+<th>PE</th>
+<th>条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bull（DCF乐观）</td>
+<td>334港元</td>
+<td>约30x</td>
+<td>WACC 10%，永续6%，IP平台化兑现</td>
+</tr>
+<tr>
+<td><strong>基准（DCF中枢）</strong></td>
+<td><strong>224港元</strong></td>
+<td><strong>约20x</strong></td>
+<td><strong>WACC 11%，永续5%，中性假设</strong></td>
+</tr>
+<tr>
+<td>Bear（DCF保守）</td>
+<td>188港元</td>
+<td>约16x</td>
+<td>WACC 12%，永续3%</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>162港元</td>
+<td>约12x</td>
+<td>PE 12x 2026E（极悲观）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>止损位</strong>：125港元（-19%）</p>
+<blockquote>
+<p>来源：泡泡玛特_9992HK_综合投研分析_20260528 §5.4、§6.3</p>
+</blockquote>
+<hr />
+<h2>五、投资决策</h2>
+<h3>5.1 核心逻辑（一句话）</h3>
+<p>PE 15.15倍历史低位 + DCF中值224港元（折让29%）+ 2026Q1中国+100%验证基本面韧性 + LABUBU 4.0/世界杯等催化，上行空间38-57%。</p>
+<h3>5.2 不对称机会评估</h3>
+<table>
+<thead>
+<tr>
+<th>方向</th>
+<th>概率</th>
+<th>幅度</th>
+<th>评估</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上行（&gt;220港元）</td>
+<td>60-70%</td>
+<td>+43-62%</td>
+<td>DCF基准224港元，机构均值237港元</td>
+</tr>
+<tr>
+<td>下行（&lt;125港元）</td>
+<td>15-20%</td>
+<td>-19%</td>
+<td>止损位125港元下方</td>
+</tr>
+</tbody>
+</table>
+<p><strong>不对称性</strong>：盈亏比约2-2.5:1，显著正期望值。估值低位+基本面强劲+强催化剂，风险收益比有利。</p>
+<h3>5.3 机构观点汇总</h3>
+<table>
+<thead>
+<tr>
+<th>机构</th>
+<th>评级</th>
+<th>目标价（港元）</th>
+<th>上行空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>华泰证券</td>
+<td>买入</td>
+<td>237</td>
+<td>+54%</td>
+</tr>
+<tr>
+<td>交银国际</td>
+<td>买入</td>
+<td>233</td>
+<td>+51%</td>
+</tr>
+<tr>
+<td>海通国际</td>
+<td>中性</td>
+<td>159</td>
+<td>+3%</td>
+</tr>
+<tr>
+<td>中信里昂</td>
+<td>买入</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>37家机构均值</strong></td>
+<td><strong>31/37买入（84%）</strong></td>
+<td><strong>237港元</strong></td>
+<td><strong>+54%</strong></td>
+</tr>
+<tr>
+<td><strong>37家机构中位数</strong></td>
+<td>—</td>
+<td><strong>190港元</strong></td>
+<td><strong>+23%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：泡泡玛特_9992HK_综合投研分析_20260528 §5.1</p>
+</blockquote>
+<h3>5.4 估值补充逻辑</h3>
+<p><strong>王宁的核心判断</strong>："潮玩有天花板，但它不是一个IP和一家公司的天花板。"</p>
+<p>这意味着估值不应局限于潮玩行业天花板（2029年约1288亿元），而应考虑IP延展性（电影/乐园/授权/衍生品）的更大空间。泡泡玛特对标迪士尼的IP平台化路径，其平台化能力的价值可能被当前估值低估。</p>
+<p>但需注意：若IP内容化（电影/游戏/乐园）进展不及预期，估值可能面临下修风险。</p>
+<h3>5.5 关键跟踪指标</h3>
+<ul>
+<li>PE修复至18-20倍的速度</li>
+<li>2026Q2/Q3营收增速是否达指引</li>
+<li>利润率边际变化（原材料成本、海运费）</li>
+<li>机构目标价调整方向</li>
+<li>公司回购力度</li>
+</ul>
+<hr />
+<h2>六、相关链接</h2>
+<ul>
+<li>泡泡玛特总览 - 总览</li>
+<li>商业模式 - 核心竞争力</li>
+<li>成长性 - 成长分析</li>
+<li>盈利能力 - 盈利能力</li>
+<li>风险 - 风险提示</li>
+<li>影响因素 - 短期影响因素</li>
+</ul>
+</div>
+</body>
+</html>

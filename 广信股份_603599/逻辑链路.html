@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>广信股份 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>广信股份 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>农药行业周期底部 → 主要产品价格企稳 → 营收降幅收窄 → 盈利修复</td>
+<td>中</td>
+<td>成长性评级2/5，估值基准15.1元</td>
+<td>价格持续下跌或印度产能继续释放</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>光气生产资质稀缺 → 永久性进入壁垒 → 护城河稳固</td>
+<td>高</td>
+<td>护城河评级4/5</td>
+<td>光气监管放松或替代技术突破</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>"一证一品"政策执行 → 行业出清 → 小厂退出 → 龙头份额集中</td>
+<td>中</td>
+<td>商业模式评级3/5</td>
+<td>政策执行不力或延期</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>一体化产业链（原料→中间体→原药）→ 成本优势 → 底部毛利率仍维持30%+</td>
+<td>高</td>
+<td>盈利能力评级3/5</td>
+<td>毛利率&lt;25%或成本优势丧失</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>印度农药产能持续释放 → 全球供给过剩 → 产品价格承压</td>
+<td>中</td>
+<td>风险行业竞争加剧</td>
+<td>印度产能释放放缓或环保趋严</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>PE/PB历史低位（25%/20%分位）→ 安全边际5-15%有限 → 需更低价格或更明确复苏信号</td>
+<td>中</td>
+<td>估值评级3/5</td>
+<td>行业景气回升超预期或政策催化</td>
+<td>2026-05-27</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>高股息率 → 周期底部防御属性</td>
+<td>中</td>
+<td>估值防御价值</td>
+<td>盈利下滑致分红缩减</td>
+<td>2026-05-27</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：行业周期底→盈利修复</h3>
+<p><strong>因果断言：</strong>
+如果农药行业处于周期底部（营收从90.6亿降至46.4亿），且行业自发出清+政策推动，则主要产品价格企稳带动营收降幅收窄，最终实现盈利修复。</p>
+<p><strong>失效信号：</strong>
+- 主要产品价格持续下跌
+- 印度产能继续大量释放</p>
+<h3>LK-002：光气壁垒→护城河</h3>
+<p><strong>因果断言：</strong>
+如果光气生产资质持续受严格监管（国内稀缺），则构成永久性进入壁垒，护城河稳固。</p>
+<p><strong>失效信号：</strong>
+- 光气监管放松
+- 非光气路线替代技术突破</p>
+<h3>LK-003：一证一品→行业出清</h3>
+<p><strong>因果断言：</strong>
+如果"一证一品"政策严格执行，则大量不规范小厂退出，行业集中度提升，龙头受益。</p>
+<p><strong>失效信号：</strong>
+- 政策执行不力或延期</p>
+<h3>LK-004：一体化→成本优势</h3>
+<p><strong>因果断言：</strong>
+如果全产业链一体化（原料→中间体→原药），则成本优势突出，周期底部毛利率仍维持30%+，优于同行。</p>
+<p><strong>失效信号：</strong>
+- 毛利率&lt;25%
+- 成本优势丧失</p>
+<h3>LK-005：印度产能→价格承压</h3>
+<p><strong>因果断言：</strong>
+如果印度农药产能持续释放且成本低于国内，则全球供给过剩，产品价格承压。</p>
+<p><strong>失效信号：</strong>
+- 印度产能释放放缓
+- 环保政策收紧限制印度供给</p>
+<h3>LK-006：估值低位→安全边际有限</h3>
+<p><strong>因果断言：</strong>
+PE/PB处于历史低位（25%/20%分位），但安全边际仅5-15%，估值保护有限，需等待更明确的复苏信号或更低价格。</p>
+<p><strong>失效信号：</strong>
+- 行业景气回升超预期
+- 重大政策催化</p>
+<h3>LK-007：高股息→防御</h3>
+<p><strong>因果断言：</strong>
+如果公司维持较高股息率，则在周期底部为投资者提供防御性回报。</p>
+<p><strong>失效信号：</strong>
+- 盈利持续下滑致分红缩减</p>
+</div>
+</body>
+</html>
