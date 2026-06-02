@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>百龙创园 · 跟踪清单</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>百龙创园 · 跟踪清单</h1>
+<blockquote>
+<p>M2 定期检查清单，用于监控关键判断和逻辑链路的有效性。
+建议检查频率：月度/季度/半年度</p>
+</blockquote>
+<h2>一、跟踪项总表</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>关联链路/判断</th>
+<th>检查内容</th>
+<th>检查频率</th>
+<th>上次检查</th>
+<th>下次检查</th>
+<th>状态</th>
+<th>预警阈值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T-01</td>
+<td>LK-002</td>
+<td>泰国基地投产进度</td>
+<td>月度</td>
+<td>—</td>
+<td>2027-08-01</td>
+<td>🟢 正常</td>
+<td>2027H1未投产则触发</td>
+</tr>
+<tr>
+<td>T-02</td>
+<td>LK-004</td>
+<td>客户集中度变化（CR5）</td>
+<td>月度</td>
+<td>—</td>
+<td>2026-07-01</td>
+<td>🟢 正常</td>
+<td>CR5突破60%触发</td>
+</tr>
+<tr>
+<td>T-03</td>
+<td>LK-003</td>
+<td>毛利率走势</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-09-01</td>
+<td>🟢 正常</td>
+<td>低于35%触发</td>
+</tr>
+<tr>
+<td>T-04</td>
+<td>R3</td>
+<td>库存去化情况</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-09-01</td>
+<td>🟢 正常</td>
+<td>库存增速未回落至50%以下触发</td>
+</tr>
+<tr>
+<td>T-05</td>
+<td>风险R6</td>
+<td>汇率风险（美元/人民币/泰铢）</td>
+<td>半年度</td>
+<td>—</td>
+<td>2026-12-01</td>
+<td>🟢 正常</td>
+<td>波动超±5%触发</td>
+</tr>
+<tr>
+<td>T-06</td>
+<td>风险R4</td>
+<td>行业竞争格局（Tate &amp; Lyle等扩产）</td>
+<td>半年度</td>
+<td>—</td>
+<td>2026-12-01</td>
+<td>🟢 正常</td>
+<td>竞品国内布局实质性进展触发</td>
+</tr>
+<tr>
+<td>T-07</td>
+<td>LK-001</td>
+<td>国内阿洛酮糖渠道拓展</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-09-01</td>
+<td>🟢 正常</td>
+<td>2026Q3无实质进展触发</td>
+</tr>
+<tr>
+<td>T-08</td>
+<td>盈利能力</td>
+<td>综合毛利率维持40%以上</td>
+<td>季度</td>
+<td>—</td>
+<td>2026-09-01</td>
+<td>🟢 正常</td>
+<td>连续两季低于40%触发</td>
+</tr>
+<tr>
+<td>T-09</td>
+<td>泰国工厂超额利润</td>
+<td><strong>泰国木薯淀粉/白糖价格指数</strong></td>
+<td>季度</td>
+<td>—</td>
+<td>2026-09-01</td>
+<td>🟡 新增</td>
+<td>泰国原料价格优势收窄则触发</td>
+</tr>
+<tr>
+<td>T-10</td>
+<td>泰国工厂超额利润</td>
+<td><strong>BOI税收优惠审批进展</strong></td>
+<td>季度</td>
+<td>—</td>
+<td>2026-09-01</td>
+<td>🟡 新增</td>
+<td>申请被拒则期权失效触发</td>
+</tr>
+<tr>
+<td>T-11</td>
+<td>风险R4-行业</td>
+<td><strong>阿洛酮糖市场均价走势</strong></td>
+<td>季度</td>
+<td>—</td>
+<td>2026-09-01</td>
+<td>🟡 新增</td>
+<td>跌破1.8万元/吨则护城河侵蚀预警</td>
+</tr>
+<tr>
+<td>T-12</td>
+<td>风险R4-行业</td>
+<td><strong>微元合成万吨级产能达产率/良率</strong></td>
+<td>季度</td>
+<td>—</td>
+<td>2026-09-01</td>
+<td>🟡 新增</td>
+<td>成本降至1万元/吨以内则行业估值压制预警</td>
+</tr>
+</tbody>
+</table>
+<p><strong>状态说明：</strong>
+- 🟢 正常：未触发预警，逻辑有效
+- 🟡 关注：接近预警阈值，需留意
+- 🔴 警报：触发预警阈值，需重新评估
+- ⚫ 失效：逻辑链路已失效，待更新</p>
+<blockquote>
+<p>来源：百龙创园_605016_综合投研分析_20260601 §6.后续跟踪要点</p>
+</blockquote>
+<hr />
+<h2>二、月度跟踪项详情</h2>
+<h3>2.1 泰国基地投产进度</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跟踪频率</td>
+<td>月度</td>
+</tr>
+<tr>
+<td>重要性</td>
+<td>⭐⭐⭐⭐⭐（核心驱动）</td>
+</tr>
+<tr>
+<td>关注内容</td>
+<td>厂房建设进度、设备安装调试、产能爬坡节奏【L4】</td>
+</tr>
+<tr>
+<td>数据来源</td>
+<td>公司公告、季报经营分析、券商调研纪要</td>
+</tr>
+<tr>
+<td>判断标准</td>
+<td>2027年能否如期投产，爬坡节奏【L4】</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 客户集中度变化</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跟踪频率</td>
+<td>月度（关注大客户动态）</td>
+</tr>
+<tr>
+<td>重要性</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>关注内容</td>
+<td>前五大客户销售额占比变化，新增/流失大客户【L4】</td>
+</tr>
+<tr>
+<td>数据来源</td>
+<td>公司定期报告、主要客户与供应商数据</td>
+</tr>
+<tr>
+<td>判断标准</td>
+<td>若CR5超过60%需高度警惕，低于50%为健康【L4】</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>三、季度跟踪项详情</h2>
+<h3>3.1 毛利率走势</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跟踪频率</td>
+<td>季度</td>
+</tr>
+<tr>
+<td>重要性</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>关注内容</td>
+<td>综合毛利率及各产品线毛利率变化，2025年Q1已达45.1%【L2】</td>
+</tr>
+<tr>
+<td>数据来源</td>
+<td>季报/中报/年报</td>
+</tr>
+<tr>
+<td>判断标准</td>
+<td>维持40%以上为优秀，35%-40%为正常，低于35%需关注【L4】</td>
+</tr>
+</tbody>
+</table>
+<h3>3.2 库存去化情况</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跟踪频率</td>
+<td>季度</td>
+</tr>
+<tr>
+<td>重要性</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>关注内容</td>
+<td>健康甜味剂库存（当前同比+130.96%）、膳食纤维库存（当前同比+142.65%）的消化节奏【L2】</td>
+</tr>
+<tr>
+<td>数据来源</td>
+<td>季报存货附注、经营数据</td>
+</tr>
+<tr>
+<td>判断标准</td>
+<td>Q2-Q3库存增速回落至50%以下为健康信号【L4】</td>
+</tr>
+</tbody>
+</table>
+<h3>3.3 国内阿洛酮糖渠道拓展</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跟踪频率</td>
+<td>季度</td>
+</tr>
+<tr>
+<td>重要性</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>关注内容</td>
+<td>元气森林等客户开拓进展，国内C端市场打开节奏【L4】</td>
+</tr>
+<tr>
+<td>数据来源</td>
+<td>公司公告、调研纪要</td>
+</tr>
+<tr>
+<td>判断标准</td>
+<td>2026Q3有实质性客户合作落地为正面信号【L4】</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、半年度跟踪项详情</h2>
+<h3>4.1 汇率风险</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跟踪频率</td>
+<td>半年度</td>
+</tr>
+<tr>
+<td>重要性</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>关注内容</td>
+<td>美元/人民币及泰铢汇率走势，境外收入占比68.67%【L2】</td>
+</tr>
+<tr>
+<td>数据来源</td>
+<td>央行汇率数据、公司汇兑损益披露</td>
+</tr>
+<tr>
+<td>判断标准</td>
+<td>汇率波动超过±5%可能对单季业绩产生可见影响【L4】</td>
+</tr>
+</tbody>
+</table>
+<h3>4.2 行业竞争格局</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>跟踪频率</td>
+<td>半年度</td>
+</tr>
+<tr>
+<td>重要性</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>关注内容</td>
+<td>Tate &amp; Lyle等国际巨头阿洛酮糖扩产进展、国内新进入者【L4】</td>
+</tr>
+<tr>
+<td>数据来源</td>
+<td>行业研究报告、竞争对手财报</td>
+</tr>
+<tr>
+<td>判断标准</td>
+<td>关注阿洛酮糖全球供需平衡变化及定价趋势【L4】</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>五、检查记录日志</h2>
+<table>
+<thead>
+<tr>
+<th>检查日期</th>
+<th>编号</th>
+<th>检查结果</th>
+<th>操作</th>
+<th>检查人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>初始创建，尚未检查</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>六、过期项汇总</h2>
+<blockquote>
+<p>以下为 lint 检查时自动填充的过期项。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>关联链路/判断</th>
+<th>应检日期</th>
+<th>已过期</th>
+<th>建议操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>初始创建，无过期项</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>七、跟踪汇总</h2>
+<table>
+<thead>
+<tr>
+<th>频率</th>
+<th>跟踪项</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>月度</td>
+<td>泰国基地投产进度</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>月度</td>
+<td>客户集中度变化</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>季度</td>
+<td>毛利率走势</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>季度</td>
+<td>库存去化情况</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>季度</td>
+<td>国内阿洛酮糖渠道拓展</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>季度</td>
+<td>综合毛利率维持40%以上</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>季度</td>
+<td><strong>泰国木薯/白糖价格指数</strong></td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>季度</td>
+<td><strong>BOI税收优惠审批进展</strong></td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>季度</td>
+<td><strong>阿洛酮糖市场均价</strong></td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>季度</td>
+<td><strong>微元合成达产率/良率</strong></td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>半年度</td>
+<td>汇率风险</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>半年度</td>
+<td>行业竞争格局</td>
+<td>⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>八、关联文件</h2>
+<ul>
+<li>逻辑链路 — 因果断言网络</li>
+<li>变更记录 — 逻辑修正记录</li>
+</ul>
+</div>
+</body>
+</html>

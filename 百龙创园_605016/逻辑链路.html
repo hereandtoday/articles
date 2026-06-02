@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>百龙创园 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>百龙创园 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>阿洛酮糖国内获批 → 国内终端市场打开 → 收入增长</td>
+<td>高</td>
+<td>成长性A</td>
+<td>国内渠道拓展停滞/竞品抢先</td>
+<td>2026-06-01</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>泰国基地投产 → 产能翻倍 → 出口加速增长</td>
+<td>中</td>
+<td>成长性A</td>
+<td>建设延期/产能爬坡不及预期</td>
+<td>2026-06-01</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>高毛利产品占比提升 → 毛利率提升 → ROE提升</td>
+<td>高</td>
+<td>盈利能力A</td>
+<td>毛利率跌破35%/产品结构逆转</td>
+<td>2026-06-01</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>客户集中度上升 → 重新定性为"主动锁定+渠道复用"，非被动依赖</td>
+<td><strong>修正</strong></td>
+<td>风险R1已重新定性</td>
+<td>Anderson粘性/毛利率下降超10ppt【L2】</td>
+<td>2026-06-01</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>Anderson Global Group合作深化 → 体现"共成长"而非"压榨" → 验证主动锁定逻辑</td>
+<td>高</td>
+<td>成长性A/护城河</td>
+<td>Anderson采购额下降且毛利率下降</td>
+<td>2026-06-01</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>产品规格最全+认证壁垒 → 客户粘性 → 收入稳定性</td>
+<td>高</td>
+<td>护城河A-</td>
+<td>核心技术被替代/认证失效</td>
+<td>2026-06-01</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：百龙创园_605016_综合投研分析_20260601 §全篇</p>
+</blockquote>
+<hr />
+<h2>二、链路详情</h2>
+<h3>LK-001：阿洛酮糖国内获批 → 收入增长【L4】</h3>
+<blockquote>
+<p>来源：百龙创园_605016_综合投研分析_20260601 §5.1核心投资逻辑 / §3.1预期地图</p>
+</blockquote>
+<p><strong>因果断言：</strong>
+如果阿洛酮糖在国内获批新食品原料，则国内终端市场打开，百龙创园作为国内首家工业化生产企业直接受益，收入增长。</p>
+<p><strong>支持依据：</strong>
+美国2019年获批后市场5年CAGR超30%，国内2023年市场规模1.73亿美元预计2030年增至5.45亿美元（CAGR 17.8%）【L2】。</p>
+<p><strong>适用条件：</strong>
+- 国内食品饮料客户（元气森林等）有采购阿洛酮糖的实际需求
+- 百龙创园产品价格和品质具备竞争力
+- 国内监管环境保持稳定</p>
+<p><strong>失效信号：</strong>
+- 2026年Q3国内渠道拓展无实质进展
+- 竞品（如Tate &amp; Lyle）抢先完成国内布局
+- 国内终端市场对阿洛酮糖需求低于预期</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 美国市场已有成功先例，百龙创园具备先发优势，获批已落地。</p>
+<hr />
+<h3>LK-002：泰国基地投产 → 出口加速增长【L4】</h3>
+<blockquote>
+<p>来源：百龙创园_605016_综合投研分析_20260601 §2.5成长性因子拆解 / §5.1核心投资逻辑</p>
+</blockquote>
+<p><strong>因果断言：</strong>
+如果泰国基地如期投产（12,000吨晶体+7,000吨液体阿洛酮糖等），则产能翻倍以上，出口加速增长，业绩弹性释放。</p>
+<p><strong>支持依据：</strong>
+泰国基地预计2027年H1投产，阿洛酮糖产能从国内几千吨大幅跃升至万吨级别【L2】。</p>
+<p><strong>适用条件：</strong>
+- 泰国基地建设按计划推进
+- 海外客户订单跟得上产能释放
+- 泰国当地运营团队到位</p>
+<p><strong>失效信号：</strong>
+- 2027年H1未如期投产</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 基地尚在建设期，存在建设进度和海外运营不确定性。</p>
+<hr />
+<h3>LK-003：产品结构升级 → 盈利能力持续提升【L4】</h3>
+<blockquote>
+<p>来源：百龙创园_605016_综合投研分析_20260601 §2.3财务表现 / §2.5成长性因子拆解</p>
+</blockquote>
+<p><strong>因果断言：</strong>
+如果高毛利产品（膳食纤维49.29%+阿洛酮糖30.91%）占比持续提升，则综合毛利率提升，净利率提升，ROE持续改善。</p>
+<p><strong>支持依据：</strong>
+2025年已验证：膳食纤维占比51%→56%，阿洛酮糖毛利率19.04%→30.91%，综合毛利率33.65%→41.76%（+8.11ppt）【L2】。ROE从14.63%→18.79%【L2】。</p>
+<p><strong>适用条件：</strong>
+- 膳食纤维和阿洛酮糖的高毛利率可持续
+- 产品结构升级趋势不逆转
+- 原材料成本不出现大幅上涨</p>
+<p><strong>失效信号：</strong>
+- 综合毛利率跌破35%
+- 高毛利产品占比停滞或下降
+- 原材料成本上涨侵蚀毛利</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 2025年数据已充分验证该逻辑，2026Q1毛利率达45.1%延续趋势。</p>
+<hr />
+<h3>LK-004：客户集中度上升 → 重新定性为"主动锁定+渠道复用"（壁垒特征，非风险特征）【L4】</h3>
+<blockquote>
+<p>来源：2026-06客户结构补充分析【L2】 + 百龙创园_605016_综合投研分析_20260601 §2.2产业链分析</p>
+</blockquote>
+<p><strong>因果断言（修正前）：</strong>
+如果客户集中度持续上升（38.82%→47.02%→53.73%），则单一大客户依赖加深，一旦大客户流失或减单，业绩波动加大。</p>
+<p><strong>因果断言（修正后）：</strong>
+客户集中度上升表象下，实为"主动锁定+渠道复用"——功能性配料定制化属性极强（替换成本2-3年），前两大客户（Anderson+SMI，合计47%+）均为美国贸易商，穿透后终端极度分散（单一终端品牌占比极少超5%），高毛利率（30%+）+成本加成定价证伪利润压榨逻辑。此为壁垒特征，非风险特征。</p>
+<p><strong>支持依据【L2】</strong>：
+- Anderson Global Group三年合作（26,739万→42,454万→60,054万），采购额增长2.25倍，毛利率同期持续提升，呈现"共成长"而非"压榨"特征
+- 定制化功能性配料替换成本2-3年验证周期，下游客户沉没成本巨大，主动切换意愿极低
+- 成本加成定价模式有效传导原材料波动，证明公司拥有定价权
+- 贸易商渠道穿透后单一终端品牌占比极少超5%，表观集中实则分散</p>
+<p><strong>修正后失效信号</strong>：
+- Anderson Global Group采购额同比下降超30%且毛利率同步下降（真风险信号）
+- 客户主动引入第二供应商且采购份额发生实质转移
+- 成本加成定价模式失效且原材料价格大幅上涨</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 客户结构穿透验证+商业模式底层逻辑+财务定价权数据三重验证。</p>
+<hr />
+<h3>LK-005：产品规格最全+认证壁垒 → 收入稳定性【L4】</h3>
+<blockquote>
+<p>来源：百龙创园_605016_综合投研分析_20260601 §2.4护城河分析</p>
+</blockquote>
+<p><strong>因果断言：</strong>
+如果公司保持200+规格型号+多国认证壁垒，则客户粘性强、替换成本高，收入具备稳定性。</p>
+<p><strong>支持依据：</strong>
+公司是国内首家抗性糊精生产许可证+首家工业化阿洛酮糖企业，拥有25项省级以上科技成果，参与多项国标制定【L2】。覆盖全球200+规格型号，客户可定制化需求粘性强【L2】。</p>
+<p><strong>适用条件：</strong>
+- 公司持续投入研发保持技术领先
+- 认证体系保持有效
+- 客户定制化需求持续存在</p>
+<p><strong>失效信号：</strong>
+- 核心技术被竞争对手突破
+- 关键认证失效或被取消
+- 客户转向标准化产品降低定制需求</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 技术和认证壁垒已形成多年，短期难以被替代。</p>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td>依赖</td>
+<td>阿洛酮糖获批→国内渠道拓展→高毛利产品占比提升，LK-003的毛利率提升依赖LK-001的市场打开</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-003</td>
+<td>并行</td>
+<td>泰国基地投产（量增）与产品结构升级（价增）独立但共同支撑业绩增长</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-004</td>
+<td>互斥风险</td>
+<td>LK-003驱动毛利率提升是正面逻辑，LK-004客户集中度上升可能抵消盈利改善的稳定性</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-001</td>
+<td>依赖</td>
+<td>认证壁垒是阿洛酮糖国内获批后先发优势的基础</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-004</td>
+<td>并行</td>
+<td>客户粘性（LK-005）和客户集中度（LK-004）是同一硬币的两面</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：百龙创园_605016_综合投研分析_20260601 §全篇</p>
+</blockquote>
+<hr />
+<h2>四、关联卡片</h2>
+<ul>
+<li>百龙创园总览 — 综合评级与投资结论</li>
+<li>商业模式 — 护城河四层分析（技术/客户/规模/认证）</li>
+<li>成长性 — 增长驱动拆解（量增+价增）</li>
+<li>盈利能力 — ROE与DuPont分解</li>
+<li>估值 — 安全边际评估</li>
+<li>风险 — R1大客户流失风险与LK-004对应</li>
+</ul>
+</div>
+</body>
+</html>
