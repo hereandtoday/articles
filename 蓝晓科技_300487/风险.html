@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>蓝晓科技 · 风险</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>蓝晓科技 · 风险</h1>
+<blockquote>
+<p><strong>边界说明</strong>：本卡片聚焦"结构性威胁+极端情景损失"，不含当前状态/边际变化
+- 当前状态 → 影响因素
+- 跟踪指标阈值 → 影响因素</p>
+</blockquote>
+<h2>一、风险矩阵概览</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">编号</th>
+<th>风险类别</th>
+<th>风险描述</th>
+<th style="text-align: center;">影响程度</th>
+<th style="text-align: center;">发生概率</th>
+<th style="text-align: center;">可控性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">R1</td>
+<td>盐湖提锂国能项目延迟</td>
+<td>收入确认需地方政府许可</td>
+<td style="text-align: center;">极高</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R1（更新）</td>
+<td>盐湖提锂国能项目延迟</td>
+<td>仅差生产许可证；采矿证+3万吨环评已批，试运行成功</td>
+<td style="text-align: center;">极高→<strong>高</strong></td>
+<td style="text-align: center;">中→<strong>低</strong></td>
+<td style="text-align: center;">低→<strong>中</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">R2</td>
+<td>DLE国际竞争加剧</td>
+<td>住友/Eramet/力拓加速布局</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R3</td>
+<td>应收账款累积</td>
+<td>周转率3.72次（2023年4.65次）</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中高</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R4</td>
+<td>汇率风险</td>
+<td>2026Q1汇兑损失4,275万元</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R5</td>
+<td>锂价大幅回落</td>
+<td>跌破15万元/吨</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R6</td>
+<td>小核酸商业化不及预期</td>
+<td>商业化订单延期</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R7</td>
+<td>行业政策不确定</td>
+<td>盐湖提锂审批+海外资源国政策</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R8</td>
+<td>系统装置收入波动</td>
+<td>2023→2024同比-43.13%</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">已发生</td>
+<td style="text-align: center;">中</td>
+</tr>
+<tr>
+<td style="text-align: center;">R9</td>
+<td>汇率套保信息盲区</td>
+<td>套保比例及剩余敞口未充分披露，存在信息盲区</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: center;">低</td>
+</tr>
+<tr>
+<td style="text-align: center;">R10</td>
+<td>生命科学客户集中度</td>
+<td>SPSC~80%份额绑定默克/诺和诺德/礼来，大客户集中度偏高</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>说明</strong>：
+- 影响程度：高（致命）/ 中（显著）/ 低（可承受）
+- 发生概率：高（已发生）/ 中（可能）/ 低（极端情景）
+- 可控性：高（有对冲）/ 中（部分）/ 低（几乎无）</p>
+<h2>二、结构性威胁详解</h2>
+<h3>2.1 R1：盐湖提锂国能项目延迟</h3>
+<p><strong>触发条件</strong>：
+- 地方政府许可延期至2027年甚至更晚
+- 试运行出现技术问题需返工
+- 西藏/青海地方政策变化导致审批暂停</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>损失估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>国能Q2-Q3确认</td>
+<td>0</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>推迟至2027</td>
+<td>2026年净利下调~2亿，PE估值中枢下移</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>2027仍未确认</td>
+<td>2026E净利10.5亿（取悲观预测），目标价降至50-55元</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>对冲措施</th>
+<th>量化效果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基本盘业务持续增长</td>
+<td>抵消部分影响</td>
+<td>生命科学+小核酸+基本仓增长对冲</td>
+</tr>
+<tr>
+<td>多项目布局</td>
+<td>风险分散</td>
+<td>五矿/藏格/锦泰等多个盐湖提锂项目</td>
+</tr>
+<tr>
+<td>海外项目</td>
+<td>时点错开</td>
+<td>西藏珠峰阿根廷等海外项目</td>
+</tr>
+</tbody>
+</table>
+<p><strong>护城河脆弱性边界</strong>：
+此风险触及护城河<strong>塔身</strong>（盐湖提锂是技术壁垒5/5的核心验证），但不触及<strong>塔基</strong>（基础吸附分离材料业务不受影响）。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/蓝晓科技_300487/蓝晓科技_300487_综合投研分析_20260605 §5.1、§5.4、§7.2</p>
+</blockquote>
+<h3>2.2 R2：DLE国际竞争加剧</h3>
+<p><strong>触发条件</strong>：
+- 住友金属、Eramet、力拓等国际巨头加速布局吸附法提锂
+- 海外技术突破形成实质性替代
+- 客户基于供应链多元化考虑引入新供应商</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>损失估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>公司全球唯一多项目商业化</td>
+<td>0</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>2-3年内国际巨头商业化突破</td>
+<td>海外市场拓展放缓，新订单市占率下降</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>国际巨头形成替代</td>
+<td>盐湖提锂业务利润率从54%降至40%以下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>对冲措施</th>
+<th>量化效果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技术储备领先</td>
+<td>5-10年缓冲</td>
+<td>钛系吸附剂溶损率十万分之一，工艺诀窍</td>
+</tr>
+<tr>
+<td>一体化方案</td>
+<td>客户绑定</td>
+<td>材料+装置+技术服务打包交付</td>
+</tr>
+<tr>
+<td>客户深度合作</td>
+<td>长期排他</td>
+<td>与五矿/藏格/锦泰等已建立长期合作</td>
+</tr>
+</tbody>
+</table>
+<p><strong>护城河脆弱性边界</strong>：
+此风险触及<strong>塔尖</strong>（技术壁垒顶端），但技术诀窍+工艺积累提供5-10年缓冲期。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/蓝晓科技_300487/蓝晓科技_300487_综合投研分析_20260605 §6.4</p>
+</blockquote>
+<h3>2.3 R3：应收账款累积风险</h3>
+<p><strong>触发条件</strong>：
+- 盐湖提锂大项目收入确认周期长（&gt;12个月）
+- 锂价持续低迷导致下游客户付款节奏放缓
+- 系统装置项目结算周期跨年</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>损失估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>周转率3.72次（2025年）</td>
+<td>应收~7.5亿</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>周转率降至3.0次</td>
+<td>经营现金流恶化，自由现金流承压</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>出现大额坏账</td>
+<td>计提减值1-2亿，影响净利润5-10%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>对冲措施</th>
+<th>量化效果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>客户结构分散</td>
+<td>前五客户仅17.84%</td>
+<td>无单一客户依赖</td>
+</tr>
+<tr>
+<td>海外业务高质量</td>
+<td>海外毛利率54.63%</td>
+<td>海外客户付款能力较强</td>
+</tr>
+<tr>
+<td>财务保守</td>
+<td>货币资金18亿，负债率33.18%</td>
+<td>应对短期现金流压力</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：01_公司研究/原始资料/蓝晓科技_300487/蓝晓科技_300487_综合投研分析_20260605 §3.1、§6.4</p>
+</blockquote>
+<h3>2.4 R4：汇率风险</h3>
+<p><strong>触发条件</strong>：
+- 人民币兑欧元/美元大幅升值
+- 2026Q1财务费用从上年-1502万（净收益）恶化至+4275万（净损失）</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>损失估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>Q1已发生4,275万</td>
+<td>已计入Q1报表</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>全年汇兑损失5,000-8,000万</td>
+<td>影响净利5-7%</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>人民币持续升值5%+</td>
+<td>影响净利10%+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>对冲措施</th>
+<th>量化效果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>外汇套保</td>
+<td>可对冲50-70%</td>
+<td>公司有外汇套保工具但未充分披露</td>
+</tr>
+<tr>
+<td>海外收入定价权</td>
+<td>海外毛利率54.63%</td>
+<td>可对汇率传导部分提价</td>
+</tr>
+<tr>
+<td>进口原材料</td>
+<td>部分对冲</td>
+<td>海外采购以美元结算，部分对冲人民币升值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>护城河脆弱性边界</strong>：
+此风险触及<strong>塔基</strong>（财务费用波动），但海外毛利率优势提供一定缓冲。</p>
+<blockquote>
+<p>来源：01_公司研究/原始资料/蓝晓科技_300487/蓝晓科技_300487_综合投研分析_20260605 §6.4</p>
+</blockquote>
+<h3>2.5 R5：锂价大幅回落</h3>
+<p><strong>触发条件</strong>：
+- 全球锂供给过剩格局未根本改变
+- 海外锂矿（智利/澳大利亚）大幅扩产
+- 锂电产业链去库存超预期</p>
+<p><strong>量化损失</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th>触发条件</th>
+<th>损失估算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前</td>
+<td>17.3万元/吨</td>
+<td>0</td>
+</tr>
+<tr>
+<td>中性</td>
+<td>跌破15万元/吨</td>
+<td>盐湖提锂项目经济性下降，客户资本开支延后</td>
+</tr>
+<tr>
+<td>极端</td>
+<td>跌破8万元/吨</td>
+<td>项目延迟或暂停，2026E净利下调2-3亿</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对冲机制</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>对冲措施</th>
+<th>量化效果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>加工费模式</td>
+<td>收入分成</td>
+<td>国能项目以"投资+运营"模式享氢氧化锂加工费</td>
+</tr>
+<tr>
+<td>多金属布局</td>
+<td>镓/铀对冲</td>
+<td>金属资源板块不只是锂，还有镓+铀</td>
+</tr>
+<tr>
+<td>装置销售</td>
+<td>一次性收入</td>
+<td>提锂系统装置销售不受锂价影响</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>来源：01_公司研究/原始资料/蓝晓科技_300487/蓝晓科技_300487_综合投研分析_20260605 §5.4、§8.4</p>
+</blockquote>
+<h2>三、风险综合评估</h2>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th>评价</th>
+<th style="text-align: center;">评分（1-10）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固有风险</td>
+<td>中等（10项中4项关注，无预警）</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td>风险可控性</td>
+<td>中等（外生变量占多数）</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td>风险分散度</td>
+<td>优秀（前五客户17.84%，多板块对冲）</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td>下行保护</td>
+<td>强（DCF悲观情景下行仅5.7%）</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td>尾部风险</td>
+<td>中等（盐湖提锂+Lithium价格双因素尾部）</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td><strong>综合</strong></td>
+<td><strong>中等偏低风险</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>说明</strong>：4分对应投前体检★★★★（4星/5星），评分越低代表风险越低（10分制下，1=极低风险，10=极高风险）。</p>
+<h2>四、相关链接</h2>
+<ul>
+<li>蓝晓科技总览 - 回到入口</li>
+<li>商业模式 - 护城河脆弱性边界</li>
+<li>影响因素 - 当前风险状态跟踪</li>
+<li>跟踪清单 - 风险预警阈值</li>
+</ul>
+<blockquote>
+<p><strong>边界说明</strong>：
+- 本卡片聚焦"结构性威胁+极端情景损失"
+- 当前碳酸锂价格/汇兑损益等动态 → 影响因素
+- 跟踪指标阈值 → 影响因素</p>
+</blockquote>
+</div>
+</body>
+</html>

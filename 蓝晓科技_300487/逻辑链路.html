@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>蓝晓科技 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>蓝晓科技 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>如果吸附分离材料技术壁垒稳固，则高端市场进入门槛高</td>
+<td>高</td>
+<td>商业模式AA</td>
+<td>国际巨头形成实质性替代</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>如果"材料+装置+技术"一体化平台成立，则客户转换成本极高</td>
+<td>高</td>
+<td>商业模式A</td>
+<td>客户大规模引入新供应商</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>如果盐湖提锂国能项目2026Q2-Q3确认收入，则2026E净利上修至12-13亿</td>
+<td>中</td>
+<td>成长性A / 估值修复</td>
+<td>Q3仍未确认 / 试运行指标未达</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>如果小核酸载体2026H2实现商业化订单，则生命科学板块估值切换开启</td>
+<td>中</td>
+<td>成长性A / 估值切换</td>
+<td>H2无商业化订单</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>如果GLP-1全球销售维持高增长，则多肽固相合成载体需求持续</td>
+<td>高</td>
+<td>生命科学板块基本盘</td>
+<td>GLP-1销售增速&lt;20%</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>如果产品结构持续升级（生命科学占比提升），则毛利率扩张可持续</td>
+<td>高</td>
+<td>盈利能力A</td>
+<td>传统水处理树脂占比反弹</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>如果估值体系从"化工"切换至"生命科学+新材料"，则PE中枢上移</td>
+<td>中</td>
+<td>估值B+→A</td>
+<td>Wind分类不变+市场认知固化</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>如果碳酸锂价格跌破15万元/吨，则盐湖提锂项目经济性下降</td>
+<td>中</td>
+<td>风险R5</td>
+<td>锂价企稳回升至&gt;18万</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-009</td>
+<td>如果DLE国际竞争者商业化突破，则公司海外拓展节奏放缓</td>
+<td>中</td>
+<td>风险R2</td>
+<td>国际巨头技术商业化</td>
+<td>2026-06-05</td>
+</tr>
+<tr>
+<td>LK-010</td>
+<td>如果2025年CAPEX骤降（0.41亿）后产能利用率回升，则自由现金流系统性改善</td>
+<td>高</td>
+<td>盈利能力A</td>
+<td>CAPEX反弹+利用率下降</td>
+<td>2026-06-05</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：技术壁垒支撑高端市场护城河</h3>
+<p><strong>因果断言：</strong>
+如果蓝晓科技持续保持DLE吸附剂全球唯一多项目运营+均粒技术国际领先+钛系吸附剂溶损率十万分之一，则高端吸附分离材料市场进入门槛5-10年内难以被新进入者实质性突破。</p>
+<p><strong>支持依据：</strong>
+- DLE吸附剂全球唯一多项目商业化（国能/五矿/藏格/锦泰）
+- 均粒技术（喷射法造粒）国际领先水平
+- 钛系吸附剂溶损率十万分之一，构成不可复制工艺诀窍</p>
+<p><strong>适用条件：</strong>
+- 研发投入率持续5.4-6.4%
+- 客户验证周期1-2年不变</p>
+<p><strong>失效信号：</strong>
+- 住友金属/Eramet/力拓实现DLE吸附剂商业化突破
+- 国产同行（争光股份等）实现高端技术突破
+- 公司研发费用率显著下降</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 工艺诀窍+技术积累+研发投入持续性多重支撑</p>
+<h3>LK-002：一体化平台形成深度客户绑定</h3>
+<p><strong>因果断言：</strong>
+如果"材料+装置+技术服务"一体化平台成立，则客户一旦采用蓝晓方案，更换供应商需重新验证全流程（1-2年GMP认证+整套工艺推倒重来），形成深度绑定。</p>
+<p><strong>支持依据：</strong>
+- GMP认证周期1-2年
+- 吸附材料配方与客户工艺流程定制开发
+- 系统装置业务将材料与设备打包交付
+- 2025年技术服务收入0.98亿（毛利率76.40%）= 转换成本货币化</p>
+<p><strong>适用条件：</strong>
+- 生命科学/超纯水等高转换成本场景
+- 客户对供应稳定性要求高</p>
+<p><strong>失效信号：</strong>
+- 客户大规模引入新供应商（CR5从17.84%上升至&gt;30%）
+- 国产同行实现GMP认证突破</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 多重锁定机制叠加+技术服务的变现验证</p>
+<h3>LK-003：盐湖提锂国能项目收入确认</h3>
+<p><strong>因果断言：</strong>
+如果西藏国能矿业结则茶卡3,300吨氢氧化锂产线在2026Q2-Q3取得地方政府许可并确认收入，则2026E归母净利上修至12-13亿区间（中性预测上修+20%）。</p>
+<p><strong>支持依据：</strong>
+- 试运行已成功，工艺能耗和产品指标均符合设计要求
+- UBS产业链调研显示"主要障碍已经扫清"
+- 每1,000吨氢氧化锂贡献约4,000万元增量净利（3,300吨=1.3亿）</p>
+<p><strong>适用条件：</strong>
+- 碳酸锂价格稳定在15万元/吨以上
+- 西藏/青海地方政策保持稳定
+- 试运行指标持续稳定</p>
+<p><strong>失效信号：</strong>
+- Q3仍未确认收入（重大延迟）
+- 试运行出现技术问题
+- 碳酸锂跌破10万元/吨</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 试运行成功提供部分支撑，但收入确认涉及外部许可，不确定性中等</p>
+<h3>LK-004：小核酸载体商业化</h3>
+<p><strong>因果断言：</strong>
+如果蓝晓科技小核酸固相合成载体在2026H2实现首个商业化订单（&gt;5,000万级），则生命科学板块从"概念验证"进入"业绩兑现"阶段，估值切换开启。</p>
+<p><strong>支持依据：</strong>
+- 2025年小核酸载体收入约1,500万元
+- 已通过多家头部药企验证
+- 诺华Leqvio Q126美国以外销售+106%验证需求
+- 全球小核酸合成载体市场预计2030年超10亿美元</p>
+<p><strong>适用条件：</strong>
+- 下游药企商业化采购持续
+- 公司产能配套到位</p>
+<p><strong>失效信号：</strong>
+- 2026H2无商业化订单
+- 下游药企推迟商业化（GLP-1之后的小核酸管线）</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 验证期已过+下游需求验证，但首个商业化订单时点不确定</p>
+<h3>LK-005：GLP-1销售驱动多肽载体需求</h3>
+<p><strong>因果断言：</strong>
+如果诺和诺德/礼来GLP-1药物全球销售维持高增长（&gt;20% YoY），则蓝晓科技多肽固相合成载体（seplife 2-CTC、sieber）需求持续。</p>
+<p><strong>支持依据：</strong>
+- 全球GLP-1市场2018年93亿→2023年389亿美元（CAGR 33.2%）
+- 预计2032年达1,299亿美元
+- 公司是全球多肽固相合成载体主要供应商</p>
+<p><strong>适用条件：</strong>
+- GLP-1药物安全性无重大问题
+- 减肥药市场持续扩展</p>
+<p><strong>失效信号：</strong>
+- GLP-1销售同比增速&lt;20%
+- 重大安全性事件（致癌/副作用）</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 全球GLP-1市场仍处快速放量期，多家药企管线丰富</p>
+<h3>LK-006：产品结构升级驱动毛利率扩张</h3>
+<p><strong>因果断言：</strong>
+如果公司持续推进产品结构升级（生命科学/金属资源/超纯水占比提升，传统工业水处理下降），则毛利率扩张可持续（5年+6.89pct趋势延续）。</p>
+<p><strong>支持依据：</strong>
+- 2025年吸附分离材料毛利率54.22%
+- 生命科学板块毛利率超60%
+- 三大高毛利板块占吸附材料营收79%</p>
+<p><strong>适用条件：</strong>
+- 高端市场国产替代持续
+- 公司高端产品技术领先</p>
+<p><strong>失效信号：</strong>
+- 传统水处理树脂占比反弹（&gt;40%）
+- 行业竞争加剧导致高端产品降价</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 5年毛利率+6.89pct趋势+结构占比10%→30%验证</p>
+<h3>LK-007：估值体系切换（化工→生命科学+新材料）</h3>
+<p><strong>因果断言：</strong>
+如果A股市场逐步将蓝晓科技从"基础化工-塑料制品"分类重新归类为"新材料+生命科学上游"，则PE中枢从20-25倍（化工）上移至30-40倍（新材料+生命科学），估值修复空间显著。</p>
+<p><strong>支持依据：</strong>
+- 公司被Wind和申万分类归入"基础化工-塑料制品"，PE中值20-25倍
+- 实际业务横跨新材料/生命科学/能源金属
+- ROE 20.44%、毛利率51.46%等指标接近新材料/生命科学上游</p>
+<p><strong>适用条件：</strong>
+- 生命科学收入占比持续提升（2025年已超20%）
+- 小核酸载体商业化确认
+- 盐湖提锂从设备销售向运营分成升级</p>
+<p><strong>失效信号：</strong>
+- Wind/申万分类持续不调整
+- 市场认知固化（化工视角不变）</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 切换是渐进过程，时间窗较长</p>
+<h3>LK-008：碳酸锂价格对盐湖提锂经济性的影响</h3>
+<p><strong>因果断言：</strong>
+如果碳酸锂价格跌破15万元/吨（当前17.3万），则盐湖提锂项目经济性显著下降，客户资本开支延后，2026E增量净利贡献下修。</p>
+<p><strong>支持依据：</strong>
+- 碳酸锂从年初20万回落至4月17.3万
+- 锂价中长期供给过剩格局未根本改变</p>
+<p><strong>适用条件：</strong>
+- 全球锂供给维持过剩
+- 储能/动力电池需求增速放缓</p>
+<p><strong>失效信号：</strong>
+- 锂价企稳回升至&gt;18万元/吨
+- 全球锂供给出现短缺</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 商品价格不可预测，但UBS基准假设17.3万有支撑</p>
+<h3>LK-009：DLE国际竞争压力</h3>
+<p><strong>因果断言：</strong>
+如果住友金属/Eramet/力拓等国际巨头在DLE吸附法提锂实现商业化突破（2-3年内），则蓝晓科技海外盐湖提锂市场拓展节奏放缓，新订单市占率下降。</p>
+<p><strong>支持依据：</strong>
+- 国际巨头资本实力强
+- 加速布局吸附法提锂
+- 海外客户对供应链多元化有诉求</p>
+<p><strong>适用条件：</strong>
+- 国际巨头持续投入研发
+- 海外市场拓展受阻</p>
+<p><strong>失效信号：</strong>
+- 国际巨头2-3年内未实现商业化
+- 公司海外订单市占率持续提升</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 5-10年技术诀窍领先，但需持续观察</p>
+<h3>LK-010：CAPEX切换至收获期+FCF改善</h3>
+<p><strong>因果断言：</strong>
+如果2025年CAPEX从2.47亿骤降至0.41亿（主力产能建设完成）后产能利用率持续回升，则自由现金流系统性改善，盈利能力进一步兑现。</p>
+<p><strong>支持依据：</strong>
+- 2025年CAPEX 0.41亿 vs 2024年2.47亿
+- 资产周转率从0.434（2024）回升至0.439（2025）
+- 经营现金流7.85亿，FCF=7.85-0.41=7.44亿</p>
+<p><strong>适用条件：</strong>
+- 新产能逐步满产
+- 基本盘业务需求稳定</p>
+<p><strong>失效信号：</strong>
+- CAPEX反弹+利用率下降
+- 新一轮产能扩张周期开启</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> CAPEX数据已验证+利用率企稳回升</p>
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-003</td>
+<td>LK-008</td>
+<td>依赖</td>
+<td>盐湖提锂经济性依赖碳酸锂价格</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-005</td>
+<td>依赖</td>
+<td>小核酸载体商业化是GLP-1驱动的延伸</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td>并行</td>
+<td>技术壁垒+一体化平台共同支撑护城河</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-004</td>
+<td>并行</td>
+<td>国能+小核酸是双催化剂</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-005</td>
+<td>依赖</td>
+<td>毛利率扩张依赖生命科学占比提升</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-003 / LK-004</td>
+<td>依赖</td>
+<td>估值体系切换需要催化剂兑现</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>LK-003</td>
+<td>影响</td>
+<td>锂价下跌削弱国能项目贡献</td>
+</tr>
+<tr>
+<td>LK-009</td>
+<td>LK-003</td>
+<td>互斥</td>
+<td>国际竞争突破 vs 国能项目兑现</td>
+</tr>
+<tr>
+<td>LK-010</td>
+<td>LK-006</td>
+<td>并行</td>
+<td>FCF改善+毛利率扩张共同支撑ROE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义</strong>：
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<h2>四、关联卡片</h2>
+<ul>
+<li>蓝晓科技总览 — 关联判断：综合评级A-，投资建议买入</li>
+<li>商业模式 — 关联判断：LK-001（技术壁垒）+ LK-002（一体化平台）</li>
+<li>成长性 — 关联判断：LK-003（盐湖提锂）+ LK-004（小核酸）+ LK-005（GLP-1）</li>
+<li>盈利能力 — 关联判断：LK-006（结构升级）+ LK-010（FCF改善）</li>
+<li>估值 — 关联判断：LK-007（估值切换）</li>
+<li>风险 — 关联判断：LK-008（碳酸锂）+ LK-009（DLE国际竞争）</li>
+<li>影响因素 — 关联判断：当前状态监控</li>
+<li>跟踪清单 — 关联判断：M2监控检查项</li>
+</ul>
+<blockquote>
+<p>来源：01_公司研究/原始资料/蓝晓科技_300487/蓝晓科技_300487_综合投研分析_20260605 §1-§8</p>
+</blockquote>
+</div>
+</body>
+</html>
