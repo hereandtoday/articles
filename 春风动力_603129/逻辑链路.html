@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>春风动力 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>春风动力 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>三角制造+USMCA→关税可控</td>
+<td>中</td>
+<td>评级A/目标价350</td>
+<td>USMCA失败+关税&gt;60%</td>
+<td>2026-06-16</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>高端化+量增→全地形车持续增长</td>
+<td>高</td>
+<td>成长性A</td>
+<td>ASP/销量双降</td>
+<td>2026-06-16</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>极核放量→第三曲线成型</td>
+<td>中</td>
+<td>目标价上调</td>
+<td>2026年销量&lt;100万/持续亏损</td>
+<td>2026-06-16</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>品牌+渠道→定价权</td>
+<td>高</td>
+<td>护城河A</td>
+<td>市占率连续下降</td>
+<td>2026-06-16</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>OCF质量→分红可持续</td>
+<td>高</td>
+<td>盈利能力A</td>
+<td>OCF/净利&lt;1.0</td>
+<td>2026-06-16</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>摩托出海→第二曲线加速</td>
+<td>中</td>
+<td>成长性A</td>
+<td>出口连续两季负增长</td>
+<td>2026-06-16</td>
+</tr>
+</tbody>
+</table>
+<h2>二、链路详情</h2>
+<h3>LK-001：三角制造与关税对冲</h3>
+<p><strong>因果断言：</strong>
+如果墨西哥工厂获得USMCA认证，则全地形车对美关税从27.5%降至0%，关税风险大幅缓解。</p>
+<p><strong>支持依据：</strong>
+- 【L2】墨西哥工厂5万台产能，2023年7月已投产
+- 【L2】首款车型Z10-4申请USMCA认证，2026Q1有较高概率通过
+- 【L2】即使USMCA失败，泰国+中国仍有对冲余地</p>
+<p><strong>适用条件：</strong> 美国维持当前关税框架不发生根本性变化；墨西哥工厂产品满足USMCA原产地规则。</p>
+<p><strong>失效信号：</strong> USMCA认证被明确拒绝 + 美国对墨西哥也加征关税 + 替代方案无进展。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> USMCA认证结果尚未公布，存在一定不确定性。但三角制造布局已成型，完全失败概率较低。</p>
+<h3>LK-002：高端化驱动增长</h3>
+<p><strong>因果断言：</strong>
+如果UZ系列高端产品占比持续提升（40%→60%+），则全地形车ASP和毛利率将持续改善。</p>
+<p><strong>支持依据：</strong>
+- 【L2】U10 Pro 2026Q1销量超1万台，验证高端定价能力
+- 【L2】Z10-4定价，显著高于U系列均价
+- 【L2】北美经销商从400家扩至700家，渠道支撑放量</p>
+<p><strong>适用条件：</strong> 北美市场需求稳定；消费者对高端产品有持续购买力。</p>
+<p><strong>失效信号：</strong> U10 Pro/Z10-4季度销量连续低于预期50%+；ASP环比下降。</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 高端化已有销售数据验证（U10 Pro 1万台/季），趋势明确。</p>
+<h3>LK-003：极核第三曲线</h3>
+<p><strong>因果断言：</strong>
+如果极核2026年销量达120万台且毛利率转正，则第三增长曲线成型，打开长期估值空间。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2025年销量55.12万台（+420%），增速迅猛
+- 【L2】2026Q1毛利率已转正
+- 【L2】新国标推动行业升级，合规品牌受益</p>
+<p><strong>适用条件：</strong> 新国标执行力度不减；极核产品力不出现重大质量问题。</p>
+<p><strong>失效信号：</strong> 2026年全年销量&lt;100万台；毛利率重新转负；新国标政策变化。</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> Q1毛利率转正是积极信号，但Q2后新品投入可能再波动，全年盈亏平衡仍有不确定性。</p>
+<h3>LK-004：品牌定价权</h3>
+<p><strong>因果断言：</strong>
+如果CFMOTO品牌在全球ATV/摩托车市场持续提升知名度（赛事背书+市占率提升），则定价权和毛利率将持续增强。</p>
+<p><strong>支持依据：</strong>
+- 【L2】2024年Moto3年度车手冠军（中国制造商首个）
+- 【L2】英国ATV/UTV销量第一（超越本田）
+- 【L2】欧洲全地形车市占率25%（第一）</p>
+<p><strong>适用条件：</strong> 赛事合作持续；产品品质维持口碑。</p>
+<p><strong>失效信号：</strong> 欧洲/英国市占率连续下降；品牌负面事件。</p>
+<p><strong>置信度：</strong> 高</p>
+<h3>LK-005：现金流质量</h3>
+<p><strong>因果断言：</strong>
+如果OCF/净利润持续&gt;1.5，则分红能力和抗风险能力可持续。</p>
+<p><strong>支持依据：</strong>
+- 【L2】OCF/净利：2023=1.37、2024=2.02、2025=2.37，持续提升
+- 【L2】5年分红率从30%提升至38%</p>
+<p><strong>适用条件：</strong> 应收账款周转天数稳定在30天左右。</p>
+<p><strong>失效信号：</strong> OCF/净利&lt;1.0；应收账款周转天数大幅恶化。</p>
+<p><strong>置信度：</strong> 高</p>
+<h3>LK-006：摩托车出海</h3>
+<p><strong>因果断言：</strong>
+如果海外大排量摩托ASP/毛利率高于国内4-5pct持续成立，则出海加速将改善整体盈利能力。</p>
+<p><strong>支持依据：</strong>
+- 【L2】海外ASP/毛利率较国内高4-5pct
+- 【L2】2025年Q3已恢复出口增长（KTM重组影响消退）</p>
+<p><strong>适用条件：</strong> 欧洲/北美市场需求稳定；无新的贸易壁垒。</p>
+<p><strong>失效信号：</strong> 出口连续两季度负增长；海外毛利率与国内趋同。</p>
+<p><strong>置信度：</strong> 中</p>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-002</td>
+<td>依赖</td>
+<td>高端化定价权在关税可控前提下才能充分释放</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-003</td>
+<td>并行</td>
+<td>关税对冲和极核放量是独立的增长驱动力</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-002</td>
+<td>依赖</td>
+<td>高端化定价依赖品牌溢价能力</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-002</td>
+<td>并行</td>
+<td>现金流质量和增长驱动独立</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-001</td>
+<td>依赖</td>
+<td>摩托出海受关税政策影响</td>
+</tr>
+</tbody>
+</table>
+<h2>四、关联卡片</h2>
+<ul>
+<li>春风动力_603129总览 — 综合评级A级，基于上述链路的综合判断</li>
+<li>商业模式 — 品牌+渠道+技术护城河（LK-004）</li>
+<li>成长性 — 三轮驱动成长逻辑（LK-002/LK-003/LK-006）</li>
+<li>风险 — 关税+汇率+竞争风险（LK-001/LK-006的失效场景）</li>
+</ul>
+<blockquote>
+<p>来源：原始资料/春风动力_603129_综合投研分析_20260616.md</p>
+</blockquote>
+</div>
+</body>
+</html>
