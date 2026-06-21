@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>紫金矿业 · 逻辑链路</title>
+<style>:root{--ink:#14181f;--ink-soft:#3c4451;--ink-mute:#6c7686;--rule:#dde2ea;--rule-strong:#b9c1cf;--paper:#fff;--paper-soft:#f6f8fb;--accent:#1f4ea8;--accent-light:#e8edf5;--code-bg:#f1f4f9;--code-ink:#16213a;--table-row-alt:#fafbfd;--positive:#1c6e3d;--negative:#a32a2a;--warning:#c97a1a}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-text-size-adjust:100%}@media(max-width:600px){html{font-size:15px}}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Inter",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+h1{font-size:20px;font-weight:700;margin:0 0 10px;color:#1a365d;line-height:1.3}
+h2{font-size:1.2rem;font-weight:700;color:#1a365d;margin:1.8em 0 .6em;padding-bottom:6px;border-bottom:2px solid var(--rule)}
+h3{font-size:1.05rem;font-weight:600;color:var(--ink-soft);margin:1.4em 0 .5em}
+p{margin-bottom:1em;text-align:justify;word-break:break-word}
+hr{border:none;height:1px;background:var(--rule);margin:1.8em 0}
+blockquote{margin:1em 0;padding:12px 16px;background:#f7f3eb;border-left:4px solid #b85a20;color:#4a3a2a;font-size:14px;line-height:1.5;border-radius:0 4px 4px 0}
+blockquote p{margin-bottom:0}
+strong{color:var(--ink);font-weight:700}
+code{font-family:"JetBrains Mono","SF Mono",monospace;background:var(--accent-light);padding:2px 6px;border-radius:3px;font-size:13px;color:var(--accent)}
+pre{background:var(--code-bg);border:1px solid var(--rule);border-radius:6px;padding:14px 18px;margin:12px 0;overflow-x:auto;font-size:13px;line-height:1.5;font-family:"JetBrains Mono","SF Mono",monospace;color:var(--code-ink)}
+pre code{background:none;padding:0;color:var(--code-ink)}
+li{margin-bottom:4px;line-height:1.6;margin-left:20px}
+ul,ol{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:1em 0;font-size:13px;line-height:1.5}
+table th{background:var(--accent);color:#fff;font-weight:600;padding:8px 12px;border:1px solid var(--accent);text-align:left;font-size:12px;white-space:nowrap}
+table td{padding:7px 12px;border:1px solid var(--rule);vertical-align:top}
+table tbody tr:nth-child(even) td{background:var(--table-row-alt)}
+table tbody tr:hover td{background:var(--accent-light);cursor:pointer}
+.pos{color:var(--positive);font-weight:600}
+.neg{color:var(--negative);font-weight:600}
+.warn{color:var(--warning);font-weight:600}
+</style>
+</head>
+<body>
+<div class="body">
+<h1>紫金矿业 · 逻辑链路</h1>
+<blockquote>
+<p>因果断言网络（L3），显式化判断之间的逻辑关系。
+每条链路：前提条件 → 因果断言 → 结论 → 失效信号</p>
+</blockquote>
+<h2>一、链路清单</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>因果断言</th>
+<th>置信度</th>
+<th>关联判断</th>
+<th>失效信号</th>
+<th>更新日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>全球矿业龙头地位 + 资源储量结构性优势 → 商业模式S级</td>
+<td>高</td>
+<td>总览商业模式S级</td>
+<td>资源储量大幅下降/全球排名跌出前5</td>
+<td>2026-06-19</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>量价齐升（金/铜/银）+ 锂业务从0到1 → 成长性A级</td>
+<td>高</td>
+<td>总览成长性A级、估值525-580亿净利润</td>
+<td>金价&lt;3500美元/铜价&lt;9000美元持续1年以上</td>
+<td>2026-06-19</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>ROE连续3年提升 + OCF/净利润=1.46 + FCF 444亿 → 盈利能力S级</td>
+<td>高</td>
+<td>盈利能力S级</td>
+<td>ROE回落至20%以下且持续2年</td>
+<td>2026-06-19</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>DCF ¥37.83 + PE-TTM 35%分位 + PEG&lt;1 → 估值A级</td>
+<td>中</td>
+<td>估值A级</td>
+<td>金价/铜价大幅下跌导致DCF重估下行20%+</td>
+<td>2026-06-19</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>价格波动 + 海外地缘 + 成本上行 → 风险中等(4.8)</td>
+<td>中</td>
+<td>风险综合4.8</td>
+<td>海外项目大规模停产/成本年涨&gt;20%</td>
+<td>2026-06-19</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>央行购金&gt;800吨 + 全球铜供给增速&lt;1% + 中国央行黄金储备占比仅8.6% → 金/铜价格中枢长期上移</td>
+<td>高</td>
+<td>影响因素F1/F2/F4</td>
+<td>中国央行连续2年净减持/全球铜矿大规模复产</td>
+<td>2026-06-19</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>公司持续勘探+新增资源（金364吨+铜103万吨）+ 一体化运营 → 资源衰减对冲60%+</td>
+<td>高</td>
+<td>风险R6对冲</td>
+<td>新增资源&lt;老矿山衰减/勘探投入大幅减少</td>
+<td>2026-06-19</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>紫金黄金国际分拆上市 + 历史并购整合能力 → 海外资产独立估值+协同释放</td>
+<td>中</td>
+<td>商业模式S级、风险R3对冲40%</td>
+<td>分拆后业绩不及预期/海外资产剥离</td>
+<td>2026-06-19</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>二、链路详情</h2>
+<h3>LK-001：全球矿业龙头地位+资源储量结构性优势</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果公司维持全球矿业龙头地位（铜全球Top3、金全球Top5）+ 资源储量结构性优势（铜10,968万吨、金4,610吨），则商业模式评级S级。</p>
+</blockquote>
+<p><strong>支持依据：</strong>
+- 资源储量铜全球Top 3、金全球Top 5
+- 2025年新增权益资源金364吨+铜103万吨
+- 矿产品毛利率61.56%（剔除冶炼加工后）
+- 自主勘查成本约453万元/吨黄金（远低于行业平均）</p>
+<p><strong>适用条件：</strong>
+- 全球矿业并购整合格局相对稳定
+- 公司未发生大规模资源剥离</p>
+<p><strong>失效信号：</strong>
+- 资源储量大幅下降（年降幅&gt;10%）
+- 全球排名跌出前5
+- 主要矿山发生重大停产（&gt;6个月）</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 储量数据已验证+矿产品毛利率连续提升+并购历史整合能力已多次验证</p>
+<hr />
+<h3>LK-002：量价齐升+锂业务从0到1→成长性A级</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果金/铜/银价格中枢上移（价驱动）+ 公司2026年金+17.3%/铜+10.6%/碳酸锂+371%（量驱动），则成长性评级A级，2026年净利润560-680亿元。</p>
+</blockquote>
+<p><strong>支持依据：</strong>
+- 央行连续19个月净购金（2026Q1净购金243.7吨）
+- 全球铜矿供给增速&lt;1%
+- 公司2026年矿产金105吨、矿产铜120万吨、碳酸锂12万吨指引
+- 2026Q1归母净利润已实现+97.50%（量价齐升验证）</p>
+<p><strong>适用条件：</strong>
+- 金价维持在3,500-5,000美元/盎司区间
+- 铜价维持在9,000-15,000美元/吨区间
+- 海外项目按计划投产</p>
+<p><strong>失效信号：</strong>
+- 金价&lt;3,500美元/盎司持续1年以上
+- 铜价&lt;9,000美元/吨持续1年以上
+- 海外项目大规模投产延期（&gt;1年）</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 公司指引相对保守（多家券商一致预期高于公司指引）+ 2026Q1已验证</p>
+<hr />
+<h3>LK-003：ROE连续3年提升+现金流强劲→盈利能力S级</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果公司维持ROE 27.91%+ OCF/净利润&gt;1.0 + FCF&gt;300亿元，则盈利能力评级S级。</p>
+</blockquote>
+<p><strong>支持依据：</strong>
+- ROE连续3年提升（19.64%→22.93%→27.91%）
+- OCF 5年CAGR约30.6%，2025年OCF 754.30亿元（同比+54.4%）
+- OCF/净利润=1.46（净利润现金含量极高）
+- FCF 444亿元（2025年）</p>
+<p><strong>适用条件：</strong>
+- 商品价格不出现系统性下行
+- 资产负债率维持&lt;55%</p>
+<p><strong>失效信号：</strong>
+- ROE回落至20%以下且持续2年
+- OCF/净利润&lt;0.8（净利润现金含量恶化）
+- FCF持续&lt;200亿元（资本开支过度）</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 历史5年财务数据已验证</p>
+<hr />
+<h3>LK-004：DCF+PE-TTM分位+PEG→估值A级</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果DCF内在价值¥37.83 + PE-TTM 35%分位 + PEG&lt;1，则估值评级A级，1年期目标价¥42元。</p>
+</blockquote>
+<p><strong>支持依据：</strong>
+- WACC 8.5%、永续增长率g=2.5%下的DCF内在价值¥37.83
+- 当前PE-TTM 12.80x处近1年35%分位
+- 2026E PE约10x（按520亿元基准净利润），PEG约0.5
+- Citi/JPMorgan/UBS目标价¥46.6-51</p>
+<p><strong>适用条件：</strong>
+- 金价/铜价不出现系统性下行
+- WACC假设维持8.5%</p>
+<p><strong>失效信号：</strong>
+- 金价/铜价大幅下跌导致DCF重估下行20%+
+- WACC上行至10%+（利率大幅上行）
+- 2026年净利润不及450亿元（悲观情景）</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> DCF对金/铜价高度敏感，价格波动直接重估</p>
+<hr />
+<h3>LK-005：价格波动+海外地缘+成本上行→风险中等</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果金价/铜价波动+海外地缘风险+成本年涨10-19%，则风险综合评分中等（约4.8分）。</p>
+</blockquote>
+<p><strong>支持依据：</strong>
+- 金价/铜价历史波动率20-30%
+- 海外项目分布于11个国家，地缘风险存在但分散
+- 2025年成本上行：矿产金+19.3%、矿产铜+11.1%</p>
+<p><strong>适用条件：</strong>
+- 全球未发生系统性金融危机
+- 海外国家政策保持相对稳定</p>
+<p><strong>失效信号：</strong>
+- 海外项目大规模停产（如卡莫阿再次淹井）
+- 单位成本年涨&gt;20%
+- 主要海外项目被国有化</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 海外地缘+成本上行为中长期风险，难以精确量化</p>
+<hr />
+<h3>LK-006：央行购金+全球铜供给增速&lt;1%→价格中枢长期上移</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果央行年净购金&gt;800吨 + 全球铜矿供给增速&lt;1% + 中国央行黄金储备占比仅8.6%，则金/铜价格中枢长期上移。</p>
+</blockquote>
+<p><strong>支持依据：</strong>
+- 2022-2024年央行净购金均超过1,000吨/年
+- 2025年央行净购金863吨（历史高位）
+- 2026Q1净购金243.7吨（同比加速）
+- WGC 2025年央行调查：43%央行计划未来1年增加黄金储备，72%预计未来5年占比小幅提升
+- UBS/Citi等投行上调铜价预测至13,000美元/吨+</p>
+<p><strong>适用条件：</strong>
+- 去美元化趋势持续
+- 全球铜矿未发生大规模复产</p>
+<p><strong>失效信号：</strong>
+- 中国央行连续2年净减持黄金
+- 全球铜矿大规模复产（&gt;3%/年）
+- 去美元化趋势逆转</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> WGC数据+多家投行预测+中国央行储备占比8.6%为强支撑</p>
+<hr />
+<h3>LK-007：持续勘探+一体化运营→资源衰减对冲</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果公司持续勘探（年新增金364吨+铜103万吨）+ 一体化运营，则资源衰减对冲达60%+。</p>
+</blockquote>
+<p><strong>支持依据：</strong>
+- 2025年新增权益资源量金364吨、铜103万吨
+- 自主勘查成本约453万元/吨黄金（远低于行业平均）
+- "矿石流五环归一"矿业工程模式
+- 国内外问题矿山并购后均能扭亏为盈</p>
+<p><strong>适用条件：</strong>
+- 勘探投入维持稳定
+- 海外勘探项目未受到地缘干扰</p>
+<p><strong>失效信号：</strong>
+- 新增资源&lt;老矿山衰减
+- 勘探投入大幅减少（同比-30%）
+- 海外勘探项目被强制收回</p>
+<p><strong>置信度：</strong> 高
+<strong>置信度依据：</strong> 历史勘探数据已验证+紫金自主勘查能力为行业领先</p>
+<hr />
+<h3>LK-008：紫金黄金国际分拆+历史整合能力→海外资产价值释放</h3>
+<p><strong>因果断言：</strong></p>
+<blockquote>
+<p>如果紫金黄金国际成功分拆上市 + 历史并购整合能力持续，则海外资产独立估值+协同释放。</p>
+</blockquote>
+<p><strong>支持依据：</strong>
+- 2025年9月30日紫金黄金国际（02259.HK）分拆上市，公司持股85%
+- 历史整合案例：卡莫阿、Timok、阿基姆等海外项目均能在紫金接管后扭亏</p>
+<p><strong>适用条件：</strong>
+- 海外资产独立运营不受地缘干扰
+- 整合协同效应按预期实现</p>
+<p><strong>失效信号：</strong>
+- 分拆后业绩不及预期
+- 海外资产剥离
+- 主要海外项目运营中断</p>
+<p><strong>置信度：</strong> 中
+<strong>置信度依据：</strong> 分拆效果有待长期验证（2025年9月刚完成）</p>
+<hr />
+<h2>三、跨链路关系</h2>
+<table>
+<thead>
+<tr>
+<th>链路ID</th>
+<th>关联链路</th>
+<th>关系类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LK-001</td>
+<td>LK-007</td>
+<td>依赖</td>
+<td>LK-001（商业模式S级）依赖于LK-007（资源衰减对冲60%+）</td>
+</tr>
+<tr>
+<td>LK-001</td>
+<td>LK-008</td>
+<td>并行</td>
+<td>LK-001与LK-008共同支撑商业模式S级</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-006</td>
+<td>依赖</td>
+<td>LK-002（量价齐升）依赖于LK-006（价格中枢上移）</td>
+</tr>
+<tr>
+<td>LK-002</td>
+<td>LK-001</td>
+<td>并行</td>
+<td>LK-002与LK-001共同支撑成长性和商业模式</td>
+</tr>
+<tr>
+<td>LK-003</td>
+<td>LK-002</td>
+<td>依赖</td>
+<td>LK-003（盈利能力S级）依赖于LK-002（量价齐升）</td>
+</tr>
+<tr>
+<td>LK-004</td>
+<td>LK-003</td>
+<td>并行</td>
+<td>LK-004（估值A级）与LK-003（盈利能力S级）独立支撑总评级</td>
+</tr>
+<tr>
+<td>LK-005</td>
+<td>LK-002</td>
+<td>互斥</td>
+<td>LK-005（风险中等）与LK-002（成长性A级）反向关系</td>
+</tr>
+<tr>
+<td>LK-006</td>
+<td>LK-002</td>
+<td>依赖</td>
+<td>LK-006（价格中枢上移）支撑LK-002（成长性A）</td>
+</tr>
+<tr>
+<td>LK-007</td>
+<td>LK-005</td>
+<td>并行</td>
+<td>LK-007（资源衰减对冲）与LK-005（风险）部分对冲</td>
+</tr>
+<tr>
+<td>LK-008</td>
+<td>LK-005</td>
+<td>并行</td>
+<td>LK-008（海外资产价值释放）与LK-005（风险）部分对冲</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关系类型定义：</strong>
+- <strong>依赖</strong>：B 的成立依赖于 A 的成立
+- <strong>并行</strong>：A 与 B 独立，共同支撑同一结论
+- <strong>互斥</strong>：A 与 B 不能同时成立</p>
+<hr />
+<h2>四、关联卡片</h2>
+<ul>
+<li>紫金矿业总览 — 关联判断：综合评级S级、估值A级、目标价¥42</li>
+<li>商业模式 — 关联判断：商业模式S级 ← LK-001</li>
+<li>成长性 — 关联判断：成长性A级，2026E 560-680亿元 ← LK-002</li>
+<li>盈利能力 — 关联判断：盈利能力S级，ROE 27.91% ← LK-003</li>
+<li>估值 — 关联判断：估值A级，1Y目标价¥42 ← LK-004</li>
+<li>风险 — 关联判断：风险综合4.8（中等）← LK-005</li>
+<li>影响因素 — 关联判断：F1/F2/F4等正向因素 ← LK-006</li>
+</ul>
+<blockquote>
+<p>来源：紫金矿业_601899_综合投研分析_20260619 §1-7</p>
+</blockquote>
+</div>
+</body>
+</html>
